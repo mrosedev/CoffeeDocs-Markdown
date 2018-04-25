@@ -1,10 +1,7 @@
-<div class="header">
-[]{#top}
+---
+layout: default
+---
 
-<div class="zz-skip-header">
-[Go to primary content](#BEGIN)
-
-</div>
 +-----------------------------------+----------------------------------:+
 | **Java Platform, Standard Edition |   --                              |
 | Security Developer's Guide**\     |   --                              |
@@ -15,17 +12,10 @@
 ------------------------------------------------------------------------
 
   -------------------------------------------- --
-   [![Next](../../dcommon/gifs/rightnav.gif)\  
-   <span class="icon">Next</span>](title.htm)  
+   [Next](title.htm)  
   -------------------------------------------- --
 
-[]{#BEGIN}
 
-</div>
-<!-- class="header" -->
-
-<div class="ind">
-<!-- End Header -->
 
 Contents {#contents .toc}
 ========
