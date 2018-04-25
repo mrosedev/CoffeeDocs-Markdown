@@ -20,7 +20,7 @@ E94828-01
 Contents
 ========
 
-[Title and Copyright Information](title.htm)
+[Title and Copyright Information](title.html)
 --------------------------------------------
 
 [Preface](preface.htm#GUID-C49D47BA-EA16-4F4F-90CE-DAD9B984D823)
