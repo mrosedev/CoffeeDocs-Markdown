@@ -1,26 +1,15 @@
-<div class="header">
-[]{#top}
+---
+layout: default
+---
 
-<div class="zz-skip-header">
-[Go to primary content](#BEGIN)
 
-</div>
-+-----------------------------------+----------------------------------:+
-| **Java Platform, Standard Edition |   -- ---------------------------- |
-| Security Developer's Guide**\     | ------------------------------    |
-| **<span>Release 11</span>**\      |       [![Go To Table Of Contents] |
-| E94828-01                         | (../../dcommon/gifs/toc.gif)\     |
-|                                   |             <span class="icon">Co |
-|                                   | ntents</span>](toc.htm)           |
-|                                   |   -- ---------------------------- |
-|                                   | ------------------------------    |
-+-----------------------------------+-----------------------------------+
+**Java Platform, Standard Edition Security Developer's Guide** Release 11 E94828-01
 
 ------------------------------------------------------------------------
 
   ----------------------------------------------- ---------------------------------------------- --
-   [![Previous](../../dcommon/gifs/leftnav.gif)\    [![Next](../../dcommon/gifs/rightnav.gif)\   
-   <span class="icon">Previous</span>](toc.htm)    <span class="icon">Next</span>](preface.htm)  
+   [
+   <span class="icon">Previous</span>](toc.htm)    [<span class="icon">Next</span>](preface.htm)  
   ----------------------------------------------- ---------------------------------------------- --
 
 []{#BEGIN}
