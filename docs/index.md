@@ -2,12 +2,10 @@
 layout: default
 ---
 
-+-----------------------------------+----------------------------------:+
-| **Java Platform, Standard Edition |   --                              |
-| Security Developer's Guide**\     |   --                              |
-| **<span>Release 11</span>**\      |                                   |
-| E94828-01                         |                                   |
-+-----------------------------------+-----------------------------------+
+
+**Java Platform, Standard Edition Security Developer's Guide**
+**Release 11
+E94828-01
 
 ------------------------------------------------------------------------
 
@@ -17,13 +15,13 @@ layout: default
 
 
 
-Contents {#contents .toc}
+Contents
 ========
 
-[Title and Copyright Information](title.htm) {#title-and-copyright-information .tocheader}
+[Title and Copyright Information](title.htm)
 --------------------------------------------
 
-[Preface](preface.htm#GUID-C49D47BA-EA16-4F4F-90CE-DAD9B984D823) {#preface .tocheader}
+[Preface](preface.htm#GUID-C49D47BA-EA16-4F4F-90CE-DAD9B984D823)
 ----------------------------------------------------------------
 
 -   [Audience](preface.htm#GUID-4E10EE4D-C026-4A83-9270-B63AEB3E96F5)
@@ -33,7 +31,7 @@ Contents {#contents .toc}
     Documents](preface.htm#GUID-7242A5DD-3D31-416A-BD79-5B49A9CF7583)
 -   [Conventions](preface.htm#GUID-75D45AA0-5C30-4EB1-8954-FB75E303F2DC)
 
-[<span class="secnum">1</span> General Security](general-security1.htm) {#general-security .tocheader}
+[<span class="secnum">1</span> General Security](general-security1.htm)
 -----------------------------------------------------------------------
 
 -   [Java Security
