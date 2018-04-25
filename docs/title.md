@@ -8,11 +8,10 @@ layout: default
 ------------------------------------------------------------------------
 
   ----------------------------------------------- ---------------------------------------------- --
-   [
-   <span class="icon">Previous</span>](toc.htm)    [<span class="icon">Next</span>](preface.htm)  
+   [<span class="icon">Previous</span>](toc.htm)    [<span class="icon">Next</span>](preface.htm)  
   ----------------------------------------------- ---------------------------------------------- --
 
-[]{#BEGIN}
+
 
 </div>
 <!-- class="header" -->
