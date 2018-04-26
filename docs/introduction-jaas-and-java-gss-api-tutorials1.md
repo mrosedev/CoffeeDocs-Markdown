@@ -59,7 +59,7 @@ Kerberos.
 
 Note: JSSE is another API that can be used for secure communication. For
 the differences between the two, see [When to Use Java GSS-API Versus
-JSSE](when-use-java-gss-api-vs-jsse.htm#GUID-51EAFD1C-7203-40C7-A295-61062D322E8C).
+JSSE](when-use-java-gss-api-vs-jsse.html#GUID-51EAFD1C-7203-40C7-A295-61062D322E8C).
 
 The reason both JAAS and Java GSS-API tutorials are presented together
 is because JAAS authentication is typically performed prior to secure
@@ -73,23 +73,23 @@ The following tutorials provide working examples for all of the
 scenarios described above.
 
 1.  [Use of Java GSS-API for Secure Message Exchanges Without JAAS
-    Programming](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-42A2B80C-90CD-4C7A-8EED-8BFFE83CAF56)
+    Programming](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-42A2B80C-90CD-4C7A-8EED-8BFFE83CAF56)
 
     Demonstrates the use of the Java GSS-API for secure message
     exchanges between a client application and a server application.
 
 2.  [JAAS
-    Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+    Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 
     Explains how an application can authenticate users using JAAS.
 
 3.  [JAAS
-    Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
+    Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
 
     Explains how to enforce user-based access controls using JAAS.
 
 4.  [Use of JAAS Login
-    Utility](use-jaas-login-utility.htm#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
+    Utility](use-jaas-login-utility.html#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
 
     Describes a utility program that authenticates a user using JAAS and
     executes any application as that user. The appropriate user-based
@@ -101,7 +101,7 @@ scenarios described above.
     authentication and authorization directly.
 
 5.  [Use of JAAS Login Utility and Java GSS-API for Secure Message
-    Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8)
+    Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8)
 
     The most comprehensive tutorial. The Login utility is used to
     authenticate a service user and to start up a server application as
@@ -112,7 +112,7 @@ scenarios described above.
     GSS-API.
 
 6.  [More Things You Can Do with Java GSS-API and
-    JAAS](more-things-you-can-do-java-gss-api-and-jaas.htm#GUID-B69758E7-D7B9-4860-BFA2-0429618374E8)
+    JAAS](more-things-you-can-do-java-gss-api-and-jaas.html#GUID-B69758E7-D7B9-4860-BFA2-0429618374E8)
 
     Shows additional operations the server application in the previous
     tutorial can perform once communication has been established with
@@ -121,7 +121,7 @@ scenarios described above.
 All applications in all tutorials in this series utilize Kerberos
 Version 5 as the underlying technology for authentication and secure
 communication. See [Kerberos
-Requirements](kerberos-requirements1.htm#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).
+Requirements](kerberos-requirements1.html#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).
 The term \"Kerberos\" used throughout the tutorials is meant to refer to
 Kerberos Version 5.
 

@@ -11,7 +11,7 @@ status of the handshake is determined:
 
 This image illustrates some of the possible handshake statuses. The
 section [Understanding SSLEngine Operation
-Statuses](../java-secure-socket-extension-jsse-reference-guide.htm#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744 "The status of the SSLEngine is represented by SSLEngineResult.Status.")
+Statuses](../java-secure-socket-extension-jsse-reference-guide.html#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744 "The status of the SSLEngine is represented by SSLEngineResult.Status.")
 describes these statuses in more detail:
 
 -   `NEED_TASK`{.codeph}

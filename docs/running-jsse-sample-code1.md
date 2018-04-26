@@ -39,13 +39,13 @@ The following JSSE sample programs illustrate how to use JSSE:
 
 -   [Sample Code Illustrating a Secure Socket Connection Between a
     Client and a
-    Server](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-A4D59ABB-62AF-4FC0-900E-A795FDC84E41 "These samples illustrate how to set up a secure socket connection between a client and a server.")
+    Server](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-A4D59ABB-62AF-4FC0-900E-A795FDC84E41 "These samples illustrate how to set up a secure socket connection between a client and a server.")
 -   [Sample Code Illustrating HTTPS
-    Connections](sample-code-illustrating-https-connections.htm#GUID-54F1F19F-0F93-4877-A4A1-46ACD03FD7CB)
+    Connections](sample-code-illustrating-https-connections.html#GUID-54F1F19F-0F93-4877-A4A1-46ACD03FD7CB)
 -   [Sample Code Illustrating a Secure RMI
-    Connection](sample-code-illustrating-secure-rmi-connection.htm#GUID-2F82CCFD-22E6-4E6E-A2E1-88CF2BB19E87)
+    Connection](sample-code-illustrating-secure-rmi-connection.html#GUID-2F82CCFD-22E6-4E6E-A2E1-88CF2BB19E87)
 -   [Sample Code Illustrating the Use of an
-    SSLEngine](sample-code-illustrating-use-sslengine.htm#GUID-EDE915F0-427B-48C7-918F-23C44384B862)
+    SSLEngine](sample-code-illustrating-use-sslengine.html#GUID-EDE915F0-427B-48C7-918F-23C44384B862)
 
 When you use the sample code, be aware that the sample programs are
 designed to illustrate how to use JSSE. They are not designed to be
@@ -61,7 +61,7 @@ programs, be patient: you may not see any output for a while. If you run
 the programs with the `javax.net.debug`{.codeph} system property set to
 `all`{.codeph}, you will see more feedback. For an introduction to
 reading this debug information, see [Debugging SSL/TLS
-Connections](java-secure-socket-extension-jsse-reference-guide.htm#GUID-4D421910-C36D-40A2-8BA2-7D42CCBED3C6 "Understanding SSL/TLS connection problems can sometimes be difficult, especially when it is not clear what messages are actually being sent and received. JSSE has a built-in debug facility and is activated by the System property javax.net.debug.").
+Connections](java-secure-socket-extension-jsse-reference-guide.html#GUID-4D421910-C36D-40A2-8BA2-7D42CCBED3C6 "Understanding SSL/TLS connection problems can sometimes be difficult, especially when it is not clear what messages are actually being sent and received. JSSE has a built-in debug facility and is activated by the System property javax.net.debug.").
 
 </div>
 </div>

@@ -38,37 +38,37 @@ JAAS Authorization {#JSSEC-GUID-69241059-CCD0-49F6-838F-DDC752F9F19F .sect1}
 <span></span>
 
 This tutorial expands the program and policy file developed in the [JAAS
-Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 tutorial to demonstrate the JAAS authorization component, which ensures
 the authenticated caller has the access control rights (permissions)
 required to do subsequent security-sensitive operations. Since the
 authorization component requires that the user authentication first be
 completed, please read the [JAAS
-Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 tutorial first if you have not already done so.
 
 The rest of this tutorial consists of the following sections:
 
 -   [What is JAAS
-    Authorization?](jaas-authorization.htm#GUID-95EBDFAE-D531-45ED-BF48-4CC122E483E1)
+    Authorization?](jaas-authorization.html#GUID-95EBDFAE-D531-45ED-BF48-4CC122E483E1)
 -   [How Is JAAS Authorization
-    Performed?](jaas-authorization.htm#GUID-9B40B33D-3618-4F98-9DDE-9A639F751CA4)
+    Performed?](jaas-authorization.html#GUID-9B40B33D-3618-4F98-9DDE-9A639F751CA4)
     -   [How Do You Make Principal-Based Policy File
-        Statements?](jaas-authorization.htm#GUID-80F0B546-1E95-457B-8EF7-5BB1519E20A4)
+        Statements?](jaas-authorization.html#GUID-80F0B546-1E95-457B-8EF7-5BB1519E20A4)
     -   [How Do You Associate a Subject with an Access Control
-        Context?](jaas-authorization.htm#GUID-86CC2E0C-58B9-4E35-91E1-EC130EE2E4FC)
+        Context?](jaas-authorization.html#GUID-86CC2E0C-58B9-4E35-91E1-EC130EE2E4FC)
 -   [The Authorization Tutorial
-    Code](jaas-authorization.htm#GUID-6C7F947A-E2F3-4C1A-BF58-8198E4E9B6D3)
+    Code](jaas-authorization.html#GUID-6C7F947A-E2F3-4C1A-BF58-8198E4E9B6D3)
 -   [The Login Configuration
-    File](jaas-authorization.htm#GUID-C7E4B4C5-1541-4482-BA11-98A1D489CA76)
+    File](jaas-authorization.html#GUID-C7E4B4C5-1541-4482-BA11-98A1D489CA76)
 -   [The Policy
-    File](jaas-authorization.htm#GUID-19567566-CC1A-4440-AE33-D7C6AB305D3F)
+    File](jaas-authorization.html#GUID-19567566-CC1A-4440-AE33-D7C6AB305D3F)
 -   [Running the Authorization Tutorial
-    Code](jaas-authorization.htm#GUID-F22DFBEC-7DF0-4CFB-B882-B5A58C2C76B1)
+    Code](jaas-authorization.html#GUID-F22DFBEC-7DF0-4CFB-B882-B5A58C2C76B1)
 
 If you want to first see the tutorial code in action, you can skip
 directly to [Running the Authorization Tutorial
-Code](jaas-authorization.htm#GUID-F22DFBEC-7DF0-4CFB-B882-B5A58C2C76B1)
+Code](jaas-authorization.html#GUID-F22DFBEC-7DF0-4CFB-B882-B5A58C2C76B1)
 and then go back to the other sections to learn more.
 
 </div>
@@ -82,14 +82,14 @@ What is JAAS Authorization? {#JSSEC-GUID-95EBDFAE-D531-45ED-BF48-4CC122E483E1 .s
 JAAS authorization extends the existing Java security architecture that
 uses a security policy (see [Default Policy Implementation and Policy
 File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D))
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D))
 to specify what access rights are granted to executing code. That
 architecture is <span class="variable">code-centric</span>. That is, the
 permissions are granted based on code characteristics: where the code is
 coming from and whether it is digitally signed and if so by whom. We saw
 an example of this in the `jaasacn.policy`{.codeph} file used in the
 [JAAS
-Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 tutorial. That file contains the following:
 
 ``` {.oac_no_warn dir="ltr"}
@@ -146,15 +146,15 @@ How Is JAAS Authorization Performed? {#JSSEC-GUID-9B40B33D-3618-4F98-9DDE-9A639F
 To make JAAS authorization take place, the following is required:
 
 -   The user must be authenticated, as described in the [JAAS
-    Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+    Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
     tutorial.
 -   Principal-based entries must be configured in the security policy.
     See [How Do You Make Principal-Based Policy File
-    Statements?](jaas-authorization.htm#GUID-80F0B546-1E95-457B-8EF7-5BB1519E20A4)
+    Statements?](jaas-authorization.html#GUID-80F0B546-1E95-457B-8EF7-5BB1519E20A4)
 -   The Subject that is the result of authentication must be associated
     with the current access control context. See [How Do You Associate a
     Subject with an Access Control
-    Context?](jaas-authorization.htm#GUID-86CC2E0C-58B9-4E35-91E1-EC130EE2E4FC)
+    Context?](jaas-authorization.html#GUID-86CC2E0C-58B9-4E35-91E1-EC130EE2E4FC)
 
 </div>
 <div class="sect3">
@@ -166,7 +166,7 @@ To make JAAS authorization take place, the following is required:
 Policy file `grant`{.codeph} statements can now optionally include one
 or more Principal fields (see [Default Policy Implementation and Policy
 File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)).
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)).
 Inclusion of a Principal field indicates that the user or other entity
 represented by the specified Principal, executing the specified code,
 has the designated permissions.
@@ -256,7 +256,7 @@ To create and associate a Subject with an access control context, you
 need the following:
 
 -   The user must first be authenticated, as described in [JAAS
-    Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623).
+    Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623).
 -   The static `doAs`{.codeph} method from the
     <span class="apiname">Subject</span> class must be called, passing
     it an authenticated <span class="apiname">Subject</span> and a
@@ -264,7 +264,7 @@ need the following:
     or
     [<span class="apiname">java.security.PrivilegedExceptionAction</span>](https://docs.oracle.com/javase/10/docs/api/java/security/PrivilegedExceptionAction.html).
     (See [Appendix A: API for Privileged
-    Blocks](java-se-platform-security-architecture.htm#GUID-BB3C8FB3-1A1A-47F3-8536-3952B84F46F2 "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.")
+    Blocks](java-se-platform-security-architecture.html#GUID-BB3C8FB3-1A1A-47F3-8536-3952B84F46F2 "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.")
     for a comparison of <span class="apiname">PrivilegedAction</span>
     and <span class="apiname">PrivilegedExceptionAction</span>.) The
     `doAs`{.codeph} method associates the provided
@@ -284,7 +284,7 @@ need the following:
     the current access control context, `doAsPrivileged`{.codeph}
     associates the <span class="apiname">Subject</span> with the
     provided access control context. See [doAs versus
-    doAsPrivileged](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-97198A0C-B488-4D24-A242-CAFA8F70DFA5)
+    doAsPrivileged](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-97198A0C-B488-4D24-A242-CAFA8F70DFA5)
     in the JAAS Reference Guide for a comparison of those methods.
 
 </div>
@@ -299,12 +299,12 @@ The Authorization Tutorial Code {#JSSEC-GUID-6C7F947A-E2F3-4C1A-BF58-8198E4E9B6D
 <div>
 The code for this tutorial consists of two files:
 
--   [`JaasAzn.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASAZN.JAVA-33892F00)
+-   [`JaasAzn.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASAZN.JAVA-33892F00)
     is exactly the same as the `JaasAcn.java`{.codeph} from the [JAAS
-    Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+    Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
     tutorial except for the additional code needed to call
     `Subject.doAsPrivileged`{.codeph}.
--   [`SampleAction.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLEACTION.JAVA-33893145)
+-   [`SampleAction.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLEACTION.JAVA-33893145)
     contains the <span class="apiname">SampleAction</span> class. This
     class implements <span class="apiname">PrivilegedAction</span> and
     has a `run`{.codeph} method that contains all the code we want to be
@@ -318,7 +318,7 @@ The code for this tutorial consists of two files:
 ### JaasAzn.java {#JSSEC-GUID-EEBB584B-80FA-4EDD-B57A-BED4CCFE4EB4 .sect3}
 
 <div>
-[`JaasAzn.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASAZN.JAVA-33892F00)
+[`JaasAzn.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASAZN.JAVA-33892F00)
 is exactly the same as the `JaasAcn.java`{.codeph} code used in the
 previous tutorial except with three statements added at the end of the
 `main`{.codeph} method, after the authentication is done. These
@@ -391,7 +391,7 @@ require any permissions while the action executes.
 ### SampleAction.java {#JSSEC-GUID-994AEA05-292D-418A-8C2D-A32E3A9AC7D3 .sect3}
 
 <div>
-[`SampleAction.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLEACTION.JAVA-33893145)
+[`SampleAction.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLEACTION.JAVA-33893145)
 contains the <span class="apiname">SampleAction</span> class. This class
 implements `java.security.PrivilegedAction`{.codeph} and has a
 `run`{.codeph} method that contains all the code we want to be executed
@@ -418,9 +418,9 @@ The Login Configuration File {#JSSEC-GUID-C7E4B4C5-1541-4482-BA11-98A1D489CA76 .
 <div>
 The login configuration file used for this tutorial can be exactly the
 same as that used by the [JAAS
-Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 tutorial. Thus we can use
-[<span class="apiname">jaas.conf</span>](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7),
+[<span class="apiname">jaas.conf</span>](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7),
 which contains just one entry:
 
 ``` {.oac_no_warn dir="ltr"}
@@ -523,7 +523,7 @@ the <span class="variable">code</span> but to a specific user executing
 the code, to demonstrate how to restrict access to a particular user.
 
 Thus, as explained in [How Do You Make Principal-Based Policy File
-Statements?](jaas-authorization.htm#GUID-80F0B546-1E95-457B-8EF7-5BB1519E20A4),
+Statements?](jaas-authorization.html#GUID-80F0B546-1E95-457B-8EF7-5BB1519E20A4),
 our `grant`{.codeph} statement looks like the following:
 
 ``` {.oac_no_warn dir="ltr"}
@@ -557,16 +557,16 @@ To execute our JAAS authorization tutorial code, all you have to do is
 
 1.  Place the following files into a directory:
     -   The
-        [`JaasAzn.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASAZN.JAVA-33892F00)
+        [`JaasAzn.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASAZN.JAVA-33892F00)
         source file.
     -   The
-        [`SampleAction.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLEACTION.JAVA-33893145)
+        [`SampleAction.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLEACTION.JAVA-33893145)
         source file.
     -   The
-        [`jaas.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7)
+        [`jaas.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7)
         login configuration file.
     -   The
-        [`jaasazn.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASSAZN.POLICY-3389344E)
+        [`jaasazn.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASSAZN.POLICY-3389344E)
         policy file.
 2.  Replace `your_user_name@your_realm`{.codeph} in
     `jaasazn.policy`{.codeph} with your user name and realm.
@@ -653,7 +653,7 @@ To execute our JAAS authorization tutorial code, all you have to do is
     succeeded!\" and if not, you will see \"Authentication Failed.\"
 
     For login troubleshooting suggestions, see
-    [Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
+    [Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
 
     Once authentication is successfully completed, the rest of the
     program (in `SampleAction`{.codeph}) will be executed on behalf of

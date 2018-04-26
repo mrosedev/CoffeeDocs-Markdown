@@ -44,28 +44,28 @@ be used to securely establish the mapping of a public key to a subject.
 Topics
 
 [PKI Programmers Guide
-Overview](java-pki-programmers-guide.htm#GUID-D6A18B1E-A2A8-4CA2-BD18-514CD807810E "The Java Certification Path API defines interfaces and abstract classes for creating, building, and validating certification paths.  Implementations may be plugged in using a provider-based interface.")
+Overview](java-pki-programmers-guide.html#GUID-D6A18B1E-A2A8-4CA2-BD18-514CD807810E "The Java Certification Path API defines interfaces and abstract classes for creating, building, and validating certification paths.  Implementations may be plugged in using a provider-based interface.")
 
 [Core Classes and
-Interfaces](java-pki-programmers-guide.htm#GUID-271526C4-6095-4233-9F7F-0CD0C62BDA93 "The core classes of the Java Certification Path API consist of interfaces and classes that support certification path functionality in an algorithm and implementation-independent manner.")
+Interfaces](java-pki-programmers-guide.html#GUID-271526C4-6095-4233-9F7F-0CD0C62BDA93 "The core classes of the Java Certification Path API consist of interfaces and classes that support certification path functionality in an algorithm and implementation-independent manner.")
 
 [Implementing a Service
-Provider](java-pki-programmers-guide.htm#GUID-266DD62E-39A7-435B-90DF-7EB1425D56E1 "Experienced programmers can create their own provider packages supplying certification path service implementations.")
+Provider](java-pki-programmers-guide.html#GUID-266DD62E-39A7-435B-90DF-7EB1425D56E1 "Experienced programmers can create their own provider packages supplying certification path service implementations.")
 
 [Appendix A: Standard
-Names](java-pki-programmers-guide.htm#GUID-EF1585DC-20BF-4140-B71E-0A8528D4A57D "The Java Certification Path API requires and utilizes a set of standard names for certification path validation algorithms, encodings and certificate storage types.")
+Names](java-pki-programmers-guide.html#GUID-EF1585DC-20BF-4140-B71E-0A8528D4A57D "The Java Certification Path API requires and utilizes a set of standard names for certification path validation algorithms, encodings and certificate storage types.")
 
 [Appendix B: CertPath Implementation in SUN
-Provider](java-pki-programmers-guide.htm#GUID-EB250086-0AC1-4D60-AE2A-FC7461374746)
+Provider](java-pki-programmers-guide.html#GUID-EB250086-0AC1-4D60-AE2A-FC7461374746)
 
 [Appendix C: OCSP
-Support](java-pki-programmers-guide.htm#GUID-E6E737DB-4000-4005-969E-BCD0238B1566 "Client-side support for the On-Line Certificate Status Protocol (OCSP) as defined in RFC 2560 is supported.")
+Support](java-pki-programmers-guide.html#GUID-E6E737DB-4000-4005-969E-BCD0238B1566 "Client-side support for the On-Line Certificate Status Protocol (OCSP) as defined in RFC 2560 is supported.")
 
 [Appendix D: CertPath Implementation in JdkLDAP
-Provider](java-pki-programmers-guide.htm#GUID-FF62B0E3-E57A-4F40-970A-0481AF750CCD "The JdkLDAP provider supports the LDAP implementation of the CertStore engine class.")
+Provider](java-pki-programmers-guide.html#GUID-FF62B0E3-E57A-4F40-970A-0481AF750CCD "The JdkLDAP provider supports the LDAP implementation of the CertStore engine class.")
 
 [Appendix E: Disabling Cryptographic
-Algorithms](java-pki-programmers-guide.htm#GUID-D2A99DE3-62CF-4E4B-BF91-814C4A5C4DD3 "The jdk.certpath.disabledAlgorithms Security Property contains a list of cryptographic algorithms and key size constraints that are considered weak or broken. Certificates and other data (CRLs, OCSPResponses) containing any of these algorithms or key sizes will be blocked during certification path building and validation. This property is used by Oracle's PKIX implementation, other implementations might not examine and use it.")
+Algorithms](java-pki-programmers-guide.html#GUID-D2A99DE3-62CF-4E4B-BF91-814C4A5C4DD3 "The jdk.certpath.disabledAlgorithms Security Property contains a list of cryptographic algorithms and key size constraints that are considered weak or broken. Certificates and other data (CRLs, OCSPResponses) containing any of these algorithms or key sizes will be blocked during certification path building and validation. This property is used by Oracle's PKIX implementation, other implementations might not examine and use it.")
 
 </div>
 <!-- class="section" -->
@@ -84,7 +84,7 @@ Implementations may be plugged in using a provider-based interface.
 
 <div class="section">
 This API is based on the [Cryptographic Service
-Providers](java-cryptography-architecture-jca-reference-guide.htm#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920)
+Providers](java-cryptography-architecture-jca-reference-guide.html#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920)
 architecture, described in the<cite> Java Cryptography Architecture
 Reference Guide</cite>, and includes algorithm-specific classes for
 building and validating X.509 certification paths according to the PKIX
@@ -116,7 +116,7 @@ This document is intended for two types of experienced developers:
 
 <div class="section" id="GUID-D6A18B1E-A2A8-4CA2-BD18-514CD807810E__GUID-4BEA98CF-CE46-4BB2-B7D0-E7170C4B955C">
 This document assumes that you have already read [Cryptographic Service
-Providers](java-cryptography-architecture-jca-reference-guide.htm#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920).
+Providers](java-cryptography-architecture-jca-reference-guide.html#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920).
 
 </div>
 <!-- class="section" -->
@@ -509,25 +509,25 @@ package for handling certificates. The core classes can be broken up
 into 4 class categories: Basic, Validation, Building, and Storage:
 
 -   [Basic Certification Path
-    Classes](java-pki-programmers-guide.htm#GUID-2D30176C-EE5A-41F8-896B-1A16E7F786B8 "The basic certification path classes provide fundamental functionality for encoding and representing certification paths. The key basic class in the Java Certification Path API is CertPath, which encapsulates the universal aspects shared by all types of certification paths. An application uses an instance of the CertificateFactory class to create a CertPath object.")
+    Classes](java-pki-programmers-guide.html#GUID-2D30176C-EE5A-41F8-896B-1A16E7F786B8 "The basic certification path classes provide fundamental functionality for encoding and representing certification paths. The key basic class in the Java Certification Path API is CertPath, which encapsulates the universal aspects shared by all types of certification paths. An application uses an instance of the CertificateFactory class to create a CertPath object.")
 
     -   `CertPath`{.codeph}, `CertificateFactory`{.codeph}, and
         `CertPathParameters`{.codeph}
 
 -   [Certification Path Validation
-    Classes](java-pki-programmers-guide.htm#GUID-C825028D-5F30-4041-ACC4-466657F59F02 "The Java Certification Path API includes classes and interfaces for validating certification paths. An application uses an instance of the CertPathValidator class to validate a CertPath object. If successful, the result of the validation algorithm is returned in an object implementing the CertPathValidatorResult interface.")
+    Classes](java-pki-programmers-guide.html#GUID-C825028D-5F30-4041-ACC4-466657F59F02 "The Java Certification Path API includes classes and interfaces for validating certification paths. An application uses an instance of the CertPathValidator class to validate a CertPath object. If successful, the result of the validation algorithm is returned in an object implementing the CertPathValidatorResult interface.")
 
     -   `CertPathValidator`{.codeph},
         `CertPathValidatorResult`{.codeph}, and
         `CertPathChecker`{.codeph}
 
 -   [Certification Path Building
-    Classes](java-pki-programmers-guide.htm#GUID-CBABC770-E714-4E6C-AD40-EA680BE91C20 "The Java Certification Path API includes classes for building (or discovering) certification paths. An application uses an instance of the CertPathBuilder class to build a CertPath object. If successful, the result of the build is returned in an object implementing the CertPathBuilderResult interface.")
+    Classes](java-pki-programmers-guide.html#GUID-CBABC770-E714-4E6C-AD40-EA680BE91C20 "The Java Certification Path API includes classes for building (or discovering) certification paths. An application uses an instance of the CertPathBuilder class to build a CertPath object. If successful, the result of the build is returned in an object implementing the CertPathBuilderResult interface.")
 
     -   `CertPathBuilder`{.codeph}, and `CertPathBuilderResult`{.codeph}
 
 -   [Certificate/CRL Storage
-    Classes](java-pki-programmers-guide.htm#GUID-AB96FD45-6F8A-4785-B6C5-082BEB6CDA5E "The Java Certification Path API includes the CertStore class for retrieving certificates and CRLs from a repository.")
+    Classes](java-pki-programmers-guide.html#GUID-AB96FD45-6F8A-4785-B6C5-082BEB6CDA5E "The Java Certification Path API includes the CertStore class for retrieving certificates and CRLs from a repository.")
 
     -   `CertStore`{.codeph}, `CertStoreParameters`{.codeph},
         `CertSelector`{.codeph}, and `CRLSelector`{.codeph}
@@ -538,7 +538,7 @@ path validation algorithm defined in [RFC
 5280](http://www.ietf.org/rfc/rfc5280.txt): <cite>Public Key
 Infrastructure Certificate and Certificate Revocation List (CRL)
 Profile</cite>. The [PKIX
-Classes](java-pki-programmers-guide.htm#GUID-5BBEF087-CA8A-4287-97FB-BD88DCD12FE5 "The Java Certification Path API includes a set of algorithm-specific classes modeled for use with the PKIX certification path validation algorithm.")
+Classes](java-pki-programmers-guide.html#GUID-5BBEF087-CA8A-4287-97FB-BD88DCD12FE5 "The Java Certification Path API includes a set of algorithm-specific classes modeled for use with the PKIX certification path validation algorithm.")
 are:
 
 -   `TrustAnchor`{.codeph}
@@ -574,19 +574,19 @@ manipulating separate objects need not synchronize.
 Topics
 
 [Basic Certification Path
-Classes](java-pki-programmers-guide.htm#GUID-2D30176C-EE5A-41F8-896B-1A16E7F786B8 "The basic certification path classes provide fundamental functionality for encoding and representing certification paths. The key basic class in the Java Certification Path API is CertPath, which encapsulates the universal aspects shared by all types of certification paths. An application uses an instance of the CertificateFactory class to create a CertPath object.")
+Classes](java-pki-programmers-guide.html#GUID-2D30176C-EE5A-41F8-896B-1A16E7F786B8 "The basic certification path classes provide fundamental functionality for encoding and representing certification paths. The key basic class in the Java Certification Path API is CertPath, which encapsulates the universal aspects shared by all types of certification paths. An application uses an instance of the CertificateFactory class to create a CertPath object.")
 
 [Certification Path Validation
-Classes](java-pki-programmers-guide.htm#GUID-C825028D-5F30-4041-ACC4-466657F59F02 "The Java Certification Path API includes classes and interfaces for validating certification paths. An application uses an instance of the CertPathValidator class to validate a CertPath object. If successful, the result of the validation algorithm is returned in an object implementing the CertPathValidatorResult interface.")
+Classes](java-pki-programmers-guide.html#GUID-C825028D-5F30-4041-ACC4-466657F59F02 "The Java Certification Path API includes classes and interfaces for validating certification paths. An application uses an instance of the CertPathValidator class to validate a CertPath object. If successful, the result of the validation algorithm is returned in an object implementing the CertPathValidatorResult interface.")
 
 [Certification Path Building
-Classes](java-pki-programmers-guide.htm#GUID-CBABC770-E714-4E6C-AD40-EA680BE91C20 "The Java Certification Path API includes classes for building (or discovering) certification paths. An application uses an instance of the CertPathBuilder class to build a CertPath object. If successful, the result of the build is returned in an object implementing the CertPathBuilderResult interface.")
+Classes](java-pki-programmers-guide.html#GUID-CBABC770-E714-4E6C-AD40-EA680BE91C20 "The Java Certification Path API includes classes for building (or discovering) certification paths. An application uses an instance of the CertPathBuilder class to build a CertPath object. If successful, the result of the build is returned in an object implementing the CertPathBuilderResult interface.")
 
 [Certificate/CRL Storage
-Classes](java-pki-programmers-guide.htm#GUID-AB96FD45-6F8A-4785-B6C5-082BEB6CDA5E "The Java Certification Path API includes the CertStore class for retrieving certificates and CRLs from a repository.")
+Classes](java-pki-programmers-guide.html#GUID-AB96FD45-6F8A-4785-B6C5-082BEB6CDA5E "The Java Certification Path API includes the CertStore class for retrieving certificates and CRLs from a repository.")
 
 [PKIX
-Classes](java-pki-programmers-guide.htm#GUID-5BBEF087-CA8A-4287-97FB-BD88DCD12FE5 "The Java Certification Path API includes a set of algorithm-specific classes modeled for use with the PKIX certification path validation algorithm.")
+Classes](java-pki-programmers-guide.html#GUID-5BBEF087-CA8A-4287-97FB-BD88DCD12FE5 "The Java Certification Path API includes a set of algorithm-specific classes modeled for use with the PKIX certification path validation algorithm.")
 
 </div>
 <!-- class="section" -->
@@ -610,13 +610,13 @@ object.
 Topics
 
 [The CertPath
-Class](java-pki-programmers-guide.htm#GUID-E47B8A0E-6B3A-4B49-994D-CF185BF441EC "The CertPath class is an abstract class for certification paths. It defines the functionality shared by all certification path objects. Various certification path types can be implemented by subclassing the CertPath class, even though they may have different contents and ordering schemes.")
+Class](java-pki-programmers-guide.html#GUID-E47B8A0E-6B3A-4B49-994D-CF185BF441EC "The CertPath class is an abstract class for certification paths. It defines the functionality shared by all certification path objects. Various certification path types can be implemented by subclassing the CertPath class, even though they may have different contents and ordering schemes.")
 
 [The CertificateFactory
-Class](java-pki-programmers-guide.htm#GUID-BCABADD4-C0DC-4987-B187-F086B4BCE195 "The CertificateFactory class is an engine class that defines the functionality of a certificate factory. It is used to generate Certificate, CRL, and CertPath objects.")
+Class](java-pki-programmers-guide.html#GUID-BCABADD4-C0DC-4987-B187-F086B4BCE195 "The CertificateFactory class is an engine class that defines the functionality of a certificate factory. It is used to generate Certificate, CRL, and CertPath objects.")
 
 [The CertPathParameters
-Interface](java-pki-programmers-guide.htm#GUID-2AF52C1B-8EE2-4D65-9273-F7AC523AB42F "The CertPathParameters interface is a transparent representation of the set of parameters used with a particular certification path builder or validation algorithm.")
+Interface](java-pki-programmers-guide.html#GUID-2AF52C1B-8EE2-4D65-9273-F7AC523AB42F "The CertPathParameters interface is a transparent representation of the set of parameters used with a particular certification path builder or validation algorithm.")
 
 </div>
 <!-- class="section" -->
@@ -746,7 +746,7 @@ in a different form such as an encoded byte array or an array of
 Creating a CertificateFactory Object
 
 See the
-[CertificateFactory](java-cryptography-architecture-jca-reference-guide.htm#GUID-9A581FBA-EDF7-4BCA-8244-4CE2C75E4CEA "The CertificateFactory class defines the functionality of a certificate factory, which is used to generate certificate and certificate revocation list (CRL) objects from their encoding.")
+[CertificateFactory](java-cryptography-architecture-jca-reference-guide.html#GUID-9A581FBA-EDF7-4BCA-8244-4CE2C75E4CEA "The CertificateFactory class defines the functionality of a certificate factory, which is used to generate certificate and certificate revocation list (CRL) objects from their encoding.")
 section in the <cite> Java Cryptography Architecture Reference
 Guide</cite> for the details of creating a `CertificateFactory`{.codeph}
 object.
@@ -904,10 +904,10 @@ returned in an object implementing the
 Topics
 
 [The CertPathValidator
-Class](java-pki-programmers-guide.htm#GUID-808C1A6D-6A67-4026-A9DE-223A428EC80A "The CertPathValidator class is an engine class used to validate a certification path.")
+Class](java-pki-programmers-guide.html#GUID-808C1A6D-6A67-4026-A9DE-223A428EC80A "The CertPathValidator class is an engine class used to validate a certification path.")
 
 [The CertPathValidatorResult
-Interface](java-pki-programmers-guide.htm#GUID-29AC2D33-7518-4DEA-A4CC-544CB174B915 "The CertPathValidatorResult interface is a transparent representation of the successful result or output of a certification path validation algorithm.")
+Interface](java-pki-programmers-guide.html#GUID-29AC2D33-7518-4DEA-A4CC-544CB174B915 "The CertPathValidatorResult interface is a transparent representation of the successful result or output of a certification path validation algorithm.")
 
 </div>
 <!-- class="section" -->
@@ -1065,10 +1065,10 @@ implementing the `CertPathBuilderResult`{.codeph} interface.
 Topics
 
 [The CertPathBuilder
-Class](java-pki-programmers-guide.htm#GUID-BEFCC824-21C1-4AD3-B670-D0CA01F08D95 "The CertPathBuilder class is an engine class used to build a certification path.")
+Class](java-pki-programmers-guide.html#GUID-BEFCC824-21C1-4AD3-B670-D0CA01F08D95 "The CertPathBuilder class is an engine class used to build a certification path.")
 
 [The CertPathBuilderResult
-Interface](java-pki-programmers-guide.htm#GUID-47B1564D-DFC3-4F0F-A006-CB7303EDD919 "The CertPathBuilderResult interface is a transparent representation of the result or output of a certification path builder algorithm.")
+Interface](java-pki-programmers-guide.html#GUID-47B1564D-DFC3-4F0F-A006-CB7303EDD919 "The CertPathBuilderResult interface is a transparent representation of the result or output of a certification path builder algorithm.")
 
 </div>
 <!-- class="section" -->
@@ -1223,13 +1223,13 @@ checks, CRLs.
 Topics
 
 [The CertStore
-Class](java-pki-programmers-guide.htm#GUID-5404B79C-3D49-4668-974C-1BACD1A98B73 "The CertStore class is an engine class used to provide the functionality of a certificate and certificate revocation list (CRL) repository.")
+Class](java-pki-programmers-guide.html#GUID-5404B79C-3D49-4668-974C-1BACD1A98B73 "The CertStore class is an engine class used to provide the functionality of a certificate and certificate revocation list (CRL) repository.")
 
 [The CertStoreParameters
-Interface](java-pki-programmers-guide.htm#GUID-BC87018F-F888-4905-8ED4-AE574C646AF2 "The CertStoreParameters interface is a transparent representation of the set of parameters used with a particular CertStore.")
+Interface](java-pki-programmers-guide.html#GUID-BC87018F-F888-4905-8ED4-AE574C646AF2 "The CertStoreParameters interface is a transparent representation of the set of parameters used with a particular CertStore.")
 
 [The CertSelector and CRLSelector
-Interfaces](java-pki-programmers-guide.htm#GUID-263AAFB6-DC37-4B64-95E7-60D59D7728B5 "The CertSelector and CRLSelector interfaces are a specification of the set of criteria for selecting certificates and CRLs from a collection or large group of certificates and CRLs.")
+Interfaces](java-pki-programmers-guide.html#GUID-263AAFB6-DC37-4B64-95E7-60D59D7728B5 "The CertSelector and CRLSelector interfaces are a specification of the set of criteria for selecting certificates and CRLs from a collection or large group of certificates and CRLs.")
 
 </div>
 <!-- class="section" -->
@@ -1843,28 +1843,28 @@ Profile</cite>.
 Topics
 
 [The TrustAnchor
-Class](java-pki-programmers-guide.htm#GUID-772D31A0-FF9B-4A1E-985B-2100177C74F9 "The TrustAnchor class represents a "most-trusted CA", which is used as a trust anchor for validating X.509 certification paths.")
+Class](java-pki-programmers-guide.html#GUID-772D31A0-FF9B-4A1E-985B-2100177C74F9 "The TrustAnchor class represents a "most-trusted CA", which is used as a trust anchor for validating X.509 certification paths.")
 
 [The PKIXParameters
-Class](java-pki-programmers-guide.htm#GUID-3D95A3BE-74CB-4357-BB85-9A8DEA36A457 "The PKIXParametersClass class specifies the set of input parameters defined by the PKIX certification path validation algorithm. It also includes a few additional useful parameters.")
+Class](java-pki-programmers-guide.html#GUID-3D95A3BE-74CB-4357-BB85-9A8DEA36A457 "The PKIXParametersClass class specifies the set of input parameters defined by the PKIX certification path validation algorithm. It also includes a few additional useful parameters.")
 
 [The CertPathValidatorResult
-Interface](java-pki-programmers-guide.htm#GUID-29AC2D33-7518-4DEA-A4CC-544CB174B915 "The CertPathValidatorResult interface is a transparent representation of the successful result or output of a certification path validation algorithm.")
+Interface](java-pki-programmers-guide.html#GUID-29AC2D33-7518-4DEA-A4CC-544CB174B915 "The CertPathValidatorResult interface is a transparent representation of the successful result or output of a certification path validation algorithm.")
 
 [The PolicyNode Interface and PolicyQualifierInfo
-Class](java-pki-programmers-guide.htm#GUID-3AD41382-E729-469B-83EE-CB2FE66D71D8 "The PKIX validation algorithm defines several outputs related to certificate policy processing. Most applications will not need to use these outputs, but all providers that implement the PKIX validation or building algorithm must support them.")
+Class](java-pki-programmers-guide.html#GUID-3AD41382-E729-469B-83EE-CB2FE66D71D8 "The PKIX validation algorithm defines several outputs related to certificate policy processing. Most applications will not need to use these outputs, but all providers that implement the PKIX validation or building algorithm must support them.")
 
 [The PKIXBuilderParameters
-Class](java-pki-programmers-guide.htm#GUID-BB092D65-80CA-457E-A7B4-F1B41A1A674A "The PKIXBuilderParameters class specifies the set of parameters to be used with CertPathBuilder class.")
+Class](java-pki-programmers-guide.html#GUID-BB092D65-80CA-457E-A7B4-F1B41A1A674A "The PKIXBuilderParameters class specifies the set of parameters to be used with CertPathBuilder class.")
 
 [The PKIXCertPathBuilderResult
-Class](java-pki-programmers-guide.htm#GUID-BF0E3B2B-1DA5-4A95-A8DD-C03C04EA70E7 "The PKIXCertPathBuilderResult class represents the successful result of the PKIX certification path construction algorithm.")
+Class](java-pki-programmers-guide.html#GUID-BF0E3B2B-1DA5-4A95-A8DD-C03C04EA70E7 "The PKIXCertPathBuilderResult class represents the successful result of the PKIX certification path construction algorithm.")
 
 [The PKIXCertPathChecker
-Class](java-pki-programmers-guide.htm#GUID-D46630F6-939D-4054-A451-3D8206ED4E62 "The PKIXCertPathChecker class allows a user to extend a PKIX CertPathValidator or CertPathBuilder implementation. This is an advanced feature that most users will not need to understand. However, anyone implementing a PKIX service provider should read this section")
+Class](java-pki-programmers-guide.html#GUID-D46630F6-939D-4054-A451-3D8206ED4E62 "The PKIXCertPathChecker class allows a user to extend a PKIX CertPathValidator or CertPathBuilder implementation. This is an advanced feature that most users will not need to understand. However, anyone implementing a PKIX service provider should read this section")
 
 [Using PKIXCertPathChecker in Certificate Path
-Validation](java-pki-programmers-guide.htm#GUID-F727578E-71D0-4BC5-9B06-47EE13F9CBCF "Using a PKIXCertPathChecker to customize certificate path validation is relatively straightforward.")
+Validation](java-pki-programmers-guide.html#GUID-F727578E-71D0-4BC5-9B06-47EE13F9CBCF "Using a PKIXCertPathChecker to customize certificate path validation is relatively straightforward.")
 
 </div>
 <!-- class="section" -->
@@ -2275,7 +2275,7 @@ parameters to be used with` CertPathBuilder`{.codeph} class.
 
 This class (which extends the `PKIXParameters`{.codeph} class) specifies
 the set of parameters to be used with
-[CertPathBuilder](java-pki-programmers-guide.htm#GUID-BEFCC824-21C1-4AD3-B670-D0CA01F08D95 "The CertPathBuilder class is an engine class used to build a certification path.")
+[CertPathBuilder](java-pki-programmers-guide.html#GUID-BEFCC824-21C1-4AD3-B670-D0CA01F08D95 "The CertPathBuilder class is an engine class used to build a certification path.")
 class that build certification paths validated against the PKIX
 certification path validation algorithm.
 
@@ -2488,7 +2488,7 @@ implementation at runtime. The following are a few examples of when a
     `PKIXRevocationChecker`{.codeph}</a></code> (introduced in JDK 8;
     see [Check Revocation Status of Certificates with
     PKIXRevocationChecker
-    Class](java-pki-programmers-guide.htm#GUID-43A3A247-E165-408C-AD74-88A75BFB4750 "An instance of PKIXRevocationChecker checks the revocation status of certificates with the Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs)."))
+    Class](java-pki-programmers-guide.html#GUID-43A3A247-E165-408C-AD74-88A75BFB4750 "An instance of PKIXRevocationChecker checks the revocation status of certificates with the Online Certificate Status Protocol (OCSP) or Certificate Revocation Lists (CRLs)."))
     to have more control over the revocation mechanism, or you can
     implement your own `PKIXCertPathChecker`{.codeph} to check that
     certificates have not been revoked.
@@ -3154,7 +3154,7 @@ certification path service implementations.
 <div class="section">
 This section assumes that you have read [Java Cryptography Architecture
 (JCA) Reference
-Guide](java-cryptography-architecture-jca-reference-guide.htm#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").
+Guide](java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").
 
 The following engine classes are defined in the Java Certification Path
 API:
@@ -3201,7 +3201,7 @@ services, you must ensure that certain information is provided.
 
 <div class="section">
 Developers should follow the [Steps to Implement and Integrate a
-Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
+Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
 Here are some additional rules to follow for certain steps:
 
 </div>
@@ -3211,7 +3211,7 @@ Here are some additional rules to follow for certain steps:
 Step 3: Write your \"Master Class\", a subclass of Provider
 
 In [Step 3: Write Your Master Class, a Subclass of
-Provider](howtoimplaprovider.htm#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")
+Provider](howtoimplaprovider.html#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")
 these are the properties that must be defined for the certification path
 services, where the algorithm name is substituted for
 <span class="variable">algName</span>, and certstore type for
@@ -3257,7 +3257,7 @@ put("CertPathValidator.PKIX ValidationAlgorithm", "RFC5280");
 Step 11: Document your Provider and its Supported Services
 
 In [Step 12: Document Your Provider and Its Supported
-Services](howtoimplaprovider.htm#GUID-912FAB1D-628A-47EA-A1DD-A216F2DD4245),
+Services](howtoimplaprovider.html#GUID-912FAB1D-628A-47EA-A1DD-A216F2DD4245),
 certification path service providers should document the following
 information for each SPI:
 
@@ -3509,7 +3509,7 @@ security specifications (JCA/JSSE/etc.) have been combined in the [Java
 Security Standard Algorithm Names
 Specification](https://docs.oracle.com/javase/10/docs/specs/security/standard-names.html).
 Specific provider information can be found in the [JDK
-Providers](oracle-providers.htm#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
+Providers](oracle-providers.html#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
 
 Please note that a service provider may choose to define a new name for
 a proprietary or non-standard algorithm that is not mentioned in the
@@ -3579,15 +3579,15 @@ CRL Profile</cite>. This implementation sets the
 Weak cryptographic algorithms can be disabled in the \"SUN\" provider
 using the `jdk.certpath.disabledAlgorithms`{.codeph} Security Property.
 See [Appendix E: Disabling Cryptographic
-Algorithms](java-pki-programmers-guide.htm#GUID-D2A99DE3-62CF-4E4B-BF91-814C4A5C4DD3 "The jdk.certpath.disabledAlgorithms Security Property contains a list of cryptographic algorithms and key size constraints that are considered weak or broken. Certificates and other data (CRLs, OCSPResponses) containing any of these algorithms or key sizes will be blocked during certification path building and validation. This property is used by Oracle's PKIX implementation, other implementations might not examine and use it.")
+Algorithms](java-pki-programmers-guide.html#GUID-D2A99DE3-62CF-4E4B-BF91-814C4A5C4DD3 "The jdk.certpath.disabledAlgorithms Security Property contains a list of cryptographic algorithms and key size constraints that are considered weak or broken. Certificates and other data (CRLs, OCSPResponses) containing any of these algorithms or key sizes will be blocked during certification path building and validation. This property is used by Oracle's PKIX implementation, other implementations might not examine and use it.")
 for a description and examples of this property.
 
 The PKIX Certificate and CRL Profile has many optional features. The
 \"SUN\" provider implements support for the policy mapping, [authority
 information
-access](java-pki-programmers-guide.htm#GUID-EB250086-0AC1-4D60-AE2A-FC7461374746__SECTION-1310-623E8D62)
+access](java-pki-programmers-guide.html#GUID-EB250086-0AC1-4D60-AE2A-FC7461374746__SECTION-1310-623E8D62)
 and [CRL distribution point
-certificate](java-pki-programmers-guide.htm#GUID-EB250086-0AC1-4D60-AE2A-FC7461374746__SECTION-139-623E860E)
+certificate](java-pki-programmers-guide.html#GUID-EB250086-0AC1-4D60-AE2A-FC7461374746__SECTION-139-623E860E)
 extensions, the issuing distribution point CRL extension, and the reason
 code and certificate issuer CRL entry extensions. It does not implement
 support for the freshest CRL or subject information access certificate
@@ -3600,7 +3600,7 @@ conforms to section 6.3 of the PKIX Certificate and CRL Profile. OCSP
 ([RFC 2560](http://www.ietf.org/rfc/rfc2560.txt)) is also currently
 supported as a built in revocation checking mechanism. See [Appendix C:
 OCSP
-Support](java-pki-programmers-guide.htm#GUID-E6E737DB-4000-4005-969E-BCD0238B1566 "Client-side support for the On-Line Certificate Status Protocol (OCSP) as defined in RFC 2560 is supported.")
+Support](java-pki-programmers-guide.html#GUID-E6E737DB-4000-4005-969E-BCD0238B1566 "Client-side support for the On-Line Certificate Status Protocol (OCSP) as defined in RFC 2560 is supported.")
 for more details on the implementation and configuration and how it
 works in conjunction with CRLs.
 

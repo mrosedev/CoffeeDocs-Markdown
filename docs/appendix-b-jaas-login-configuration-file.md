@@ -81,7 +81,7 @@ Example 6-1 Login Configuration File for JAAS Authentication Tutorial
 
 As an example, the login configuration file used for the [JAAS
 Authentication
-Tutorial](jaas-authentication-tutorial.htm#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
+Tutorial](jaas-authentication-tutorial.html#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
 tutorial contains just one entry, which is
 
 ``` {.oac_no_warn dir="ltr"}
@@ -106,7 +106,7 @@ The <span class="bold">name</span> for an entry in a login configuration
 file is the name that applications use to refer to the entry when they
 instantiate a <span class="apiname">LoginContext</span>, as described in
 [JAAS Authentication
-Tutorial](jaas-authentication-tutorial.htm#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
+Tutorial](jaas-authentication-tutorial.html#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
 in the JAAS authentication tutorial. The name can be whatever name the
 application developer wishes to use. Here, the term \"application\"
 refers to whatever code does the JAAS login.
@@ -324,7 +324,7 @@ The configuration file to be used can be specified in one of two ways:
     file that should be used. We use this approach for all the
     tutorials. For example, we run our `SampleAcn`{.codeph} application
     in the [JAAS Authentication
-    Tutorial](jaas-authentication-tutorial.htm#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
+    Tutorial](jaas-authentication-tutorial.html#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
     using the following command, which specifies that the configuration
     file is the `sample_jaas.config`{.codeph} file in the current
     directory:

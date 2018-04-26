@@ -59,14 +59,14 @@ control context.
 To populate a Subject with such credentials, client and server
 applications typically will first perform JAAS authentication using a
 Kerberos <span class="apiname">LoginModule</span>. The [JAAS
-Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 tutorial demonstrates how to do this. The [JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
 tutorial then demonstrates how to associate the authenticated Subject
 with the thread\'s access control context. A utility has also been
 written as a convenience to automatically perform those operations on
 your behalf. The [Use of JAAS Login
-Utility](use-jaas-login-utility.htm#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
+Utility](use-jaas-login-utility.html#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
 tutorial demonstrates how to use the Login utility.
 
 For this tutorial, we will not have the client and server perform JAAS
@@ -75,9 +75,9 @@ will rely on setting the system property
 `javax.security.auth.useSubjectCredsOnly`{.codeph} to `false`{.codeph},
 which allows us to relax the restriction of requiring a GSS mechanism to
 obtain necessary credentials from an existing
-[Subject](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3),
+[Subject](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3),
 set up by JAAS. See [The useSubjectCredsOnly System
-Property](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-841EB74E-3B52-4421-BC10-FE3C8511E007).
+Property](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-841EB74E-3B52-4421-BC10-FE3C8511E007).
 
 <div class="infoboxnote" id="GUID-42A2B80C-90CD-4C7A-8EED-8BFFE83CAF56__GUID-C1D390A1-E212-48D7-BB3D-B117D67BD365">
 Note:
@@ -91,36 +91,36 @@ allowed unless the required permissions were explicitly granted.
 </div>
 There is another tutorial, [Use of JAAS Login Utility and Java GSS-API
 for Secure Message
-Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8),
+Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8),
 that is just like the tutorial you are reading except that it utilizes
 the Login utility, policy files, and a more complex login configuration
 file. A login configuration file (see [Appendix B: JAAS Login
 Configuration
-File](appendix-b-jaas-login-configuration-file.htm#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)),
+File](appendix-b-jaas-login-configuration-file.html#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)),
 required whenever JAAS authentication is done, specifies the desired
 authentication module.
 
 As with all tutorials in this series, the underlying technology used to
 support authentication and secure communication for the applications in
 this tutorial is Kerberos V5. See [Kerberos
-Requirements](kerberos-requirements1.htm#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).
+Requirements](kerberos-requirements1.html#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).
 
 -   [Overview of the Client and Server
-    Applications](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-BEDCBE80-87A3-4124-B891-DF15C55301A5)
+    Applications](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-BEDCBE80-87A3-4124-B891-DF15C55301A5)
 -   [The SampleClient and SampleServer
-    Code](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-0DDC8ACE-7398-41C6-B061-CF3DEAB7AC86)
+    Code](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-0DDC8ACE-7398-41C6-B061-CF3DEAB7AC86)
 -   [Kerberos User and Service Principal
-    Names](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-6D82A7D2-C406-40F4-838A-42ED61194182)
+    Names](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-6D82A7D2-C406-40F4-838A-42ED61194182)
 -   [The Login Configuration
-    File](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-2ED6C724-87F1-49EB-9015-32E6E74E3C6A)
+    File](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-2ED6C724-87F1-49EB-9015-32E6E74E3C6A)
 -   [The useSubjectCredsOnly System
-    Property](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-841EB74E-3B52-4421-BC10-FE3C8511E007)
+    Property](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-841EB74E-3B52-4421-BC10-FE3C8511E007)
 -   [Running the SampleClient and SampleServer
-    Programs](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-DC1FCD2D-101C-4EF2-8034-387CBE66FA3E)
+    Programs](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-DC1FCD2D-101C-4EF2-8034-387CBE66FA3E)
 
 If you want to first see the tutorial code in action, you can skip
 directly to [Running the SampleClient and SampleServer
-Programs](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-DC1FCD2D-101C-4EF2-8034-387CBE66FA3E)
+Programs](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-DC1FCD2D-101C-4EF2-8034-387CBE66FA3E)
 and then go back to the other sections to learn more.
 
 </div>
@@ -148,7 +148,7 @@ Here is a summary of execution of the `SampleClient`{.codeph} and
     a.  Reads its arguments: (1) The name of the Kerberos principal that
         represents `SampleServer`{.codeph} (see [Kerberos User and
         Service Principal
-        Names](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-6D82A7D2-C406-40F4-838A-42ED61194182)), (2)
+        Names](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-6D82A7D2-C406-40F4-838A-42ED61194182)), (2)
         the name of the host (machine) on which `SampleServer`{.codeph}
         is running, and (3) the port number on which
         `SampleServer`{.codeph} listens for client connections.
@@ -181,22 +181,22 @@ The SampleClient and SampleServer Code {#JSSEC-GUID-0DDC8ACE-7398-41C6-B061-CF3D
 
 <div>
 The entire code for both the
-[` SampleClient.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLECLIENT.JAVA-338923E1)
+[` SampleClient.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLECLIENT.JAVA-338923E1)
 and
-[`SampleServer.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVER.JAVA-33891DED)
+[`SampleServer.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVER.JAVA-33891DED)
 programs resides in their `main`{.codeph} methods and can be broken down
 into the following subparts:
 
 1.  [Obtaining the Command-Line
-    Arguments](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-50F25F90-A350-4A21-A06E-44E33209D542)
+    Arguments](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-50F25F90-A350-4A21-A06E-44E33209D542)
 2.  [Establishing a Socket Connection for Message
-    Exchanges](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-04BC81DE-98D3-42CA-9AC0-45CB4ECEC0BB)
+    Exchanges](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-04BC81DE-98D3-42CA-9AC0-45CB4ECEC0BB)
 3.  [Establishing a Security
-    Context](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-3619B5FA-76CA-4445-8770-8D56CEBA967B)
+    Context](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-3619B5FA-76CA-4445-8770-8D56CEBA967B)
 4.  [Exchanging Messages
-    Securely](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-39585A77-5CF3-4122-B4EC-3D778392370D)
+    Securely](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-39585A77-5CF3-4122-B4EC-3D778392370D)
 5.  [Clean
-    Up](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-DA54B317-30B2-4666-86B6-B1AD4D627002)
+    Up](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-DA54B317-30B2-4666-86B6-B1AD4D627002)
 
 <div class="infoboxnote" id="GUID-0DDC8ACE-7398-41C6-B061-CF3DEAB7AC86__GUID-39A47901-8887-47B3-BDCC-CDA90803FABF">
 Note:
@@ -234,7 +234,7 @@ read the command-line arguments.
 1.  A service principal name -- The name of the Kerberos principal that
     represents `SampleServer`{.codeph} (see [Kerberos User and Service
     Principal
-    Names](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-6D82A7D2-C406-40F4-838A-42ED61194182)).
+    Names](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-6D82A7D2-C406-40F4-838A-42ED61194182)).
 2.  A host name -- The machine on which `SampleServer`{.codeph} is
     running.
 3.  A port number -- The port number of the port on which
@@ -463,9 +463,9 @@ The context establishment code for our sample applications is described
 in the following:
 
 -   [Context Establishment by
-    SampleClient](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-3C5C1A0A-83D7-4AF8-94EC-EEA8112DEBAC)
+    SampleClient](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-3C5C1A0A-83D7-4AF8-94EC-EEA8112DEBAC)
 -   [Context Establishment by
-    SampleServer](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-7466BDBC-CB41-4287-802A-C3426B14304A)
+    SampleServer](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-7466BDBC-CB41-4287-802A-C3426B14304A)
 
 </div>
 <div class="sect4">
@@ -478,11 +478,11 @@ In our client/server scenario, SampleClient is the context initiator.
 Here are the basic steps it takes to establish a security context:
 
 1.  [SampleClient GSSContext
-    Instantiation](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-5E314B25-F3EF-4F40-BB32-678F9DD71D3B)
+    Instantiation](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-5E314B25-F3EF-4F40-BB32-678F9DD71D3B)
 2.  [SampleClient Setting of Desired
-    Options](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-4D05D762-CD29-4A82-B773-5652A4754BF5)
+    Options](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-4D05D762-CD29-4A82-B773-5652A4754BF5)
 3.  [SampleClient Context Establishment
-    Loop](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-AB3C68A2-4E5E-42B2-96C1-C8BDAB5058A7):
+    Loop](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-AB3C68A2-4E5E-42B2-96C1-C8BDAB5058A7):
     Loops while the context is not yet established, each time calling
     `initSecContext`{.codeph}, sending any returned token to
     `SampleServer`{.codeph}, and receiving a token (if any) from
@@ -540,7 +540,7 @@ The peer in our client/server paradigm is the server. For the
 `peer`{.codeph} argument, we need a <span class="apiname">GSSName</span>
 for the service principal representing the server. (See [Kerberos User
 and Service Principal
-Names](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-6D82A7D2-C406-40F4-838A-42ED61194182).)
+Names](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-6D82A7D2-C406-40F4-838A-42ED61194182).)
 A <span class="apiname">String</span> for the service principal name is
 passed as the first argument to `SampleClient`{.codeph}, which places
 the argument into its local <span class="apiname">String</span> variable
@@ -769,7 +769,7 @@ Note that whenever a token is written, the number of bytes in the token
 is written first, followed by the token itself. The reasons are
 discussed in the introduction to the [The SampleClient and SampleServer
 Message
-Exchanges](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-D929F2E0-8AD5-46A3-8A1F-7C30ACE5675B)
+Exchanges](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-D929F2E0-8AD5-46A3-8A1F-7C30ACE5675B)
 section.
 
 Here is the `SampleClient`{.codeph} context establishment loop, followed
@@ -826,9 +826,9 @@ acceptor. Here are the basic steps it takes to establish a security
 context:
 
 1.  [SampleServer GSSContext
-    Instantiation](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-528478D5-A436-4539-9994-F6F338B02910)
+    Instantiation](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-528478D5-A436-4539-9994-F6F338B02910)
 2.  [SampleClient Context Establishment
-    Loop](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-AB3C68A2-4E5E-42B2-96C1-C8BDAB5058A7):
+    Loop](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-AB3C68A2-4E5E-42B2-96C1-C8BDAB5058A7):
     Loops while the context is not yet established, each time receiving
     a token from `SampleClient`{.codeph}, calling
     `acceptSecContext`{.codeph} and passing it the token, and sending
@@ -842,7 +842,7 @@ context:
 
 <div>
 As described in [SampleClient GSSContext
-Instantiation](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-5E314B25-F3EF-4F40-BB32-678F9DD71D3B),
+Instantiation](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-5E314B25-F3EF-4F40-BB32-678F9DD71D3B),
 a <span class="apiname">GSSContext</span> is created by instantiating a
 <span class="apiname">GSSManager</span> and then calling one of its
 `createContext`{.codeph} methods.
@@ -954,9 +954,9 @@ Once a security context has been established between
 context to securely exchange messages.
 
 -   [GSSContext Methods for Message
-    Exchange](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-683071BD-5FAB-4392-BABD-A5A68C145120)
+    Exchange](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-683071BD-5FAB-4392-BABD-A5A68C145120)
 -   [The SampleClient and SampleServer Message
-    Exchanges](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-D929F2E0-8AD5-46A3-8A1F-7C30ACE5675B)
+    Exchanges](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-D929F2E0-8AD5-46A3-8A1F-7C30ACE5675B)
 
 </div>
 <div class="sect4">
@@ -1312,7 +1312,7 @@ Kerberos User and Service Principal Names {#JSSEC-GUID-6D82A7D2-C406-40F4-838A-4
 Since the underlying authentication and secure communication technology
 used by this tutorial is Kerberos V5, we use Kerberos-style principal
 names wherever a user or service is called for (see
-[Principals](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-8FAF9739-CD62-4A47-9582-884DBF3081F0)).
+[Principals](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-8FAF9739-CD62-4A47-9582-884DBF3081F0)).
 
 For example, when you run `SampleClient`{.codeph} you are asked to
 provide your <span class="bold">user name</span>. Your Kerberos-style
@@ -1385,7 +1385,7 @@ servers, such as `ftp/host1@realm`{.codeph} and
 <div>
 If the realm of a user or service principal name is the default realm
 (see [Kerberos
-Requirements](kerberos-requirements1.htm#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998)),
+Requirements](kerberos-requirements1.html#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998)),
 you can leave off the realm when you are logging into Kerberos (that is,
 when you are prompted for your user name). Thus, for example, if your
 user name is `mjones@KRBNT-OPERATIONS.EXAMPLE.COM`{.codeph}, and you run
@@ -1424,15 +1424,15 @@ For this tutorial, we are letting the underlying Kerberos mechanism
 obtain credentials of the users running `SampleClient`{.codeph} and
 `SampleServer`{.codeph}, rather than invoking JAAS methods directly (as
 in the [JAAS
-Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 and [JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
 tutorials) or indirectly (for example, via the Login utility described
 in the [Use of JAAS Login
-Utility](use-jaas-login-utility.htm#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
+Utility](use-jaas-login-utility.html#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
 tutorial and in the [Use of JAAS Login Utility and Java GSS-API for
 Secure Message
-Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8)
+Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8)
 tutorial).
 
 The default Kerberos mechanism implementation supplied by Oracle
@@ -1447,7 +1447,7 @@ for a particular application. The default JAAS implementation from
 Oracle requires that the login configuration information be specified in
 a file. (Note: Some other vendors might not have file-based
 implementations.) See [Appendix B: JAAS Login Configuration
-File](appendix-b-jaas-login-configuration-file.htm#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
+File](appendix-b-jaas-login-configuration-file.html#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
 for information as to what a login configuration file is, what it
 contains, and how to specify which login configuration file should be
 used.
@@ -1462,7 +1462,7 @@ same login configuration file, if that file contains two entries, one
 entry for the client side and one for the server side.
 
 The
-[`bcsLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__BCSLOGIN.CONF-3389212B)
+[`bcsLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__BCSLOGIN.CONF-3389212B)
 login configuration file used for this tutorial is the following:
 
 ``` {.oac_no_warn dir="ltr"}
@@ -1520,7 +1520,7 @@ For this tutorial, we set the system property
 `javax.security.auth.useSubjectCredsOnly`{.codeph} to `false`{.codeph},
 which allows us to relax the usual restriction of requiring a GSS
 mechanism to obtain necessary credentials from an existing
-[Subject](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3),
+[Subject](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3),
 set up by JAAS. When this restriction is relaxed, it allows the
 mechanism to obtain credentials from some vendor-specific location. For
 example, some vendors might choose to use the operating system\'s cache
@@ -1550,13 +1550,13 @@ To execute the `SampleClient`{.codeph} and `SampleServer`{.codeph}
 programs, do the following:
 
 -   [Prepare SampleServer for
-    Execution](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-758C5F29-2F6A-420B-9BFA-FA741149F3B6)
+    Execution](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-758C5F29-2F6A-420B-9BFA-FA741149F3B6)
 -   [Prepare SampleClient for
-    Execution](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-2D1E8C81-221C-44CC-9B86-7A41C7DCA44B)
+    Execution](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-2D1E8C81-221C-44CC-9B86-7A41C7DCA44B)
 -   [Execute
-    SampleServer](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-9D61C2A9-1E0D-4701-8FBF-F5D31AA4BB2C)
+    SampleServer](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-9D61C2A9-1E0D-4701-8FBF-F5D31AA4BB2C)
 -   [Execute
-    SampleClient](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-9AF3C84A-CB43-4F4B-A09D-445D8741FE59)
+    SampleClient](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-9AF3C84A-CB43-4F4B-A09D-445D8741FE59)
 
 </div>
 <div class="sect3">
@@ -1570,10 +1570,10 @@ To prepare `SampleServer`{.codeph} for execution, do the following:
 1.  Copy the following files into a directory accessible by the machine
     on which you will run `SampleServer`{.codeph}:
     -   The
-        [`SampleServer.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVER.JAVA-33891DED)
+        [`SampleServer.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVER.JAVA-33891DED)
         source file.
     -   The
-        [`bcsLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__BCSLOGIN.CONF-3389212B)
+        [`bcsLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__BCSLOGIN.CONF-3389212B)
         login configuration file.
 2.  Compile `SampleServer.java`{.codeph}:
 
@@ -1594,10 +1594,10 @@ To prepare `SampleClient`{.codeph} for execution, do the following:
 1.  Copy the following files into a directory accessible by the machine
     on which you will run `SampleClient`{.codeph}:
     -   The
-        [`SampleClient.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLECLIENT.JAVA-338923E1)
+        [`SampleClient.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLECLIENT.JAVA-338923E1)
         source file.
     -   The
-        [`bcsLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__BCSLOGIN.CONF-3389212B)
+        [`bcsLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__BCSLOGIN.CONF-3389212B)
         login configuration file.
 2.  Compile `SampleClient.java`{.codeph}:
 
@@ -1644,7 +1644,7 @@ for execution. Execute `SampleServer`{.codeph}, specifying
 -   by `-Djavax.security.auth.useSubjectCredsOnly=false`{.codeph} that
     the underlying mechanism can decide how to get credentials. See [The
     useSubjectCredsOnly System
-    Property](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-841EB74E-3B52-4421-BC10-FE3C8511E007).
+    Property](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-841EB74E-3B52-4421-BC10-FE3C8511E007).
 
 -   by `-Djava.security.auth.login.config=bcsLogin.conf`{.codeph} that
     the login configuration file to be used is `bcsLogin.conf`{.codeph}.
@@ -1700,7 +1700,7 @@ authentication mechanism specified in the login configuration file will
 log the service principal into Kerberos.
 
 For login troubleshooting suggestions, see
-[Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
+[Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
 
 </div>
 </div>
@@ -1726,7 +1726,7 @@ you have prepared `SampleClient`{.codeph} for execution. Execute
 The `SampleClient`{.codeph} arguments are (1) the Kerberos name of the
 service principal that represents `SampleServer`{.codeph} (see [Kerberos
 User and Service Principal
-Names](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-6D82A7D2-C406-40F4-838A-42ED61194182),
+Names](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-6D82A7D2-C406-40F4-838A-42ED61194182),
 (2) the name of the host (machine) on which `SampleServer`{.codeph} is
 running, and (3) the port number on which `SampleServer`{.codeph} is
 listening for client connections.
@@ -1770,7 +1770,7 @@ and `SampleServer`{.codeph} establish a shared context and then exchange
 messages as described in this tutorial.
 
 For login troubleshooting suggestions, see
-[Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
+[Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
 
 </div>
 </div>

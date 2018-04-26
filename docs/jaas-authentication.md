@@ -47,7 +47,7 @@ JAAS can be used for two purposes:
 
 This section provides a basic tutorial for the authentication component.
 The authorization component will be described in the [JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
 tutorial.
 
 JAAS authentication is performed in a
@@ -59,22 +59,22 @@ a particular authentication technology to be used is determined at
 runtime. The implementation is specified in a login configuration file.
 The authentication technology used for this tutorial is Kerberos. (See
 [Kerberos
-Requirements](kerberos-requirements1.htm#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).)
+Requirements](kerberos-requirements1.html#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).)
 
 The rest of this tutorial consists of the following sections:
 
 1.  [The Authentication Tutorial
-    Code](jaas-authentication.htm#GUID-F12A6645-5A3E-41F7-94E6-57694DFFF2D3)
+    Code](jaas-authentication.html#GUID-F12A6645-5A3E-41F7-94E6-57694DFFF2D3)
 2.  [The Login
-    Configuration](jaas-authentication.htm#GUID-C595253D-3817-4CA6-9336-D7D5159C9680)
+    Configuration](jaas-authentication.html#GUID-C595253D-3817-4CA6-9336-D7D5159C9680)
 3.  [Running the
-    Code](jaas-authentication.htm#GUID-A76E9155-E82F-48C0-9382-C365C157EEBF)
+    Code](jaas-authentication.html#GUID-A76E9155-E82F-48C0-9382-C365C157EEBF)
 4.  [Running the Code with a Security
-    Manager](jaas-authentication.htm#GUID-EF86E769-AFAF-4341-B9B0-4E122A0BFCEC)
+    Manager](jaas-authentication.html#GUID-EF86E769-AFAF-4341-B9B0-4E122A0BFCEC)
 
 If you want to first see the tutorial code in action, you can skip
 directly to [Running the
-Code](jaas-authentication.htm#GUID-A76E9155-E82F-48C0-9382-C365C157EEBF)
+Code](jaas-authentication.html#GUID-A76E9155-E82F-48C0-9382-C365C157EEBF)
 and then go back to the other sections to learn about coding and
 configuration file details.
 
@@ -87,7 +87,7 @@ The Authentication Tutorial Code {#JSSEC-GUID-F12A6645-5A3E-41F7-94E6-57694DFFF2
 
 <div>
 Our authentication tutorial code is contained in a single source file,
-[`JaasAcn.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASACN.JAVA-338927FE).
+[`JaasAcn.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASACN.JAVA-338927FE).
 This file\'s `main`{.codeph} method performs the authentication and then
 reports whether or not authentication succeeded.
 
@@ -95,9 +95,9 @@ The code for authenticating the user is very simple, consisting of just
 two steps:
 
 1.  [Instantiating a
-    LoginContext](jaas-authentication.htm#GUID-080F384C-0FF3-4443-B4A7-21B6F03371F0)
+    LoginContext](jaas-authentication.html#GUID-080F384C-0FF3-4443-B4A7-21B6F03371F0)
 2.  [Calling the LoginContext\'s login
-    Method](jaas-authentication.htm#GUID-98A3DD32-C417-449B-9C55-1C9509364612)
+    Method](jaas-authentication.html#GUID-98A3DD32-C417-449B-9C55-1C9509364612)
 
 </div>
 <div class="sect3">
@@ -137,7 +137,7 @@ The arguments are the following:
     This is the name for the <span class="apiname">LoginContext</span>
     to use to look up an entry for this application in the JAAS login
     configuration file, described in [The Login
-    Configuration](jaas-authentication.htm#GUID-C595253D-3817-4CA6-9336-D7D5159C9680).
+    Configuration](jaas-authentication.html#GUID-C595253D-3817-4CA6-9336-D7D5159C9680).
     Such an entry specifies the class(es) that implement the desired
     underlying authentication technology(ies). The class(es) must
     implement the <span class="apiname">LoginModule</span> interface,
@@ -149,7 +149,7 @@ The arguments are the following:
 
     The entry in the login configuration file we use for this tutorial
     (see
-    [`jaas.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7))
+    [`jaas.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7))
     has the name \"JaasSample\", so that is the name we specify as the
     first argument to the <span class="apiname">LoginContext</span>
     constructor.
@@ -203,7 +203,7 @@ lc.login();
 The LoginContext instantiates a new empty
 [`javax.security.auth.Subject`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/security/auth/Subject.html)
 object (which represents the user or service being authenticated; see
-[Subject](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3)).
+[Subject](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3)).
 The <span class="apiname">LoginContext</span> constructs the configured
 <span class="apiname">LoginModule</span> (in our case
 <span class="apiname">Krb5LoginModule</span>) and initializes it with
@@ -256,7 +256,7 @@ described in
 [<span class="apiname">com.sun.security.auth.login.ConfigFile</span>](https://docs.oracle.com/javase/10/docs/api/com/sun/security/auth/login/ConfigFile.html).
 
 See [Appendix B: JAAS Login Configuration
-File](appendix-b-jaas-login-configuration-file.htm#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
+File](appendix-b-jaas-login-configuration-file.html#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
 for information as to what a login configuration file is, what it
 contains, and how to specify which login configuration file should be
 used.
@@ -269,7 +269,7 @@ used.
 
 <div>
 As noted, the login configuration file we use for this tutorial,
-[jass.conf](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7),
+[jass.conf](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7),
 contains just one entry, which is
 
 ``` {.oac_no_warn dir="ltr"}
@@ -308,9 +308,9 @@ Running the Code {#JSSEC-GUID-A76E9155-E82F-48C0-9382-C365C157EEBF .sect2}
 To execute our JAAS authentication tutorial code, all you have to do is
 
 1.  Place the
-    [`JaasAcn.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASACN.JAVA-338927FE)
+    [`JaasAcn.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASACN.JAVA-338927FE)
     application source file and the
-    [`jaas.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7)
+    [`jaas.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7)
     login configuration file into a directory.
 2.  Compile `JaasAcn.java`{.codeph}:
 
@@ -381,7 +381,7 @@ Authentication failed:
 ```
 
 For login troubleshooting suggestions, see
-[Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
+[Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
 
 After fixing any problems, re-run the program to try again.
 
@@ -398,11 +398,11 @@ When a Java program is run with a security manager installed, the
 program is not allowed to access resources or otherwise perform
 security-sensitive operations unless it is explicitly granted permission
 (see [Permissions in the
-JDK](permissions-jdk1.htm#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.")
+JDK](permissions-jdk1.html#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.")
 to do so by the security policy in effect. The permission must be
 granted by an entry in a policy file (see [Default Policy Implementation
 and Policy File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)).
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)).
 
 Most browsers install a security manager, so
 <span class="variable">applets</span> typically run under the scrutiny
@@ -440,12 +440,12 @@ Here are the complete steps required in order to be able to run our
 `JaasAcn`{.codeph} application with a security manager installed. You
 can skip the first two steps if you have already done them, as described
 in [Running the
-Code](jaas-authentication.htm#GUID-A76E9155-E82F-48C0-9382-C365C157EEBF).
+Code](jaas-authentication.html#GUID-A76E9155-E82F-48C0-9382-C365C157EEBF).
 
 1.  Place the
-    [`JaasAcn.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASACN.JAVA-338927FE)
+    [`JaasAcn.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JAASACN.JAVA-338927FE)
     application source file and the
-    [`jaas.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7)
+    [`jaas.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASS.CONF-33892AE7)
     login configuration file into a directory.
 2.  Compile `JaasAcn.java`{.codeph}:
 
@@ -491,7 +491,7 @@ Code](jaas-authentication.htm#GUID-A76E9155-E82F-48C0-9382-C365C157EEBF).
     ```
 
     Copy the policy file
-    [`jaasacn.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASSACN.POLICY-33892D36)
+    [`jaasacn.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__JASSACN.POLICY-33892D36)
     to the same directory as that in which you stored
     `JaasAcn.java`{.codeph}, etc. This is a text file containing the
     following `grant`{.codeph} statement to grant `JaasAcn.jar`{.codeph}
@@ -506,9 +506,9 @@ Code](jaas-authentication.htm#GUID-A76E9155-E82F-48C0-9382-C365C157EEBF).
 
     Note: Policy files and the structure of entries within them are
     described in [Default Policy Implementation and Policy File
-    Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
+    Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
     Permissions are described in [Permissions in the
-    JDK](permissions-jdk1.htm#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").
+    JDK](permissions-jdk1.html#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").
 
 5.  Execute the `JaasAcn`{.codeph} application, specifying
 
@@ -563,7 +563,7 @@ Code](jaas-authentication.htm#GUID-A76E9155-E82F-48C0-9382-C365C157EEBF).
     \"Authentication failed:\" followed by a reason for the failure.
 
     For login troubleshooting suggestions, see
-    [Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
+    [Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
 
 </div>
 </div>

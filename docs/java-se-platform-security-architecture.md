@@ -949,7 +949,7 @@ behavior at the level of native code), and of course the
 For more information about permissions, including tables enumerating the
 risks of assigning specific permissions as well as a table of all the
 JDK built-in methods that require permissions, see [Permissions in the
-JDK](permissions-jdk1.htm#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").
+JDK](permissions-jdk1.html#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").
 
 </div>
 </div>
@@ -1663,7 +1663,7 @@ implementation:
 
     The following example describes a scenario involving both
     `self`{.codeph} and [KeyStore alias
-    replacement](java-se-platform-security-architecture.htm#GUID-F5270083-CCAC-49E0-ACAC-50176FBFDD97__GUID-0BB07966-22BF-44C7-9200-21C4B1700432)
+    replacement](java-se-platform-security-architecture.html#GUID-F5270083-CCAC-49E0-ACAC-50176FBFDD97__GUID-0BB07966-22BF-44C7-9200-21C4B1700432)
     together:
 
     ``` {.oac_no_warn dir="ltr"}
@@ -1689,7 +1689,7 @@ implementation:
     <span class="apiname">java.security.KeyStore</span> alias
     substitution. The `KeyStore`{.codeph} used is the one specified in
     the KeyStore entry; see [Policy File
-    Format](java-se-platform-security-architecture.htm#GUID-F5270083-CCAC-49E0-ACAC-50176FBFDD97).
+    Format](java-se-platform-security-architecture.html#GUID-F5270083-CCAC-49E0-ACAC-50176FBFDD97).
     `alias_name`{.codeph} represents an alias into the
     `KeyStore`{.codeph}. `${{alias:alias_name}}`{.codeph} is replaced
     with `javax.security.auth.x500.X500Principal "DN"`{.codeph}, where
@@ -1898,7 +1898,7 @@ policy files that are specified in the security properties file. (The
 `-Djava.security.manager`{.codeph} argument ensures that the default
 security manager is installed, and thus the application is subject to
 policy checks, as described in [Managing Applets and
-Applications](java-se-platform-security-architecture.htm#GUID-DE9A9E41-E735-4624-A015-A22D6C7E75DA).
+Applications](java-se-platform-security-architecture.html#GUID-DE9A9E41-E735-4624-A015-A22D6C7E75DA).
 It is not required if the application `SomeApp`{.codeph} installs a
 security manager.)
 
@@ -2360,11 +2360,11 @@ A variant of
 enables code to assert a subset of its privileges without preventing the
 full traversal of the stack to check for other permissions. See
 [Asserting a Subset of
-Privileges](java-se-platform-security-architecture.htm#GUID-35DBFA01-FEF4-4382-A5D1-4AD2CA441CDA).
+Privileges](java-se-platform-security-architecture.html#GUID-35DBFA01-FEF4-4382-A5D1-4AD2CA441CDA).
 
 For more information about marking code as \"privileged,\" see [Appendix
 A: API for Privileged
-Blocks](java-se-platform-security-architecture.htm#GUID-BB3C8FB3-1A1A-47F3-8536-3952B84F46F2 "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.").
+Blocks](java-se-platform-security-architecture.html#GUID-BB3C8FB3-1A1A-47F3-8536-3952B84F46F2 "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.").
 
 </div>
 </div>
@@ -2794,7 +2794,7 @@ There is also a `-Djava.security.policy`{.codeph} command-line argument
 whose usage determines what policy files are utilized. This command-line
 argument is described in detail in [Default Policy Implementation and
 Policy File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
 Basically, if you don\'t include `-Djava.security.policy`{.codeph} on
 the command line, then the policy files specified in the security
 properties file will be used.
@@ -2878,7 +2878,7 @@ and grant it `java.security.AllPermission`{.codeph}. You can do this by
 adjusting the policy file to grant `AllPermission`{.codeph} to your
 `SecurityManager`{.codeph}. For more information, see [Default Policy
 Implementation and Policy File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
 
 </div>
 </div>
@@ -3299,10 +3299,10 @@ This section explains what privileged code is and what it is used for.
 It also shows you how to use the doPrivileged API.
 
 -   [Using the doPrivileged
-    API](java-se-platform-security-architecture.htm#GUID-3747895F-0C78-45D7-9CA9-AEE9A1FDC217 "This section describes the doPrivileged API and the use of the privileged feature.")
+    API](java-se-platform-security-architecture.html#GUID-3747895F-0C78-45D7-9CA9-AEE9A1FDC217 "This section describes the doPrivileged API and the use of the privileged feature.")
 -   [What It Means to Have Privileged
-    Code](java-se-platform-security-architecture.htm#GUID-73F600BE-8098-4613-AD4B-E2DEFB9118D8 "Marking code as privileged enables a piece of trusted code to temporarily enable access to more resources than are available directly to the code that called it.")
--   [Reflection](java-se-platform-security-architecture.htm#GUID-0E000DED-C900-48BF-BBD0-8FD3599600E1 "The doPrivileged method can be invoked reflectively using the java.lang.reflect.Method.invoke method.")
+    Code](java-se-platform-security-architecture.html#GUID-73F600BE-8098-4613-AD4B-E2DEFB9118D8 "Marking code as privileged enables a piece of trusted code to temporarily enable access to more resources than are available directly to the code that called it.")
+-   [Reflection](java-se-platform-security-architecture.html#GUID-0E000DED-C900-48BF-BBD0-8FD3599600E1 "The doPrivileged method can be invoked reflectively using the java.lang.reflect.Method.invoke method.")
 
 </div>
 <div class="sect3">
@@ -3315,17 +3315,17 @@ This section describes the doPrivileged API and the use of the
 privileged feature.
 
 -   [No Return Value, No Exception
-    Thrown](java-se-platform-security-architecture.htm#GUID-A8827156-5B0C-4CBD-85C5-4A73B10194B1)
+    Thrown](java-se-platform-security-architecture.html#GUID-A8827156-5B0C-4CBD-85C5-4A73B10194B1)
 -   [Accessing Local
-    Variables](java-se-platform-security-architecture.htm#GUID-8661C7DE-C5EE-4D9A-B4C4-257F3EDEFD61 "If you are using a lambda expression or anonymous inner class, then any local variables you access must be final or effectively final.")
+    Variables](java-se-platform-security-architecture.html#GUID-8661C7DE-C5EE-4D9A-B4C4-257F3EDEFD61 "If you are using a lambda expression or anonymous inner class, then any local variables you access must be final or effectively final.")
 -   [Handling
-    Exceptions](java-se-platform-security-architecture.htm#GUID-FE22FB75-A320-40F3-94D4-87B7E6A0784A "If the action performed in your run method could throw a checked exception (one that must be listed in the throws clause of a method), then you need to use the PrivilegedExceptionAction interface instead of the PrivilegedAction interface.")
+    Exceptions](java-se-platform-security-architecture.html#GUID-FE22FB75-A320-40F3-94D4-87B7E6A0784A "If the action performed in your run method could throw a checked exception (one that must be listed in the throws clause of a method), then you need to use the PrivilegedExceptionAction interface instead of the PrivilegedAction interface.")
 -   [Asserting a Subset of
-    Privileges](java-se-platform-security-architecture.htm#GUID-35DBFA01-FEF4-4382-A5D1-4AD2CA441CDA)
+    Privileges](java-se-platform-security-architecture.html#GUID-35DBFA01-FEF4-4382-A5D1-4AD2CA441CDA)
 -   [Least
-    Privilege](java-se-platform-security-architecture.htm#GUID-522F4040-3CDD-4063-8380-94A3B477AD21 "The typical use case of the doPrivileged method is to enable the method that invokes it to perform one or more actions that require permission checks without requiring the callers of the current method to have all the necessary permissions.")
+    Privilege](java-se-platform-security-architecture.html#GUID-522F4040-3CDD-4063-8380-94A3B477AD21 "The typical use case of the doPrivileged method is to enable the method that invokes it to perform one or more actions that require permission checks without requiring the callers of the current method to have all the necessary permissions.")
 -   [More
-    Privilege](java-se-platform-security-architecture.htm#GUID-05B5503A-E24A-4E27-A3DE-BFFF73D65D9B "When coding the current method, you want to temporarily extend the permission of the calling method to perform an action.")
+    Privilege](java-se-platform-security-architecture.html#GUID-05B5503A-E24A-4E27-A3DE-BFFF73D65D9B "When coding the current method, you want to temporarily extend the permission of the calling method to perform an action.")
 
 </div>
 <div class="sect4">
@@ -3339,7 +3339,7 @@ If you do not need to return a value from within the
 <span class="italic">privileged</span> block, your call to
 [`doPrivileged`{.codeph}](https://docs.oracle.com/javase/10/docs/api/java/security/AccessController.html#doPrivileged-java.security.PrivilegedAction-)
 can look like [Example
-1-1](java-se-platform-security-architecture.htm#GUID-A8827156-5B0C-4CBD-85C5-4A73B10194B1__SAMPLECODEFORPRIVILEGEDBLOCK-754E162C).
+1-1](java-se-platform-security-architecture.html#GUID-A8827156-5B0C-4CBD-85C5-4A73B10194B1__SAMPLECODEFORPRIVILEGEDBLOCK-754E162C).
 
 Note that the invocation of `doPrivileged`{.codeph} with a lambda
 expression explicitly casts the lambda expression as of type
@@ -3347,7 +3347,7 @@ expression explicitly casts the lambda expression as of type
 `doPrivileged`{.codeph} exists that takes an object of type
 [`PrivilegedExceptionAction`{.codeph}](https://docs.oracle.com/javase/10/docs/api/java/security/PrivilegedExceptionAction.html);
 see [Handling
-Exceptions](java-se-platform-security-architecture.htm#GUID-FE22FB75-A320-40F3-94D4-87B7E6A0784A "If the action performed in your run method could throw a checked exception (one that must be listed in the throws clause of a method), then you need to use the PrivilegedExceptionAction interface instead of the PrivilegedAction interface.").
+Exceptions](java-se-platform-security-architecture.html#GUID-FE22FB75-A320-40F3-94D4-87B7E6A0784A "If the action performed in your run method could throw a checked exception (one that must be listed in the throws clause of a method), then you need to use the PrivilegedExceptionAction interface instead of the PrivilegedAction interface.").
 
 `PrivilegedAction`{.codeph} is a functional interface with a single
 abstract method, named `run`{.codeph}, that returns a value of type
@@ -3781,7 +3781,7 @@ The source location for the policy information used by the
 implementation. The `Policy`{.codeph} reference implementation obtains
 its information from policy configuration files. See [Default Policy
 Implementation and Policy File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)
 for information about the `Policy`{.codeph} reference implementation and
 the syntax that must be used in policy files it reads.
 

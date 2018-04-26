@@ -37,7 +37,7 @@ More Things You Can Do with Java GSS-API and JAAS {#JSSEC-GUID-B69758E7-D7B9-486
 <div>
 The previous tutorial, [Use of JAAS Login Utility and Java GSS-API for
 Secure Message
-Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8),
+Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8),
 demonstrated how two applications, in particular a client and a server,
 could use the Java GSS-API to establish a secure context between them
 and then securely exchange messages.
@@ -49,9 +49,9 @@ with the context initiator (the client). Basically, the server can
 whether or not the client has delegated credentials to the server.
 
 -   [Executing Code on Behalf of the Client
-    User](more-things-you-can-do-java-gss-api-and-jaas.htm#GUID-7836E843-A8F1-4C59-A5FD-BFEE3B307508)
+    User](more-things-you-can-do-java-gss-api-and-jaas.html#GUID-7836E843-A8F1-4C59-A5FD-BFEE3B307508)
 -   [Using Credentials Delegated from the
-    Client](more-things-you-can-do-java-gss-api-and-jaas.htm#GUID-23E84B31-CEAD-4FAC-A3EB-AD807587A502)
+    Client](more-things-you-can-do-java-gss-api-and-jaas.html#GUID-23E84B31-CEAD-4FAC-A3EB-AD807587A502)
 
 </div>
 <div class="sect2">
@@ -79,15 +79,15 @@ utilizing JAAS authorization, providing principal-based access control,
 the access control is handled automatically. Permissions for the
 security-sensitive operations in such code only need to be granted to
 that user and not also to the server code. See the [JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
 tutorial for more information on JAAS authorization.
 
 -   [Basic
-    Approach](more-things-you-can-do-java-gss-api-and-jaas.htm#GUID-08F32421-A49E-4DB8-9FD9-CC25D398CF2D)
+    Approach](more-things-you-can-do-java-gss-api-and-jaas.html#GUID-08F32421-A49E-4DB8-9FD9-CC25D398CF2D)
 -   [Sample Code and Policy
-    File](more-things-you-can-do-java-gss-api-and-jaas.htm#GUID-B04626E5-C67D-4116-A7D4-4D58270BE4CB)
+    File](more-things-you-can-do-java-gss-api-and-jaas.html#GUID-B04626E5-C67D-4116-A7D4-4D58270BE4CB)
 -   [Running the Sample
-    Code](more-things-you-can-do-java-gss-api-and-jaas.htm#GUID-4CD5A92F-DDD9-4464-9F42-4105B583A08B)
+    Code](more-things-you-can-do-java-gss-api-and-jaas.html#GUID-4CD5A92F-DDD9-4464-9F42-4105B583A08B)
 
 </div>
 <div class="sect3">
@@ -150,7 +150,7 @@ on behalf of the user in the local JVM, the user\'s credentials are not
 required -- and in fact cannot even be obtained unless the client has
 delegated credentials to the server, as discussed in [Using Credentials
 Delegated from the
-Client](more-things-you-can-do-java-gss-api-and-jaas.htm#GUID-23E84B31-CEAD-4FAC-A3EB-AD807587A502).
+Client](more-things-you-can-do-java-gss-api-and-jaas.html#GUID-23E84B31-CEAD-4FAC-A3EB-AD807587A502).
 Since the credentials are not needed here, we pass a `null`{.codeph} for
 the GSSCredential argument.
 
@@ -216,9 +216,9 @@ impersonating the client in order to execute code whose
 security-sensitive operations are only permitted to be done by the
 specific user executing the client.
 
--   [`SampleServerImp.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVERIMP.JAVA-33894617)
--   [`ReadFileAction.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__READFILEACTION.JAVA-33894842)
--   [`serverimp.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVERIMP.POLICY-33894A6C)
+-   [`SampleServerImp.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVERIMP.JAVA-33894617)
+-   [`ReadFileAction.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__READFILEACTION.JAVA-33894842)
+-   [`serverimp.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVERIMP.POLICY-33894A6C)
 
 </div>
 <div class="sect4">
@@ -228,10 +228,10 @@ specific user executing the client.
 
 <div>
 The
-[`SampleServerImp.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVERIMP.JAVA-33894617)
+[`SampleServerImp.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVERIMP.JAVA-33894617)
 file is exactly the same as the `SampleServer.java` file from the
 previous ([Use of JAAS Login Utility and Java GSS-API for Secure Message
-Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8))
+Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8))
 tutorial, except that after exchanging messages with the client, it has
 the following code to perform a `ReadFileAction`{.codeph} as the client
 user:
@@ -277,7 +277,7 @@ Subject.doAsPrivileged(client, readFile, null);
 
 <div>
 The
-[`ReadFileAction.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__READFILEACTION.JAVA-33894842)
+[`ReadFileAction.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__READFILEACTION.JAVA-33894842)
 file contains the `ReadFileAction`{.codeph} class. Its constructor takes
 as an argument a <span class="apiname">String</span> for the name of the
 client user. The client user name is used to construct a file name for a
@@ -337,10 +337,10 @@ grant CodeBase "file:./ReadFileAction.jar"
 ```
 
 The
-[`serverimp.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVERIMP.POLICY-33894A6C)
+[`serverimp.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVERIMP.POLICY-33894A6C)
 file is exactly the same as the `server.policy`{.codeph} file from the
 previous ([Use of JAAS Login Utility and Java GSS-API for Secure Message
-Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8))
+Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8))
 tutorial, except that it grants the
 <span class="apiname">SampleServer</span> code the
 `javax.security.auth.AuthPermission "doAsPrivileged"`{.codeph}
@@ -376,12 +376,12 @@ with a \"\\\".
 <div>
 To run the sample code illustrating the server impersonating the client,
 do everything listed in [Running the SampleClient and SampleServer
-Programs](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-07D0C8CC-0922-4B0F-B14D-9A644CB13783)
+Programs](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-07D0C8CC-0922-4B0F-B14D-9A644CB13783)
 in the previous tutorial, except for the following:
 
 -   In the \"Prepare `SampleServer`{.codeph} for Execution\" step:
     -   Use
-        [`SampleServerImp.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVERIMP.JAVA-33894617)
+        [`SampleServerImp.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVERIMP.JAVA-33894617)
         instead of `SampleServer.java`{.codeph}. Compile it and create a
         JAR file named `SampleServerImp.jar`{.codeph} containing
         `SampleServerImp.class`{.codeph} via the following:
@@ -392,13 +392,13 @@ in the previous tutorial, except for the following:
         ```
 
     -   Use the
-        [`serverimp.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVERIMP.POLICY-33894A6C)
+        [`serverimp.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVERIMP.POLICY-33894A6C)
         policy file instead of `server.policy`{.codeph}.
     -   Use the
-        [`csImpLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CSIMPLOGIN.CONF-37761B67)
+        [`csImpLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CSIMPLOGIN.CONF-37761B67)
         login configuration file instead of `cs.conf`{.codeph}.
     -   Copy
-        [`ReadFileAction.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__READFILEACTION.JAVA-33894842)
+        [`ReadFileAction.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__READFILEACTION.JAVA-33894842)
         to the same directory as the other files. Compile it and place
         it in a JAR file via the following:
 
@@ -412,7 +412,7 @@ in the previous tutorial, except for the following:
         of the service principal that represents
         <span class="apiname">SampleServer</span> (see [Kerberos User
         and Service Principal
-        Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)).
+        Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)).
     -   In `serverimp.policy`{.codeph}, replace
         `service_principal@your_realm`{.codeph} in both places it
         appears with the Kerberos name of the service principal that
@@ -507,7 +507,7 @@ in the previous tutorial, except for the following:
         prints out its contents.
 
         For login troubleshooting suggestions, see
-        [Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
+        [Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
 
 </div>
 </div>
@@ -578,7 +578,7 @@ default credentials. The server could then associate this
 `Subject`{.codeph} with the current
 <span class="apiname">AccessControlContext</span>, as described in [How
 Do You Associate a Subject with an Access Control
-Context?](jaas-authorization.htm#GUID-86CC2E0C-58B9-4E35-91E1-EC130EE2E4FC)
+Context?](jaas-authorization.html#GUID-86CC2E0C-58B9-4E35-91E1-EC130EE2E4FC)
 in the JAAS Authorization tutorial. Then, when the server code calls the
 <span class="apiname">GSSManager</span> `createContext`{.codeph} method,
 it can pass a null (indicating the credentials for the \"current\"
@@ -645,7 +645,7 @@ Substitute your realm for all places `your_realm`{.codeph} appears. Also
 substitute the service principal name for the service principal
 representing the server for `service_principal@your_realm`{.codeph}.
 (See [Kerberos User and Service Principal
-Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)
+Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)
 in the previous tutorial.) Suppose your realm is
 `KRBNT-OPERATIONS.EXAMPLE.COM`{.codeph} and the service principal is
 `sample/raven.example.com@KRBNT-OPERATIONS.EXAMPLE.COM`{.codeph}. Then

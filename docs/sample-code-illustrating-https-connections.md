@@ -38,12 +38,12 @@ Sample Code Illustrating HTTPS Connections {#JSSEC-GUID-54F1F19F-0F93-4877-A4A1-
 There are two primary APIs for accessing secure communications through
 JSSE. One way is through a socket-level API that can be used for
 arbitrary secure communications, as illustrated by the
-[`SSLSocketClient.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-AA1C27A1-2CA8-4309-B281-D6199F60E666__SSLSOCKETCLIENT.JAVA-32CFECE1),
-[`SSLSocketClientWithTunneling.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-B9103D0C-3E6A-4301-B558-461E4CB23DC9__SSLSOCKETCLIENTWITHTUNNELING.JAVA-32D03DB5),
+[`SSLSocketClient.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-AA1C27A1-2CA8-4309-B281-D6199F60E666__SSLSOCKETCLIENT.JAVA-32CFECE1),
+[`SSLSocketClientWithTunneling.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-B9103D0C-3E6A-4301-B558-461E4CB23DC9__SSLSOCKETCLIENTWITHTUNNELING.JAVA-32D03DB5),
 and
-[`SSLSocketClientWithClientAuth.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-756AE510-E1BF-42FE-92FC-B9BE3EC31C7B__SSLSOCKETCLIENTWITHCLIENTAUTH.JAVA-32D0CA6C)
+[`SSLSocketClientWithClientAuth.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-756AE510-E1BF-42FE-92FC-B9BE3EC31C7B__SSLSOCKETCLIENTWITHCLIENTAUTH.JAVA-32D0CA6C)
 examples (with and without the examples described in [Running
-ClassFileServer](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C)).
+ClassFileServer](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C)).
 
 A second, and often simpler, way is through the standard Java URL API.
 You can communicate securely with an SSL-enabled web server by using the
@@ -61,7 +61,7 @@ environment-specific. The JSSE implementation provides an HTTPS URL
 implementation. To use a different HTTPS protocol implementation, set
 the `java.protocol.handler.pkgs`{.codeph} system property; see [How to
 Specify a java.lang.System
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363).
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363).
 
 </div>
 <div class="sect2">
@@ -72,11 +72,11 @@ Running URLReader {#JSSEC-GUID-BC38D378-DF50-4B41-8489-67B6AB621FAB .sect2}
 
 <div>
 The example
-[`URLReader.java`](sample-code-illustrating-https-connections.htm#GUID-BC38D378-DF50-4B41-8489-67B6AB621FAB__URLREADER.JAVA-33086510)
+[`URLReader.java`](sample-code-illustrating-https-connections.html#GUID-BC38D378-DF50-4B41-8489-67B6AB621FAB__URLREADER.JAVA-33086510)
 illustrates using a URL to access resources on a secure site. By
 default, this example connects to `www.verisign.com`{.codeph}, but it
 can be adapted to connect to
-[`ClassFileServer.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C__CLASSFILESERVER.JAVA-3314B74B).
+[`ClassFileServer.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C__CLASSFILESERVER.JAVA-3314B74B).
 To do so, the URL will need to be modified to point to the correct
 address. You may also need to update the server\'s certificate or
 provide a custom <span class="apiname">HostNameVerifier</span> (see
@@ -151,7 +151,7 @@ Running URLReaderWithOptions {#JSSEC-GUID-20E68036-A8A2-4297-8074-44D076845E00 .
 
 <div>
 The example is very similar to
-[`URLReaader.java`](sample-code-illustrating-https-connections.htm#GUID-BC38D378-DF50-4B41-8489-67B6AB621FAB__URLREADER.JAVA-33086510),
+[`URLReaader.java`](sample-code-illustrating-https-connections.html#GUID-BC38D378-DF50-4B41-8489-67B6AB621FAB__URLREADER.JAVA-33086510),
 but it enables you to set the system properties through main method
 arguments rather than as `-D`{.codeph} options to the Java runtime
 environment.

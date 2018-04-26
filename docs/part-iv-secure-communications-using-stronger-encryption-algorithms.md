@@ -101,7 +101,7 @@ Steps to Follow
 
     </div>
 2.  Edit the Kerberos configuration file
-    ([`krb5.conf`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.htm#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__KRB5.CONF-338B7967)).
+    ([`krb5.conf`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.html#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__KRB5.CONF-338B7967)).
 
     You will need to edit the Kerberos configuration file in order to
     select the desired encryption types used. The required parameters

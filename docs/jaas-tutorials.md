@@ -39,10 +39,10 @@ This page links to two tutorials demonstrating various aspects of the
 use of JAAS (Java Authentication and Authorization Service):
 
 -   [JAAS Authentication
-    Tutorial](jaas-authentication-tutorial.htm#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4):
+    Tutorial](jaas-authentication-tutorial.html#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4):
     Explains how an application can authenticate users using JAAS.
 -   [JAAS Authorization
-    Tutorial](jaas-authorization-tutorial.htm#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411):
+    Tutorial](jaas-authorization-tutorial.html#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411):
     Explains how to enforce user-based access controls using JAAS.
 
 The authentication technology used for these tutorials is very basic,

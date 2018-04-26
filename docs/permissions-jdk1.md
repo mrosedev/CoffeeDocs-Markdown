@@ -85,14 +85,14 @@ grant codeBase "file:/home/sysadmin/" {
 
 To know more about policy file locations and granting permissions in
 policy files, see [Default Policy Implementation and Policy File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
 
 Technically, whenever a resource access is attempted,
 <span class="variable">all</span> code traversed by the execution thread
 up to that point must have permission for that resource access, unless
 some code on the thread has been marked as \"privileged.\" See [Appendix
 A: API for Privileged
-Blocks](java-se-platform-security-architecture.htm#GUID-BB3C8FB3-1A1A-47F3-8536-3952B84F46F2 "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.").
+Blocks](java-se-platform-security-architecture.html#GUID-BB3C8FB3-1A1A-47F3-8536-3952B84F46F2 "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.").
 
 </div>
 <div class="sect2">
@@ -139,7 +139,7 @@ permission.
 Note:
 
 See [Appendix A: FilePermission Path Name Canonicalization Disabled By
-Default](permissions-jdk1.htm#GUID-83063225-0ACB-4909-9BAB-7F7D4E3749E2 "A canonical path is a path that doesn't contain any links or shortcuts. Performing path name canonicalization in a FilePermission object can negatively affect performance.")
+Default](permissions-jdk1.html#GUID-83063225-0ACB-4909-9BAB-7F7D4E3749E2 "A canonical path is a path that doesn't contain any links or shortcuts. Performing path name canonicalization in a FilePermission object can negatively affect performance.")
 for important information about a change in how
 <span class="apiname">FilePermission</span> path names are
 canonicalized.
@@ -806,7 +806,7 @@ Table 1-6 Methods and the Permissions
 +-----------------------+-----------------------+-----------------------+
 | <span class="apiname" | <span class="apiname" | See [Table            |
 | >java.lang.SecurityMa | >checkPermission</spa | 1-7](permissions-jdk1 |
-| nager</span>          | n>                    | .htm#GUID-7423481B-52 |
+| nager</span>          | n>                    | .html#GUID-7423481B-52 |
 | methods               |                       | 7F-4F15-AF01-992D6352 |
 |                       |                       | 1D2E__JAVA.LANG.SECUR |
 |                       |                       | ITYMANAGERMETHODSAND- |
@@ -2028,21 +2028,21 @@ implementation and the syntax that must be used in policy files it
 reads:
 
 -   [Default Policy
-    Implementation](permissions-jdk1.htm#GUID-233A73E2-33C6-4DD0-9EA9-8921ADF40358 "In the Policy reference implementation, the policy can be specified within one or more policy configuration files. The configuration file(s) specify what permissions are allowed for code from a specified code source, and executed by a specified principal. Each configuration file must be encoded in UTF-8.")
+    Implementation](permissions-jdk1.html#GUID-233A73E2-33C6-4DD0-9EA9-8921ADF40358 "In the Policy reference implementation, the policy can be specified within one or more policy configuration files. The configuration file(s) specify what permissions are allowed for code from a specified code source, and executed by a specified principal. Each configuration file must be encoded in UTF-8.")
 -   [Default Policy File
-    Locations](permissions-jdk1.htm#GUID-BFF84712-05CF-4C1E-926F-411FDF83AE32 "There is by default a single system-wide policy file, and a single (optional) user policy file. When the Policy is initialized, the system policy is loaded in first, and then the user policy is added to it. If neither policy is present, a built-in policy is used. This built-in policy is the same as the java.policy file installed with the JRE.")
+    Locations](permissions-jdk1.html#GUID-BFF84712-05CF-4C1E-926F-411FDF83AE32 "There is by default a single system-wide policy file, and a single (optional) user policy file. When the Policy is initialized, the system policy is loaded in first, and then the user policy is added to it. If neither policy is present, a built-in policy is used. This built-in policy is the same as the java.policy file installed with the JRE.")
 -   [Modifying the Policy
-    Implementation](permissions-jdk1.htm#GUID-75C71299-8B56-4AC9-A83F-41BC14535545 "The Policy reference implementation can be modified by editing the security properties file, which is the java.security file in the conf/security directory of the JDK.")
+    Implementation](permissions-jdk1.html#GUID-75C71299-8B56-4AC9-A83F-41BC14535545 "The Policy reference implementation can be modified by editing the security properties file, which is the java.security file in the conf/security directory of the JDK.")
 -   [Policy File
-    Syntax](permissions-jdk1.htm#GUID-7942E6F8-8AAB-4404-9FE9-E08DD6FFCFFA "The policy configuration file(s) for a JDK installation specifies what permissions (which types of system resource accesses) are granted to code from a specified code source, and executed as a specified principal.")
+    Syntax](permissions-jdk1.html#GUID-7942E6F8-8AAB-4404-9FE9-E08DD6FFCFFA "The policy configuration file(s) for a JDK installation specifies what permissions (which types of system resource accesses) are granted to code from a specified code source, and executed as a specified principal.")
 -   [Policy File
-    Examples](permissions-jdk1.htm#GUID-CE19E4A6-897A-47E1-B6AB-3E49327F7364)
+    Examples](permissions-jdk1.html#GUID-CE19E4A6-897A-47E1-B6AB-3E49327F7364)
 -   [Property Expansion in Policy
-    Files](permissions-jdk1.htm#GUID-B614FBFF-0C3C-42F3-B766-DE709CA4D73A "Property expansion is possible in policy files and in the security properties file.")
+    Files](permissions-jdk1.html#GUID-B614FBFF-0C3C-42F3-B766-DE709CA4D73A "Property expansion is possible in policy files and in the security properties file.")
 -   [Windows Systems, File Paths, and Property
-    Expansion](permissions-jdk1.htm#GUID-6DB03078-DAD5-4A2C-9DF9-58A8F2FA802C "The file path specifications on Windows systems should include two backslashes for each actual single backslash.")
+    Expansion](permissions-jdk1.html#GUID-6DB03078-DAD5-4A2C-9DF9-58A8F2FA802C "The file path specifications on Windows systems should include two backslashes for each actual single backslash.")
 -   [General Expansion in Policy
-    Files](permissions-jdk1.htm#GUID-6ACBD24A-F4B8-4B32-BAA4-949199273BE5)
+    Files](permissions-jdk1.html#GUID-6ACBD24A-F4B8-4B32-BAA4-949199273BE5)
 
 </div>
 <div class="sect3">
@@ -2067,7 +2067,7 @@ The Policy reference implementation is initialized the first time its
 whenever its <span class="apiname">refresh</span> method is called.
 Initialization involves parsing the policy configuration file(s) (see
 [Policy File
-Syntax](permissions-jdk1.htm#GUID-7942E6F8-8AAB-4404-9FE9-E08DD6FFCFFA "The policy configuration file(s) for a JDK installation specifies what permissions (which types of system resource accesses) are granted to code from a specified code source, and executed as a specified principal.")),
+Syntax](permissions-jdk1.html#GUID-7942E6F8-8AAB-4404-9FE9-E08DD6FFCFFA "The policy configuration file(s) for a JDK installation specifies what permissions (which types of system resource accesses) are granted to code from a specified code source, and executed as a specified principal.")),
 and then populating the <span class="apiname">Policy</span> object.
 
 </div>
@@ -2138,7 +2138,7 @@ policy.url.2=file:${user.home}/.java.policy
 ```
 
 (See [Property Expansion in Policy
-Files](permissions-jdk1.htm#GUID-B614FBFF-0C3C-42F3-B766-DE709CA4D73A "Property expansion is possible in policy files and in the security properties file.")
+Files](permissions-jdk1.html#GUID-B614FBFF-0C3C-42F3-B766-DE709CA4D73A "Property expansion is possible in policy files and in the security properties file.")
 for information about specifying property values via a special syntax,
 such as specifying the `java.home`{.codeph} property value via
 `${java.home}`{.codeph}.)
@@ -2576,7 +2576,7 @@ string that is passed in as a value.
 Note:
 
 See [Appendix A: FilePermission Path Name Canonicalization Disabled By
-Default](permissions-jdk1.htm#GUID-83063225-0ACB-4909-9BAB-7F7D4E3749E2 "A canonical path is a path that doesn't contain any links or shortcuts. Performing path name canonicalization in a FilePermission object can negatively affect performance.")
+Default](permissions-jdk1.html#GUID-83063225-0ACB-4909-9BAB-7F7D4E3749E2 "A canonical path is a path that doesn't contain any links or shortcuts. Performing path name canonicalization in a FilePermission object can negatively affect performance.")
 for important information about a change in how
 <span class="apiname">FilePermission</span> path names are
 canonicalized.
@@ -2916,7 +2916,7 @@ backslashes for each actual single backslash.
 
 <div class="section">
 As mentioned in [File Path Specifications on Windows
-Systems](permissions-jdk1.htm#GUID-9A8CEB0F-E717-4DAB-91B6-726A79BE4EEB),
+Systems](permissions-jdk1.html#GUID-9A8CEB0F-E717-4DAB-91B6-726A79BE4EEB),
 on Windows systems, when you directly specify a file path in a string
 (but not in a codebase URL), you need to include two backslashes for
 each actual single backslash in the path, as in
@@ -3048,7 +3048,7 @@ implementation:
 
     The following example describes a scenario involving both
     <span class="bold">`self`{.codeph}</span> and [KeyStore Alias
-    Replacement](permissions-jdk1.htm#GUID-2636C14A-A783-447A-BE7F-3BF031076117)
+    Replacement](permissions-jdk1.html#GUID-2636C14A-A783-447A-BE7F-3BF031076117)
     together:
 
     ``` {.codeblock dir="ltr"}
@@ -3074,7 +3074,7 @@ implementation:
     <span class="apiname">java.security.KeyStore</span> alias
     substitution. The `KeyStore`{.codeph} used is the one specified in
     the [Keystore
-    Entry](permissions-jdk1.htm#GUID-97EFF17D-2BD7-45E5-AA80-AF1F000B6B83).
+    Entry](permissions-jdk1.html#GUID-97EFF17D-2BD7-45E5-AA80-AF1F000B6B83).
     <span class="variable">alias\_name</span> represents an alias into
     the `KeyStore`{.codeph}. `${{alias:alias_name}}`{.codeph} is
     replaced with
@@ -3176,10 +3176,10 @@ other different name forms that can be canonicalized to the same name.
 Customizing Path Name Canonicalization
 
 The system properties in [Table
-1-9](permissions-jdk1.htm#GUID-83063225-0ACB-4909-9BAB-7F7D4E3749E2__LISTOFSYSTEMPROPERTIESTOCUSTOMIZEPA-C3268ADF "List of system properties to customize path name canonicalization.")
+1-9](permissions-jdk1.html#GUID-83063225-0ACB-4909-9BAB-7F7D4E3749E2__LISTOFSYSTEMPROPERTIESTOCUSTOMIZEPA-C3268ADF "List of system properties to customize path name canonicalization.")
 can be used to customize the `FilePermission`{.codeph} path name
 canonicalization. See [How to Specify a java.lang.System
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363).
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363).
 
 <div class="tblformalwide" id="GUID-83063225-0ACB-4909-9BAB-7F7D4E3749E2__LISTOFSYSTEMPROPERTIESTOCUSTOMIZEPA-C3268ADF">
 Table 1-9 System Properties to Customize Path Name Canonicalization

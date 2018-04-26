@@ -57,7 +57,7 @@ Running SSLEngineSimpleDemo {#JSSEC-GUID-3DB6AE99-C0BA-49D1-9ABD-DEF439A965E6 .s
 
 <div>
 The example
-[`SSLEngineSimpleDemo.java`](sample-code-illustrating-use-sslengine.htm#GUID-3DB6AE99-C0BA-49D1-9ABD-DEF439A965E6__SSLENGINESIMPLEDEMO.JAVA-3318C898)
+[`SSLEngineSimpleDemo.java`](sample-code-illustrating-use-sslengine.html#GUID-3DB6AE99-C0BA-49D1-9ABD-DEF439A965E6__SSLENGINESIMPLEDEMO.JAVA-3318C898)
 is a very simple application that focuses on the operation of the
 `SSLEngine`{.codeph} while simplifying the I/O and threading issues.
 This application creates two `SSLEngine`{.codeph} objects that exchange

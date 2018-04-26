@@ -141,9 +141,9 @@ administration. Kerberos was developed in the mid-1980\'s as part of
 MIT\'s Project Athena. A full description of the Kerberos V5 protocol is
 beyond the scope of this paper. For more information on the Kerberos V5
 protocol please refer to
-[\[1\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-01)
+[\[1\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-01)
 and
-[\[2\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-02).
+[\[2\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-02).
 
 Kerberos V5 is a mature protocol and has been widely deployed. A free
 reference implementation in C is available from MIT. For these reasons
@@ -178,9 +178,9 @@ access control based on the authenticated identities.
 <div>
 JAAS authentication framework is based on Pluggable Authentication
 Module (PAM); see
-[\[3\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-03)
+[\[3\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-03)
 and
-[\[4\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-04).
+[\[4\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-04).
 JAAS authentication is performed in a pluggable fashion allowing system
 administrators to add appropriate authentication modules. This permits
 Java applications to remain independent of underlying authentication
@@ -502,7 +502,7 @@ specific value.
 
 The following shows server side sample code. It is similar to the
 [sample client
-code](single-sign-using-kerberos-java1.htm#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E__SAMPLECLIENTCODELOGINCONTEXTLCNULLT-37F389A2)
+code](single-sign-using-kerberos-java1.html#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E__SAMPLECLIENTCODELOGINCONTEXTLCNULLT-37F389A2)
 except for the application entry name and the
 <span class="apiname">PrivilegedAction</span>.
 
@@ -590,7 +590,7 @@ interface for peer to peer authentication and secure communication that
 insulates the caller from the details of the underlying technology.
 
 The API, described in a language independent form in RFC 2743
-[\[6\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-06),
+[\[6\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-06),
 accommodates the following security services: authentication, message
 confidentiality and integrity, sequencing of protected messages, replay
 detection, and credential delegation. The underlying security technology
@@ -600,16 +600,16 @@ authentication.[^Foot 1^](#fn_1){#fn_1}
 
 There are mainly two standard security mechanisms that the IETF has
 defined: Kerberos V5
-[\[6\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-06)
+[\[6\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-06)
 and the Simple Public Key Mechanism (SPKM)
-[\[8\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-08).
+[\[8\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-08).
 
 The API is designed such that an implementation may support multiple
 mechanisms simultaneously, giving the application the ability to choose
 one at runtime. However, a client application and a server application
 that communicate with each other must use the same security mechanism.
 [Figure
-7-1](single-sign-using-kerberos-java1.htm#GUID-A92F4222-4C58-49AA-AF94-E7BB12D3C3C5__AMULTI-MECHANISMGSS-APIIMPLEMENTATI-37F451B6)
+7-1](single-sign-using-kerberos-java1.html#GUID-A92F4222-4C58-49AA-AF94-E7BB12D3C3C5__AMULTI-MECHANISMGSS-APIIMPLEMENTATI-37F451B6)
 illustrates this. It shows a client-server application that uses the
 GSS-API for secure communication. The GSS framework enables this
 application to support multiple security mechanisms (in this example,
@@ -645,10 +645,10 @@ transport to its peer. This enables the API to be transport independent.
 <div>
 The Java API for the Generic Security Service was also defined at the
 IETF and is documented in RFC 2853
-[\[10\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-10).
+[\[10\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-10).
 Oracle is pursuing the standardization of this API under the Java
 Community Process (JCP)
-[\[11\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-11)
+[\[11\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-11)
 and plans to deliver a reference implementation with Merlin. Because the
 JCP is merely endorsing this externally defined API, the IETF assigned
 package namespace `org.ietf.jgss`{.codeph} will be retained in Merlin.
@@ -684,9 +684,9 @@ for three important interfaces: <span class="apiname">GSSName</span>,
 <span class="apiname">GSSContext</span>. These interfaces are described
 below with the methods to instantiate their implementations. For a
 complete API specification, readers are referred to
-[\[9\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-09)
+[\[9\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-09)
 and
-[\[11\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-11).
+[\[11\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-11).
 
 Most calls to Java GSS-API throw a
 <span class="apiname">GSSException</span> that encapsulate problems that
@@ -911,7 +911,7 @@ round trip of tokens during context establishment. The client first
 sends a token generated by its
 <span class="apiname">initSecContext()</span> containing the Kerberos
 AP-REQ message
-[\[2\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-02).
+[\[2\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-02).
 In order to generate the AP-REQ message, the Kerberos provider obtains a
 service ticket for the target server using the client\'s TGT. The
 service ticket is encrypted with the server\'s long-term secret key and
@@ -927,7 +927,7 @@ output.
 However, if mutual authentication were enabled, then the server\'s
 <span class="apiname">acceptSecContext()</span> would generate an output
 token containing the Kerberos AP-REP
-[\[2\]](single-sign-using-kerberos-java1.htm#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-02)
+[\[2\]](single-sign-using-kerberos-java1.html#GUID-67712665-922E-4947-8103-0AAE9C2AAC2B__SSO-KERBEROS-02)
 message. This token would need to be sent back to the client for
 processing by its <span class="apiname">initSecContext()</span>, before
 the client side context is established.
@@ -944,9 +944,9 @@ arrives.
 Here is a class showing how the client side of an application would be
 coded. This is the `ClientAction`{.codeph} class that was executed using
 the <span class="apiname">doAs</span> method in the [sample client
-code](single-sign-using-kerberos-java1.htm#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E__SAMPLECLIENTCODELOGINCONTEXTLCNULLT-37F389A2)
+code](single-sign-using-kerberos-java1.html#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E__SAMPLECLIENTCODELOGINCONTEXTLCNULLT-37F389A2)
 in the section [The Kerberos Login
-Module](single-sign-using-kerberos-java1.htm#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E):
+Module](single-sign-using-kerberos-java1.html#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E):
 
 ``` {.oac_no_warn dir="ltr"}
 // Sample client using Java GSS-API
@@ -1007,9 +1007,9 @@ class ClientAction implements PrivilegedAction {
 
 The corresponding section of code on the server side running the
 `ServerAction`{.codeph} class from the [sample server
-code](single-sign-using-kerberos-java1.htm#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E__SAMPLESERVERCODELOGINCONTEXTLCNULLT-37F4D999)
+code](single-sign-using-kerberos-java1.html#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E__SAMPLESERVERCODELOGINCONTEXTLCNULLT-37F4D999)
 in the section [The Kerberos Login
-Module](single-sign-using-kerberos-java1.htm#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E):
+Module](single-sign-using-kerberos-java1.html#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E):
 
 ``` {.oac_no_warn dir="ltr"}
 // Sample server using Java GSS-API
@@ -1108,7 +1108,7 @@ Java GSS-API allows the client to securely delegate its credentials to
 the server, such that the server can initiate other security contexts on
 behalf of the client. This feature is useful for single sign-on in a
 multi-tier environment. [Figure
-7-2](single-sign-using-kerberos-java1.htm#GUID-363496FF-1E54-4A63-8B3B-89D7D23C2C4B__GUID-BDE6C438-A115-4935-BF04-A06CAC888B99)
+7-2](single-sign-using-kerberos-java1.html#GUID-363496FF-1E54-4A63-8B3B-89D7D23C2C4B__GUID-BDE6C438-A115-4935-BF04-A06CAC888B99)
 illustrates this.
 
 <div class="figure" id="GUID-363496FF-1E54-4A63-8B3B-89D7D23C2C4B__GUID-BDE6C438-A115-4935-BF04-A06CAC888B99">
@@ -1186,7 +1186,7 @@ because MS-SFU defines the Service for User (S4U2self) extension so that
 the front end can access the back end on behalf of the client without
 presenting the client\'s Kerberos credentials, MS-SFU could provide
 authentication in this situation. [Figure
-7-3](single-sign-using-kerberos-java1.htm#GUID-363496FF-1E54-4A63-8B3B-89D7D23C2C4B__CONSTRAINEDDELEGATIONWITHS4U2SELF-47300961)
+7-3](single-sign-using-kerberos-java1.html#GUID-363496FF-1E54-4A63-8B3B-89D7D23C2C4B__CONSTRAINEDDELEGATIONWITHS4U2SELF-47300961)
 illustrates this.
 
 <div class="figure" id="GUID-363496FF-1E54-4A63-8B3B-89D7D23C2C4B__CONSTRAINEDDELEGATIONWITHS4U2SELF-47300961">
@@ -1209,7 +1209,7 @@ with open delegation.
 In contrast, with MS-SFU delegation (implemented in S4U2proxy), the
 administrator can precisely control the services to which a particular
 service can access on behalf a client.[Figure
-7-4](single-sign-using-kerberos-java1.htm#GUID-363496FF-1E54-4A63-8B3B-89D7D23C2C4B__CONSTRAINEDDELEGATIONWITHS4U2PROXY-47300C1F)
+7-4](single-sign-using-kerberos-java1.html#GUID-363496FF-1E54-4A63-8B3B-89D7D23C2C4B__CONSTRAINEDDELEGATIONWITHS4U2PROXY-47300C1F)
 illustrates this.
 
 <div class="figure" id="GUID-363496FF-1E54-4A63-8B3B-89D7D23C2C4B__CONSTRAINEDDELEGATIONWITHS4U2PROXY-47300C1F">
@@ -1400,9 +1400,9 @@ native cache, the deployer can both hide the login from the user, and
 minimize the overhead in the multiple logins. (See how this is done for
 the JAAS configuration entry `SampleClient`{.codeph} in the [sample
 client configuration
-entry](single-sign-using-kerberos-java1.htm#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E__SAMPLECLIENTCOM.SUN.SECURITY.AUTH.M-37F332E5)
+entry](single-sign-using-kerberos-java1.html#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E__SAMPLECLIENTCOM.SUN.SECURITY.AUTH.M-37F332E5)
 in the section [The Kerberos Login
-Module](single-sign-using-kerberos-java1.htm#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E).)
+Module](single-sign-using-kerberos-java1.html#GUID-45DD4879-CD1B-4E02-8B20-572C95C8386E).)
 
 </div>
 </div>

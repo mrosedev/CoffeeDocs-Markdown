@@ -87,9 +87,9 @@ The following <span class="bold">tutorials</span> for JAAS
 authentication and authorization can be run by everyone:
 
 -   [JAAS Authentication
-    Tutorial](jaas-authentication-tutorial.htm#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
+    Tutorial](jaas-authentication-tutorial.html#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
 -   [JAAS Authorization
-    Tutorial](jaas-authorization-tutorial.htm#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411)
+    Tutorial](jaas-authorization-tutorial.html#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411)
 
 Similar tutorials for JAAS authentication and authorization, but which
 demonstrate the use of a Kerberos LoginModule and thus which require a
@@ -265,9 +265,9 @@ your new `LoginModule`{.codeph} provider and determine its requirements.
     `initialize`{.codeph} method. The `LoginModule`{.codeph} passes the
     `CallbackHandler`{.codeph} an array of appropriate
     `Callback`{.codeph}s. See [LoginModule.login
-    Method](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-E9C5810B-ADB6-4454-869D-B269ECA8145F__LOGINMODULE.LOGINMETHOD-21144491)
+    Method](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-E9C5810B-ADB6-4454-869D-B269ECA8145F__LOGINMODULE.LOGINMETHOD-21144491)
     in [Step 3: Implement the Abstract LoginModule
-    Methods](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-E9C5810B-ADB6-4454-869D-B269ECA8145F "The LoginModule interface specifies five abstract methods that require implementations.").
+    Methods](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-E9C5810B-ADB6-4454-869D-B269ECA8145F "The LoginModule interface specifies five abstract methods that require implementations.").
 
     <div class="p">
     <div class="infoboxnote" id="GUID-A4140569-4124-4AE7-81CC-145537BE0F42__GUID-E00E32FE-7328-4E56-B91F-04095BA3A9D6">
@@ -729,7 +729,7 @@ Files
 Place your `LoginModule`{.codeph} and application code in separate JAR
 files, in preparation for referencing the JAR files in the policy in
 [Step 6b: Set LoginModule and Application JAR File
-Permissions](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6CSETLOGINMODULEANDAPPLICATIONJ-83D21A8B).
+Permissions](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6CSETLOGINMODULEANDAPPLICATIONJ-83D21A8B).
 Here is a sample command for creating a JAR file:
 
 ``` {.oac_no_warn dir="ltr"}
@@ -753,7 +753,7 @@ security-sensitive tasks that will trigger security checks (making
 network connections, reading or writing files on a local disk, etc.), it
 will need to be granted the required permissions if it is run while a
 security manager is installed; see [Permissions in the
-JDK](permissions-jdk1.htm#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").
+JDK](permissions-jdk1.html#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").
 
 Since `LoginModule`{.codeph}s usually associate `Principal`{.codeph}s
 and credentials with an authenticated Subject, some types of permissions
@@ -876,7 +876,7 @@ works when a security manager is installed and the
 `LoginModule`{.codeph}, you need to test such an installation and
 execution environment, after granting required permissions, as described
 in [Step 6b: Set LoginModule and Application JAR File
-Permissions](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6CSETLOGINMODULEANDAPPLICATIONJ-83D21A8B).
+Permissions](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6CSETLOGINMODULEANDAPPLICATIONJ-83D21A8B).
 
 </div>
 <!-- class="section" -->
@@ -884,16 +884,16 @@ Permissions](java-authentication-and-authorization-service-jaas-loginmodule-deve
 1.  <span>If you find during testing that your `LoginModule`{.codeph} or
     application needs modifications, make the modifications, recompile
     ([Step 5: Compile the LoginModule and
-    Application](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-6DEAB2A4-2ADE-4CC8-B188-F0A58A38F61C "Compile your new LoginModule and the application you will use for testing.")).</span>
+    Application](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-6DEAB2A4-2ADE-4CC8-B188-F0A58A38F61C "Compile your new LoginModule and the application you will use for testing.")).</span>
 2.  <span>Place the updated code in a JAR file ([Step 6a: Place Your
     LoginModule and Application Code in JAR
-    Files](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6APLACEYOURLOGINMODULEANDAPPLIC-83D213BF)).</span>
+    Files](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6APLACEYOURLOGINMODULEANDAPPLIC-83D213BF)).</span>
 3.  <span>If needed fix or add to the permissions ([Step 6b: Set
     LoginModule and Application JAR File
-    Permissions](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6CSETLOGINMODULEANDAPPLICATIONJ-83D21A8B)).</span>
+    Permissions](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6CSETLOGINMODULEANDAPPLICATIONJ-83D21A8B)).</span>
 4.  <span>If needed modify the login configuration file ([Step 6c:
     Create a Configuration Referencing the
-    LoginModule](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6DCREATEACONFIGURATIONREFERENCI-83D21DD1)).</span>
+    LoginModule](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-800F2CC8-C4BC-4AE7-B29A-1BFBE01D9979__STEP6DCREATEACONFIGURATIONREFERENCI-83D21DD1)).</span>
 5.  <span>Re-run the application and repeat these steps as
     needed.</span>
 

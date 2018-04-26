@@ -72,7 +72,7 @@ authentication.
 The Java SASL API also allows developers to use their own, custom SASL
 mechanisms. SASL mechanisms are installed by using the Java Cryptography
 Architecture (JCA); see [Java Cryptography Architecture (JCA) Reference
-Guide](java-cryptography-architecture-jca-reference-guide.htm#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").
+Guide](java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").
 
 </div>
 <!-- class="section" -->
@@ -84,7 +84,7 @@ SASL provides a pluggable authentication and security layer for network
 applications. There are other features in Java SE that provide similar
 functionality, including Java Secure Socket Extension (JSSE) (see [Java
 Secure Socket Extension (JSSE) Reference
-Guide](java-secure-socket-extension-jsse-reference-guide.htm#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication."))
+Guide](java-secure-socket-extension-jsse-reference-guide.html#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication."))
 and the [Java Generic Security
 Service](http://www.ietf.org/rfc/rfc2853.txt). JSSE provides a framework
 and an implementation for a Java language version of the SSL, TLS, and
@@ -410,7 +410,7 @@ passes the buffer (without the length field) to
 to obtain the decoded bytes sent by the peer. Details of this protocol
 are described in [RFC 2222](http://www.ietf.org/rfc/rfc2222.txt).
 [Example
-11-1](java-sasl-api-programming-and-deployment-guide1.htm#GUID-762BDD49-6EE8-419C-A45E-540462CB192B__SAMPLECODEFORSASLCLIENTSENDANDRECEI-7547A249)
+11-1](java-sasl-api-programming-and-deployment-guide1.html#GUID-762BDD49-6EE8-419C-A45E-540462CB192B__SAMPLECODEFORSASLCLIENTSENDANDRECEI-7547A249)
 illustrates how a client application sends and receives application data
 using a security layer.
 
@@ -483,9 +483,9 @@ Security.addProvider(new com.example.MyProvider());
 ```
 
 See [Step 8: Prepare for
-Testing](howtoimplaprovider.htm#GUID-FB9C6DB2-DE9A-4EFE-89B4-C2C168C5982D "The next steps describe how to install and configure your new provider so that it is available via the JCA.")
+Testing](howtoimplaprovider.html#GUID-FB9C6DB2-DE9A-4EFE-89B4-C2C168C5982D "The next steps describe how to install and configure your new provider so that it is available via the JCA.")
 in [Steps to Implement and Integrate a
-Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:")
+Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:")
 for more information about adding providers to the security properties
 file and programmatically adding your own providers.
 
@@ -581,7 +581,7 @@ Table 11-1 SunSASL Provider Client Mechanisms
 | pi-programm | (as default | >PasswordCa |             | >Sasl.POLIC |
 | ing-and-dep | user name)  | llback</spa |             | Y\_NOANONYM |
 | loyment-gui |             | n>](https:/ |             | OUS</span>] |
-| de1.htm#GUI |             | /docs.oracl |             | (https://do |
+| de1.html#GUI |             | /docs.oracl |             | (https://do |
 | D-681CD78D- |             | e.com/javas |             | cs.oracle.c |
 | D2E4-43DE-9 |             | e/10/docs/a |             | om/javase/1 |
 | 225-249AA83 |             | pi/javax/se |             | 0/docs/api/ |
@@ -601,7 +601,7 @@ Table 11-1 SunSASL Provider Client Mechanisms
 |             |             | avax/securi |             | om/javase/1 |
 |             |             | ty/auth/cal |             | 0/docs/api/ |
 |             |             | lback/NameC |             | javax/secur |
-|             |             | allback.htm |             | ity/sasl/Sa |
+|             |             | allback.html |             | ity/sasl/Sa |
 |             |             | l)          |             | sl.html#POL |
 |             |             |             |             | ICY_NOPLAIN |
 |             |             |             |             | TEXT)       |
@@ -611,13 +611,13 @@ Table 11-1 SunSASL Provider Client Mechanisms
 | -api-progra |             | >NameCallba | >Sasl.QOP</ | >Sasl.POLIC |
 | mming-and-d | protocol id | ck</span>]( | span>](http | Y\_NOANONYM |
 | eployment-g |             | https://doc | s://docs.or | OUS</span>] |
-| uide1.htm#G | server name | s.oracle.co | acle.com/ja | (https://do |
+| uide1.html#G | server name | s.oracle.co | acle.com/ja | (https://do |
 | UID-681CD78 |             | m/javase/10 | vase/10/doc | cs.oracle.c |
 | D-D2E4-43DE |             | /docs/api/j | s/api/javax | om/javase/1 |
 | -9225-249AA |             | avax/securi | /security/s | 0/docs/api/ |
 | 83FF177__DI |             | ty/auth/cal | asl/Sasl.ht | javax/secur |
 | GEST-MD5-20 |             | lback/NameC | ml#QOP)     | ity/sasl/Sa |
-| E3E4D3)     |             | allback.htm |             | sl.html#POL |
+| E3E4D3)     |             | allback.html |             | sl.html#POL |
 |             |             | l)          | [<span clas | ICY_NOANONY |
 |             |             |             | s="apiname" | MOUS)       |
 |             |             | [<span clas | >Sasl.STREN |             |
@@ -737,7 +737,7 @@ Table 11-1 SunSASL Provider Client Mechanisms
 |             |             | avax/securi | m`{.codeph} | cs.oracle.c |
 |             |             | ty/auth/cal |             | om/javase/1 |
 |             |             | lback/NameC | `com.sun.se | 0/docs/api/ |
-|             |             | allback.htm | curity.sasl | javax/secur |
+|             |             | allback.html | curity.sasl | javax/secur |
 |             |             | l)          | .ntlm.hostn | ity/sasl/Sa |
 |             |             |             | ame`{.codep | sl.html#POL |
 |             |             | [<span clas | h}          | ICY_NOPLAIN |
@@ -1144,7 +1144,7 @@ Table 11-4 Server Mechanisms
 | pi-programm |             | >AuthorizeC |             | >Sasl.POLIC |
 | ing-and-dep |             | allback</sp |             | Y\_NOANONYM |
 | loyment-gui |             | an>](https: |             | OUS</span>] |
-| de1.htm#GUI |             | //docs.orac |             | (https://do |
+| de1.html#GUI |             | //docs.orac |             | (https://do |
 | D-0D61D8E5- |             | le.com/java |             | cs.oracle.c |
 | 31E8-4F26-9 |             | se/10/docs/ |             | om/javase/1 |
 | BD2-9AF92F5 |             | api/javax/s |             | 0/docs/api/ |
@@ -1164,7 +1164,7 @@ Table 11-4 Server Mechanisms
 |             |             | avax/securi |             | om/javase/1 |
 |             |             | ty/auth/cal |             | 0/docs/api/ |
 |             |             | lback/NameC |             | javax/secur |
-|             |             | allback.htm |             | ity/sasl/Sa |
+|             |             | allback.html |             | ity/sasl/Sa |
 |             |             | l)          |             | sl.html#POL |
 |             |             |             |             | ICY_NOPLAIN |
 |             |             | [<span clas |             | TEXT)       |
@@ -1186,7 +1186,7 @@ Table 11-4 Server Mechanisms
 | -api-progra | server name | >AuthorizeC | >Sasl.QOP</ | >Sasl.POLIC |
 | mming-and-d |             | allback</sp | span>](http | Y\_NOANONYM |
 | eployment-g |             | an>](https: | s://docs.or | OUS</span>] |
-| uide1.htm#G |             | //docs.orac | acle.com/ja | (https://do |
+| uide1.html#G |             | //docs.orac | acle.com/ja | (https://do |
 | UID-0D61D8E |             | le.com/java | vase/10/doc | cs.oracle.c |
 | 5-31E8-4F26 |             | se/10/docs/ | s/api/javax | om/javase/1 |
 | -9BD2-9AF92 |             | api/javax/s | /security/s | 0/docs/api/ |
@@ -1206,7 +1206,7 @@ Table 11-4 Server Mechanisms
 |             |             | avax/securi | sl.html#STR | om/javase/1 |
 |             |             | ty/auth/cal | ENGTH)      | 0/docs/api/ |
 |             |             | lback/NameC |             | javax/secur |
-|             |             | allback.htm | [<span clas | ity/sasl/Sa |
+|             |             | allback.html | [<span clas | ity/sasl/Sa |
 |             |             | l)          | s="apiname" | sl.html#POL |
 |             |             |             | >Sasl.MAX\_ | ICY_NOPLAIN |
 |             |             | [<span clas | BUFFER</spa | TEXT)       |
@@ -1264,7 +1264,7 @@ Table 11-4 Server Mechanisms
 |             |             | avax/securi | .ntlm.domai | ity/sasl/Sa |
 |             |             | ty/auth/cal | n`{.codeph} | sl.html#POL |
 |             |             | lback/NameC |             | ICY_NOPLAIN |
-|             |             | allback.htm |             | TEXT)       |
+|             |             | allback.html |             | TEXT)       |
 |             |             | l),         |             |             |
 |             |             | providing   |             |             |
 |             |             | request     |             |             |
@@ -1399,7 +1399,7 @@ Table 11-5 JdkSASL Provider Client Mechanism
 | -programmin |             |             | >Sasl.QOP</ | >Sasl.POLIC |
 | g-and-deplo | authorizati |             | span>](http | Y\_NOACTIVE |
 | yment-guide | on id       |             | s://docs.or | </span>](ht |
-| 1.htm#GUID- |             |             | acle.com/ja | tps://docs. |
+| 1.html#GUID- |             |             | acle.com/ja | tps://docs. |
 | 6B2412AB-D5 | protocol id |             | vase/10/doc | oracle.com/ |
 | BC-4C8A-9DA |             |             | s/api/javax | javase/10/d |
 | 7-515E32DDE | server name |             | /security/s | ocs/api/jav |
@@ -1536,7 +1536,7 @@ Table 11-6 Server mechanism
 | -programmin | >Subject</s | >AuthorizeC | >Sasl.QOP</ | >Sasl.POLIC |
 | g-and-deplo | pan>](https | allback</sp | span>](http | Y\_NOACTIVE |
 | yment-guide | ://docs.ora | an>](https: | s://docs.or | </span>](ht |
-| 1.htm#GUID- | cle.com/jav | //docs.orac | acle.com/ja | tps://docs. |
+| 1.html#GUID- | cle.com/jav | //docs.orac | acle.com/ja | tps://docs. |
 | 6B2412AB-D5 | ase/10/docs | le.com/java | vase/10/doc | oracle.com/ |
 | BC-4C8A-9DA | /api/javax/ | se/10/docs/ | s/api/javax | javase/10/d |
 | 7-515E32DDE | security/au | api/javax/s | /security/s | ocs/api/jav |
@@ -1702,7 +1702,7 @@ There are three basic steps in implementing a SASL security provider:
     This involves creating a JCA provider. The steps for creating a JCA
     provider is described in detail in [Steps to Implement and Integrate
     a
-    Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
+    Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
     SASL client factories are registered using property names of the
     form
     `SaslClientFactory.`{.codeph}<span class="italic">mechName</span>
@@ -1725,7 +1725,7 @@ There are three basic steps in implementing a SASL security provider:
     register the relevant factories. The completed SASL provider can
     then be made available to applications using the instructions
     described in [How SASL Mechanisms are Installed and
-    Selected](java-sasl-api-programming-and-deployment-guide1.htm#GUID-93982F1C-AFFE-47B9-B4BA-41551ECCE2D2 "SASL mechanism implementations are provided by SASL security providers. Each provider may support one or more SASL mechanisms and is registered with the JCA.").
+    Selected](java-sasl-api-programming-and-deployment-guide1.html#GUID-93982F1C-AFFE-47B9-B4BA-41551ECCE2D2 "SASL mechanism implementations are provided by SASL security providers. Each provider may support one or more SASL mechanisms and is registered with the JCA.").
 
     </div>
 

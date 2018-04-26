@@ -112,7 +112,7 @@ client authentication. Using JSSE, developers can provide for the secure
 passage of data between a client and a server running any application
 protocol (such as HTTP, Telnet, or FTP) over TCP/IP. For an introduction
 to SSL, see [Secure Sockets Layer (SSL) Protocol
-Overview](java-secure-socket-extension-jsse-reference-guide.htm#GUID-69ECD56C-3B20-47F4-AEF0-A06EFA13A61D "Secure Sockets Layer (SSL) is the most widely used protocol for implementing cryptography on the web. SSL uses a combination of cryptographic processes to provide secure communication over a network. This section provides an introduction to SSL and the cryptographic processes it uses.").
+Overview](java-secure-socket-extension-jsse-reference-guide.html#GUID-69ECD56C-3B20-47F4-AEF0-A06EFA13A61D "Secure Sockets Layer (SSL) is the most widely used protocol for implementing cryptography on the web. SSL uses a combination of cryptographic processes to provide secure communication over a network. This section provides an introduction to SSL and the cryptographic processes it uses.").
 
 By abstracting the complex underlying security algorithms and
 handshaking mechanisms, JSSE minimizes the risk of creating subtle but
@@ -147,11 +147,11 @@ implementation that is shipped with the JDK does not implement SSL 2.0.
 JSSE is a security component of the Java SE platform, and is based on
 the same design principles found elsewhere in the [Java Cryptography
 Architecture (JCA) Reference
-Guide](java-cryptography-architecture-jca-reference-guide.htm#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.")
+Guide](java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.")
 framework. This framework for cryptography-related security components
 allows them to have implementation independence and, whenever possible,
 algorithm independence. JSSE uses the [Cryptographic Service
-Providers](java-cryptography-architecture-jca-reference-guide.htm#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920)
+Providers](java-cryptography-architecture-jca-reference-guide.html#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920)
 defined by the JCA framework.
 
 Other security components in the Java SE platform include the [Java
@@ -280,7 +280,7 @@ Table 8-1 Cryptographic Algorithms Used by JSSE
 
 ^Footnote 1^ The SunJSSE implementation uses the [Java Cryptography
 Architecture
-(JCA)](java-cryptography-architecture-jca-reference-guide.htm#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.")
+(JCA)](java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.")
 for all its cryptographic algorithms.
 
 ^Footnote 2^ A JSSE provider may disable or deactivate weak algorithms
@@ -290,7 +290,7 @@ and weak keys.
 Java Cryptography Extension (JCE) unlimited strength jurisdiction policy
 file set, which is included in the JDK. By default, the active
 cryptography policy is unlimited. See [Cryptographic Strength
-Configuration](java-cryptography-architecture-jca-reference-guide.htm#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1).
+Configuration](java-cryptography-architecture-jca-reference-guide.html#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1).
 
 </div>
 </div>
@@ -339,7 +339,7 @@ cryptographic services:
     rules for certificate chain path validation.
 
 See [The SunJSSE
-Provider](oracle-providers.htm#GUID-7093246A-31A3-4304-AC5F-5FB6400405E2).
+Provider](oracle-providers.html#GUID-7093246A-31A3-4304-AC5F-5FB6400405E2).
 
 </div>
 </div>
@@ -376,7 +376,7 @@ Java SE Security
     Java Tutorial
 
 -   [Java PKI Programmers
-    Guide](java-pki-programmers-guide.htm#GUID-650D0D53-B617-4055-AFD3-AF5C2629CBBF "The Java Certification Path API consists of classes and interfaces for handling certification paths, which are also called certification chains. If a certification path meets certain validation rules, it may be used to securely establish the mapping of a public key to a subject.")
+    Guide](java-pki-programmers-guide.html#GUID-650D0D53-B617-4055-AFD3-AF5C2629CBBF "The Java Certification Path API consists of classes and interfaces for handling certification paths, which are also called certification chains. If a certification path meets certain validation rules, it may be used to securely establish the mapping of a public key to a subject.")
 
 -   [Inside Java 2 Platform Security, Second Edition: Architecture, API
     Design and
@@ -527,7 +527,7 @@ definitions.
 [<!-- -->]{#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__GUID-60304F31-E57E-4DF6-8A0F-ED84B5EDEFBF}Cryptographic Service Provider (CSP)
 
 :   Sometimes referred to simply as
-    [providers](java-cryptography-architecture-jca-reference-guide.htm#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920)
+    [providers](java-cryptography-architecture-jca-reference-guide.html#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920)
     for short, the Java Cryptography Architecture (JCA) defines it as a
     package (or set of packages) that implements one or more engine
     classes for specific cryptographic algorithms. An engine class
@@ -543,7 +543,7 @@ definitions.
 [<!-- -->]{#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__GUID-AA38F0B8-97E2-410E-BAA4-4BECE30D36A5}decryption
 
 :   See
-    [encryption/decryption](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__ENCRYPTION_DECRYPTION_TERM_JSSEREFGUIDE).
+    [encryption/decryption](java-secure-socket-extension-jsse-reference-guide.html#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__ENCRYPTION_DECRYPTION_TERM_JSSEREFGUIDE).
 
 [<!-- -->]{#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__GUID-2BBD1416-FE35-4349-B19E-00DBAE4A2157}digital signature
 
@@ -712,12 +712,12 @@ definitions.
 [<!-- -->]{#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__GUID-8E9201DB-D0D5-4DFB-AB72-CDBF7C797D92}trust manager
 
 :   See [\"key manager/trust
-    manager\"](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__GUID-D7CAC72A-2714-4C9B-88E2-7F317DE94CEE).
+    manager\"](java-secure-socket-extension-jsse-reference-guide.html#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__GUID-D7CAC72A-2714-4C9B-88E2-7F317DE94CEE).
 
 [<!-- -->]{#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__GUID-4B18A49C-1C39-49B9-B650-AA22C80AF68D}truststore
 
 :   See
-    [\"keystore/truststore\"](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__GUID-E3D57C3C-21D3-47E2-95BC-1B2825E8AFCB).
+    [\"keystore/truststore\"](java-secure-socket-extension-jsse-reference-guide.html#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329__GUID-E3D57C3C-21D3-47E2-95BC-1B2825E8AFCB).
 
 </div>
 <!-- class="section" -->
@@ -740,7 +740,7 @@ processes it uses.
 <div class="section">
 SSL provides a secure enhancement to the standard TCP/IP sockets
 protocol used for Internet communications. As shown in [Table
-8-2](java-secure-socket-extension-jsse-reference-guide.htm#GUID-69ECD56C-3B20-47F4-AEF0-A06EFA13A61D__GUID-44FB6EEC-B8FB-410E-8FB8-8E74A2F6CC06 "List of protocols supported in each layer of the TCP/IP protocol stack."),
+8-2](java-secure-socket-extension-jsse-reference-guide.html#GUID-69ECD56C-3B20-47F4-AEF0-A06EFA13A61D__GUID-44FB6EEC-B8FB-410E-8FB8-8E74A2F6CC06 "List of protocols supported in each layer of the TCP/IP protocol stack."),
 the secure sockets layer is added between the transport layer and the
 application layer in the standard TCP/IP protocol stack. The application
 most commonly used with SSL is Hypertext Transfer Protocol (HTTP), the
@@ -875,7 +875,7 @@ Safely transmitting a key between two communicating parties is not a
 trivial matter. A public key certificate enables a party to safely
 transmit its public key, while providing assurance to the receiver of
 the authenticity of the public key. See [Public Key
-Certificates](java-secure-socket-extension-jsse-reference-guide.htm#GUID-2EEF5310-2407-45E2-A3A5-81532D247CD1).
+Certificates](java-secure-socket-extension-jsse-reference-guide.html#GUID-2EEF5310-2407-45E2-A3A5-81532D247CD1).
 
 The descriptions of the cryptographic processes in secret-key
 cryptography and public-key cryptography follow conventions widely used
@@ -951,9 +951,9 @@ Although this scenario does not allow for secure data communication, it
 does provide the basis for digital signatures. A digital signature is
 one of the components of a public key certificate, and is used in SSL to
 authenticate a client or a server. See [Public Key
-Certificates](java-secure-socket-extension-jsse-reference-guide.htm#GUID-2EEF5310-2407-45E2-A3A5-81532D247CD1)
+Certificates](java-secure-socket-extension-jsse-reference-guide.html#GUID-2EEF5310-2407-45E2-A3A5-81532D247CD1)
 and [Digital
-Signatures](java-secure-socket-extension-jsse-reference-guide.htm#GUID-ECC35863-046D-40D4-8B74-5F0150D4342A "Once a cryptographic hash is created for a message, the hash is encrypted with the sender's private key. This encrypted hash is called a digital signature.").
+Signatures](java-secure-socket-extension-jsse-reference-guide.html#GUID-ECC35863-046D-40D4-8B74-5F0150D4342A "Once a cryptographic hash is created for a message, the hash is encrypted with the sender's private key. This encrypted hash is called a digital signature.").
 
 Public-key cryptography is also called <span class="italic">asymmetric
 cryptography</span> because different keys are used to encrypt and
@@ -1177,11 +1177,11 @@ SSL handshake. The SSL handshake includes the following stages:
 
 <div>
 [The SSL
-Handshake](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B)
+Handshake](java-secure-socket-extension-jsse-reference-guide.html#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B)
 provides a high-level description of the SSL handshake, which is the
 exchange of information between the client and the server prior to
 sending the encrypted message. [Figure
-8-1](java-secure-socket-extension-jsse-reference-guide.htm#GUID-D04EF7C1-B1D4-4611-9896-A7B5573CBEED__GUID-14810B76-CBF2-4F3C-9493-DDDB93358230)
+8-1](java-secure-socket-extension-jsse-reference-guide.html#GUID-D04EF7C1-B1D4-4611-9896-A7B5573CBEED__GUID-14810B76-CBF2-4F3C-9493-DDDB93358230)
 provides more detail. It shows the sequence of messages that are
 exchanged in the SSL handshake. Messages that are sent only in certain
 situations are noted as optional. Each of the SSL messages is described
@@ -1264,7 +1264,7 @@ The SSL messages are sent in the following order:
     server hello, and using the secret key that the client sent to the
     server during the client key exchange. The handshake can be
     renegotiated at this time. See [Handshaking Again
-    (Renegotiation)](java-secure-socket-extension-jsse-reference-guide.htm#GUID-FCA1CA1F-9FF1-4C9F-8FE8-EBFDE84F735F "Once the initial handshake is finished and application data is flowing, either side is free to initiate a new handshake at any time. An application might like to use a stronger cipher suite for especially critical operations, or a server application might want to require client authentication.").
+    (Renegotiation)](java-secure-socket-extension-jsse-reference-guide.html#GUID-FCA1CA1F-9FF1-4C9F-8FE8-EBFDE84F735F "Once the initial handshake is finished and application data is flowing, either side is free to initiate a new handshake at any time. An application might like to use a stronger cipher suite for especially critical operations, or a server application might want to require client authentication.").
 15. <span class="bold">Close Messages:</span>At the end of the
     connection, each side sends a `close_notify`{.codeph} alert to
     inform the peer that the connection is closed.
@@ -1303,7 +1303,7 @@ Note:
 a protocol flaw related to renegotiation was found in 2009. The protocol
 and the Java SE implementation have both been fixed. See [Transport
 Layer Security (TLS) Renegotiation
-Issue](java-secure-socket-extension-jsse-reference-guide.htm#GUID-9C767872-3A6C-4AD1-9805-49F112A0FA28 "In the fall of 2009, a flaw was discovered in the SSL/TLS protocols. A fix to the protocol was developed by the IETF TLS Working Group, and current versions of the JDK contain this fix. This section describes the situation in much more detail, along with interoperability issues when communicating with older implementations that do not contain this protocol fix.").
+Issue](java-secure-socket-extension-jsse-reference-guide.html#GUID-9C767872-3A6C-4AD1-9805-49F112A0FA28 "In the fall of 2009, a flaw was discovered in the SSL/TLS protocols. A fix to the protocol was developed by the IETF TLS Working Group, and current versions of the JDK contain this fix. This section describes the situation in much more detail, along with interoperability issues when communicating with older implementations that do not contain this protocol fix.").
 
 </div>
 </div>
@@ -1346,9 +1346,9 @@ by default. See the
 method. Alternatively, applications can use the
 <span class="apiname">HostnameVerifier</span> interface to override the
 default HTTPS host name rules. See [The HostnameVerifier
-Interface](java-secure-socket-extension-jsse-reference-guide.htm#GUID-9E46E5AA-FE3E-48D7-B616-98A143F74587)
+Interface](java-secure-socket-extension-jsse-reference-guide.html#GUID-9E46E5AA-FE3E-48D7-B616-98A143F74587)
 and [HttpsURLConnection
-Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A14E129D-4D9D-4F38-A9F0-ED6F97B18863 "The javax.net.ssl.HttpsURLConnection class extends the java.net.HttpURLConnection class and adds support for HTTPS-specific features.").
+Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-A14E129D-4D9D-4F38-A9F0-ED6F97B18863 "The javax.net.ssl.HttpsURLConnection class extends the java.net.HttpURLConnection class and adds support for HTTPS-specific features.").
 
 </div>
 </div>
@@ -1388,7 +1388,7 @@ the TLS handshake by using one of the following approaches.
         refresh.
 
     See [Certificate/CRL Storage
-    Classes](java-pki-programmers-guide.htm#GUID-AB96FD45-6F8A-4785-B6C5-082BEB6CDA5E "The Java Certification Path API includes the CertStore class for retrieving certificates and CRLs from a repository.")
+    Classes](java-pki-programmers-guide.html#GUID-AB96FD45-6F8A-4785-B6C5-082BEB6CDA5E "The Java Certification Path API includes the CertStore class for retrieving certificates and CRLs from a repository.")
     topic of the <cite>Java PKI Programmer\'s Guide</cite>.
 
 -   <span class="bold">Client-driven OCSP </span>
@@ -1431,7 +1431,7 @@ OCSP responder during the Transport Layer Security (TLS) handshake.
 The client-driven OCSP request occurs during the TLS handshake just
 after the client receives the certificate from the server and validates
 it. See [SSL
-Handshake](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B).
+Handshake](java-secure-socket-extension-jsse-reference-guide.html#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B).
 
 <div class="section">
 TLS Handshake with Client-Driven OCSP
@@ -1485,7 +1485,7 @@ must already be set up to connect to a server using TLS.
         `com.sun.net.ssl.checkRevocation`{.codeph} to `true`{.codeph}.
     -   Use the `setRevocationEnabled`{.codeph} method on
         `PKIXParameters`{.codeph}. See [The PKIXParameters
-        Class](java-pki-programmers-guide.htm#GUID-3D95A3BE-74CB-4357-BB85-9A8DEA36A457 "The PKIXParametersClass class specifies the set of input parameters defined by the PKIX certification path validation algorithm. It also includes a few additional useful parameters.").
+        Class](java-pki-programmers-guide.html#GUID-3D95A3BE-74CB-4357-BB85-9A8DEA36A457 "The PKIXParametersClass class specifies the set of input parameters defined by the PKIX certification path validation algorithm. It also includes a few additional useful parameters.").
 2.  <span>Enable client-driven OCSP:</span>
 
     <div>
@@ -1557,7 +1557,7 @@ Stapling\"](img_text/ocsp-stapling.htm)
 <!-- class="figure" -->
 
 For more information about TLS handshake messages, see [The SSL
-Handshake](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B).
+Handshake](java-secure-socket-extension-jsse-reference-guide.html#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B).
 
 </div>
 <!-- class="section" -->
@@ -1646,7 +1646,7 @@ handshake.
         You can do this from the command line or in the code.
     -   Use the `setRevocationEnabled`{.codeph} method on the
         `PKIXParameters`{.codeph} class. See [The PKIXParameters
-        Class](java-pki-programmers-guide.htm#GUID-3D95A3BE-74CB-4357-BB85-9A8DEA36A457 "The PKIXParametersClass class specifies the set of input parameters defined by the PKIX certification path validation algorithm. It also includes a few additional useful parameters.").
+        Class](java-pki-programmers-guide.html#GUID-3D95A3BE-74CB-4357-BB85-9A8DEA36A457 "The PKIXParametersClass class specifies the set of input parameters defined by the PKIX certification path validation algorithm. It also includes a few additional useful parameters.").
 
     <div>
     For the client to include the stapled responses received from the
@@ -1689,7 +1689,7 @@ respond to clients using TLS.
     </div>
 2.  **Optional:** <span>Set other properties as required. See [OCSP
     Stapling Configuration
-    Properties](java-secure-socket-extension-jsse-reference-guide.htm#GUID-3A540C8F-5EB7-4E96-9051-92A1E2D8AF37 "This topic lists the effects of setting various properties when using the Online Certificate Status Protocol (OCSP). It shows the properties used in both client-driven OCSP and OCSP stapling.")
+    Properties](java-secure-socket-extension-jsse-reference-guide.html#GUID-3A540C8F-5EB7-4E96-9051-92A1E2D8AF37 "This topic lists the effects of setting various properties when using the Online Certificate Status Protocol (OCSP). It shows the properties used in both client-driven OCSP and OCSP stapling.")
     for a list of the valid properties.</span>
 
 </div>
@@ -1853,9 +1853,9 @@ Table 8-4 Client-Side Settings Used in OCSP Stapling
   PKIXBuilderParameters   checkRevocation Property   PKIXRevocationChecker                                             Result
   ----------------------- -------------------------- ----------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Default                 Default                    Default                                                           Revocation checking is disabled.
-  Default                 True                       Default                                                           Revocation checking is enabled.[\[1\]](java-secure-socket-extension-jsse-reference-guide.htm#GUID-3A540C8F-5EB7-4E96-9051-92A1E2D8AF37__NOTETHATCLIENT-SIDEOCSPFALLBACKWILL-1B855C3C)
-  Instantiated            Default                    Default                                                           Revocation checking is enabled.[\[1\]](java-secure-socket-extension-jsse-reference-guide.htm#GUID-3A540C8F-5EB7-4E96-9051-92A1E2D8AF37__NOTETHATCLIENT-SIDEOCSPFALLBACKWILL-1B855C3C)
-  Instantiated            Default                    Instantiated, added to `PKIXBuilderParameters`{.codeph} object.   Revocation checking is enabled and[\[1\]](java-secure-socket-extension-jsse-reference-guide.htm#GUID-3A540C8F-5EB7-4E96-9051-92A1E2D8AF37__NOTETHATCLIENT-SIDEOCSPFALLBACKWILL-1B855C3C)will behave according to the `PKIXRevocationChecker`{.codeph} settings.
+  Default                 True                       Default                                                           Revocation checking is enabled.[\[1\]](java-secure-socket-extension-jsse-reference-guide.html#GUID-3A540C8F-5EB7-4E96-9051-92A1E2D8AF37__NOTETHATCLIENT-SIDEOCSPFALLBACKWILL-1B855C3C)
+  Instantiated            Default                    Default                                                           Revocation checking is enabled.[\[1\]](java-secure-socket-extension-jsse-reference-guide.html#GUID-3A540C8F-5EB7-4E96-9051-92A1E2D8AF37__NOTETHATCLIENT-SIDEOCSPFALLBACKWILL-1B855C3C)
+  Instantiated            Default                    Instantiated, added to `PKIXBuilderParameters`{.codeph} object.   Revocation checking is enabled and[\[1\]](java-secure-socket-extension-jsse-reference-guide.html#GUID-3A540C8F-5EB7-4E96-9051-92A1E2D8AF37__NOTETHATCLIENT-SIDEOCSPFALLBACKWILL-1B855C3C)will behave according to the `PKIXRevocationChecker`{.codeph} settings.
 
 </div>
 <!-- class="inftblhruleinformal" -->
@@ -1897,7 +1897,7 @@ JSSE Classes and Interfaces {#JSSEC-GUID-B7AB25FA-7F0C-4EFA-A827-813B2CE7FBDC .s
 To communicate securely, both sides of the connection must be
 SSL-enabled. In the JSSE API, the endpoint classes of the connection are
 `SSLSocket`{.codeph} and `SSLEngine`{.codeph}. In [Figure
-8-4](java-secure-socket-extension-jsse-reference-guide.htm#GUID-B7AB25FA-7F0C-4EFA-A827-813B2CE7FBDC__GUID-A0AB7CF4-2CB8-4F12-8EF8-68EA03C6217D),
+8-4](java-secure-socket-extension-jsse-reference-guide.html#GUID-B7AB25FA-7F0C-4EFA-A827-813B2CE7FBDC__GUID-A0AB7CF4-2CB8-4F12-8EF8-68EA03C6217D),
 the major classes used to create `SSLSocket`{.codeph} and
 `SSLEngine`{.codeph} are laid out in a logical ordering.
 
@@ -1964,7 +1964,7 @@ sockets. Subclasses of this class are factories that create particular
 subclasses of sockets and thus provide a general framework for the
 addition of public socket-level functionality. For example, see
 [SSLSocketFactory and SSLServerSocketFactory
-Classes](java-secure-socket-extension-jsse-reference-guide.htm#GUID-F0917FCC-FBB0-4E36-8D79-37F14F8A274B).
+Classes](java-secure-socket-extension-jsse-reference-guide.html#GUID-F0917FCC-FBB0-4E36-8D79-37F14F8A274B).
 
 The abstract `javax.net.ServerSocketFactory`{.codeph} class is analogous
 to the `SocketFactory`{.codeph} class, but is used specifically for
@@ -2064,7 +2064,7 @@ supports all of the standard socket methods and adds methods specific to
 secure sockets. Instances of this class encapsulate the
 <span class="apiname">SSLContext</span> under which they were created.
 See [The SSLContext
-Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C281CAF3-275F-4DE4-8B47-4A84363CF39F "The javax.net.ssl.SSLContext class is an engine class for an implementation of a secure socket protocol. An instance of this class acts as a factory for SSLSocket, SSLServerSocket, and SSLEngine. An SSLContext object holds all of the state information shared across all objects created under that context. For example, session state is associated with the SSLContext when it is negotiated through the handshake protocol by sockets created by socket factories provided by the context. These cached sessions can be reused and shared by other sockets created under the same context.").
+Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-C281CAF3-275F-4DE4-8B47-4A84363CF39F "The javax.net.ssl.SSLContext class is an engine class for an implementation of a secure socket protocol. An instance of this class acts as a factory for SSLSocket, SSLServerSocket, and SSLEngine. An SSLContext object holds all of the state information shared across all objects created under that context. For example, session state is associated with the SSLContext when it is negotiated through the handshake protocol by sockets created by socket factories provided by the context. These cached sessions can be reused and shared by other sockets created under the same context.").
 There are APIs to control the creation of secure socket sessions for a
 socket instance, but trust and key management are not directly exposed.
 
@@ -2075,7 +2075,7 @@ sockets.
 To prevent peer spoofing, you should always verify the credentials
 presented to an `SSLSocket`{.codeph}. See [Cipher Suite Choice and
 Remote Entity
-Verification](java-secure-socket-extension-jsse-reference-guide.htm#GUID-D6A538A2-8CEF-4C6D-9C44-295758E64E38).
+Verification](java-secure-socket-extension-jsse-reference-guide.html#GUID-D6A538A2-8CEF-4C6D-9C44-295758E64E38).
 
 <div class="p">
 <div class="infoboxnote" id="GUID-8EF3AA86-6559-482D-82C7-4F6F6951A1AB__GUID-1242F7C2-58EE-4389-BD47-8316EBD20B28">
@@ -2153,7 +2153,7 @@ The core class is
 It encapsulates an SSL/TLS/DTLS state machine and operates on inbound
 and outbound byte buffers supplied by the user of the
 `SSLEngine`{.codeph} class. [Figure
-8-5](java-secure-socket-extension-jsse-reference-guide.htm#GUID-8796681D-06C8-4884-ADE4-782394F6F6FB__GUID-A02F05DD-41AA-47E3-A1BE-9AB4AC6E4BC2)
+8-5](java-secure-socket-extension-jsse-reference-guide.html#GUID-8796681D-06C8-4884-ADE4-782394F6F6FB__GUID-A02F05DD-41AA-47E3-A1BE-9AB4AC6E4BC2)
 illustrates the flow of data from the application, through
 `SSLEngine`{.codeph}, to the transport mechanism, and back.
 
@@ -2319,7 +2319,7 @@ requires a handshake to establish cryptographic parameters. This
 handshake requires a series of back-and-forth steps by the
 `SSLEngine`{.codeph} object. For more details about the handshake
 itself, see [The SSL
-Handshake](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B).
+Handshake](java-secure-socket-extension-jsse-reference-guide.html#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B).
 
 During the initial handshaking, the `wrap()`{.codeph} and
 `unwrap()`{.codeph} methods generate and consume handshake data, and the
@@ -2331,7 +2331,7 @@ the `SSLEngineResult.HandshakeStatus`{.codeph} field is used to
 determine what operation must occur next to move the handshake along.
 
 [Table
-8-5](java-secure-socket-extension-jsse-reference-guide.htm#GUID-6DB10B60-4FE0-4C29-8E6D-DC661522A2B4__GUID-498B945A-6C5B-4291-8278-B34D79CCF010 "Sequence of methods called during a typical handshake, with corresponding messages and statuses")
+8-5](java-secure-socket-extension-jsse-reference-guide.html#GUID-6DB10B60-4FE0-4C29-8E6D-DC661522A2B4__GUID-498B945A-6C5B-4291-8278-B34D79CCF010 "Sequence of methods called during a typical handshake, with corresponding messages and statuses")
 shows the sequence of methods called during a typical handshake, with
 corresponding messages and statuses.
 
@@ -2352,7 +2352,7 @@ Table 8-5 Typical Handshake
 <!-- class="inftblhruleinformal" -->
 
 [Figure
-8-6](java-secure-socket-extension-jsse-reference-guide.htm#GUID-6DB10B60-4FE0-4C29-8E6D-DC661522A2B4__STATEMACHINEDURINGDTLSHANDSHAKE-D6B2B3FD)
+8-6](java-secure-socket-extension-jsse-reference-guide.html#GUID-6DB10B60-4FE0-4C29-8E6D-DC661522A2B4__STATEMACHINEDURINGDTLSHANDSHAKE-D6B2B3FD)
 shows the state machine during a typical SSL/TLS handshake, with
 corresponding messages and statuses:
 
@@ -2390,7 +2390,7 @@ The following example is an SSL application that uses a non-blocking
 `SocketChannel`{.codeph} to communicate with its peer. It sends the
 string \"hello\" to the peer by encoding it using the
 `SSLEngine`{.codeph} created in [Example
-8-1](java-secure-socket-extension-jsse-reference-guide.htm#GUID-16B697CD-77EB-468F-94A1-04254BA75FD7__THEFOLLOWINGSAMPLECODECREATESASSLEN-225FBEA9)
+8-1](java-secure-socket-extension-jsse-reference-guide.html#GUID-16B697CD-77EB-468F-94A1-04254BA75FD7__THEFOLLOWINGSAMPLECODECREATESASSLEN-225FBEA9)
 . It uses information from the `SSLSession`{.codeph} to determine how
 large to make the byte buffers.
 
@@ -2457,7 +2457,7 @@ Example 8-3 Sample Code for Reading Data From Nonblocking SocketChannel
 The following sample code illustrates how to read data from the same
 nonblocking `SocketChannel`{.codeph} and extract the plaintext data from
 it by using `SSLEngine`{.codeph} created in [Example
-8-1](java-secure-socket-extension-jsse-reference-guide.htm#GUID-16B697CD-77EB-468F-94A1-04254BA75FD7__THEFOLLOWINGSAMPLECODECREATESASSLEN-225FBEA9).
+8-1](java-secure-socket-extension-jsse-reference-guide.html#GUID-16B697CD-77EB-468F-94A1-04254BA75FD7__THEFOLLOWINGSAMPLECODECREATESASSLEN-225FBEA9).
 Each iteration of this code may or may not produce plaintext data,
 depending on whether handshaking is in progress.
 
@@ -2535,7 +2535,7 @@ is not responsible for I/O operations, it is up to the application to
 provide timers and signal the SSLEngine when a retransmission is needed.
 It is important that you implement a timer and retransmission strategy
 for your application. See [Handling Retransmissions in DTLS
-Connections](java-secure-socket-extension-jsse-reference-guide.htm#GUID-6C8AA45B-EB45-4767-BBB4-B7C5A64A60B7 "In SSL/TLS over a reliable connection, data is guaranteed to arrive in the proper order, and retransmission is unnecessary. However, for DTLS, which often works over unreliable media, missing or delayed handshake messages must be retransmitted.").
+Connections](java-secure-socket-extension-jsse-reference-guide.html#GUID-6C8AA45B-EB45-4767-BBB4-B7C5A64A60B7 "In SSL/TLS over a reliable connection, data is guaranteed to arrive in the proper order, and retransmission is unnecessary. However, for DTLS, which often works over unreliable media, missing or delayed handshake messages must be retransmitted.").
 
 The DTLS handshake includes the following stages:
 
@@ -2600,7 +2600,7 @@ In a DTLS handshake, series of back-and-forth messages are exchanged
 between the client and server by the `SSLEngine`{.codeph} object.
 
 [Figure
-8-7](java-secure-socket-extension-jsse-reference-guide.htm#GUID-F1BFB231-BE35-4B14-BB8D-7F33D31A117D__GUID-72C1D49C-0A80-4548-BF96-2D72E1C65912)
+8-7](java-secure-socket-extension-jsse-reference-guide.html#GUID-F1BFB231-BE35-4B14-BB8D-7F33D31A117D__GUID-72C1D49C-0A80-4548-BF96-2D72E1C65912)
 shows the sequence of messages that are exchanged in the DTLS handshake.
 Messages that are sent only in certain situations are noted as optional.
 Each message is described following the figure.
@@ -2755,7 +2755,7 @@ Note:
 A protocol flaw related to renegotiation was found in 2009. The protocol
 and the Java SE implementation have both been fixed. See [Transport
 Layer Security (TLS) Renegotiation
-Issue](java-secure-socket-extension-jsse-reference-guide.htm#GUID-9C767872-3A6C-4AD1-9805-49F112A0FA28 "In the fall of 2009, a flaw was discovered in the SSL/TLS protocols. A fix to the protocol was developed by the IETF TLS Working Group, and current versions of the JDK contain this fix. This section describes the situation in much more detail, along with interoperability issues when communicating with older implementations that do not contain this protocol fix.").
+Issue](java-secure-socket-extension-jsse-reference-guide.html#GUID-9C767872-3A6C-4AD1-9805-49F112A0FA28 "In the fall of 2009, a flaw was discovered in the SSL/TLS protocols. A fix to the protocol was developed by the IETF TLS Working Group, and current versions of the JDK contain this fix. This section describes the situation in much more detail, along with interoperability issues when communicating with older implementations that do not contain this protocol fix.").
 
 </div>
 <div class="example" id="GUID-E1E48823-8B76-456A-88FA-B4D531183520__GUID-E31F4DB7-7133-414A-A7A8-4AECA3A8A5CA">
@@ -2893,7 +2893,7 @@ used together to handle retransmission in an application.
 
 <div class="section">
 [Figure
-8-8](java-secure-socket-extension-jsse-reference-guide.htm#GUID-32494D9D-B0FC-4DFC-B747-F4115B6112E3__GUID-62CAEA17-2745-42AE-94C6-2E35852FC63A)
+8-8](java-secure-socket-extension-jsse-reference-guide.html#GUID-32494D9D-B0FC-4DFC-B747-F4115B6112E3__GUID-62CAEA17-2745-42AE-94C6-2E35852FC63A)
 shows a typical scenario for handling DTLS handshaking retransmission:
 
 <div class="figure" id="GUID-32494D9D-B0FC-4DFC-B747-F4115B6112E3__GUID-62CAEA17-2745-42AE-94C6-2E35852FC63A">
@@ -2913,9 +2913,9 @@ image.](img/state-flow-need_unwrap_again_new.png "This image illustrates the DTL
     `SSLEngine`{.codeph}. </span>
     <div>
     See [Creating an SSLEngine
-    Object](java-secure-socket-extension-jsse-reference-guide.htm#GUID-16B697CD-77EB-468F-94A1-04254BA75FD7 "Use the SSLContext.createSSLEngine() method to create an SSLEngine object.").
+    Object](java-secure-socket-extension-jsse-reference-guide.html#GUID-16B697CD-77EB-468F-94A1-04254BA75FD7 "Use the SSLContext.createSSLEngine() method to create an SSLEngine object.").
     The DTLS handshake process begins. See [The DTLS
-    Handshake](java-secure-socket-extension-jsse-reference-guide.htm#GUID-B62245D1-5337-4B51-B1F3-CA89099157C1 "Before application data can be sent or received, the DTLS protocol requires a handshake to establish cryptographic parameters. This handshake requires a series of back-and-forth messages between the client and server by the SSLEngine object.").
+    Handshake](java-secure-socket-extension-jsse-reference-guide.html#GUID-B62245D1-5337-4B51-B1F3-CA89099157C1 "Before application data can be sent or received, the DTLS protocol requires a handshake to establish cryptographic parameters. This handshake requires a series of back-and-forth messages between the client and server by the SSLEngine object.").
     </div>
 2.  <span>If the handshake status is
     `HandshakeStatus.NEED_UNWRAP`{.codeph}, wait for data from
@@ -2962,7 +2962,7 @@ indicates that for the next
 data from the remote side is required.
 
 [Figure
-8-9](java-secure-socket-extension-jsse-reference-guide.htm#GUID-F8FB4BE7-3A43-41FB-8642-07848FCA9381__GUID-693172EF-782D-4676-BA14-27B0794F8B72)
+8-9](java-secure-socket-extension-jsse-reference-guide.html#GUID-F8FB4BE7-3A43-41FB-8642-07848FCA9381__GUID-693172EF-782D-4676-BA14-27B0794F8B72)
 shows a typical scenario for using the
 `HandshakeStatus.NEED_UNWRAP_AGAIN`{.codeph}.
 
@@ -2986,9 +2986,9 @@ image.](img/dtls-buffered-handshake-message-new.png "This flowchart illustrates 
     `SSLEngine`{.codeph}.</span>
     <div>
     See [Creating an SSLEngine
-    Object](java-secure-socket-extension-jsse-reference-guide.htm#GUID-16B697CD-77EB-468F-94A1-04254BA75FD7 "Use the SSLContext.createSSLEngine() method to create an SSLEngine object.").
+    Object](java-secure-socket-extension-jsse-reference-guide.html#GUID-16B697CD-77EB-468F-94A1-04254BA75FD7 "Use the SSLContext.createSSLEngine() method to create an SSLEngine object.").
     The DTLS handshake process begins, see [The DTLS
-    Handshake](java-secure-socket-extension-jsse-reference-guide.htm#GUID-B62245D1-5337-4B51-B1F3-CA89099157C1 "Before application data can be sent or received, the DTLS protocol requires a handshake to establish cryptographic parameters. This handshake requires a series of back-and-forth messages between the client and server by the SSLEngine object.").
+    Handshake](java-secure-socket-extension-jsse-reference-guide.html#GUID-B62245D1-5337-4B51-B1F3-CA89099157C1 "Before application data can be sent or received, the DTLS protocol requires a handshake to establish cryptographic parameters. This handshake requires a series of back-and-forth messages between the client and server by the SSLEngine object.").
     </div>
 2.  **Optional:** <span>If the handshake status is
     `HandshakeStatus.NEED_UNWRAP`{.codeph}, wait for data from
@@ -3145,7 +3145,7 @@ as keystore:
 <div>
 A DTLS handshake and a SSL/TLS handshake generate and process data
 similarly. (See [Generating and Processing SSL/TLS
-Data](java-secure-socket-extension-jsse-reference-guide.htm#GUID-6DB10B60-4FE0-4C29-8E6D-DC661522A2B4 "The two main SSLEngine methods are wrap() and unwrap(). They are responsible for generating and consuming network data respectively. Depending on the state of the SSLEngine object, this data might be handshake or application data.").)
+Data](java-secure-socket-extension-jsse-reference-guide.html#GUID-6DB10B60-4FE0-4C29-8E6D-DC661522A2B4 "The two main SSLEngine methods are wrap() and unwrap(). They are responsible for generating and consuming network data respectively. Depending on the state of the SSLEngine object, this data might be handshake or application data.").)
 They both use the <span class="apiname">SSLEngine.wrap()</span> and
 <span class="apiname">SSLEngine.wrap()</span> methods to generate and
 consume network data, respectively.
@@ -3212,7 +3212,7 @@ should take, the `SSLEngine.wrap()`{.codeph} and
 `SSLEngine.unwrap()`{.codeph} methods return an
 [`SSLEngineResult`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/net/ssl/SSLEngineResult.html)
 instance, as shown in [Example
-8-2](java-secure-socket-extension-jsse-reference-guide.htm#GUID-6DB10B60-4FE0-4C29-8E6D-DC661522A2B4__GUID-223D79BF-70AD-4F6C-B472-81C28C010BD9).
+8-2](java-secure-socket-extension-jsse-reference-guide.html#GUID-6DB10B60-4FE0-4C29-8E6D-DC661522A2B4__GUID-223D79BF-70AD-4F6C-B472-81C28C010BD9).
 This `SSLEngineResult`{.codeph} object contains two pieces of status
 information: the overall status of the engine and the handshaking
 status.
@@ -3239,7 +3239,7 @@ available:
     destination buffer.
 
 [Example
-8-7](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744__EXAMPLE4HANDLINGBUFFER_UNDERFLOWAND-78F60126)
+8-7](java-secure-socket-extension-jsse-reference-guide.html#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744__EXAMPLE4HANDLINGBUFFER_UNDERFLOWAND-78F60126)
 illustrates how to handle the `BUFFER_UNDERFLOW`{.codeph} and
 `BUFFER_OVERFLOW`{.codeph} statuses of the `SSLEngine.unwrap()`{.codeph}
 method. It uses `SSLSession.getApplicationBufferSize()`{.codeph} and
@@ -3294,9 +3294,9 @@ greatly simplified; they would need to be expanded significantly to
 properly handle all of these statuses.
 
 [Example
-8-9](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744__GUID-CEB4C19E-7DB9-4CD8-8315-8FEDD212BAD3)
+8-9](java-secure-socket-extension-jsse-reference-guide.html#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744__GUID-CEB4C19E-7DB9-4CD8-8315-8FEDD212BAD3)
 and [Example
-8-8](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744__EXAMPLE5CHECKINGANDPROCESSINGHANDSH-78F5FE16)
+8-8](java-secure-socket-extension-jsse-reference-guide.html#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744__EXAMPLE5CHECKINGANDPROCESSINGHANDSH-78F5FE16)
 illustrate how to process handshaking data by checking handshaking
 status and the overall status of the `wrap()`{.codeph} and
 `unwrap()`{.codeph} methods.
@@ -3581,7 +3581,7 @@ application is done with the SSL/TLS/DTLS connection, it should first
 obtain the close messages from the `SSLEngine`{.codeph}, then transmit
 them to the peer using its transport mechanism, and finally shut down
 the transport mechanism. [Example
-8-10](java-secure-socket-extension-jsse-reference-guide.htm#GUID-2B54A68F-75AF-4FEA-9339-F7082FE5DA33__SHUTTINGDOWNANSSLTLSCONNECTION-B4C0BC69)
+8-10](java-secure-socket-extension-jsse-reference-guide.html#GUID-2B54A68F-75AF-4FEA-9339-F7082FE5DA33__SHUTTINGDOWNANSSLTLSCONNECTION-B4C0BC69)
 illustrates this.
 
 In addition to an application explicitly closing the
@@ -3593,7 +3593,7 @@ processing application or handshake data, indicated by throwing an
 `SSLEngine.wrap()`{.codeph} to get the close message and send it to the
 peer until `SSLEngine.isOutboundDone()`{.codeph} returns `true`{.codeph}
 (as shown in [Example
-8-10](java-secure-socket-extension-jsse-reference-guide.htm#GUID-2B54A68F-75AF-4FEA-9339-F7082FE5DA33__SHUTTINGDOWNANSSLTLSCONNECTION-B4C0BC69)),
+8-10](java-secure-socket-extension-jsse-reference-guide.html#GUID-2B54A68F-75AF-4FEA-9339-F7082FE5DA33__SHUTTINGDOWNANSSLTLSCONNECTION-B4C0BC69)),
 or until the `SSLEngineResult.getStatus()`{.codeph} returns
 `CLOSED`{.codeph}.
 
@@ -3608,11 +3608,11 @@ end of your input data, you should call
 `SSLEngine`{.codeph} that the remote peer has closed cleanly from the
 SSL/TLS/DTLS perspective. Then the application should still try to shut
 down cleanly by using the procedure in [Example
-8-10](java-secure-socket-extension-jsse-reference-guide.htm#GUID-2B54A68F-75AF-4FEA-9339-F7082FE5DA33__SHUTTINGDOWNANSSLTLSCONNECTION-B4C0BC69).
+8-10](java-secure-socket-extension-jsse-reference-guide.html#GUID-2B54A68F-75AF-4FEA-9339-F7082FE5DA33__SHUTTINGDOWNANSSLTLSCONNECTION-B4C0BC69).
 Obviously, unlike `SSLSocket`{.codeph}, the application using
 `SSLEngine`{.codeph} must deal with more state transitions, statuses,
 and programming. See [Sample Code Illustrating the Use of an
-SSLEngine](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGTHEUSEOFANSSL-7D23A601).
+SSLEngine](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGTHEUSEOFANSSL-7D23A601).
 
 </div>
 <!-- class="section" -->
@@ -3696,7 +3696,7 @@ the peer. The `getRequestedServerNames()`{.codeph} method called on an
 `ExtendedSSLSession`{.codeph} instance is used to obtain a list of
 `SNIServerName`{.codeph} objects in the requested [Server Name
 Indication (SNI)
-Extension](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F).
+Extension](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F).
 The server should use the requested server names to guide its selection
 of an appropriate authentication certificate, and/or other aspects of
 the security policy. The client should use the requested server names to
@@ -3721,11 +3721,11 @@ large inbound packets, then the buffer sizes returned by
 always check the BUFFER\_OVERFLOW and BUFFER\_UNDERFLOW statuses and
 enlarge the corresponding buffers if necessary. See [Understanding
 SSLEngine Operation
-Statuses](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744 "The status of the SSLEngine is represented by SSLEngineResult.Status.").
+Statuses](java-secure-socket-extension-jsse-reference-guide.html#GUID-AC6700ED-ADC4-41EA-B111-2AEF2CBF7744 "The status of the SSLEngine is represented by SSLEngineResult.Status.").
 SunJSSE will always send standard compliant 16 KB records and allow
 incoming 32 KB records. For a workaround, see the System property
 `jsse.SSLEngine.acceptLargeFragments`{.codeph} in [Customizing
-JSSE](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9 "JSSE includes a standard implementation that can be customized by plugging in different implementations or specifying the default keystore, and so on.").
+JSSE](java-secure-socket-extension-jsse-reference-guide.html#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9 "JSSE includes a standard implementation that can be customized by plugging in different implementations or specifying the default keystore, and so on.").
 
 </div>
 </div>
@@ -3748,7 +3748,7 @@ HTTPS-specific features.
 The HTTPS protocol is similar to HTTP, but HTTPS first establishes a
 secure channel via SSL/TLS sockets and then verifies the identity of the
 peer (see [Cipher Suite Choice and Remote Entity
-Verification](java-secure-socket-extension-jsse-reference-guide.htm#GUID-D6A538A2-8CEF-4C6D-9C44-295758E64E38))
+Verification](java-secure-socket-extension-jsse-reference-guide.html#GUID-D6A538A2-8CEF-4C6D-9C44-295758E64E38))
 before requesting or receiving data. The
 `javax.net.ssl.HttpsURLConnection`{.codeph} class extends the
 `java.net.HttpURLConnection`{.codeph} class and adds support for
@@ -3767,9 +3767,9 @@ initiating the network connection via the
 `URLConnection.connect()`{.codeph} method. Of particular interest are:
 
 -   [Setting the Assigned
-    SSLSocketFactory](java-secure-socket-extension-jsse-reference-guide.htm#GUID-8BE4AE6F-21EF-4DF0-91D4-B2D36EF625CA)
+    SSLSocketFactory](java-secure-socket-extension-jsse-reference-guide.html#GUID-8BE4AE6F-21EF-4DF0-91D4-B2D36EF625CA)
 -   [Setting the Assigned
-    HostnameVerifier](java-secure-socket-extension-jsse-reference-guide.htm#GUID-ABE2057C-0F36-48E1-8E76-4FC8D72A6573)
+    HostnameVerifier](java-secure-socket-extension-jsse-reference-guide.html#GUID-ABE2057C-0F36-48E1-8E76-4FC8D72A6573)
 
 </div>
 <!-- class="section" -->
@@ -3869,26 +3869,26 @@ support classes and interfaces are part of the `javax.net.ssl`{.codeph}
 package.
 
 Three of the classes described in this section ([The SSLContext
-Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C281CAF3-275F-4DE4-8B47-4A84363CF39F "The javax.net.ssl.SSLContext class is an engine class for an implementation of a secure socket protocol. An instance of this class acts as a factory for SSLSocket, SSLServerSocket, and SSLEngine. An SSLContext object holds all of the state information shared across all objects created under that context. For example, session state is associated with the SSLContext when it is negotiated through the handshake protocol by sockets created by socket factories provided by the context. These cached sessions can be reused and shared by other sockets created under the same context."),
+Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-C281CAF3-275F-4DE4-8B47-4A84363CF39F "The javax.net.ssl.SSLContext class is an engine class for an implementation of a secure socket protocol. An instance of this class acts as a factory for SSLSocket, SSLServerSocket, and SSLEngine. An SSLContext object holds all of the state information shared across all objects created under that context. For example, session state is associated with the SSLContext when it is negotiated through the handshake protocol by sockets created by socket factories provided by the context. These cached sessions can be reused and shared by other sockets created under the same context."),
 [The KeyManagerFactory
-Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-616A7E77-587C-44E0-9F69-92BEDF631D5F "The javax.net.ssl.KeyManagerFactory class is an engine class for a provider-based service that acts as a factory for one or more types of KeyManager objects. The SunJSSE provider implements a factory that can return a basic X.509 key manager. Because it is provider-based, additional factories can be implemented and configured to provide additional or alternative key managers."),
+Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-616A7E77-587C-44E0-9F69-92BEDF631D5F "The javax.net.ssl.KeyManagerFactory class is an engine class for a provider-based service that acts as a factory for one or more types of KeyManager objects. The SunJSSE provider implements a factory that can return a basic X.509 key manager. Because it is provider-based, additional factories can be implemented and configured to provide additional or alternative key managers."),
 and [The TrustManagerFactory
-Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AB5DA59B-B070-4AC5-A9C1-C3C30BF9209F "The javax.net.ssl.TrustManagerFactory is an engine class for a provider-based service that acts as a factory for one or more types of TrustManager objects. Because it is provider-based, additional factories can be implemented and configured to provide additional or alternative trust managers that provide more sophisticated services or that implement installation-specific authentication policies."))
+Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-AB5DA59B-B070-4AC5-A9C1-C3C30BF9209F "The javax.net.ssl.TrustManagerFactory is an engine class for a provider-based service that acts as a factory for one or more types of TrustManager objects. Because it is provider-based, additional factories can be implemented and configured to provide additional or alternative trust managers that provide more sophisticated services or that implement installation-specific authentication policies."))
 are <span class="italic"><span>engine classes</span></span>. An engine
 class is an API class for specific algorithms (or protocols, in the case
 of `SSLContext`{.codeph}), for which implementations may be provided in
 one or more Cryptographic Service Provider (provider) packages. See [JCA
 Design
-Principles](java-cryptography-architecture-jca-reference-guide.htm#GUID-71693272-7F57-4155-99F9-A2139271FD6D)
+Principles](java-cryptography-architecture-jca-reference-guide.html#GUID-71693272-7F57-4155-99F9-A2139271FD6D)
 and [Engine Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
 
 The SunJSSE provider that comes standard with JSSE provides
 `SSLContext`{.codeph}, `KeyManagerFactory`{.codeph}, and
 `TrustManagerFactory`{.codeph} implementations, as well as
 implementations for engine classes in the standard
 `java.security`{.codeph} API. [Table
-8-6](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AD2529FD-8778-4A02-B544-5F58E083774B__GUID-8487642F-B1E3-4DB7-BA5E-ABF8971F8A58 "The following table lists implementations supplied by SunJSSE.")
+8-6](java-secure-socket-extension-jsse-reference-guide.html#GUID-AD2529FD-8778-4A02-B544-5F58E083774B__GUID-8487642F-B1E3-4DB7-BA5E-ABF8971F8A58 "The following table lists implementations supplied by SunJSSE.")
 lists implementations supplied by SunJSSE.
 
 <div class="tblformal" id="GUID-AD2529FD-8778-4A02-B544-5F58E083774B__GUID-8487642F-B1E3-4DB7-BA5E-ABF8971F8A58">
@@ -3899,7 +3899,7 @@ Table 8-6 Implementations Supplied by SunJSSE
   `KeyStore`{.codeph}              PKCS12
   `KeyManagerFactory`{.codeph}     PKIX, SunX509
   `TrustManagerFactory`{.codeph}   PKIX (X509 or SunPKIX), SunX509
-  `SSLContext`{.codeph}            SSLv3[\[1\]](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AD2529FD-8778-4A02-B544-5F58E083774B__FOOTNOTE1SSLV3ISENABLEDSTARTINGWITH-8E8BD3EF), TLSv1, TLSv1.1, TLSv1.2, DTLSv1.0, DTLSv1.2
+  `SSLContext`{.codeph}            SSLv3[\[1\]](java-secure-socket-extension-jsse-reference-guide.html#GUID-AD2529FD-8778-4A02-B544-5F58E083774B__FOOTNOTE1SSLV3ISENABLEDSTARTINGWITH-8E8BD3EF), TLSv1, TLSv1.1, TLSv1.2, DTLSv1.0, DTLSv1.2
 
 </div>
 <!-- class="inftblhruleinformal" -->
@@ -3968,7 +3968,7 @@ There are two ways to obtain and initialize an `SSLContext`{.codeph}:
     key material used is found in the default keystore and truststore,
     as determined by system properties described in [Customizing the
     Default Keystores and Truststores, Store Types, and Store
-    Passwords](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150).
+    Passwords](java-secure-socket-extension-jsse-reference-guide.html#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150).
 -   The approach that gives the caller the most control over the
     behavior of the created context is to call the static method
     [`SSLContext.getDefault`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/net/ssl/SSLContext.html#getDefault)
@@ -4077,7 +4077,7 @@ If the `KeyManager[]`{.codeph} parameter is null, then an empty
 providers will be searched for the highest-priority implementation of
 the <span class="apiname">TrustManagerFactory</span> class (see [The
 TrustManagerFactory
-Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AB5DA59B-B070-4AC5-A9C1-C3C30BF9209F "The javax.net.ssl.TrustManagerFactory is an engine class for a provider-based service that acts as a factory for one or more types of TrustManager objects. Because it is provider-based, additional factories can be implemented and configured to provide additional or alternative trust managers that provide more sophisticated services or that implement installation-specific authentication policies.")),
+Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-AB5DA59B-B070-4AC5-A9C1-C3C30BF9209F "The javax.net.ssl.TrustManagerFactory is an engine class for a provider-based service that acts as a factory for one or more types of TrustManager objects. Because it is provider-based, additional factories can be implemented and configured to provide additional or alternative trust managers that provide more sophisticated services or that implement installation-specific authentication policies.")),
 from which an appropriate `TrustManager`{.codeph} will be obtained.
 Likewise, the `SecureRandom`{.codeph} parameter may be null, in which
 case a default implementation will be used.
@@ -4087,7 +4087,7 @@ If the internal default context is used, (for example, an
 `SSLSocketFactory.getDefault()`{.codeph} or
 `SSLServerSocketFactory.getDefault()`{.codeph}), then a [default
 KeyManager and
-TrustManager](java-secure-socket-extension-jsse-reference-guide.htm#GUID-0ACD9274-607C-49BE-AED9-BEE2B4F2BEF2)
+TrustManager](java-secure-socket-extension-jsse-reference-guide.html#GUID-0ACD9274-607C-49BE-AED9-BEE2B4F2BEF2)
 are created. The default `SecureRandom`{.codeph} implementation is also
 chosen.
 
@@ -4170,7 +4170,7 @@ created from a trust manager factory, or you can write your own trust
 manager, for example, using the
 [`CertPath`{.codeph}](https://docs.oracle.com/javase/10/docs/api/java/security/cert/CertPath.html)
 API. See [Java PKI Programmer's
-Guide](java-pki-programmers-guide.htm#GUID-E47B8A0E-6B3A-4B49-994D-CF185BF441EC "The CertPath class is an abstract class for certification paths. It defines the functionality shared by all certification path objects. Various certification path types can be implemented by subclassing the CertPath class, even though they may have different contents and ordering schemes.").
+Guide](java-pki-programmers-guide.html#GUID-E47B8A0E-6B3A-4B49-994D-CF185BF441EC "The CertPath class is an abstract class for certification paths. It defines the functionality shared by all certification path objects. Various certification path types can be implemented by subclassing the CertPath class, even though they may have different contents and ordering schemes.").
 You do not need to use a trust manager factory if you implement a trust
 manager using the
 [`X509TrustManager`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/net/ssl/X509TrustManager.html)
@@ -4246,7 +4246,7 @@ editing the `ssl.TrustManagerFactory.algorithm`{.codeph} property in the
 
 The PKIX trust manager factory uses the CertPath PKIX implementation
 (see [PKI Programmers Guide
-Overview](java-pki-programmers-guide.htm#GUID-D6A18B1E-A2A8-4CA2-BD18-514CD807810E "The Java Certification Path API defines interfaces and abstract classes for creating, building, and validating certification paths.  Implementations may be plugged in using a provider-based interface."))
+Overview](java-pki-programmers-guide.html#GUID-D6A18B1E-A2A8-4CA2-BD18-514CD807810E "The Java Certification Path API defines interfaces and abstract classes for creating, building, and validating certification paths.  Implementations may be plugged in using a provider-based interface."))
 from an installed security provider. The trust manager factory can be
 initialized using the normal `init(KeyStores)`{.codeph} method, or by
 passing <span class="apiname">CertPath</span> parameters to the PKIX
@@ -4255,7 +4255,7 @@ trust manager using the
 class.
 
 [Example
-8-11](java-secure-socket-extension-jsse-reference-guide.htm#GUID-ED23411A-B4AA-4E46-A5E9-619A0CF30151__EXAMPLE-1326-635DA89D)
+8-11](java-secure-socket-extension-jsse-reference-guide.html#GUID-ED23411A-B4AA-4E46-A5E9-619A0CF30151__EXAMPLE-1326-635DA89D)
 illustrates how to get the trust manager to use a particular LDAP
 certificate store and enable revocation checking.
 
@@ -4272,9 +4272,9 @@ property `com.sun.security.enableCRLDP`{.codeph} be set to
 method has revocation checking enabled by default.
 
 See [PKIX
-Classes](java-pki-programmers-guide.htm#GUID-5BBEF087-CA8A-4287-97FB-BD88DCD12FE5 "The Java Certification Path API includes a set of algorithm-specific classes modeled for use with the PKIX certification path validation algorithm.")
+Classes](java-pki-programmers-guide.html#GUID-5BBEF087-CA8A-4287-97FB-BD88DCD12FE5 "The Java Certification Path API includes a set of algorithm-specific classes modeled for use with the PKIX certification path validation algorithm.")
 and [The CertPath
-Class](java-pki-programmers-guide.htm#GUID-E47B8A0E-6B3A-4B49-994D-CF185BF441EC "The CertPath class is an abstract class for certification paths. It defines the functionality shared by all certification path objects. Various certification path types can be implemented by subclassing the CertPath class, even though they may have different contents and ordering schemes.").
+Class](java-pki-programmers-guide.html#GUID-E47B8A0E-6B3A-4B49-994D-CF185BF441EC "The CertPath class is an abstract class for certification paths. It defines the functionality shared by all certification path objects. Various certification path types can be implemented by subclassing the CertPath class, even though they may have different contents and ordering schemes.").
 
 <div class="example" id="GUID-ED23411A-B4AA-4E46-A5E9-619A0CF30151__EXAMPLE-1326-635DA89D">
 Example 8-11 Sample Code for Using a LDAP Certificate to Enable
@@ -4384,7 +4384,7 @@ process to try to find trust material:
 
 To know more about what <span class="variable">java-home</span> refers
 to, see [Terms and
-Definitions](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.").
+Definitions](java-secure-socket-extension-jsse-reference-guide.html#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.").
 
 The factory looks for a file specified via the
 `javax.net.ssl.trustStore`{.codeph} Security Property or for the
@@ -4412,7 +4412,7 @@ by either creating and registering your own
 
 <div class="section">
 [Example
-8-12](java-secure-socket-extension-jsse-reference-guide.htm#GUID-E1205974-3249-4E40-83C0-5F89C7375CF4__EXAMPLE-1327-635DA68E)
+8-12](java-secure-socket-extension-jsse-reference-guide.html#GUID-E1205974-3249-4E40-83C0-5F89C7375CF4__EXAMPLE-1327-635DA68E)
 illustrates a `MyX509TrustManager`{.codeph} class that enhances the
 default SunJSSE `X509TrustManager`{.codeph} behavior by providing
 alternative authentication logic when the default
@@ -4602,7 +4602,7 @@ for `X509TrustManager`{.codeph}.
 
 <div class="section">
 [Example
-8-13](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AC443CF8-4CBD-4B77-8733-46D8DA2E3248__IMPORTJAVA.IO.IMPORTJAVA.NET.IMPORT-635DA3F9)
+8-13](java-secure-socket-extension-jsse-reference-guide.html#GUID-AC443CF8-4CBD-4B77-8733-46D8DA2E3248__IMPORTJAVA.IO.IMPORTJAVA.NET.IMPORT-635DA3F9)
 illustrates how to create a class that uses the PKIX
 `TrustManagerFactory`{.codeph} to locate a default
 `X509ExtendedTrustManager`{.codeph} that will be used to make decisions
@@ -4770,7 +4770,7 @@ the internal default context is used (for example, an
 `SSLServerSocketFactory.getDefault()`{.codeph}), then a default
 `KeyManager`{.codeph} is created. See [Customizing the Default Keystores
 and Truststores, Store Types, and Store
-Passwords](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150).
+Passwords](java-secure-socket-extension-jsse-reference-guide.html#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150).
 Typically, a single key manager supports authentication based on X.509
 public key certificates. Some secure socket implementations may also
 support authentication based on shared secret keys, Kerberos, or other
@@ -4907,7 +4907,7 @@ end-user through a graphical user interface.
 If the default `X509KeyManager`{.codeph} behavior is not suitable for
 your situation, then you can create your own `X509KeyManager`{.codeph}
 in a way similar to that shown in [Creating Your Own
-X509TrustManager](java-secure-socket-extension-jsse-reference-guide.htm#GUID-E1205974-3249-4E40-83C0-5F89C7375CF4 "If the supplied X509TrustManager behavior is not suitable for your situation, then you can create your own X509TrustManager by either creating and registering your own TrustManagerFactory or by implementing the X509TrustManager interface directly.").
+X509TrustManager](java-secure-socket-extension-jsse-reference-guide.html#GUID-E1205974-3249-4E40-83C0-5F89C7375CF4 "If the supplied X509TrustManager behavior is not suitable for your situation, then you can create your own X509TrustManager by either creating and registering your own TrustManagerFactory or by implementing the X509TrustManager interface directly.").
 
 </div>
 <!-- class="section" -->
@@ -4949,10 +4949,10 @@ method.
 
 You can create your own `X509ExtendedKeyManager`{.codeph} subclass in a
 way similar to that shown in [Creating Your Own
-X509TrustManager](java-secure-socket-extension-jsse-reference-guide.htm#GUID-E1205974-3249-4E40-83C0-5F89C7375CF4 "If the supplied X509TrustManager behavior is not suitable for your situation, then you can create your own X509TrustManager by either creating and registering your own TrustManagerFactory or by implementing the X509TrustManager interface directly.").
+X509TrustManager](java-secure-socket-extension-jsse-reference-guide.html#GUID-E1205974-3249-4E40-83C0-5F89C7375CF4 "If the supplied X509TrustManager behavior is not suitable for your situation, then you can create your own X509TrustManager by either creating and registering your own TrustManagerFactory or by implementing the X509TrustManager interface directly.").
 
 Support for the [Server Name Indication (SNI)
-Extension](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
+Extension](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
 on the server side enables the key manager to check the server name and
 select the appropriate key accordingly. For example, suppose there are
 three key entries with certificates in the keystore:
@@ -5015,7 +5015,7 @@ that affect a SSL/TLS/DTLS connection:
     handshaking
 -   The server names and server name matchers (see [Server Name
     Indication (SNI)
-    Extension](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F))
+    Extension](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F))
 -   The cipher suite preference to be used in an SSL/TLS/DTLS handshake
 -   Algorithm during SSL/TLS/DTLS handshaking
 -   The Server Name Indication (SNI)
@@ -5043,7 +5043,7 @@ implementation of `X509ExtendedTrustManager`{.codeph}, it uses the
 server name indication retrieved by the
 `ExtendedSSLSession.getRequestedServerNames()`{.codeph} method. See
 [Example
-8-14](java-secure-socket-extension-jsse-reference-guide.htm#GUID-BC9AD59B-05B6-4ACA-9CDD-D18ACEA3840D__SAMPLECODETOSETTHESERVERNAMEINDICAT-6A7C526D).
+8-14](java-secure-socket-extension-jsse-reference-guide.html#GUID-BC9AD59B-05B6-4ACA-9CDD-D18ACEA3840D__SAMPLECODETOSETTHESERVERNAMEINDICAT-6A7C526D).
 
 <div class="example" id="GUID-BC9AD59B-05B6-4ACA-9CDD-D18ACEA3840D__SAMPLECODETOSETTHESERVERNAMEINDICAT-6A7C526D">
 Example 8-14 Sample Code to Set Server Name Indication
@@ -5098,7 +5098,7 @@ invoking the method
 <div>
 The `javax.net.ssl.SSLSessionContext`{.codeph} interface is a grouping
 of
-[SSLSession](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AB362290-033A-4D3B-AAF3-1BFEB1CD472B "The javax.net.ssl.SSLSession interface represents a security context negotiated between the two peers of an SSLSocket or SSLEngine connection. After a session has been arranged, it can be shared by future SSLSocket or SSLEngine objects connected between the same two peers.")
+[SSLSession](java-secure-socket-extension-jsse-reference-guide.html#GUID-AB362290-033A-4D3B-AAF3-1BFEB1CD472B "The javax.net.ssl.SSLSession interface represents a security context negotiated between the two peers of an SSLSocket or SSLEngine connection. After a session has been arranged, it can be shared by future SSLSocket or SSLEngine objects connected between the same two peers.")
 objects associated with a single entity. For example, it could be
 associated with a server or client that participates in many sessions
 concurrently. The methods in this interface enable the enumeration of
@@ -5122,7 +5122,7 @@ method returns null.
 The `javax.net.ssl.SSLSessionBindingListener`{.codeph} interface is
 implemented by objects that are notified when they are being bound or
 unbound from an
-[SSLSession](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AB362290-033A-4D3B-AAF3-1BFEB1CD472B "The javax.net.ssl.SSLSession interface represents a security context negotiated between the two peers of an SSLSocket or SSLEngine connection. After a session has been arranged, it can be shared by future SSLSocket or SSLEngine objects connected between the same two peers.").
+[SSLSession](java-secure-socket-extension-jsse-reference-guide.html#GUID-AB362290-033A-4D3B-AAF3-1BFEB1CD472B "The javax.net.ssl.SSLSession interface represents a security context negotiated between the two peers of an SSLSocket or SSLEngine connection. After a session has been arranged, it can be shared by future SSLSocket or SSLEngine objects connected between the same two peers.").
 
 </div>
 </div>
@@ -5136,10 +5136,10 @@ The `javax.net.ssl.SSLSessionBindingEvent`{.codeph} class defines the
 event communicated to an
 <span class="apiname">SSLSessionBindingListener</span> (see [The
 SSLSessionBindingListener
-Interface](java-secure-socket-extension-jsse-reference-guide.htm#GUID-F2F8AC17-849A-40EE-A385-FD15328999B6))
+Interface](java-secure-socket-extension-jsse-reference-guide.html#GUID-F2F8AC17-849A-40EE-A385-FD15328999B6))
 when it is bound or unbound from an
 <span class="apiname">SSLSession</span> (see [SSLSession and
-ExtendedSSLSession](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AB362290-033A-4D3B-AAF3-1BFEB1CD472B "The javax.net.ssl.SSLSession interface represents a security context negotiated between the two peers of an SSLSocket or SSLEngine connection. After a session has been arranged, it can be shared by future SSLSocket or SSLEngine objects connected between the same two peers.")).
+ExtendedSSLSession](java-secure-socket-extension-jsse-reference-guide.html#GUID-AB362290-033A-4D3B-AAF3-1BFEB1CD472B "The javax.net.ssl.SSLSession interface represents a security context negotiated between the two peers of an SSLSocket or SSLEngine connection. After a session has been arranged, it can be shared by future SSLSocket or SSLEngine objects connected between the same two peers.")).
 
 </div>
 </div>
@@ -5165,7 +5165,7 @@ The `javax.net.ssl.HandShakeCompletedEvent`{.codeph} class defines the
 event communicated to a
 <span class="apiname">HandShakeCompletedListener</span> (see [The
 HandShakeCompletedListener
-Interface](java-secure-socket-extension-jsse-reference-guide.htm#GUID-DFBAA9D1-C08B-48C9-88FE-F88003A6A6C7 "The javax.net.ssl.HandShakeCompletedListener interface is an interface implemented by any class that is notified of the completion of an SSL protocol handshake on a given SSLSocket connection."))
+Interface](java-secure-socket-extension-jsse-reference-guide.html#GUID-DFBAA9D1-C08B-48C9-88FE-F88003A6A6C7 "The javax.net.ssl.HandShakeCompletedListener interface is an interface implemented by any class that is notified of the completion of an SSL protocol handshake on a given SSLSocket connection."))
 upon completion of an SSL protocol handshake on a given
 `SSLSocket`{.codeph} connection.
 
@@ -5184,7 +5184,7 @@ the class that implements this interface and is assigned to this
 determine that the host name is acceptable given the parameters, it
 reports that the connection should be allowed. An unacceptable response
 causes the connection to be terminated. See [Example
-8-15](java-secure-socket-extension-jsse-reference-guide.htm#GUID-9E46E5AA-FE3E-48D7-B616-98A143F74587__SAMPLECODEFORHOSTNAMEVERIFIERINTERF-6A7C5993).
+8-15](java-secure-socket-extension-jsse-reference-guide.html#GUID-9E46E5AA-FE3E-48D7-B616-98A143F74587__SAMPLECODEFORHOSTNAMEVERIFIERINTERF-6A7C5993).
 
 See
 [`HttpsURLConnection`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/net/ssl/HttpsURLConnection.html)
@@ -5286,7 +5286,7 @@ constants definitions in JSSE.
 
 `StandardConstants.SNI_HOST_NAME`{.codeph} represents a domain name
 server (DNS) host name in a [Server Name Indication
-(SNI)](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
+(SNI)](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
 extension, which can be used when instantiating an
 `SNIServerName`{.codeph} or `SNIMatcher`{.codeph} object.
 
@@ -5300,7 +5300,7 @@ extension, which can be used when instantiating an
 <div>
 An instance of the abstract `SNIServerName`{.codeph} class represents a
 server name in the [Server Name Indication
-(SNI)](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
+(SNI)](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
 extension. It is instantiated using the type and encoded value of the
 specified server name.
 
@@ -5324,7 +5324,7 @@ server name type and encoded server name value), use the
 An instance of the abstract `SNIMatcher`{.codeph} class performs match
 operations on an `SNIServerName`{.codeph} object. Servers can use
 information from the [Server Name Indication
-(SNI)](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
+(SNI)](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
 extension to decide if a specific `SSLSocket`{.codeph} or
 `SSLEngine`{.codeph} should accept a connection. For example, when
 multiple \"virtual\" or \"name-based\" servers are hosted on a single
@@ -5351,9 +5351,9 @@ use the `getType()`{.codeph} method.
 An instance of the `SNIHostName`{.codeph} class (which extends the
 `SNIServerName`{.codeph} class) represents a server name of type
 \"host\_name\" (see [The StandardConstants
-Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-651B5070-F586-4504-A6CD-8BEB2D928D47 "The StandardConstants class is used to represent standard constants definitions in JSSE."))
+Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-651B5070-F586-4504-A6CD-8BEB2D928D47 "The StandardConstants class is used to represent standard constants definitions in JSSE."))
 in the [Server Name Indication (SNI)
-Extension](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F).
+Extension](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F).
 To instantiate an `SNIHostName`{.codeph}, specify the fully qualified
 DNS host name of the server (as understood by the client) as a
 `String`{.codeph} argument. The argument is illegal in the following
@@ -5415,9 +5415,9 @@ keystore, and so on.
 
 <div class="section">
 [Table
-8-7](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SECURITYPROPERTIESANDCUSTOMIZEITEMS-DCEC7645 "List of Security Properties and the customizable items.")
+8-7](java-secure-socket-extension-jsse-reference-guide.html#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SECURITYPROPERTIESANDCUSTOMIZEITEMS-DCEC7645 "List of Security Properties and the customizable items.")
 and [Table
-8-8](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SYSTEMPROPERTIESANDCUSTOMIZEITEMSIN-DCEEB591 "List of system properties and customized items.")
+8-8](java-secure-socket-extension-jsse-reference-guide.html#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SYSTEMPROPERTIESANDCUSTOMIZEITEMSIN-DCEEB591 "List of system properties and customized items.")
 summarize which aspects can be customized, what the defaults are, and
 which mechanisms are used to provide customization.
 
@@ -5443,11 +5443,11 @@ use with the JSSE implementation.
 
 <div class="section">
 [Table
-8-7](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SECURITYPROPERTIESANDCUSTOMIZEITEMS-DCEC7645 "List of Security Properties and the customizable items.")
+8-7](java-secure-socket-extension-jsse-reference-guide.html#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SECURITYPROPERTIESANDCUSTOMIZEITEMS-DCEC7645 "List of Security Properties and the customizable items.")
 shows items that are customized by setting the
 `java.security.Security`{.codeph} property. See [How to Specify a
 java.security.Security
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-38CC6235-823B-49D7-A566-4BEA1B64C9C6)
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-38CC6235-823B-49D7-A566-4BEA1B64C9C6)
 
 <div class="tblformalwide" id="GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SECURITYPROPERTIESANDCUSTOMIZEITEMS-DCEC7645">
 Table 8-7 Security Properties and Customized Items
@@ -5463,7 +5463,7 @@ Table 8-7 Security Properties and Customized Items
 |                 | (java-secure-so |                 |                 |
 |                 | cket-extension- |                 |                 |
 |                 | jsse-reference- |                 |                 |
-|                 | guide.htm#GUID- |                 |                 |
+|                 | guide.html#GUID- |                 |                 |
 |                 | F196CEDD-DC14-4 |                 |                 |
 |                 | 0EA-852A-133DB9 |                 |                 |
 |                 | BA798B "The X50 |                 |                 |
@@ -5480,7 +5480,7 @@ Table 8-7 Security Properties and Customized Items
 +-----------------+-----------------+-----------------+-----------------+
 | `jdk.tls.client | Client-side     | [Table          | <span class="bo |
 | .cipherSuites`{ | default enabled | 4-11](oracle-pr | ld">Caution</sp |
-| .codeph}        | cipher suites;  | oviders.htm#GUI | an>:            |
+| .codeph}        | cipher suites;  | oviders.html#GUI | an>:            |
 |                 | see [Specifying | D-7093246A-31A3 | These system    |
 |                 | Default Enabled | -4304-AC5F-5FB6 | properties can  |
 |                 | Cipher          | 400405E2__CIPHE | be used to      |
@@ -5505,7 +5505,7 @@ Table 8-7 Security Properties and Customized Items
 +-----------------+-----------------+-----------------+-----------------+
 | `jdk.tls.server | Server-side     | [Table          | <span class="bo |
 | .cipherSuites`{ | default enabled | 4-11](oracle-pr | ld">Caution</sp |
-| .codeph}        | cipher suites;  | oviders.htm#GUI | an>:            |
+| .codeph}        | cipher suites;  | oviders.html#GUI | an>:            |
 |                 | see [Specifying | D-7093246A-31A3 | These system    |
 |                 | Default Enabled | -4304-AC5F-5FB6 | properties can  |
 |                 | Cipher          | 400405E2__CIPHE | be used to      |
@@ -5537,7 +5537,7 @@ Table 8-7 Security Properties and Customized Items
 |                 | (java-secure-so | 2.  SunRsaSign  | security        |
 |                 | cket-extension- | 3.  SunEC       | properties      |
 |                 | jsse-reference- | 4.  SunJSSE     | file, where     |
-|                 | guide.htm#GUID- | 5.  SunJCE      | `n`{.codeph} is |
+|                 | guide.html#GUID- | 5.  SunJCE      | `n`{.codeph} is |
 |                 | 8BC473B2-CD64-4 |                 | an integer      |
 |                 | E8B-8136-80BB28 |                 | whose value is  |
 |                 | 6091B1 "The JDK |                 | equal or        |
@@ -5563,7 +5563,7 @@ Table 8-7 Security Properties and Customized Items
 |                 | -secure-socket- |                 |                 |
 |                 | extension-jsse- |                 |                 |
 |                 | reference-guide |                 |                 |
-|                 | .htm#GUID-316FB |                 |                 |
+|                 | .html#GUID-316FB |                 |                 |
 |                 | 978-7588-442E-B |                 |                 |
 |                 | 829-B4973DB3B58 |                 |                 |
 |                 | 4 "The SunJSSE  |                 |                 |
@@ -5626,7 +5626,7 @@ Table 8-7 Security Properties and Customized Items
 |                 | a-secure-socket | GUID-A41282C3-1 |                 |
 |                 | -extension-jsse | 9A3-400A-A40F-8 |                 |
 |                 | -reference-guid | 6F4DA22ABA9__RE |                 |
-|                 | e.htm#GUID-0A43 | STRICTED_ALGORI |                 |
+|                 | e.html#GUID-0A43 | STRICTED_ALGORI |                 |
 |                 | 8179-32A7-4900- | THMS_MAY_CHANGE |                 |
 |                 | A81C-29E3073E1E | _FOOTNOTE){#GUI |                 |
 |                 | 90 "In some env | D-A41282C3-19A3 |                 |
@@ -5726,7 +5726,7 @@ Table 8-7 Security Properties and Customized Items
 |                 | a-secure-socket | keySize \<      | versions,       |
 |                 | -extension-jsse | 224[^Footref 4^ | cipher suites,  |
 |                 | -reference-guid | ](#fnsrc_d10810 | key exchange    |
-|                 | e.htm#GUID-0A43 | 6e6311){#fnsrc_ | mechanisms,     |
+|                 | e.html#GUID-0A43 | 6e6311){#fnsrc_ | mechanisms,     |
 |                 | 8179-32A7-4900- | d108106e6311}   | etc.) that will |
 |                 | A81C-29E3073E1E |                 | not be          |
 |                 | 90 "In some env |                 | negotiated for  |
@@ -5803,10 +5803,10 @@ security) in future releases.</span>
 
 <div class="section">
 [Table
-8-8](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SYSTEMPROPERTIESANDCUSTOMIZEITEMSIN-DCEEB591 "List of system properties and customized items.")
+8-8](java-secure-socket-extension-jsse-reference-guide.html#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SYSTEMPROPERTIESANDCUSTOMIZEITEMSIN-DCEEB591 "List of system properties and customized items.")
 shows items that are customized by setting `java.lang.System`{.codeph}
 property. See [How to Specify a java.lang.System
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363).
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363).
 
 <div class="tblformalwide" id="GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__SYSTEMPROPERTIESANDCUSTOMIZEITEMSIN-DCEEB591">
 Table 8-8 System Properties and Customized Items
@@ -5821,7 +5821,7 @@ Table 8-8 System Properties and Customized Items
 |                 | (java-secure-so |                 |                 |
 |                 | cket-extension- |                 |                 |
 |                 | jsse-reference- |                 |                 |
-|                 | guide.htm#GUID- |                 |                 |
+|                 | guide.html#GUID- |                 |                 |
 |                 | 7EBD6A94-9ADE-4 |                 |                 |
 |                 | 321-8915-17B376 |                 |                 |
 |                 | 3F8E77 "You can |                 |                 |
@@ -5849,7 +5849,7 @@ Table 8-8 System Properties and Customized Items
 |                 | -secure-socket- |                 | it resides in a |
 |                 | extension-jsse- |                 | hardware token) |
 |                 | reference-guide |                 |                 |
-|                 | .htm#GUID-7D9F4 |                 |                 |
+|                 | .html#GUID-7D9F4 |                 |                 |
 |                 | 3B8-AABF-4C5B-9 |                 |                 |
 |                 | 3E6-3AFB18B6615 |                 |                 |
 |                 | 0))             |                 |                 |
@@ -5867,7 +5867,7 @@ Table 8-8 System Properties and Customized Items
 |                 | -secure-socket- |                 | specifying the  |
 |                 | extension-jsse- |                 | password on the |
 |                 | reference-guide |                 | command line.   |
-|                 | .htm#GUID-7D9F4 |                 | To keep the     |
+|                 | .html#GUID-7D9F4 |                 | To keep the     |
 |                 | 3B8-AABF-4C5B-9 |                 | password        |
 |                 | 3E6-3AFB18B6615 |                 | secure, have    |
 |                 | 0))             |                 | the application |
@@ -5892,7 +5892,7 @@ Table 8-8 System Properties and Customized Items
 |                 | -secure-socket- |                 |                 |
 |                 | extension-jsse- |                 |                 |
 |                 | reference-guide |                 |                 |
-|                 | .htm#GUID-7D9F4 |                 |                 |
+|                 | .html#GUID-7D9F4 |                 |                 |
 |                 | 3B8-AABF-4C5B-9 |                 |                 |
 |                 | 3E6-3AFB18B6615 |                 |                 |
 |                 | 0))             |                 |                 |
@@ -5910,7 +5910,7 @@ Table 8-8 System Properties and Customized Items
 |                 | -secure-socket- |                 |                 |
 |                 | extension-jsse- |                 |                 |
 |                 | reference-guide |                 |                 |
-|                 | .htm#GUID-7D9F4 |                 |                 |
+|                 | .html#GUID-7D9F4 |                 |                 |
 |                 | 3B8-AABF-4C5B-9 |                 |                 |
 |                 | 3E6-3AFB18B6615 |                 |                 |
 |                 | 0))             |                 |                 |
@@ -5927,7 +5927,7 @@ Table 8-8 System Properties and Customized Items
 |                 | -secure-socket- |                 |                 |
 |                 | extension-jsse- |                 |                 |
 |                 | reference-guide |                 |                 |
-|                 | .htm#GUID-7D9F4 |                 |                 |
+|                 | .html#GUID-7D9F4 |                 |                 |
 |                 | 3B8-AABF-4C5B-9 |                 |                 |
 |                 | 3E6-3AFB18B6615 |                 |                 |
 |                 | 0))             |                 |                 |
@@ -5945,7 +5945,7 @@ Table 8-8 System Properties and Customized Items
 |                 | -secure-socket- |                 | specifying the  |
 |                 | extension-jsse- |                 | password on the |
 |                 | reference-guide |                 | command line.   |
-|                 | .htm#GUID-7D9F4 |                 | To keep the     |
+|                 | .html#GUID-7D9F4 |                 | To keep the     |
 |                 | 3B8-AABF-4C5B-9 |                 | password        |
 |                 | 3E6-3AFB18B6615 |                 | secure, have    |
 |                 | 0))             |                 | the application |
@@ -5970,7 +5970,7 @@ Table 8-8 System Properties and Customized Items
 |                 | -secure-socket- |                 |                 |
 |                 | extension-jsse- |                 |                 |
 |                 | reference-guide |                 |                 |
-|                 | .htm#GUID-7D9F4 |                 |                 |
+|                 | .html#GUID-7D9F4 |                 |                 |
 |                 | 3B8-AABF-4C5B-9 |                 |                 |
 |                 | 3E6-3AFB18B6615 |                 |                 |
 |                 | 0))             |                 |                 |
@@ -5988,7 +5988,7 @@ Table 8-8 System Properties and Customized Items
 |                 | -secure-socket- |                 | resides in a    |
 |                 | extension-jsse- |                 | hardware token) |
 |                 | reference-guide |                 |                 |
-|                 | .htm#GUID-7D9F4 |                 |                 |
+|                 | .html#GUID-7D9F4 |                 |                 |
 |                 | 3B8-AABF-4C5B-9 |                 |                 |
 |                 | 3E6-3AFB18B6615 |                 |                 |
 |                 | 0))             |                 |                 |
@@ -6143,7 +6143,7 @@ Table 8-8 System Properties and Customized Items
 |                 |                 |                 | a-secure-socket |
 |                 |                 |                 | -extension-jsse |
 |                 |                 |                 | -reference-guid |
-|                 |                 |                 | e.htm#GUID-AC67 |
+|                 |                 |                 | e.html#GUID-AC67 |
 |                 |                 |                 | 00ED-ADC4-41EA- |
 |                 |                 |                 | B111-2AEF2CBF77 |
 |                 |                 |                 | 44 "The status  |
@@ -6164,7 +6164,7 @@ Table 8-8 System Properties and Customized Items
 |                 | Fix](java-secur |                 | renegotiation.  |
 |                 | e-socket-extens |                 |                 |
 |                 | ion-jsse-refere |                 | This system     |
-|                 | nce-guide.htm#G |                 | property is     |
+|                 | nce-guide.html#G |                 | property is     |
 |                 | UID-475E6316-28 |                 | <span>deprecate |
 |                 | 3A-4A59-9B11-24 |                 | d               |
 |                 | 79348C4629 "The |                 | and might be    |
@@ -6205,7 +6205,7 @@ Table 8-8 System Properties and Customized Items
 |                 | Fix](java-secur |                 | without         |
 |                 | e-socket-extens |                 | requiring the   |
 |                 | ion-jsse-refere |                 | proper RFC 5746 |
-|                 | nce-guide.htm#G |                 | messages.       |
+|                 | nce-guide.html#G |                 | messages.       |
 |                 | UID-475E6316-28 |                 |                 |
 |                 | 3A-4A59-9B11-24 |                 | This system     |
 |                 | 79348C4629 "The |                 | property is     |
@@ -6240,7 +6240,7 @@ Table 8-8 System Properties and Customized Items
 +-----------------+-----------------+-----------------+-----------------+
 | `jdk.tls.client | [The SunJSSE    | None            | To enable       |
 | .protocols`{#GU | Provider](oracl |                 | specific        |
-| ID-A41282C3-19A | e-providers.htm |                 | `SunJSSE`{.code |
+| ID-A41282C3-19A | e-providers.html |                 | `SunJSSE`{.code |
 | 3-400A-A40F-86F | #GUID-7093246A- |                 | ph}             |
 | 4DA22ABA9__JDK. | 31A3-4304-AC5F- |                 | protocols on    |
 | TLS.CLIENT.PROT | 5FB6400405E2)   |                 | the client,     |
@@ -6305,7 +6305,7 @@ Table 8-8 System Properties and Customized Items
 |                 | Keys](java-secu |                 |                 |
 |                 | re-socket-exten |                 |                 |
 |                 | sion-jsse-refer |                 |                 |
-|                 | ence-guide.htm# |                 |                 |
+|                 | ence-guide.html# |                 |                 |
 |                 | GUID-D9B216E8-3 |                 |                 |
 |                 | EFC-4882-B76E-1 |                 |                 |
 |                 | 7A87D8F2F9D "In |                 |                 |
@@ -6336,7 +6336,7 @@ Table 8-8 System Properties and Customized Items
 |                 | -secure-socket- |                 |                 |
 |                 | extension-jsse- |                 |                 |
 |                 | reference-guide |                 |                 |
-|                 | .htm#GUID-41D5F |                 |                 |
+|                 | .html#GUID-41D5F |                 |                 |
 |                 | 11E-81BD-4C03-A |                 |                 |
 |                 | 315-48016D9B9B3 |                 |                 |
 |                 | 6 "In order to  |                 |                 |
@@ -6393,7 +6393,7 @@ There are several ways to set these properties:
     application named MyApp and set the
     `javax.net.ssl.trustStore`{.codeph} system property to specify a
     truststore named MyCacertsFile. See
-    [truststore](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150).
+    [truststore](java-secure-socket-extension-jsse-reference-guide.html#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150).
     Enter the following:</span>
 
     <div>
@@ -6471,7 +6471,7 @@ You can set a Security Property either statically or dynamically:
 
     [<!-- -->]{#GUID-38CC6235-823B-49D7-A566-4BEA1B64C9C6__GUID-548CD27A-7959-4905-8A44-EA4F9CE36641}<span class="variable">java-home</span>
     :   See [Terms and
-        Definitions](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.")
+        Definitions](java-secure-socket-extension-jsse-reference-guide.html#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.")
 
     To specify a Security Property value in the security properties
     file, you add a line of the following form:
@@ -6536,7 +6536,7 @@ To cause a different implementation to be returned:
 <div class="section">
 Specify the name (and package) of the other implementation\'s class as
 the value of a [How to Specify a java.security.Security
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-38CC6235-823B-49D7-A566-4BEA1B64C9C6)
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-38CC6235-823B-49D7-A566-4BEA1B64C9C6)
 named `cert.provider.x509v1`{.codeph}.
 
 </div>
@@ -6647,9 +6647,9 @@ Specified by JSSE Provider Defaults
 
 Each JSSE provider has its own default enabled cipher suites. See [The
 SunJSSE
-Provider](oracle-providers.htm#GUID-7093246A-31A3-4304-AC5F-5FB6400405E2)
+Provider](oracle-providers.html#GUID-7093246A-31A3-4304-AC5F-5FB6400405E2)
 in [JDK Providers
-Documentation](oracle-providers.htm#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.")
+Documentation](oracle-providers.html#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.")
 for the cipher suite names supported by the SunJSSE provider and which
 ones that are enabled by default.
 
@@ -6671,7 +6671,7 @@ a default HTTPS URL implementation.
 If you want an alternative HTTPS protocol implementation to be used, set
 the `java.protocol.handler.pkgs`{.codeph} [How to Specify a
 java.lang.System
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363)
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363)
 to include the new class name. This action causes the specified classes
 to be found and loaded before the JDK default classes. See the
 [<span class="apiname">URL</span>](https://docs.oracle.com/javase/10/docs/api/java/net/URL.html)
@@ -6704,7 +6704,7 @@ classes for specific cryptographic algorithms.
 The JSSE engine classes are `SSLContext`{.codeph},
 `KeyManagerFactory`{.codeph}, and `TrustManagerFactory`{.codeph}. See
 [Java Cryptography Architecture (JCA) Reference
-Guide](java-cryptography-architecture-jca-reference-guide.htm#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.")
+Guide](java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.")
 to know more about providers and engine classes.
 
 Before it can be used, a provider must be registered, either statically
@@ -6755,9 +6755,9 @@ implementation from the first provider that supplies an implementation
 for the specified algorithm is used.
 
 See [Step 8.1: Configure the
-Provider](howtoimplaprovider.htm#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")
+Provider](howtoimplaprovider.html#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")
 in [Steps to Implement and Integrate a
-Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
+Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
 
 </div>
 <!-- class="section" -->
@@ -6780,9 +6780,9 @@ granted the `insertProvider.<provider name>`{.codeph} permission.
 
 <div class="section">
 See [Step 8.1: Configure the
-Provider](howtoimplaprovider.htm#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")
+Provider](howtoimplaprovider.html#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")
 in [Steps to Implement and Integrate a
-Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
+Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
 
 </div>
 <!-- class="section" -->
@@ -6799,7 +6799,7 @@ Some providers may require configuration. This is done using the
 `configure`{.codeph} method of the `Provider`{.codeph} class, prior to
 calling the `addProvider`{.codeph} method of the `Security`{.codeph}
 class. See [SunPKCS11
-Configuration](pkcs11-reference-guide1.htm#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9)
+Configuration](pkcs11-reference-guide1.html#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9)
 for an example. The `Provider.configure()`{.codeph} method is new to
 Java SE 9.
 
@@ -6827,12 +6827,12 @@ The `jdk.security.provider.preferred`{.codeph} Security Property allows
 specific algorithms, or service types to be selected from a preferred
 set of providers before accessing the list of registered providers. See
 [How to Specify a java.security.Security
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-38CC6235-823B-49D7-A566-4BEA1B64C9C6).
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-38CC6235-823B-49D7-A566-4BEA1B64C9C6).
 
 The `jdk.security.provider.preferred`{.codeph} Security Property does
 not register the providers. The ordered provider list must be
 [Registering the Cryptographic Provider
-Statically](java-secure-socket-extension-jsse-reference-guide.htm#GUID-59723547-D466-44C9-B066-EC5098B508E6)
+Statically](java-secure-socket-extension-jsse-reference-guide.html#GUID-59723547-D466-44C9-B066-EC5098B508E6)
 using the `security.provider.n`{.codeph} property. Any provider that is
 not registered is ignored.
 
@@ -6867,7 +6867,7 @@ In this syntax:
 
 :   The name of the provider. Any provider that isn't listed in the
     registered list will be ignored. See [JDK
-    Providers](oracle-providers.htm#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
+    Providers](oracle-providers.html#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
 
 Entries containing errors such as parsing errors are ignored. Use the
 command `java -Djava.security.debug=jca`{.codeph} to debug errors.
@@ -6947,12 +6947,12 @@ This default `SSLContext`{.codeph} is initialized with a default
 keystore is specified by the `javax.net.ssl.keyStore`{.codeph} system
 property and an appropriate `javax.net.ssl.keyStorePassword`{.codeph}
 system property (see [How to Specify a java.lang.System
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363)),
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363)),
 then the `KeyManager`{.codeph} created by the default
 `SSLContext`{.codeph} will be a `KeyManager`{.codeph} implementation for
 managing the specified keystore. (The actual implementation will be as
 specified in [Customizing the Default Key Managers and Trust
-Managers](java-secure-socket-extension-jsse-reference-guide.htm#GUID-0ACD9274-607C-49BE-AED9-BEE2B4F2BEF2).)
+Managers](java-secure-socket-extension-jsse-reference-guide.html#GUID-0ACD9274-607C-49BE-AED9-BEE2B4F2BEF2).)
 If no such system property is specified, then the keystore managed by
 the `KeyManager`{.codeph} will be a new empty keystore.
 
@@ -7040,7 +7040,7 @@ JSSE reference implementation does, as described herein.
 <div class="section">
 As noted in [Customizing the Default Keystores and Truststores, Store
 Types, and Store
-Passwords](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150),
+Passwords](java-secure-socket-extension-jsse-reference-guide.html#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150),
 whenever a default `SSLSocketFactory`{.codeph} or
 `SSLServerSocketFactory`{.codeph} is created, and this default
 `SSLSocketFactory`{.codeph} (or `SSLServerSocketFactory`{.codeph}) comes
@@ -7056,7 +7056,7 @@ section.
 
 The `KeyManager`{.codeph} implementation chosen is determined by first
 examining the `ssl.KeyManagerFactory.algorithm`{.codeph} [Security
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-38CC6235-823B-49D7-A566-4BEA1B64C9C6).
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-38CC6235-823B-49D7-A566-4BEA1B64C9C6).
 If such a property value is specified, then a
 `KeyManagerFactory`{.codeph} implementation for the specified algorithm
 is searched for. The implementation from the first provider that
@@ -7214,7 +7214,7 @@ JCA or JCE providers by registering them
 <div class="section">
 The standard JCA mechanism (see [How Provider Implementations Are
 Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741))
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741))
 can be used to configure providers, either statically via the security
 properties file `<java-home>/conf/security/java.security`{.codeph}, or
 dynamically via the `addProvider()`{.codeph} or
@@ -7699,7 +7699,7 @@ place:
 </p>
 Set the mode with the the following system properties (see [How to
 Specify a java.lang.System
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363)):
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363)):
 
 -   `sun.security.ssl.allowUnsafeRenegotiation`{.codeph} (introduced in
     Phase 1) controls whether legacy (unsafe) renegotiations are
@@ -7780,7 +7780,7 @@ Here are a few suggested options:
     \"insecure\" using the system properties.</span>
 
     See [Description of the Phase 2
-    Fix](java-secure-socket-extension-jsse-reference-guide.htm#GUID-475E6316-283A-4A59-9B11-2479348C4629 "The SunJSSE implementation reenables renegotiations by default for connections to peers compliant with RFC 5746. That is, both the client and server must support RFC 5746 in order to securely renegotiate. SunJSSE provides some interoperability modes for connections with peers that have not been upgraded, but users are strongly encouraged to update both their client and server implementations as soon as possible.").
+    Fix](java-secure-socket-extension-jsse-reference-guide.html#GUID-475E6316-283A-4A59-9B11-2479348C4629 "The SunJSSE implementation reenables renegotiations by default for connections to peers compliant with RFC 5746. That is, both the client and server must support RFC 5746 in order to securely renegotiate. SunJSSE provides some interoperability modes for connections with peers that have not been upgraded, but users are strongly encouraged to update both their client and server implementations as soon as possible.").
 
 </div>
 </div>
@@ -7904,7 +7904,7 @@ The Java Cryptography Architecture (JCA) is a set of packages that
 provides a framework and implementations for encryption, key generation
 and key agreement, and message authentication code (MAC) algorithms.
 (See [Java Cryptography Architecture (JCA) Reference
-Guide](java-cryptography-architecture-jca-reference-guide.htm#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").)
+Guide](java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").)
 The SunJSSE provider uses JCA exclusively for all of its cryptographic
 operations and can automatically take advantage of JCE features and
 enhancements, including JCA\'s support for RSA
@@ -7920,7 +7920,7 @@ configured to use the underlying accelerator hardware. The provider must
 be configured before any other JCA providers in the provider list. For
 details on how to configure the Oracle PKCS\#11 provider, see [PKCS\#11
 Reference
-Guide](pkcs11-reference-guide1.htm#GUID-30E98B63-4910-40A1-A6DD-663EAF466991).
+Guide](pkcs11-reference-guide1.html#GUID-30E98B63-4910-40A1-A6DD-663EAF466991).
 
 </div>
 <!-- class="section" -->
@@ -7935,7 +7935,7 @@ Guide](pkcs11-reference-guide1.htm#GUID-30E98B63-4910-40A1-A6DD-663EAF466991).
 Support for PKCS\#11 in JCA also enables access to smartcards as a
 keystore. For details on how to configure the type and location of the
 keystores to be used by JSSE, see [Customizing
-JSSE](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9 "JSSE includes a standard implementation that can be customized by plugging in different implementations or specifying the default keystore, and so on.").
+JSSE](java-secure-socket-extension-jsse-reference-guide.html#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9 "JSSE includes a standard implementation that can be customized by plugging in different implementations or specifying the default keystore, and so on.").
 To use a smartcard as a keystore or truststore, set the
 `javax.net.ssl.keyStoreType`{.codeph} and
 `javax.net.ssl.trustStoreType`{.codeph} system properties, respectively,
@@ -7988,7 +7988,7 @@ are available, it attempts to pick a certificate with the appropriate
 key usage and prefers valid to expired certificates.
 
 [Example
-8-17](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C236C41B-54CA-4095-986B-7C62BBC419FB__IMPORTJAVAX.NET.SSL.IMPORTJAVA.SECU-6B0B77DA)
+8-17](java-secure-socket-extension-jsse-reference-guide.html#GUID-C236C41B-54CA-4095-986B-7C62BBC419FB__IMPORTJAVAX.NET.SSL.IMPORTJAVA.SECU-6B0B77DA)
 illustrates how to tell JSSE to use both a PKCS\#11 keystore (which
 might in turn use a smartcard) and a PKCS\#12 file-based keystore.
 
@@ -8154,7 +8154,7 @@ Java GSS calls with JSSE calls.
 
 If you have trouble using or configuring the JSSE application to use
 Kerberos, see
-[Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE)
+[Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE)
 in [Introduction to JAAS and Java GSS-API
 Tutorials](introduction-jaas-and-java-gss-api-tutorials1.htm).
 
@@ -8302,13 +8302,13 @@ Developers of client applications can explicitly set the server name
 indication using the
 `SSLParameters.setServerNames(List<SNIServerName> serverNames)`{.codeph}
 method. See [Example
-8-18](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F__GUID-B5160B29-A377-41C0-A60D-4A3E0C89CCAF).
+8-18](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F__GUID-B5160B29-A377-41C0-A60D-4A3E0C89CCAF).
 
 Developers of server applications can use the `SNIMatcher`{.codeph}
 class to decide how to recognize server name indication. [Example
-8-19](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F__GUID-6EACE6B2-E1A4-4A8B-82B1-7C122495CF0D)
+8-19](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F__GUID-6EACE6B2-E1A4-4A8B-82B1-7C122495CF0D)
 and [Example
-8-20](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F__GUID-E25CEBA5-2D07-484C-82EB-D280E32F7D08)
+8-20](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F__GUID-E25CEBA5-2D07-484C-82EB-D280E32F7D08)
 illustrate this functionality:
 
 <div class="example" id="GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F__GUID-B5160B29-A377-41C0-A60D-4A3E0C89CCAF">
@@ -8421,16 +8421,16 @@ requests in the ClientHello message:
 For descriptions of new classes that implement the SNI extension, see:
 
 -   [The StandardConstants
-    Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-651B5070-F586-4504-A6CD-8BEB2D928D47 "The StandardConstants class is used to represent standard constants definitions in JSSE.")
+    Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-651B5070-F586-4504-A6CD-8BEB2D928D47 "The StandardConstants class is used to represent standard constants definitions in JSSE.")
 -   [The SNIServerName
-    Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-ADD484B7-244A-4FBC-AEF0-96873890CD6B)
+    Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-ADD484B7-244A-4FBC-AEF0-96873890CD6B)
 -   [The SNIMatcher
-    Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-073F0493-3DB8-4388-818B-83E92021EF45)
+    Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-073F0493-3DB8-4388-818B-83E92021EF45)
 -   [The SNIHostName
-    Class](java-secure-socket-extension-jsse-reference-guide.htm#GUID-E10158C4-E808-41B7-9958-A119927743D8)
+    Class](java-secure-socket-extension-jsse-reference-guide.html#GUID-E10158C4-E808-41B7-9958-A119927743D8)
 
 For examples, see [Using the Server Name Indication (SNI)
-Extension](java-secure-socket-extension-jsse-reference-guide.htm#GUID-63945B45-E909-483F-B3A9-E26586737383).
+Extension](java-secure-socket-extension-jsse-reference-guide.html#GUID-63945B45-E909-483F-B3A9-E26586737383).
 
 </div>
 <!-- class="section" -->
@@ -8573,11 +8573,11 @@ Application Protocol client side: two
 ```
 
 See [The SSL
-Handshake](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B)
+Handshake](java-secure-socket-extension-jsse-reference-guide.html#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B)
 for further details on handshaking. It is also possible to check the
 results of the negotiation during handshaking. See [Determining
 Negotiated ALPN Value during
-Handshaking](java-secure-socket-extension-jsse-reference-guide.htm#GUID-BB4A54B3-FBC2-4B32-91CA-A16F91467ED9 "To determine the ALPN value that has been negotiated during the handshaking, create a custom KeyManager or TrustManager class, and include in this custom class a call to the getHandshakeApplicationProtocol method.").
+Handshaking](java-secure-socket-extension-jsse-reference-guide.html#GUID-BB4A54B3-FBC2-4B32-91CA-A16F91467ED9 "To determine the ALPN value that has been negotiated during the handshaking, create a custom KeyManager or TrustManager class, and include in this custom class a call to the getHandshakeApplicationProtocol method.").
 
 </div>
 </div>
@@ -8601,7 +8601,7 @@ and then use this `SSLParameters`{.codeph} object to populate either the
 `SSLSocket`{.codeph} object or the `SSLEngine`{.codeph} object with
 these parameters as you have done when you set up ALPN on the client
 (see the section [Setting up ALPN on the
-Client](java-secure-socket-extension-jsse-reference-guide.htm#GUID-CBFA212F-C726-4D58-A520-A4BE147D1290 "Set the Application Layer Protocol Negotiation (ALPN) values supported by the client. During the handshake with the server, the server will read the client’s list of application protocols and will determine which is most suitable.")).
+Client](java-secure-socket-extension-jsse-reference-guide.html#GUID-CBFA212F-C726-4D58-A520-A4BE147D1290 "Set the Application Layer Protocol Negotiation (ALPN) values supported by the client. During the handshake with the server, the server will read the client’s list of application protocols and will determine which is most suitable.")).
 The first value of the ALPN values set on the server that matches any of
 the ALPN values contained in the `ClientHello`{.codeph} will be chosen
 and returned to the client as part of the `ServerHello`{.codeph}.
@@ -8617,7 +8617,7 @@ Here is the code for a Java server that uses the default approach for
 protocol negotiation. To run the code the property
 `javax.net.ssl.keyStore`{.codeph} must be set to a valid keystore. (This
 can be done on the command line, see [Creating a Keystore to Use with
-JSSE](java-secure-socket-extension-jsse-reference-guide.htm#GUID-3D26386B-BC7A-41BB-AC70-80E6CD147D6F "The procedure as to how you can use the keytool utility to create a simple PKCS12 keystore suitable for use with JSSE.")).
+JSSE](java-secure-socket-extension-jsse-reference-guide.html#GUID-3D26386B-BC7A-41BB-AC70-80E6CD147D6F "The procedure as to how you can use the keytool utility to create a simple PKCS12 keystore suitable for use with JSSE.")).
 
 ``` {.oac_no_warn dir="ltr"}
 import java.util.*; 
@@ -8675,11 +8675,11 @@ Application Protocol server side: two
 ```
 
 See [The SSL
-Handshake](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B)
+Handshake](java-secure-socket-extension-jsse-reference-guide.html#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B)
 for further details on handshaking. It is also possible to check the
 results of the negotiation during handshaking. See [Determining
 Negotiated ALPN Value during
-Handshaking](java-secure-socket-extension-jsse-reference-guide.htm#GUID-BB4A54B3-FBC2-4B32-91CA-A16F91467ED9 "To determine the ALPN value that has been negotiated during the handshaking, create a custom KeyManager or TrustManager class, and include in this custom class a call to the getHandshakeApplicationProtocol method.").
+Handshaking](java-secure-socket-extension-jsse-reference-guide.html#GUID-BB4A54B3-FBC2-4B32-91CA-A16F91467ED9 "To determine the ALPN value that has been negotiated during the handshaking, create a custom KeyManager or TrustManager class, and include in this custom class a call to the getHandshakeApplicationProtocol method.").
 
 </div>
 </div>
@@ -8720,7 +8720,7 @@ protocol negotiation. To run the code the property
 `javax.net.ssl.keyStore`{.codeph} must be set to a valid certificate.
 (This can be done on the command line, see [Creating a Keystore to Use
 with
-JSSE](java-secure-socket-extension-jsse-reference-guide.htm#GUID-3D26386B-BC7A-41BB-AC70-80E6CD147D6F "The procedure as to how you can use the keytool utility to create a simple PKCS12 keystore suitable for use with JSSE.")).
+JSSE](java-secure-socket-extension-jsse-reference-guide.html#GUID-3D26386B-BC7A-41BB-AC70-80E6CD147D6F "The procedure as to how you can use the keytool utility to create a simple PKCS12 keystore suitable for use with JSSE.")).
 
 ``` {.oac_no_warn dir="ltr"}
 import java.util.*; 
@@ -8802,7 +8802,7 @@ result of the negotiation by calling the
 `getApplicationProtocol`{.codeph} method on either the
 `SSLSocket`{.codeph} object or the `SSLEngine`{.codeph} object. See [The
 SSL
-Handshake](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B)
+Handshake](java-secure-socket-extension-jsse-reference-guide.html#GUID-7FCC21CB-158B-440C-B5E4-E4E5A2D7352B)
 for further details on handshaking.
 
 </div>
@@ -9130,7 +9130,7 @@ related methods and they have the same functionality.
 |                       |                       | ALPN on the           |
 |                       |                       | Server](java-secure-s |
 |                       |                       | ocket-extension-jsse- |
-|                       |                       | reference-guide.htm#G |
+|                       |                       | reference-guide.html#G |
 |                       |                       | UID-B17DF013-83BD-4A0 |
 |                       |                       | 0-BF91-D9E1E0BE70D8 " |
 |                       |                       | Use the custom ALPN m |
@@ -9164,9 +9164,9 @@ This section contains information for troubleshooting JSSE. It provides
 solutions to common configuration problem.
 
 First, it provides some common [Configuration
-Problems](java-secure-socket-extension-jsse-reference-guide.htm#GUID-E8E3C6C4-5B7E-466F-B11C-35BF3B9F454D "Solutions to some common configuration problems.")
+Problems](java-secure-socket-extension-jsse-reference-guide.html#GUID-E8E3C6C4-5B7E-466F-B11C-35BF3B9F454D "Solutions to some common configuration problems.")
 and ways to solve them, and then it describes helpful [Debugging
-Utilities](java-secure-socket-extension-jsse-reference-guide.htm#GUID-31B7E142-B874-46E9-8DD0-4E18EC0EB2CF).
+Utilities](java-secure-socket-extension-jsse-reference-guide.html#GUID-31B7E142-B874-46E9-8DD0-4E18EC0EB2CF).
 
 </div>
 <div class="sect3">
@@ -9193,7 +9193,7 @@ remote side sending a certificate that is unknown to the local side.
 
 <span class="bold">Solution 1:</span> The best way to debug this type of
 problem is to turn on debugging (see [Debugging
-Utilities](java-secure-socket-extension-jsse-reference-guide.htm#GUID-31B7E142-B874-46E9-8DD0-4E18EC0EB2CF))
+Utilities](java-secure-socket-extension-jsse-reference-guide.html#GUID-31B7E142-B874-46E9-8DD0-4E18EC0EB2CF))
 and watch as certificates are loaded and when certificates are received
 via the network connection. Most likely, the received certificate is
 unknown to the trust mechanism because the wrong trust file was loaded.
@@ -9201,11 +9201,11 @@ unknown to the trust mechanism because the wrong trust file was loaded.
 Refer to the following sections:
 
 -   [JSSE Classes and
-    Interfaces](java-secure-socket-extension-jsse-reference-guide.htm#GUID-B7AB25FA-7F0C-4EFA-A827-813B2CE7FBDC)
+    Interfaces](java-secure-socket-extension-jsse-reference-guide.html#GUID-B7AB25FA-7F0C-4EFA-A827-813B2CE7FBDC)
 -   [The TrustManager
-    Interface](java-secure-socket-extension-jsse-reference-guide.htm#GUID-42CA1099-42AD-4772-BC4A-29C2A78E3EC9 "The primary responsibility of the TrustManager is to determine whether the presented authentication credentials should be trusted. If the credentials are not trusted, then the connection will be terminated. To authenticate the remote identity of a secure socket peer, you must initialize an SSLContext object with one or more TrustManager objects. You must pass one TrustManager for each authentication mechanism that is supported. If null is passed into the SSLContext initialization, then a trust manager will be created for you. Typically, a single trust manager supports authentication based on X.509 public key certificates (for example, X509TrustManager). Some secure socket implementations may also support authentication based on shared secret keys, Kerberos, or other mechanisms.")
+    Interface](java-secure-socket-extension-jsse-reference-guide.html#GUID-42CA1099-42AD-4772-BC4A-29C2A78E3EC9 "The primary responsibility of the TrustManager is to determine whether the presented authentication credentials should be trusted. If the credentials are not trusted, then the connection will be terminated. To authenticate the remote identity of a secure socket peer, you must initialize an SSLContext object with one or more TrustManager objects. You must pass one TrustManager for each authentication mechanism that is supported. If null is passed into the SSLContext initialization, then a trust manager will be created for you. Typically, a single trust manager supports authentication based on X.509 public key certificates (for example, X509TrustManager). Some secure socket implementations may also support authentication based on shared secret keys, Kerberos, or other mechanisms.")
 -   [The KeyManager
-    Interface](java-secure-socket-extension-jsse-reference-guide.htm#GUID-997AB098-DDD7-40E2-9FD0-5AA3C83E1702)
+    Interface](java-secure-socket-extension-jsse-reference-guide.html#GUID-997AB098-DDD7-40E2-9FD0-5AA3C83E1702)
 
 <span class="bold">Cause 2:</span> The system clock is not set
 correctly. In this case, the perceived time may be outside the validity
@@ -9289,12 +9289,12 @@ Refer to the following sections to learn how to pass the correct
 keystore and certificates:
 
 -   [JSSE Classes and
-    Interfaces](java-secure-socket-extension-jsse-reference-guide.htm#GUID-B7AB25FA-7F0C-4EFA-A827-813B2CE7FBDC)
+    Interfaces](java-secure-socket-extension-jsse-reference-guide.html#GUID-B7AB25FA-7F0C-4EFA-A827-813B2CE7FBDC)
 -   [Customizing the Default Keystores and Truststores, Store Types, and
     Store
-    Passwords](java-secure-socket-extension-jsse-reference-guide.htm#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150)
+    Passwords](java-secure-socket-extension-jsse-reference-guide.html#GUID-7D9F43B8-AABF-4C5B-93E6-3AFB18B66150)
 -   [Additional Keystore Formats
-    (PKCS12)](java-secure-socket-extension-jsse-reference-guide.htm#GUID-93EBE6F4-1460-450A-8D9C-AF086C233BDF)
+    (PKCS12)](java-secure-socket-extension-jsse-reference-guide.html#GUID-93EBE6F4-1460-450A-8D9C-AF086C233BDF)
 
 </div>
 <!-- class="section" -->
@@ -9321,7 +9321,7 @@ suites to include common cipher suites, and be sure to provide an
 appropriate `keyEntry`{.codeph} for asymmetric cipher suites. Also see
 [Runtime Exception: \"No available certificate corresponding to the SSL
 cipher suites which are
-enabled\"](java-secure-socket-extension-jsse-reference-guide.htm#GUID-92715704-80F4-431A-BF99-D583EE61C4AB)
+enabled\"](java-secure-socket-extension-jsse-reference-guide.html#GUID-92715704-80F4-431A-BF99-D583EE61C4AB)
 in this section.)
 
 <span class="bold">Problem 2:</span> When using Mozilla Firefox or
@@ -9369,10 +9369,10 @@ on the client side. This involves modifying or invoking some of the
 following system properties and methods:
 
 -   System property
-    [`https.protocols`{.codeph}](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__HTTPS.PROTOCOLS_PROPERTY)
+    [`https.protocols`{.codeph}](java-secure-socket-extension-jsse-reference-guide.html#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__HTTPS.PROTOCOLS_PROPERTY)
     for the `HttpsURLConnection`{.codeph}</a></code> class
 -   System property
-    [<span class="apiname">jdk.tls.client.protocols</span>](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__JDK.TLS.CLIENT.PROTOCOLS_PROPERTY)
+    [<span class="apiname">jdk.tls.client.protocols</span>](java-secure-socket-extension-jsse-reference-guide.html#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9__JDK.TLS.CLIENT.PROTOCOLS_PROPERTY)
 -   [`SSLContext.getInstance`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/net/ssl/SSLContext.html#getInstance-java.lang.String-)
     method
 -   [`SSLEngine.setEnabledProtocols`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/net/ssl/SSLEngine.html#setEnabledProtocols-java.lang.String:A-)
@@ -9393,7 +9393,7 @@ SunJSSE) can send SSL/TLS ClientHello messages encapsulated in the SSLv2
 ClientHello format. The SunJSSE provider supports this feature. If you
 want to use this feature, add the \"SSLv2Hello\" protocol to the enabled
 protocol list, if necessary. (See Protocols in the [JDK
-Providers](oracle-providers.htm#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture."),
+Providers](oracle-providers.html#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture."),
 which lists the protocols that are enabled by default for the SunJSSE
 provider.)
 
@@ -9682,7 +9682,7 @@ ordering of the option keywords is also not important.
 
 For an introduction to reading this debug information, see the guide,
 [Debugging SSL/TLS
-Connections](java-secure-socket-extension-jsse-reference-guide.htm#GUID-4D421910-C36D-40A2-8BA2-7D42CCBED3C6 "Understanding SSL/TLS connection problems can sometimes be difficult, especially when it is not clear what messages are actually being sent and received. JSSE has a built-in debug facility and is activated by the System property javax.net.debug.").
+Connections](java-secure-socket-extension-jsse-reference-guide.html#GUID-4D421910-C36D-40A2-8BA2-7D42CCBED3C6 "Understanding SSL/TLS connection problems can sometimes be difficult, especially when it is not clear what messages are actually being sent and received. JSSE has a built-in debug facility and is activated by the System property javax.net.debug.").
 
 The following are examples of using the `javax.net.debug`{.codeph}
 property:
@@ -9726,7 +9726,7 @@ System property `javax.net.debug`{.codeph}.
 <div class="section">
 To know more about `javax.net.debug`{.codeph} System property, see
 [Debugging
-Utilities](java-secure-socket-extension-jsse-reference-guide.htm#GUID-31B7E142-B874-46E9-8DD0-4E18EC0EB2CF).
+Utilities](java-secure-socket-extension-jsse-reference-guide.html#GUID-31B7E142-B874-46E9-8DD0-4E18EC0EB2CF).
 
 What follows is a brief example how to read the debug output. Please be
 aware that the output is non-standard, and may change from release to
@@ -9736,7 +9736,7 @@ X509TrustManager which prints debug information.
 This example assumes a basic understanding of the SSL/TLS protocol. To
 know more about protocols (handshake messages, etc.), see [Secure
 Sockets Layer (SSL) Protocol
-Overview](java-secure-socket-extension-jsse-reference-guide.htm#GUID-69ECD56C-3B20-47F4-AEF0-A06EFA13A61D "Secure Sockets Layer (SSL) is the most widely used protocol for implementing cryptography on the web. SSL uses a combination of cryptographic processes to provide secure communication over a network. This section provides an introduction to SSL and the cryptographic processes it uses.").
+Overview](java-secure-socket-extension-jsse-reference-guide.html#GUID-69ECD56C-3B20-47F4-AEF0-A06EFA13A61D "Secure Sockets Layer (SSL) is the most widely used protocol for implementing cryptography on the web. SSL uses a combination of cryptographic processes to provide secure communication over a network. This section provides an introduction to SSL and the cryptographic processes it uses.").
 
 In this example, we first run the `ClassFileServer`{.codeph} sample
 application from <span>[JSSE Sample
@@ -10474,16 +10474,16 @@ The following code examples are included in this section:
 Topics
 
 -   [Converting an Unsecure Socket to a Secure
-    Socket](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AB802E5F-07CE-468D-AC7C-7EBCAAE119AD "Code examples that illustrate how to use JSSE to convert an unsecure socket connection to a secure socket connection. The code samples are excerpted from the book Java SE 6 Network Security by Marco Pistoia, et. al.")
+    Socket](java-secure-socket-extension-jsse-reference-guide.html#GUID-AB802E5F-07CE-468D-AC7C-7EBCAAE119AD "Code examples that illustrate how to use JSSE to convert an unsecure socket connection to a secure socket connection. The code samples are excerpted from the book Java SE 6 Network Security by Marco Pistoia, et. al.")
 
 -   [Running the JSSE Sample
-    Code](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA "The JSSE sample programs illustrate how to use JSSE.")
+    Code](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA "The JSSE sample programs illustrate how to use JSSE.")
 
 -   [Creating a Keystore to Use with
-    JSSE](java-secure-socket-extension-jsse-reference-guide.htm#GUID-3D26386B-BC7A-41BB-AC70-80E6CD147D6F "The procedure as to how you can use the keytool utility to create a simple PKCS12 keystore suitable for use with JSSE.")
+    JSSE](java-secure-socket-extension-jsse-reference-guide.html#GUID-3D26386B-BC7A-41BB-AC70-80E6CD147D6F "The procedure as to how you can use the keytool utility to create a simple PKCS12 keystore suitable for use with JSSE.")
 
 -   [Using the Server Name Indication (SNI)
-    Extension](java-secure-socket-extension-jsse-reference-guide.htm#GUID-63945B45-E909-483F-B3A9-E26586737383)
+    Extension](java-secure-socket-extension-jsse-reference-guide.html#GUID-63945B45-E909-483F-B3A9-E26586737383)
 
 </div>
 <!-- class="section" -->
@@ -10501,11 +10501,11 @@ excerpted from the book Java SE 6 Network Security by Marco Pistoia, et.
 al.
 
 [Example
-8-26](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AB802E5F-07CE-468D-AC7C-7EBCAAE119AD__SOCKETEXAMPLEWITHOUTSSL-6B1057A9)
+8-26](java-secure-socket-extension-jsse-reference-guide.html#GUID-AB802E5F-07CE-468D-AC7C-7EBCAAE119AD__SOCKETEXAMPLEWITHOUTSSL-6B1057A9)
 shows sample code that can be used to set up communication between a
 client and a server using unsecure sockets. This code is then modified
 in [Example
-8-27](java-secure-socket-extension-jsse-reference-guide.htm#GUID-AB802E5F-07CE-468D-AC7C-7EBCAAE119AD__SOCKETEXAMPLEWITHSSL-6B10547E)
+8-27](java-secure-socket-extension-jsse-reference-guide.html#GUID-AB802E5F-07CE-468D-AC7C-7EBCAAE119AD__SOCKETEXAMPLEWITHSSL-6B10547E)
 to use JSSE to set up secure socket communication.
 
 <div class="example" id="GUID-AB802E5F-07CE-468D-AC7C-7EBCAAE119AD__SOCKETEXAMPLEWITHOUTSSL-6B1057A9">
@@ -10658,13 +10658,13 @@ The JSSE sample programs illustrate how to use JSSE.
 <div class="section">
 -   [Sample Code Illustrating a Secure Socket Connection Between a
     Client and a
-    Server](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGASECURESOCKET-82CE8421)
+    Server](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGASECURESOCKET-82CE8421)
 -   [Sample Code Illustrating HTTPS
-    Connections](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGHTTPSCONNECTI-7D238310)
+    Connections](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGHTTPSCONNECTI-7D238310)
 -   [Sample Code Illustrating a Secure RMI
-    Connection](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGASECURERMICON-F9A2C933)
+    Connection](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGASECURERMICON-F9A2C933)
 -   [Sample Code Illustrating the Use of an
-    SSLEngine](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGTHEUSEOFANSSL-7D23A601)
+    SSLEngine](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGTHEUSEOFANSSL-7D23A601)
 
 When you use the sample code, be aware that the sample programs are
 designed to illustrate how to use JSSE. They are not designed to be
@@ -10680,7 +10680,7 @@ programs, be patient: you may not see any output for a while. If you run
 the programs with the `javax.net.debug`{.codeph} system property set to
 `all`{.codeph}, you will see more feedback. For an introduction to
 reading this debug information, see [Debugging SSL/TLS
-Connections](java-secure-socket-extension-jsse-reference-guide.htm#GUID-4D421910-C36D-40A2-8BA2-7D42CCBED3C6 "Understanding SSL/TLS connection problems can sometimes be difficult, especially when it is not clear what messages are actually being sent and received. JSSE has a built-in debug facility and is activated by the System property javax.net.debug.").
+Connections](java-secure-socket-extension-jsse-reference-guide.html#GUID-4D421910-C36D-40A2-8BA2-7D42CCBED3C6 "Understanding SSL/TLS connection problems can sometimes be difficult, especially when it is not clear what messages are actually being sent and received. JSSE has a built-in debug facility and is activated by the System property javax.net.debug.").
 
 </div>
 </div>
@@ -10719,11 +10719,11 @@ but from different terminal windows.
 All the sample `SSLSocketClient*`{.codeph} programs in the
 samples/sockets/client directory (and `URLReader*`{.codeph} programs
 described in [Sample Code Illustrating HTTPS
-Connections](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGHTTPSCONNECTI-7D238310))
+Connections](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGHTTPSCONNECTI-7D238310))
 can be run with the `ClassFileServer`{.codeph} sample server program. An
 example of how to do this is shown in [Running
 SSLSocketClientWithClientAuth with
-ClassFileServer](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__RUNNINGSSLSOCKETCLIENTWITHCLIENTAUT-7D23BC0C).
+ClassFileServer](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__RUNNINGSSLSOCKETCLIENTWITHCLIENTAUT-7D23BC0C).
 You can make similar changes to run `URLReader`{.codeph},
 `SSLSocketClient`{.codeph}, or `SSLSocketClientWithTunneling`{.codeph}
 with `ClassFileServer`{.codeph}.
@@ -10732,7 +10732,7 @@ If an authentication error occurs during communication between the
 client and the server (whether using a web server or
 `ClassFileServer`{.codeph}), it is most likely because the necessary
 keys are not in the truststore (trust key database). See [Terms and
-Definitions](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.").
+Definitions](java-secure-socket-extension-jsse-reference-guide.html#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.").
 For example, the `ClassFileServer`{.codeph} uses a keystore called
 `testkeys`{.codeph} containing the private key for `localhost`{.codeph}
 as needed during the SSL handshake. The `testkeys`{.codeph} keystore is
@@ -10777,7 +10777,7 @@ command for both the client and the server:
 
 To know more about <span class="variable">java-home</span>, see [Terms
 and
-Definitions](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.").
+Definitions](java-secure-socket-extension-jsse-reference-guide.html#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.").
 
 The password for the `samplecacerts`{.codeph} truststore is
 `changeit`{.codeph}. You can substitute your own certificates in the
@@ -10944,7 +10944,7 @@ and the server, do the following:
     terminal window.
 
     See [Running
-    ClassFileServer](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__RUNNINGCLASSFILESERVER-7D23BEFC).
+    ClassFileServer](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__RUNNINGCLASSFILESERVER-7D23BEFC).
 
 2.  Run the program `SSLSocketClientWithClientAuth`{.codeph} on another
     machine or terminal window. `SSLSocketClientWithClientAuth`{.codeph}
@@ -11001,7 +11001,7 @@ environment-specific. The JSSE implementation provides an HTTPS URL
 implementation. To use a different HTTPS protocol implementation, set
 the `java.protocol.handler.pkgs`{.codeph}. See [How to Specify a
 java.lang.System
-Property](java-secure-socket-extension-jsse-reference-guide.htm#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363)
+Property](java-secure-socket-extension-jsse-reference-guide.html#GUID-460C3E5A-A373-4742-9E84-EB42A7A3C363)
 to the package name. See the `java.net.URL`{.codeph} class documentation
 for details.
 
@@ -11419,7 +11419,7 @@ User input is shown in bold.
     this example assumes that the default `X509KeyManager`{.codeph} and
     `X509TrustManager`{.codeph} are used, you select the keystores using
     the system properties described in [Customizing
-    JSSE](java-secure-socket-extension-jsse-reference-guide.htm#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9 "JSSE includes a standard implementation that can be customized by plugging in different implementations or specifying the default keystore, and so on.").
+    JSSE](java-secure-socket-extension-jsse-reference-guide.html#GUID-A41282C3-19A3-400A-A40F-86F4DA22ABA9 "JSSE includes a standard implementation that can be customized by plugging in different implementations or specifying the default keystore, and so on.").
 
     ``` {.codeblock dir="ltr"}
         % java -Djavax.net.ssl.keyStore=keystore -Djavax.net.ssl.keyStorePassword=password Server
@@ -11452,7 +11452,7 @@ truststore for the server.
 <div class="section">
 These examples illustrate how you can use the [Server Name Indication
 (SNI)
-Extension](java-secure-socket-extension-jsse-reference-guide.htm#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
+Extension](java-secure-socket-extension-jsse-reference-guide.html#GUID-82B884DF-AA3D-4FE1-8991-9C3F14044C4F)
 for client-side and server-side applications, and how it can be applied
 to a virtual infrastructure.
 
@@ -11867,7 +11867,7 @@ the proper alert message. The following example illustrates a failover
 `SSLContext`{.codeph}. You can find an example of the
 `DenialSNIMatcher`{.codeph} class in Case 2 in [Typical Server-Side
 Usage
-Examples](java-secure-socket-extension-jsse-reference-guide.htm#GUID-FA9C8332-B6D9-48E6-AF66-700E00B829D2).
+Examples](java-secure-socket-extension-jsse-reference-guide.html#GUID-FA9C8332-B6D9-48E6-AF66-700E00B829D2).
 
 ``` {.codeblock dir="ltr"}
 byte[] buffer = ...       // buffered network data
@@ -11918,7 +11918,7 @@ algorithms, certificates and keystore types. See [Java Security Standard
 Algorithm Names
 Specification](https://docs.oracle.com/javase/10/docs/specs/security/standard-names.html).
 Find specific provider information in [JDK Providers
-Documentation](oracle-providers.htm#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
+Documentation](oracle-providers.html#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
 
 </div>
 <!-- class="section" -->
@@ -11946,7 +11946,7 @@ JSSE Cipher Suite Parameters {#JSSEC-GUID-09C3A453-AAAB-4D8B-830A-558B3F30BDF3 .
 <div>
 <div class="section">
 [Table
-8-14](java-secure-socket-extension-jsse-reference-guide.htm#GUID-09C3A453-AAAB-4D8B-830A-558B3F30BDF3__GUID-BB21E6D0-F0C1-4C70-8D6C-F3E56009C51C "List of JSSE Cipher Suite Parameters")
+8-14](java-secure-socket-extension-jsse-reference-guide.html#GUID-09C3A453-AAAB-4D8B-830A-558B3F30BDF3__GUID-BB21E6D0-F0C1-4C70-8D6C-F3E56009C51C "List of JSSE Cipher Suite Parameters")
 contains a list of additional JSSE cipher suite names related
 parameters. See [Java Security Standard Algorithm
 Names](https://docs.oracle.com/javase/10/docs/specs/security/standard-names.html).

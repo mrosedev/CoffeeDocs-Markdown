@@ -67,12 +67,12 @@ Kerberos credentials from the underlying native operating system.
 Background and Resources for This Exercise
 
 See [Single Sign-on Using Kerberos in
-Java](single-sign-using-kerberos-java1.htm#GUID-D4230975-A28B-4532-B1DD-3C7219A4867F).
+Java](single-sign-using-kerberos-java1.html#GUID-D4230975-A28B-4532-B1DD-3C7219A4867F).
 In addition, see the information provided in [Exercise 2: Configuring
 JAAS for Kerberos
-Authentication](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.htm#GUID-2079DC72-5A2E-46FE-978F-42D113FFA41A)
+Authentication](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.html#GUID-2079DC72-5A2E-46FE-978F-42D113FFA41A)
 and [Exercise 4: Using the Java SASL
-API](part-ii-secure-communications-using-java-se-security-api.htm#GUID-727C5CDB-8701-40B3-8355-00C8314590A3)
+API](part-ii-secure-communications-using-java-se-security-api.html#GUID-727C5CDB-8701-40B3-8355-00C8314590A3)
 for background information about Kerberos and Java GSS.
 
 </div>
@@ -82,7 +82,7 @@ for background information about Kerberos and Java GSS.
 Steps to Follow
 
 1.  Edit the
-    [`jaas-krb5.conf`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.htm#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__JASS-KRB5.CONF-338B5E8A)
+    [`jaas-krb5.conf`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.html#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__JASS-KRB5.CONF-338B5E8A)
     configuration file.
 
     This file contains two entries: one named

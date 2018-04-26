@@ -40,15 +40,15 @@ the Java GSS-API. This API permits secure exchanges of messages between
 communicating applications. Here are the sample client and server
 applications you\'ll need for this tutorial:
 
--   [`SampleClient.java`{.codeph}](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLECLIENT.JAVA-338923E1)
--   [`SampleServer.java`{.codeph}](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVER.JAVA-33891DED)
+-   [`SampleClient.java`{.codeph}](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLECLIENT.JAVA-338923E1)
+-   [`SampleServer.java`{.codeph}](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVER.JAVA-33891DED)
 
 <div class="infoboxnote" id="GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8__GUID-14947E17-44D9-4CE2-8A0F-922A12CFEC92">
 Note:
 
 This tutorial uses the same client and server applications as the [Use
 of Java GSS-API for Secure Message Exchanges Without JAAS
-Programming](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-42A2B80C-90CD-4C7A-8EED-8BFFE83CAF56)
+Programming](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-42A2B80C-90CD-4C7A-8EED-8BFFE83CAF56)
 tutorial. In that tutorial, JAAS (Java Authentication and Authorization
 Service) programming is not required. Instead, you let the underlying
 mechanism decide how to get credentials.
@@ -63,17 +63,17 @@ control that applies control based on <span class="italic">who</span> is
 running the code -- not just on what code is running.
 
 -   [Before You Start: Recommended
-    Reading](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-A742F77E-9D77-42E1-BFB8-2DE9C6FB3051)
+    Reading](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-A742F77E-9D77-42E1-BFB8-2DE9C6FB3051)
 -   [Overview of the Client and Server
-    Applications](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-1C2B6E45-2E2F-421C-B0D3-F034156DDAE7)
+    Applications](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-1C2B6E45-2E2F-421C-B0D3-F034156DDAE7)
 -   [Kerberos User and Service Principal
-    Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)
+    Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)
 -   [The Login Configuration
-    File](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-3B582CD5-135F-4516-843E-1831DB25CCC4)
+    File](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-3B582CD5-135F-4516-843E-1831DB25CCC4)
 -   [The Policy
-    Files](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-2BA7F0B7-D3E3-4B81-8E98-0A39F9763B59)
+    Files](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-2BA7F0B7-D3E3-4B81-8E98-0A39F9763B59)
 -   [Running the SampleClient and SampleServer
-    Programs](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-07D0C8CC-0922-4B0F-B14D-9A644CB13783)
+    Programs](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-07D0C8CC-0922-4B0F-B14D-9A644CB13783)
 
 </div>
 <div class="sect2">
@@ -89,11 +89,11 @@ and authorization, and presented examples of policy files and of login
 configuration files (specifying the underlying authentication technology
 to be used) that JAAS requires. Applications in the JAAS introductory
 tutorials, [JAAS
-Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 and [JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F),
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F),
 made direct calls to JAAS methods. The [Use of JAAS Login
-Utility](use-jaas-login-utility.htm#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
+Utility](use-jaas-login-utility.html#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
 tutorial showed the use of a utility program that frees the application
 from having to do this. The client and server applications in the
 current tutorial also use the same utility program, so we recommend you
@@ -102,7 +102,7 @@ current tutorial also use the same utility program, so we recommend you
 As with all tutorials in this series, the underlying technology used to
 support authentication and secure communication for the applications in
 this tutorial is Kerberos. See [Kerberos
-Requirements](kerberos-requirements1.htm#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).
+Requirements](kerberos-requirements1.html#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).
 
 </div>
 </div>
@@ -134,7 +134,7 @@ Here is a summary of execution of the `SampleClient`{.codeph} and
     `SampleServer`{.codeph} program. The Login utility prompts you for
     the password for the principal that `SampleServer`{.codeph} should
     run as. (See [Kerberos User and Service Principal
-    Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80).)
+    Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80).)
     After authentication is complete, `SampleServer`{.codeph} is run it:
     a.  Reads its argument, the port number that it should listen on for
         client connections.
@@ -150,7 +150,7 @@ Here is a summary of execution of the `SampleClient`{.codeph} and
     a.  Reads its arguments: (1) The name of the Kerberos principal that
         represents `SampleServer`{.codeph}. (See [Kerberos User and
         Service Principal
-        Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80).), (2)
+        Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80).), (2)
         the name of the host (machine) on which `SampleServer`{.codeph}
         is running, and (3) the port number on which
         `SampleServer`{.codeph} listens for client connections.
@@ -174,10 +174,10 @@ Note:
 
 </div>
 Refer to the [The SampleClient and SampleServer
-Code](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-0DDC8ACE-7398-41C6-B061-CF3DEAB7AC86)
+Code](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-0DDC8ACE-7398-41C6-B061-CF3DEAB7AC86)
 section of the [Use of Java GSS-API for Secure Message Exchanges Without
 JAAS
-Programming](use-java-gss-api-secure-message-exchanges-jaas-programming.htm#GUID-42A2B80C-90CD-4C7A-8EED-8BFFE83CAF56)
+Programming](use-java-gss-api-secure-message-exchanges-jaas-programming.html#GUID-42A2B80C-90CD-4C7A-8EED-8BFFE83CAF56)
 tutorial for a full discussion of the code used in this tutorial.
 
 </div>
@@ -192,7 +192,7 @@ Kerberos User and Service Principal Names {#JSSEC-GUID-832A32FD-3D99-4624-86A4-7
 Since the underlying authentication and secure communication technology
 used by this tutorial is Kerberos V5, we use Kerberos-style principal
 names wherever a user or service is called for (see
-[Principals](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-8FAF9739-CD62-4A47-9582-884DBF3081F0)).
+[Principals](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-8FAF9739-CD62-4A47-9582-884DBF3081F0)).
 
 For example, when you run `SampleClient`{.codeph} you are asked to
 provide your <span class="bold">user name</span>. Your Kerberos-style
@@ -273,7 +273,7 @@ servers, such as `ftp/host1@realm`{.codeph} and
 <div>
 If the realm of a user or service principal name is the default realm
 (see [Kerberos
-Requirements](kerberos-requirements1.htm#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998)),
+Requirements](kerberos-requirements1.html#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998)),
 you can leave off the realm when you are logging into Kerberos (that is,
 when you are prompted for your user name). Thus, for example, if your
 user name is `mjones@KRBNT-OPERATIONS.EXAMPLE.COM`{.codeph}, and you run
@@ -311,14 +311,14 @@ The Login Configuration File {#JSSEC-GUID-3B582CD5-135F-4516-843E-1831DB25CCC4 .
 Whenever JAAS is used, a login configuration is required to specify the
 desired authentication technology. (See [Appendix B: JAAS Login
 Configuration
-File](appendix-b-jaas-login-configuration-file.htm#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
+File](appendix-b-jaas-login-configuration-file.html#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
 for more information about what a login configuration file is.) Both
 `SampleClient`{.codeph} and `SampleServer`{.codeph} can use the same
 login configuration file, if that file contains two entries, one entry
 for the client side and one for the server side.
 
 The
-[`csLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CSLOGIN.CONF-33894173)
+[`csLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CSLOGIN.CONF-33894173)
 login configuration file used for this tutorial is the following:
 
 ``` {.oac_no_warn dir="ltr"}
@@ -376,7 +376,7 @@ must supply the correct one in order for authentication to succeed.
 Note that you must replace `service_principal@your_realm`{.codeph} with
 the name of the service principal that represents
 `SampleServer`{.codeph}. (See [Kerberos User and Service Principal
-Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80).)
+Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80).)
 
 If the server has a keytab file containing secret keys, then use the
 following JAAS login entry:
@@ -415,9 +415,9 @@ The Policy Files {#JSSEC-GUID-2BA7F0B7-D3E3-4B81-8E98-0A39F9763B59 .sect2}
 
 <div>
 The policy file used when running `SampleClient`{.codeph} is
-[`client.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CLIENT.POLICY-33894283),
+[`client.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CLIENT.POLICY-33894283),
 and the policy file used when running `SampleServer`{.codeph} is
-[`server.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVER.POLICY-33894513).
+[`server.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVER.POLICY-33894513).
 Their contents are described below.
 
 </div>
@@ -437,7 +437,7 @@ Their contents are described below.
 A number of permissions are required by the classes in
 `Login.java`{.codeph} (`Login`{.codeph} and `MyAction`{.codeph}). As
 recommended in [Use of JAAS Login
-Utility](use-jaas-login-utility.htm#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
+Utility](use-jaas-login-utility.html#GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5)
 on the use of the Login utility, we create a `Login.jar`{.codeph} JAR
 file containing the `Login.class`{.codeph} and `MyAction.class`{.codeph}
 files and in the `client.policy`{.codeph} policy file we grant
@@ -489,7 +489,7 @@ establishment of a security context, you need two
     Kerberos as a client.
 -   the service principal name representing `SampleServer`{.codeph}.
     (See [Kerberos User and Service Principal
-    Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80).)
+    Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80).)
     Granting this permission allows you to interact with the service,
     `SampleServer`{.codeph}, using Kerberos.
 
@@ -499,9 +499,9 @@ executing `SampleClient`{.codeph}, so we specify both the
 and a Principal designation indicating the user name and realm for the
 user (you, the person who will run `SampleClient`{.codeph}). (See [How
 Do You Make Principal-Based Policy File
-Statements?](jaas-authorization.htm#GUID-80F0B546-1E95-457B-8EF7-5BB1519E20A4)
+Statements?](jaas-authorization.html#GUID-80F0B546-1E95-457B-8EF7-5BB1519E20A4)
 in [JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
 for information on policy file `grant`{.codeph} statements that include
 <span class="apiname">Principal</span> designations.)
 
@@ -534,7 +534,7 @@ You must also substitute your realm in
 <span class="apiname">krbtgt/your\_realm@your\_realm</span> and the
 service principal name for the service principal representing the server
 (see [Kerberos User and Service Principal
-Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)
+Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)
 for the service principal name for the service principal representing
 the server for `service_principal@your_realm`{.codeph}. Suppose the
 former is
@@ -580,7 +580,7 @@ grant CodeBase "file:./SampleClient.jar",
 The `grant`{.codeph} statement in the server policy file for the Login
 classes is exactly the same as the one in the client policy file, as
 described in [Permissions Required by the Login Utility
-Classes](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-F5030E1B-C83F-4464-BD5C-D0D04051FF12):
+Classes](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-F5030E1B-C83F-4464-BD5C-D0D04051FF12):
 
 ``` {.oac_no_warn dir="ltr"}
 grant codebase "file:./Login.jar" {
@@ -623,7 +623,7 @@ permission javax.security.auth.kerberos.ServicePermission
 where `service_principal@your_realm`{.codeph} is the Kerberos name of
 the service principal that represents `SampleServer`{.codeph} (see
 [Kerberos User and Service Principal
-Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)).
+Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)).
 
 We want to grant the permissions to a specific authenticated user
 executing `SampleServer`{.codeph} (the service principal considered to
@@ -661,13 +661,13 @@ To execute the `SampleClient`{.codeph} and `SampleServer`{.codeph}
 programs, do the following:
 
 -   [Prepare SampleServer for
-    Execution](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-901B5429-D25C-4DAA-90BB-7665E3682D52)
+    Execution](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-901B5429-D25C-4DAA-90BB-7665E3682D52)
 -   [Prepare SampleClient for
-    Execution](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-F72FA916-2507-479C-A2E3-89FCB25D0FE8)
+    Execution](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-F72FA916-2507-479C-A2E3-89FCB25D0FE8)
 -   [Execute
-    SampleServer](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-70ADB0E1-E036-4E40-8289-66545AD90C2F)
+    SampleServer](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-70ADB0E1-E036-4E40-8289-66545AD90C2F)
 -   [Execute
-    SampleClient](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-19CC950B-FFCA-471A-918E-92559F556356)
+    SampleClient](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-19CC950B-FFCA-471A-918E-92559F556356)
 
 </div>
 <div class="sect3">
@@ -681,22 +681,22 @@ To prepare `SampleServer`{.codeph} for execution, do the following:
 1.  Copy the following files into a directory accessible by the machine
     on which you will run `SampleServer`{.codeph}:
     -   The
-        [`Login.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__LOGIN.JAVA-338935D0)
+        [`Login.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__LOGIN.JAVA-338935D0)
         source file.
     -   The
-        [`SampleServer.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVER.JAVA-33891DED)
+        [`SampleServer.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLESERVER.JAVA-33891DED)
         source file.
     -   The
-        [`csLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CSLOGIN.CONF-33894173)
+        [`csLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CSLOGIN.CONF-33894173)
         login configuration file.
     -   The
-        [`server.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVER.POLICY-33894513)
+        [`server.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SERVER.POLICY-33894513)
         policy file.
 2.  Replace `service_principal@your_realm`{.codeph} in
     `csLogin.conf`{.codeph} with the name of the service principal
     representing `SampleServer`{.codeph} (see [Kerberos User and Service
     Principal
-    Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)).
+    Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)).
 3.  In both places it appears, replace
     `service_principal@your_realm`{.codeph} in `server.policy`{.codeph}
     with the Kerberos name of the service principal that represents
@@ -739,16 +739,16 @@ To prepare `SampleClient`{.codeph} for execution, do the following:
 1.  Copy the following files into a directory accessible by the machine
     on which you will run `SampleClient`{.codeph}:
     -   The
-        [`Login.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__LOGIN.JAVA-338935D0)
+        [`Login.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__LOGIN.JAVA-338935D0)
         source file.
     -   The
-        [`SampleClient.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLECLIENT.JAVA-338923E1)
+        [`SampleClient.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLECLIENT.JAVA-338923E1)
         source file.
     -   The
-        [`csLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CSLOGIN.CONF-33894173)
+        [`csLogin.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CSLOGIN.CONF-33894173)
         login configuration file.
     -   The
-        [`client.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CLIENT.POLICY-33894283)
+        [`client.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__CLIENT.POLICY-33894283)
         policy file.
 2.  Replace parts of `client.policy`{.codeph}:
     -   replace `your_user_name@your_realm`{.codeph} with your user name
@@ -759,7 +759,7 @@ To prepare `SampleClient`{.codeph} for execution, do the following:
         Kerberos name of the service principal that represents
         `SampleServer`{.codeph} (see [Kerberos User and Service
         Principal
-        Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)).
+        Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80)).
 3.  Compile `Login.java`{.codeph} and `SampleClient.java`{.codeph}:
 
     ``` {.oac_no_warn dir="ltr"}
@@ -880,7 +880,7 @@ Kerberos. Once authentication is successfully completed, the
 principal. It will listen for socket connections on the specified port.
 
 For login troubleshooting suggestions, see
-[Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
+[Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
 
 </div>
 </div>
@@ -913,7 +913,7 @@ followed by the arguments required by `SampleClient`{.codeph}. The
 `SampleClient`{.codeph} arguments are (1) the Kerberos name of the
 service principal that represents `SampleServer`{.codeph} (see [Kerberos
 User and Service Principal
-Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80),
+Names](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-832A32FD-3D99-4624-86A4-7AFBF8924C80),
 (2) the name of the host (machine) on which `SampleServer`{.codeph} is
 running, and (3) the port number on which `SampleServer`{.codeph} is
 listening for client connections.
@@ -973,7 +973,7 @@ establish a shared context and then exchange messages as described in
 this tutorial.
 
 For login troubleshooting suggestions, see
-[Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
+[Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
 
 </div>
 </div>

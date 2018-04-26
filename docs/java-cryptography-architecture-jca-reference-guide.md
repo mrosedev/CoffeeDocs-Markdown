@@ -67,7 +67,7 @@ principles:
     do not need to implement security algorithms. Rather, they can
     request security services from the Java platform. Security services
     are implemented in providers (see [Cryptographic Service
-    Providers](java-cryptography-architecture-jca-reference-guide.htm#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920)),
+    Providers](java-cryptography-architecture-jca-reference-guide.html#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920)),
     which are plugged into the Java platform via a standard interface.
     An application may rely on multiple independent providers for
     security functionality.
@@ -89,14 +89,14 @@ JCA provider architecture, but are described elsewhere. The JSSE
 components provides access to Secure Socket Layer (SSL), Transport Layer
 Security (TLS), and Datagram Transport Layer Security (DTLS)
 implementations; see [Java Secure Socket Extension (JSSE) Reference
-Guide](java-secure-socket-extension-jsse-reference-guide.htm#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication.").
+Guide](java-secure-socket-extension-jsse-reference-guide.html#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication.").
 You can use Java Generic Security Services (JGSS) (via Kerberos) APIs,
 and Simple Authentication and Security Layer (SASL) to securely exchange
 messages between communicating applications; see [Introduction to JAAS
 and Java GSS-API
 Tutorials](introduction-jaas-and-java-gss-api-tutorials1.htm) and [Java
 SASL API Programming and Deployment
-Guide](java-sasl-api-programming-and-deployment-guide1.htm#GUID-6D78EE33-62E6-4D85-9695-322EED493F72).
+Guide](java-sasl-api-programming-and-deployment-guide1.html#GUID-6D78EE33-62E6-4D85-9695-322EED493F72).
 
 <div class="section">
 Notes on Terminology
@@ -180,7 +180,7 @@ Implementation independence is achieved using a \"provider\"-based
 architecture. The term Cryptographic Service Provider (CSP), which is
 used interchangeably with the term \"provider,\" (see [Cryptographic
 Service
-Providers](java-cryptography-architecture-jca-reference-guide.htm#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920))
+Providers](java-cryptography-architecture-jca-reference-guide.html#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920))
 refers to a package or set of packages that implement one or more
 cryptographic services, such as digital signature algorithms, message
 digest algorithms, and key conversion services. A program may simply
@@ -259,13 +259,13 @@ The following figures illustrates requesting an SHA-256 message digest
 implementation. They show three different providers that implement
 various message digest algorithms (SHA-256, SHA-384, and SHA-512). The
 providers are ordered by preference from left to right (1-3). In [Figure
-2-1](java-cryptography-architecture-jca-reference-guide.htm#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920__REQUESTSHA-256MESSAGEDIGESTIMPLEMEN-0606134F),
+2-1](java-cryptography-architecture-jca-reference-guide.html#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920__REQUESTSHA-256MESSAGEDIGESTIMPLEMEN-0606134F),
 an application requests a SHA-256 algorithm implementation
 <span class="bold">without</span> specifying a provider name. The
 providers are searched in preference order and the implementation from
 the first provider supplying that particular algorithm, ProviderB, is
 returned. In [Figure
-2-2](java-cryptography-architecture-jca-reference-guide.htm#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920__REQUESTSHA-256MESSAGEDIGESTWITHPROV-CB5635FE),
+2-2](java-cryptography-architecture-jca-reference-guide.html#GUID-3E0744CE-6AC7-4A6D-A1F6-6C01199E6920__REQUESTSHA-256MESSAGEDIGESTWITHPROV-CB5635FE),
 the application requests the SHA-256 algorithm implementation
 <span class="bold">from a specific provider</span>, ProviderC. This
 time, the implementation from ProviderC is returned, even though a
@@ -313,7 +313,7 @@ are installed and what services they support.
 This architecture also makes it easy for end-users to add additional
 providers. Many third party provider implementations are already
 available. See [The Provider
-Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-D8E30FE5-66B4-4F6A-88B7-280789E68307 "In order to be used, a cryptographic provider must first be installed, then registered either statically or dynamically. There are a variety of Sun providers shipped with this release (SUN, SunJCE, SunJSSE, SunRsaSign, etc.) that are already installed and registered. The following sections describe how to install and register additional providers.Each Provider class instance has a (currently case-sensitive) name, a version number, and a string description of the provider and its services.")
+Class](java-cryptography-architecture-jca-reference-guide.html#GUID-D8E30FE5-66B4-4F6A-88B7-280789E68307 "In order to be used, a cryptographic provider must first be installed, then registered either statically or dynamically. There are a variety of Sun providers shipped with this release (SUN, SunJCE, SunJSSE, SunRsaSign, etc.) that are already installed and registered. The following sections describe how to install and register additional providers.Each Provider class instance has a (currently case-sensitive) name, a version number, and a string description of the provider and its services.")
 for more information on how providers are written, installed, and
 registered.
 
@@ -369,9 +369,9 @@ declared final and their implementations invoke the corresponding SPI
 methods of the encapsulated SPI object.
 
 To make this clearer, review [Example
-2-1](java-cryptography-architecture-jca-reference-guide.htm#GUID-FD5163BD-E113-4B9D-A230-11184A668616__SAMPLECODEFORGETTINGANINSTANCEOFANE-724746B9)
+2-1](java-cryptography-architecture-jca-reference-guide.html#GUID-FD5163BD-E113-4B9D-A230-11184A668616__SAMPLECODEFORGETTINGANINSTANCEOFANE-724746B9)
 and [Figure
-2-3](java-cryptography-architecture-jca-reference-guide.htm#GUID-FD5163BD-E113-4B9D-A230-11184A668616__GUID-F8F97C84-B042-4576-B56D-1FD217F20400):
+2-3](java-cryptography-architecture-jca-reference-guide.html#GUID-FD5163BD-E113-4B9D-A230-11184A668616__GUID-F8F97C84-B042-4576-B56D-1FD217F20400):
 
 </div>
 <!-- class="section" -->
@@ -456,7 +456,7 @@ modules and smartcards.
 Applications can choose different keystore implementations from
 different providers, using the same provider mechanism described
 previously. See [Key
-Management](java-cryptography-architecture-jca-reference-guide.htm#GUID-AB51DEFD-5238-4F96-967F-082F6D34FBEA "A database called a "keystore" can be used to manage a repository of keys and certificates. (A certificate is a digitally signed statement from one entity, saying that the public key of some other entity has a particular value.)").
+Management](java-cryptography-architecture-jca-reference-guide.html#GUID-AB51DEFD-5238-4F96-967F-082F6D34FBEA "A database called a "keystore" can be used to manage a repository of keys and certificates. (A certificate is a digitally signed statement from one entity, saying that the public key of some other entity has a particular value.)").
 
 </div>
 </div>
@@ -482,64 +482,64 @@ The engines provides one of the following:
 
 The following engine classes are available:
 
--   [`SecureRandom`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-AEB77CD8-D28F-4BBE-B9E5-160B5DC35D36):
+-   [`SecureRandom`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-AEB77CD8-D28F-4BBE-B9E5-160B5DC35D36):
     used to generate random or pseudo-random numbers.
--   [`MessageDigest`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-FB0090CA-2BCC-4D2C-BD2F-6F0A97197BD7 "Procedure to create a MessageDigest object.Procedure to update the Message Digest object.Procedure to compute the digest using different types of digest() methods."):
+-   [`MessageDigest`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-FB0090CA-2BCC-4D2C-BD2F-6F0A97197BD7 "Procedure to create a MessageDigest object.Procedure to update the Message Digest object.Procedure to compute the digest using different types of digest() methods."):
     used to calculate the message digest (hash) of specified data.
--   [`Signature`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-9CF09CE2-9443-4F4E-8095-5CBFC7B697CF "Signature objects are modal objects. This means that a Signature object is always in a given state, where it may only do one type of operation. The first step for signing or verifying a signature is to create a Signature instance.A Signature object must be initialized before it is used. The initialization method depends on whether the object is going to be used for signing or for verification."):
+-   [`Signature`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-9CF09CE2-9443-4F4E-8095-5CBFC7B697CF "Signature objects are modal objects. This means that a Signature object is always in a given state, where it may only do one type of operation. The first step for signing or verifying a signature is to create a Signature instance.A Signature object must be initialized before it is used. The initialization method depends on whether the object is going to be used for signing or for verification."):
     initialized with keys, these are used to sign data and verify
     digital signatures.
--   [`Cipher`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566):
+-   [`Cipher`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566):
     initialized with keys, these used for encrypting/decrypting data.
     There are various types of algorithms: symmetric bulk encryption
     (e.g. AES), asymmetric encryption (e.g. RSA), and password-based
     encryption (e.g. PBE).
 -   [Message Authentication Codes
-    (MAC)](java-cryptography-architecture-jca-reference-guide.htm#GUID-8E014689-EBBB-4DE1-B6E0-24CE59AD8B9A "Similar to a MessageDigest, a Message Authentication Code (MAC) provides a way to check the integrity of information transmitted over or stored in an unreliable medium, but includes a secret key in the calculation."):
+    (MAC)](java-cryptography-architecture-jca-reference-guide.html#GUID-8E014689-EBBB-4DE1-B6E0-24CE59AD8B9A "Similar to a MessageDigest, a Message Authentication Code (MAC) provides a way to check the integrity of information transmitted over or stored in an unreliable medium, but includes a secret key in the calculation."):
     like `MessageDigest`{.codeph}s, these also generate hash values, but
     are first initialized with keys to protect the integrity of
     messages.
--   [`KeyFactory`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-09C8DF67-7C78-453C-95B4-E7E7DEAD446A):
+-   [`KeyFactory`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-09C8DF67-7C78-453C-95B4-E7E7DEAD446A):
     used to convert existing opaque cryptographic keys of type
-    [`Key`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
+    [`Key`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
     into key specifications (transparent representations of the
     underlying key material), and vice versa.
--   [`SecretKeyFactory`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-5E8F4099-779F-4484-9A95-F1CEA167601A):
+-   [`SecretKeyFactory`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-5E8F4099-779F-4484-9A95-F1CEA167601A):
     used to convert existing opaque cryptographic keys of type
-    [`SecretKey`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
+    [`SecretKey`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
     into key specifications (transparent representations of the
     underlying key material), and vice versa.
     `SecretKeyFactory`{.codeph}s are specialized `KeyFactory`{.codeph}s
     that create secret (symmetric) keys only.
--   [`KeyPairGenerator`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-7EA29AC2-28B5-405D-BD2F-7055EC9E1EDD):
+-   [`KeyPairGenerator`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-7EA29AC2-28B5-405D-BD2F-7055EC9E1EDD):
     used to generate a new pair of public and private keys suitable for
     use with a specified algorithm.
--   [`KeyGenerator`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-F178CBC3-D25F-48B6-9F2F-ABB586E713A1 "A key generator is used to generate secret keys for symmetric algorithms."):
+-   [`KeyGenerator`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-F178CBC3-D25F-48B6-9F2F-ABB586E713A1 "A key generator is used to generate secret keys for symmetric algorithms."):
     used to generate new secret keys for use with a specified algorithm.
--   [`KeyAgreement`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-C4D8A5D0-ECA7-4686-A8F0-636115500C31 "Key agreement is a protocol by which 2 or more parties can establish the same cryptographic keys, without having to exchange any secret information."):
+-   [`KeyAgreement`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-C4D8A5D0-ECA7-4686-A8F0-636115500C31 "Key agreement is a protocol by which 2 or more parties can establish the same cryptographic keys, without having to exchange any secret information."):
     used by two or more parties to agree upon and establish a specific
     key to use for a particular cryptographic operation.
--   [`AlgorithmParameters`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-33407B4E-D819-4294-94AB-C6FABF96A93D "Like Keys and Keyspecs, an algorithm's initialization parameters are represented by either AlgorithmParameters or AlgorithmParameterSpecs."):
+-   [`AlgorithmParameters`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-33407B4E-D819-4294-94AB-C6FABF96A93D "Like Keys and Keyspecs, an algorithm's initialization parameters are represented by either AlgorithmParameters or AlgorithmParameterSpecs."):
     used to store the parameters for a particular algorithm, including
     parameter encoding and decoding.
--   [`AlgorithmParameterGenerator`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-921D1B8C-5A16-403E-B3A6-D9C6EC684D1C)
+-   [`AlgorithmParameterGenerator`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-921D1B8C-5A16-403E-B3A6-D9C6EC684D1C)
     : used to generate a set of AlgorithmParameters suitable for a
     specified algorithm.
--   [`KeyStore`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-09050137-31F1-468A-A552-B051A4E35876 "The KeyStore class supplies well-defined interfaces to access and modify the information in a keystore."):
+-   [`KeyStore`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-09050137-31F1-468A-A552-B051A4E35876 "The KeyStore class supplies well-defined interfaces to access and modify the information in a keystore."):
     used to create and manage a <span class="variable">keystore</span>.
     A keystore is a database of keys. Private keys in a keystore have a
     certificate chain associated with them, which authenticates the
     corresponding public key. A keystore also contains certificates from
     trusted entities.
--   [`CertificateFactory`{.codeph}](java-cryptography-architecture-jca-reference-guide.htm#GUID-9A581FBA-EDF7-4BCA-8244-4CE2C75E4CEA "The CertificateFactory class defines the functionality of a certificate factory, which is used to generate certificate and certificate revocation list (CRL) objects from their encoding."):
+-   [`CertificateFactory`{.codeph}](java-cryptography-architecture-jca-reference-guide.html#GUID-9A581FBA-EDF7-4BCA-8244-4CE2C75E4CEA "The CertificateFactory class defines the functionality of a certificate factory, which is used to generate certificate and certificate revocation list (CRL) objects from their encoding."):
     used to create public key certificates and Certificate Revocation
     Lists (CRLs).
--   [`CertPathBuilder`{.codeph}](java-pki-programmers-guide.htm#GUID-BEFCC824-21C1-4AD3-B670-D0CA01F08D95 "The CertPathBuilder class is an engine class used to build a certification path."):
+-   [`CertPathBuilder`{.codeph}](java-pki-programmers-guide.html#GUID-BEFCC824-21C1-4AD3-B670-D0CA01F08D95 "The CertPathBuilder class is an engine class used to build a certification path."):
     used to build certificate chains (also known as certification
     paths).
--   [`CertPathValidator`{.codeph}](java-pki-programmers-guide.htm#GUID-808C1A6D-6A67-4026-A9DE-223A428EC80A "The CertPathValidator class is an engine class used to validate a certification path."):
+-   [`CertPathValidator`{.codeph}](java-pki-programmers-guide.html#GUID-808C1A6D-6A67-4026-A9DE-223A428EC80A "The CertPathValidator class is an engine class used to validate a certification path."):
     used to validate certificate chains.
--   [`CertStore`{.codeph}](java-pki-programmers-guide.htm#GUID-5404B79C-3D49-4668-974C-1BACD1A98B73 "The CertStore class is an engine class used to provide the functionality of a certificate and certificate revocation list (CRL) repository."):
+-   [`CertStore`{.codeph}](java-pki-programmers-guide.html#GUID-5404B79C-3D49-4668-974C-1BACD1A98B73 "The CertStore class is an engine class used to provide the functionality of a certificate and certificate revocation list (CRL) repository."):
     used to retrieve `Certificate`{.codeph}s and `CRL`{.codeph}s from a
     repository.
 
@@ -589,7 +589,7 @@ Note:
 
 See `CertPathBuilder`{.codeph}, `CertPathValidator`{.codeph}, and
 `CertStore`{.codeph}engine classes in the [Java PKI Programmers
-Guide](java-pki-programmers-guide.htm#GUID-650D0D53-B617-4055-AFD3-AF5C2629CBBF "The Java Certification Path API consists of classes and interfaces for handling certification paths, which are also called certification chains. If a certification path meets certain validation rules, it may be used to securely establish the mapping of a public key to a subject.").
+Guide](java-pki-programmers-guide.html#GUID-650D0D53-B617-4055-AFD3-AF5C2629CBBF "The Java Certification Path API consists of classes and interfaces for handling certification paths, which are also called certification chains. If a certification path meets certain validation rules, it may be used to securely establish the mapping of a public key to a subject.").
 
 </div>
 The guide will cover the most useful high-level classes first (Provider,
@@ -603,7 +603,7 @@ This section shows the signatures of the main methods in each class and
 interface. Examples for some of these classes (MessageDigest, Signature,
 KeyPairGenerator, SecureRandom, KeyFactory, and key specification
 classes) are supplied in the corresponding [Code
-Examples](java-cryptography-architecture-jca-reference-guide.htm#GUID-871FA938-5110-409E-A4EC-16F2A898093A)
+Examples](java-cryptography-architecture-jca-reference-guide.html#GUID-871FA938-5110-409E-A4EC-16F2A898093A)
 sections.
 
 The complete reference documentation for the relevant Security API
@@ -656,7 +656,7 @@ follows](img/provider.png "Description of Figure 2-4 follows")\
 
 There are several types of services that can be implemented by provider
 packages; See [Engine Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
 
 The different implementations may have different characteristics. Some
 may be software-based, while others may be hardware-based. Some may be
@@ -674,7 +674,7 @@ implementations that fit theirs.
 Note:
 
 To implement a provider, see [Steps to Implement and Integrate a
-Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
+Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
 
 </div>
 </div>
@@ -687,7 +687,7 @@ Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Foll
 <div>
 <div class="section">
 For each engine class (see [Engine Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider."))
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider."))
 in the API, a implementation instance is requested and instantiated by
 calling one of the <span class="apiname">getInstance</span> methods on
 the engine class, specifying the name of the desired algorithm and,
@@ -750,7 +750,7 @@ Java Virtual Machine (JVM), providers are installed in a given
 <span class="variable">preference order</span>, the order in which the
 provider list is searched if a specific provider is not requested. (See
 [Installing
-Providers](java-cryptography-architecture-jca-reference-guide.htm#GUID-E28AC9F2-CBD7-49FC-85B8-5011A94D9007 "In order to be used, a cryptographic provider must first be installed, then registered either statically or dynamically. There are a variety of Sun providers shipped with this release (SUN, SunJCE, SunJSSE, SunRsaSign, etc.) that are already installed and registered. The following sections describe how to install and register additional providers.").)
+Providers](java-cryptography-architecture-jca-reference-guide.html#GUID-E28AC9F2-CBD7-49FC-85B8-5011A94D9007 "In order to be used, a cryptographic provider must first be installed, then registered either statically or dynamically. There are a variety of Sun providers shipped with this release (SUN, SunJCE, SunJSSE, SunRsaSign, etc.) that are already installed and registered. The following sections describe how to install and register additional providers.").)
 For example, suppose there are two providers installed in a JVM,
 `PROVIDER_1`{.codeph} and `PROVIDER_2`{.codeph}. Assume that:
 
@@ -795,7 +795,7 @@ installed provider implements the algorithm requested.
 A program also has the option of getting a list of all the installed
 providers (using the <span class="apiname">getProviders</span> method in
 [The Security
-Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-DE597505-1B42-4AE3-AE2D-45F9123138FA)
+Class](java-cryptography-architecture-jca-reference-guide.html#GUID-DE597505-1B42-4AE3-AE2D-45F9123138FA)
 class) and choosing one from the list.
 
 <div class="p">
@@ -833,9 +833,9 @@ how to install and register additional providers.
 
 All JDK providers are already installed and registered. However, if you
 require any third-party providers, see [Step 8: Prepare for
-Testing](howtoimplaprovider.htm#GUID-FB9C6DB2-DE9A-4EFE-89B4-C2C168C5982D "The next steps describe how to install and configure your new provider so that it is available via the JCA.")
+Testing](howtoimplaprovider.html#GUID-FB9C6DB2-DE9A-4EFE-89B4-C2C168C5982D "The next steps describe how to install and configure your new provider so that it is available via the JCA.")
 from [Steps to Implement and Integrate a
-Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:")
+Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:")
 for information about how to add providers to the class or module path,
 register providers (statically or dynamically), and add any required
 permissions.
@@ -891,7 +891,7 @@ configuration file(s) for a JDK installation specify what permissions
 (which types of system resource accesses) are allowed by code from
 specified code sources. (See below and the [Default Policy
 Implementation and Policy File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)
 and [Java Security Architecture
 Specification](https://docs.oracle.com/javase/8/docs/technotes/guides/security/spec/security-spec.doc.html)
 files.)
@@ -1038,9 +1038,9 @@ Properties. These properties are similar to the `System`{.codeph}
 properties, but are security-related. These properties can be set
 statically (through the `<java-home>/conf/security/java.security` file)
 or dynamically (using an API). See [Step 8.1: Configure the
-Provider](howtoimplaprovider.htm#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")
+Provider](howtoimplaprovider.html#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")
 from [Steps to Implement and Integrate a
-Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
+Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
 for an example of registering a provider statically with the
 `security.provider.n`{.codeph} Security Property. If you want to set
 properties dynamically, trusted programs can use the following methods:
@@ -1068,7 +1068,7 @@ provider list.
 
 <div>
 The SecureRandom class is an engine class (see [Engine Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider."))
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider."))
 that provides cryptographically strong random numbers, either by
 accessing a pseudo-random number generator (PRNG), a deterministic
 algorithm that produces a pseudo-random sequence from an initial seed
@@ -1131,7 +1131,7 @@ There are several ways to obtain an instance of `SecureRandom`{.codeph}:
 
 -   To get a specific implementation of `SecureRandom`{.codeph}, use one
     of the [How Provider Implementations Are Requested and
-    Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+    Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 -   Use the `getInstanceStrong()`{.codeph} method to obtain a strong
     `SecureRandom`{.codeph} implementation as defined by the
@@ -1215,7 +1215,7 @@ byte[] generateSeed(int numBytes)
 <div>
 The `MessageDigest`{.codeph} class is an engine class (see [Engine
 Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider."))
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider."))
 designed to provide the functionality of cryptographically secure
 message digests such as SHA-256 or SHA-512. A cryptographically secure
 message digest takes arbitrary-sized input (a byte array), and generates
@@ -1269,7 +1269,7 @@ Procedure to create a `MessageDigest`{.codeph} object.
     <span class="apiname">getInstance()</span> methods in the
     `MessageDigest`{.codeph} class. See [How Provider Implementations
     Are Requested and
-    Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).</span>
+    Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).</span>
     <div>
     The factory method returns an initialized message digest object. It
     thus does not need further initialization.
@@ -1313,7 +1313,7 @@ Procedure to compute the digest using different types of
 <div class="p">
 The data chunks have to be supplied by calls to `update`{.codeph}
 method. See [Updating a Message Digest
-Object](java-cryptography-architecture-jca-reference-guide.htm#GUID-72106C04-D90A-4CB8-B320-1F4F864221DC "Procedure to update the Message Digest object.").
+Object](java-cryptography-architecture-jca-reference-guide.html#GUID-72106C04-D90A-4CB8-B320-1F4F864221DC "Procedure to update the Message Digest object.").
 
 </div>
 <!-- class="section" -->
@@ -1345,7 +1345,7 @@ Object](java-cryptography-architecture-jca-reference-guide.htm#GUID-72106C04-D90
 
     <div>
     See [Computing a MessageDigest
-    Object](java-cryptography-architecture-jca-reference-guide.htm#GUID-6E9FB890-F011-450E-9EC5-EBB358E1D8A1 "An example describing the procedure to compute a MessageDigest object.").
+    Object](java-cryptography-architecture-jca-reference-guide.html#GUID-6E9FB890-F011-450E-9EC5-EBB358E1D8A1 "An example describing the procedure to compute a MessageDigest object.").
 
     </div>
 
@@ -1360,7 +1360,7 @@ Object](java-cryptography-architecture-jca-reference-guide.htm#GUID-72106C04-D90
 <div>
 The `Signature`{.codeph} class is an engine class (see [Engine Classes
 and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.")(
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.")(
 designed to provide the functionality of a cryptographic digital
 signature algorithm such as SHA256withDSA or SHA512withRSA. A
 cryptographically secure signature algorithm takes arbitrary-sized input
@@ -1404,7 +1404,7 @@ algorithm.
 
 For an example for signing and verifying data, see [Generating and
 Verifying a Signature Using Generated
-Keys](java-cryptography-architecture-jca-reference-guide.htm#GUID-7389E94B-A595-4020-A4D2-73FB0DD5A05A "Examples of generating and verifying a signature using generated keys.").
+Keys](java-cryptography-architecture-jca-reference-guide.html#GUID-7389E94B-A595-4020-A4D2-73FB0DD5A05A "Examples of generating and verifying a signature using generated keys.").
 
 </div>
 <div class="sect4">
@@ -1446,7 +1446,7 @@ The first step for signing or verifying a signature is to create a
 `Signature`{.codeph} objects are obtained by using one of the
 `Signature`{.codeph} <span class="apiname">getInstance()</span> static
 factory methods. See [How Provider Implementations Are Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 </div>
@@ -1773,7 +1773,7 @@ Creating a Cipher Object
 `Cipher`{.codeph} objects are obtained by using one of the
 `Cipher`{.codeph} <span class="apiname">getInstance()</span> static
 factory methods. See [How Provider Implementations Are Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 Here, the algorithm name is slightly different than with other engine
 classes, in that it specifies not just an algorithm name, but a
 \"transformation\". A transformation is a string that describes the
@@ -1930,7 +1930,7 @@ method, an `InvalidKeyException`{.codeph} or
 depending on the `init`{.codeph} method that has been used.
 
 See [Managing Algorithm
-Parameters](java-cryptography-architecture-jca-reference-guide.htm#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566__MANAGINGALGORITHMPARAMETERS-63E08852).
+Parameters](java-cryptography-architecture-jca-reference-guide.html#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566__MANAGINGALGORITHMPARAMETERS-63E08852).
 
 The same parameters that were used for encryption must be used for
 decryption.
@@ -2084,12 +2084,12 @@ password-based encryption requires two parameters - a
 by the underlying algorithm implementation itself. The application can
 retrieve the generated parameters from the
 <span class="apiname">Cipher</span> object, see [Example
-2-3](java-cryptography-architecture-jca-reference-guide.htm#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566__EXAMPLE-1314-724A0BB7).
+2-3](java-cryptography-architecture-jca-reference-guide.html#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566__EXAMPLE-1314-724A0BB7).
 
 The same parameters that were used for encryption must be used for
 decryption. They can be instantiated from their encoding and used to
 initialize the corresponding Cipher object for decryption, see [Example
-2-4](java-cryptography-architecture-jca-reference-guide.htm#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566__EXAMPLE-1315-724A0E25).
+2-4](java-cryptography-architecture-jca-reference-guide.html#GUID-94225C88-F2F1-44D1-A781-1DD9D5094566__EXAMPLE-1315-724A0E25).
 
 If you did not specify any parameters when you initialized a Cipher
 object, and you are not sure whether or not the underlying
@@ -2116,7 +2116,7 @@ provider use parameters:
 Note that you do not have to worry about storing or transferring any
 algorithm parameters for use by the decryption operation if you use the
 [The SealedObject
-Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-33BA4D9F-5253-4A53-81C1-38569E8FFCA8 "This class enables a programmer to create an object and protect its confidentiality with a cryptographic algorithm.")
+Class](java-cryptography-architecture-jca-reference-guide.html#GUID-33BA4D9F-5253-4A53-81C1-38569E8FFCA8 "This class enables a programmer to create an object and protect its confidentiality with a cryptographic algorithm.")
 class. This class attaches the parameters used for sealing (encryption)
 to the encrypted object contents, and uses the same parameters for
 unsealing (decryption).
@@ -2222,10 +2222,10 @@ provide easy access to common cipher uses.
 Topics
 
 [The Cipher Stream
-Classes](java-cryptography-architecture-jca-reference-guide.htm#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF "The CipherInputStream and CipherOutputStream classes are Cipher stream classes.")
+Classes](java-cryptography-architecture-jca-reference-guide.html#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF "The CipherInputStream and CipherOutputStream classes are Cipher stream classes.")
 
 [The SealedObject
-Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-33BA4D9F-5253-4A53-81C1-38569E8FFCA8 "This class enables a programmer to create an object and protect its confidentiality with a cryptographic algorithm.")
+Class](java-cryptography-architecture-jca-reference-guide.html#GUID-33BA4D9F-5253-4A53-81C1-38569E8FFCA8 "This class enables a programmer to create an object and protect its confidentiality with a cryptographic algorithm.")
 
 </div>
 <!-- class="section" -->
@@ -2278,14 +2278,14 @@ constructor that is later added to one of the super classes), because
 the design and implementation of those methods are unlikely to have
 considered security impact with regard to
 <span class="apiname">CipherInputStream</span>. See [Example
-2-5](java-cryptography-architecture-jca-reference-guide.htm#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF__SAMPLECODEFORENCRYPTINGINPUTSTREAMD-74CAEA35)
+2-5](java-cryptography-architecture-jca-reference-guide.html#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF__SAMPLECODEFORENCRYPTINGINPUTSTREAMD-74CAEA35)
 for its usage, suppose `cipher1`{.codeph} has been initialized for
 encryption. The program reads and encrypts the content from the file
 `/tmp/a.txt`{.codeph} and then stores the result (the encrypted bytes)
 in `/tmp/b.txt`{.codeph}.
 
 [Example
-2-6](java-cryptography-architecture-jca-reference-guide.htm#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF__THEFOLLOWINGEXAMPLEDEMONSTRATESHOWT-74CAEEB6)
+2-6](java-cryptography-architecture-jca-reference-guide.html#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF__THEFOLLOWINGEXAMPLEDEMONSTRATESHOWT-74CAEEB6)
 demonstrates how to easily connect several instances of
 `CipherInputStream`{.codeph} and `FileInputStream`{.codeph}. In this
 example, assume that `cipher1`{.codeph} and `cipher2`{.codeph} have been
@@ -2393,14 +2393,14 @@ the design and implementation of those methods are unlikely to have
 considered security impact with regard to `CipherOutputStream`{.codeph}.
 
 See [Example
-2-7](java-cryptography-architecture-jca-reference-guide.htm#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF__SAMPLECODEFORUSINGCIPHEROUTPUTSTREA-74D596DC)
+2-7](java-cryptography-architecture-jca-reference-guide.html#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF__SAMPLECODEFORUSINGCIPHEROUTPUTSTREA-74D596DC)
 , for its usage, suppose `cipher1`{.codeph} has been initialized for
 encryption. The program reads the content from the file
 `/tmp/a.txt`{.codeph}, then encrypts and stores the result (the
 encrypted bytes) in `/tmp/b.txt`{.codeph}.
 
 [Example
-2-7](java-cryptography-architecture-jca-reference-guide.htm#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF__SAMPLECODEFORUSINGCIPHEROUTPUTSTREA-74D596DC)
+2-7](java-cryptography-architecture-jca-reference-guide.html#GUID-C0283BC0-8B88-480D-82B1-7B01EAC3D8DF__SAMPLECODEFORUSINGCIPHEROUTPUTSTREA-74D596DC)
 demonstrates how to easily connect several instances of
 `CipherOutputStream`{.codeph} and `FileOutputStream`{.codeph}. In this
 example, assume that `cipher1`{.codeph} and `cipher2`{.codeph} have been
@@ -2611,7 +2611,7 @@ function, e.g., SHA-256, in combination with a secret shared key.
 
 The `Mac`{.codeph} class provides the functionality of a Message
 Authentication Code (MAC). See [HMAC-SHA256
-Example](java-cryptography-architecture-jca-reference-guide.htm#GUID-1B141C6A-7BB3-4DA2-A112-ADEBCE7F4B4A "The following is a sample program that demonstrates how to generate a secret-key object for HMAC-SHA256, and initialize a HMAC-SHA256 object with it.").
+Example](java-cryptography-architecture-jca-reference-guide.html#GUID-1B141C6A-7BB3-4DA2-A112-ADEBCE7F4B4A "The following is a sample program that demonstrates how to generate a secret-key object for HMAC-SHA256, and initialize a HMAC-SHA256 object with it.").
 
 </div>
 <!-- class="section" -->
@@ -2622,7 +2622,7 @@ Creating a Mac Object
 `Mac`{.codeph} objects are obtained by using one of the `Mac`{.codeph}
 <span class="apiname"> getInstance() </span>static factory methods. See
 [How Provider Implementations Are Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -2732,7 +2732,7 @@ representation, in which you can access each key material value
 individually, through one of the `get`{.codeph} methods defined in the
 corresponding <span class="apiname">KeySpec</span> interface (see [The
 KeySpec
-Interface](java-cryptography-architecture-jca-reference-guide.htm#GUID-CFF50556-89F9-4AB0-9EDE-D5763B900BFF "This interface contains no methods or constants. Its only purpose is to group and provide type safety for all key specifications. All key specifications must implement this interface.")).
+Interface](java-cryptography-architecture-jca-reference-guide.html#GUID-CFF50556-89F9-4AB0-9EDE-D5763B900BFF "This interface contains no methods or constants. Its only purpose is to group and provide type safety for all key specifications. All key specifications must implement this interface.")).
 
 All opaque keys have three characteristics:
 
@@ -2774,7 +2774,7 @@ Keys are generally obtained through key generators such as the
 <span class="apiname">KeyGenerator</span> class and the
 <span class="apiname">KeyPairGenerator</span> class, certificates, key
 specifications (see the [The KeySpec
-Interface](java-cryptography-architecture-jca-reference-guide.htm#GUID-CFF50556-89F9-4AB0-9EDE-D5763B900BFF "This interface contains no methods or constants. Its only purpose is to group and provide type safety for all key specifications. All key specifications must implement this interface."))
+Interface](java-cryptography-architecture-jca-reference-guide.html#GUID-CFF50556-89F9-4AB0-9EDE-D5763B900BFF "This interface contains no methods or constants. Its only purpose is to group and provide type safety for all key specifications. All key specifications must implement this interface."))
 using a <span class="apiname">KeyFactory</span>, or a
 <span class="apiname">Keystore</span> implementation accessing a
 keystore database used to manage keys. It is possible to parse encoded
@@ -2865,7 +2865,7 @@ helps identify the key on the device.
 This representation is contrasted with an
 <span class="variable">opaque</span> representation, as defined by the
 [Key
-Interfaces](java-cryptography-architecture-jca-reference-guide.htm#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
+Interfaces](java-cryptography-architecture-jca-reference-guide.html#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
 interface, in which you have no direct access to the key material
 fields. In other words, an \"opaque\" representation gives you limited
 access to the key\--just the three methods defined by the `Key`{.codeph}
@@ -2881,9 +2881,9 @@ or it may be specified using its DER encoding (see
 [`PKCS8EncodedKeySpec`{.codeph}](https://docs.oracle.com/javase/10/docs/api/java/security/spec/PKCS8EncodedKeySpec.html)).
 
 The [The KeyFactory
-Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-09C8DF67-7C78-453C-95B4-E7E7DEAD446A)
+Class](java-cryptography-architecture-jca-reference-guide.html#GUID-09C8DF67-7C78-453C-95B4-E7E7DEAD446A)
 and [The SecretKeyFactory
-Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-5E8F4099-779F-4484-9A95-F1CEA167601A)
+Class](java-cryptography-architecture-jca-reference-guide.html#GUID-5E8F4099-779F-4484-9A95-F1CEA167601A)
 classes can be used to convert between opaque and transparent key
 representations (that is, between `Key`{.codeph}s and
 `KeySpec`{.codeph}s, assuming that the operation is possible. (For
@@ -2950,7 +2950,7 @@ Like the `Key`{.codeph} interface, there are a similar set of
 <div>
 <div class="section">
 This abstract class (which implements the [The KeySpec
-Interface](java-cryptography-architecture-jca-reference-guide.htm#GUID-CFF50556-89F9-4AB0-9EDE-D5763B900BFF "This interface contains no methods or constants. Its only purpose is to group and provide type safety for all key specifications. All key specifications must implement this interface.")
+Interface](java-cryptography-architecture-jca-reference-guide.html#GUID-CFF50556-89F9-4AB0-9EDE-D5763B900BFF "This interface contains no methods or constants. Its only purpose is to group and provide type safety for all key specifications. All key specifications must implement this interface.")
 interface) represents a public or private key in encoded format. Its
 <span class="apiname">getEncoded</span> method returns the encoded key:
 
@@ -3048,9 +3048,9 @@ On the other hand, factories are used to <span class="bold">convert data
 from one existing object type to another</span>. For example, an
 application might have available the components of a DH private key and
 can package them as a [The KeySpec
-Interface](java-cryptography-architecture-jca-reference-guide.htm#GUID-CFF50556-89F9-4AB0-9EDE-D5763B900BFF "This interface contains no methods or constants. Its only purpose is to group and provide type safety for all key specifications. All key specifications must implement this interface."),
+Interface](java-cryptography-architecture-jca-reference-guide.html#GUID-CFF50556-89F9-4AB0-9EDE-D5763B900BFF "This interface contains no methods or constants. Its only purpose is to group and provide type safety for all key specifications. All key specifications must implement this interface."),
 but needs to convert them into a
-[PrivateKey](java-cryptography-architecture-jca-reference-guide.htm#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
+[PrivateKey](java-cryptography-architecture-jca-reference-guide.html#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
 object that can be used by a `KeyAgreement`{.codeph} object, or
 vice-versa. Or they might have the byte array of a certificate, but need
 to use a `CertificateFactory`{.codeph} to convert it into a
@@ -3066,11 +3066,11 @@ do the conversion.
 <div>
 <div class="section">
 The `KeyFactory`{.codeph} class is an [Engine Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.")
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.")
 designed to perform conversions between opaque cryptographic [Key
-Interfaces](java-cryptography-architecture-jca-reference-guide.htm#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
+Interfaces](java-cryptography-architecture-jca-reference-guide.html#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
 and [Key Specification Interfaces and
-Classes](java-cryptography-architecture-jca-reference-guide.htm#GUID-D1EA35A1-710A-4EBC-8ABB-10875411EBB0 "Key objects and key specifications (KeySpecs) are two different representations of key data. Ciphers use Key objects to initialize their encryption algorithms, but keys may need to be converted into a more portable format for transmission or storage.")
+Classes](java-cryptography-architecture-jca-reference-guide.html#GUID-D1EA35A1-710A-4EBC-8ABB-10875411EBB0 "Key objects and key specifications (KeySpecs) are two different representations of key data. Ciphers use Key objects to initialize their encryption algorithms, but keys may need to be converted into a more portable format for transmission or storage.")
 (transparent representations of the underlying key material).
 
 <div class="figure" id="GUID-09C8DF67-7C78-453C-95B4-E7E7DEAD446A__GUID-A3F628B1-EA36-4F80-9FB3-18565C99D33D">
@@ -3094,7 +3094,7 @@ example, a DSA public key may be specified by its components
 `java.security.spec.DSAPublicKeySpec`{.codeph}), or it may be specified
 using its DER encoding according to the X.509 standard (see [The
 X509EncodedKeySpec
-Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-F41053CD-D1F3-4BAE-B97D-72C53A9892DC "This class, which is a subclass of EncodedKeySpec, represents the DER encoding of a public key, according to the format specified in the X.509 standard.")).
+Class](java-cryptography-architecture-jca-reference-guide.html#GUID-F41053CD-D1F3-4BAE-B97D-72C53A9892DC "This class, which is a subclass of EncodedKeySpec, represents the DER encoding of a public key, according to the format specified in the X.509 standard.")).
 
 A key factory can be used to translate between compatible key
 specifications. Key parsing can be achieved through translation between
@@ -3103,7 +3103,7 @@ compatible key specifications, e.g., when you translate from
 basically parse the encoded key into its components. For an example, see
 the end of the [Generating/Verifying Signatures Using Key Specifications
 and
-KeyFactory](java-cryptography-architecture-jca-reference-guide.htm#GUID-5514BAFF-5F0F-403C-9943-56A632D6E406 "Sample code that is used to generate and verify signatures using key specifications and KeyFactory.")
+KeyFactory](java-cryptography-architecture-jca-reference-guide.html#GUID-5514BAFF-5F0F-403C-9943-56A632D6E406 "Sample code that is used to generate and verify signatures using key specifications and KeyFactory.")
 section.
 
 </div>
@@ -3115,7 +3115,7 @@ Creating a KeyFactory Object
 `KeyFactory`{.codeph} objects are obtained by using one of the
 `KeyFactory`{.codeph}getInstance() static factory methods. See [How
 Provider Implementations Are Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -3157,7 +3157,7 @@ material should be returned. It could, for example, be
 `DSAPublicKeySpec.class`{.codeph} , to indicate that the key material
 should be returned in an instance of the `DSAPublicKeySpec`{.codeph}
 class. See [Generating/Verifying Signatures Using Key Specifications and
-KeyFactory](java-cryptography-architecture-jca-reference-guide.htm#GUID-5514BAFF-5F0F-403C-9943-56A632D6E406 "Sample code that is used to generate and verify signatures using key specifications and KeyFactory.").
+KeyFactory](java-cryptography-architecture-jca-reference-guide.html#GUID-5514BAFF-5F0F-403C-9943-56A632D6E406 "Sample code that is used to generate and verify signatures using key specifications and KeyFactory.").
 
 </div>
 <!-- class="section" -->
@@ -3174,7 +3174,7 @@ KeyFactory](java-cryptography-architecture-jca-reference-guide.htm#GUID-5514BAFF
 The `SecretKeyFactory`{.codeph} class represents a factory for secret
 keys. Unlike the <span class="apiname">KeyFactory</span> class (see [The
 KeyFactory
-Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-09C8DF67-7C78-453C-95B4-E7E7DEAD446A)),
+Class](java-cryptography-architecture-jca-reference-guide.html#GUID-09C8DF67-7C78-453C-95B4-E7E7DEAD446A)),
 a `javax.crypto.SecretKeyFactory`{.codeph} object operates only on
 secret (symmetric) keys, whereas a `java.security.KeyFactory`{.codeph}
 object processes the public and private key components of a key pair.
@@ -3191,10 +3191,10 @@ Class\"](img_text/secretkeyfactory.htm)
 <!-- class="figure" -->
 
 Key factories are used to convert [Key
-Interfaces](java-cryptography-architecture-jca-reference-guide.htm#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
+Interfaces](java-cryptography-architecture-jca-reference-guide.html#GUID-BD91C9BC-CFC6-4125-B46F-772C638FA5DC "The java.security.Key interface is the top-level interface for all opaque keys. It defines the functionality shared by all opaque key objects.")
 (opaque cryptographic keys of type `java.security.Key`{.codeph}) into
 [Key Specification Interfaces and
-Classes](java-cryptography-architecture-jca-reference-guide.htm#GUID-D1EA35A1-710A-4EBC-8ABB-10875411EBB0 "Key objects and key specifications (KeySpecs) are two different representations of key data. Ciphers use Key objects to initialize their encryption algorithms, but keys may need to be converted into a more portable format for transmission or storage.")
+Classes](java-cryptography-architecture-jca-reference-guide.html#GUID-D1EA35A1-710A-4EBC-8ABB-10875411EBB0 "Key objects and key specifications (KeySpecs) are two different representations of key data. Ciphers use Key objects to initialize their encryption algorithms, but keys may need to be converted into a more portable format for transmission or storage.")
 (transparent representations of the underlying key material in a
 suitable format), and vice versa.
 
@@ -3261,7 +3261,7 @@ Creating a SecretKeyFactory Object
 using one of the <span class="apiname">SecretKeyFactory</span>
 <span class="apiname">getInstance()</span> static factory methods. See
 [How Provider Implementations Are Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -3312,7 +3312,7 @@ be returned in an instance of the
 <div class="section">
 The `KeyPairGenerator`{.codeph} class is an engine class (see [Engine
 Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider."))
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider."))
 used to generate pairs of public and private keys.
 
 <div class="figure" id="GUID-7EA29AC2-28B5-405D-BD2F-7055EC9E1EDD__GUID-3DB89ACB-BF5C-4155-B2BF-E3ED4BEACE8D">
@@ -3331,7 +3331,7 @@ manner, and in an algorithm-specific manner. The only difference between
 the two is the initialization of the object.
 
 See [Generating a Pair of
-Keys](java-cryptography-architecture-jca-reference-guide.htm#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ")
+Keys](java-cryptography-architecture-jca-reference-guide.html#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ")
 for examples of calls to the methods documented below.
 
 </div>
@@ -3345,7 +3345,7 @@ All key pair generation starts with a `KeyPairGenerator`{.codeph}.
 `KeyPairGenerator`{.codeph} <span class="apiname">getInstance()</span>
 static factory methods. See [How Provider Implementations Are Requested
 and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -3413,7 +3413,7 @@ Algorithm-Specific Initialization
 For situations where a set of algorithm-specific parameters already
 exists (such as \"community parameters\" in DSA), there are two
 `initialize`{.codeph} methods that have an [The AlgorithmParameterSpec
-Interface](java-cryptography-architecture-jca-reference-guide.htm#GUID-190C91B4-991D-416E-A932-C0E37B33A86D "AlgorithmParameterSpec is an interface to a transparent specification of cryptographic parameters. This interface contains no methods or constants. Its only purpose is to group (and provide type safety for) all parameter specifications. All parameter specifications must implement this interface.")
+Interface](java-cryptography-architecture-jca-reference-guide.html#GUID-190C91B4-991D-416E-A932-C0E37B33A86D "AlgorithmParameterSpec is an interface to a transparent specification of cryptographic parameters. This interface contains no methods or constants. Its only purpose is to group (and provide type safety for) all parameter specifications. All parameter specifications must implement this interface.")
 argument. One also has a `SecureRandom`{.codeph} argument, while the
 source of randomness is system-provided for the other:
 
@@ -3425,7 +3425,7 @@ void initialize(AlgorithmParameterSpec params)
 ```
 
 See [Generating a Pair of
-Keys](java-cryptography-architecture-jca-reference-guide.htm#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ").
+Keys](java-cryptography-architecture-jca-reference-guide.html#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ").
 
 </div>
 <!-- class="section" -->
@@ -3480,7 +3480,7 @@ Creating a `KeyGenerator`{.codeph}
 `KeyGenerator`{.codeph} <span class="apiname">getInstance()</span>
 static factory methods. See [How Provider Implementations Are Requested
 and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -3603,7 +3603,7 @@ object. `KeyAgreement`{.codeph} objects are obtained by using one of the
 `KeyAgreement`{.codeph} <span class="apiname">getInstance()</span>
 static factory methods. See [How Provider Implementations Are Requested
 and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -3668,7 +3668,7 @@ agreement and the key agreement is completed, i.e.,
 `generateSecret`{.codeph} can be called next.
 
 In the example of [Diffie-Hellman Key Exchange between 2
-Parties](java-cryptography-architecture-jca-reference-guide.htm#GUID-98B5A57E-E5BA-46F2-BE35-2056F43C58A4 "The program runs the Diffie-Hellman key agreement protocol between 2 parties.")
+Parties](java-cryptography-architecture-jca-reference-guide.html#GUID-98B5A57E-E5BA-46F2-BE35-2056F43C58A4 "The program runs the Diffie-Hellman key agreement protocol between 2 parties.")
 , you call `doPhase`{.codeph} once, with `lastPhase`{.codeph} set to
 `TRUE`{.codeph}. In the example of Diffie-Hellman between three parties,
 you call `doPhase`{.codeph} twice: the first time with
@@ -3833,7 +3833,7 @@ three other types of keystores that come with the JDK implementation.
 Keystore implementations are provider-based. If you want to write your
 own KeyStore implementations, see [How to Implement a Provider in the
 Java Cryptography
-Architecture](howtoimplaprovider.htm#GUID-C485394F-08C9-4D35-A245-1B82CDDBC031 "This document describes what you need to do in order to integrate your provider into Java SE so that algorithms and other services can be found when Java Security API clients request them.").
+Architecture](howtoimplaprovider.html#GUID-C485394F-08C9-4D35-A245-1B82CDDBC031 "This document describes what you need to do in order to integrate your provider into Java SE so that algorithms and other services can be found when Java Security API clients request them.").
 
 </div>
 <!-- class="section" -->
@@ -3850,7 +3850,7 @@ and modify the information in a keystore.
 
 <div class="section">
 The `KeyStore`{.codeph} class is an [Engine Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
 
 <div class="figure" id="GUID-09050137-31F1-468A-A552-B051A4E35876__GUID-E500AFDF-303F-4F6A-8F30-B78446C385BC">
 Figure 2-16 KeyStore Class
@@ -3910,7 +3910,7 @@ Creating a KeyStore Object
 
 KeyStore objects are obtained by using one of the KeyStore getInstance()
 method. See [How Provider Implementations Are Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -4122,7 +4122,7 @@ defines `getP`{.codeph}, `getQ`{.codeph}, and `getG`{.codeph} methods,
 to access `p`{.codeph}, `q`{.codeph}, and `g`{.codeph}, respectively).
 
 In contrast, the [The AlgorithmParameters
-Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-EF3A257D-5489-472A-8297-7E9952A5AAB0 "The AlgorithmParameters class provides an opaque representation of cryptographic parameters.")
+Class](java-cryptography-architecture-jca-reference-guide.html#GUID-EF3A257D-5489-472A-8297-7E9952A5AAB0 "The AlgorithmParameters class provides an opaque representation of cryptographic parameters.")
 class supplies an <span class="variable">opaque</span> representation,
 in which you have no direct access to the parameter fields. You can only
 get the name of the algorithm associated with the parameter set (via
@@ -4193,7 +4193,7 @@ representation of cryptographic parameters.
 The AlgorithmParameters Class
 
 The `AlgorithmParameters`{.codeph} class is an [Engine Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.")
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.")
 .You can initialize the `AlgorithmParameters`{.codeph} class using a
 specific `AlgorithmParameterSpec`{.codeph} object, or by encoding the
 parameters in a recognized format. You can retrieve the resulting
@@ -4209,7 +4209,7 @@ Creating an AlgorithmParameters Object
 `AlgorithmParameters`{.codeph} objects are obtained by using one of the
 `AlgorithmParameters`{.codeph} getInstance() static factory methods. For
 more information, see [How Provider Implementations Are Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -4296,7 +4296,7 @@ parameters should be returned in an instance of the
 <div class="section">
 The `AlgorithmParameterGenerator`{.codeph} class is an [Engine Classes
 and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.")
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.")
 used to generate a set of <span class="bold">brand-new</span> parameters
 suitable for a certain algorithm (the algorithm is specified when an
 `AlgorithmParameterGenerator`{.codeph} instance is created). This object
@@ -4312,7 +4312,7 @@ Creating an AlgorithmParameterGenerator Object
 `AlgorithmParameterGenerator`{.codeph} objects are obtained by using one
 of the `AlgorithmParameterGenerator`{.codeph} getInstance() static
 factory methods. See [How Provider Implementations Are Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -4394,7 +4394,7 @@ certificate revocation list (CRL) objects from their encoding.
 
 <div class="section">
 The `CertificateFactory`{.codeph} class is an [Engine Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
 
 A certificate factory for X.509 must return certificates that are an
 instance of `java.security.cert.X509Certificate`{.codeph}, and CRLs that
@@ -4409,7 +4409,7 @@ Creating a CertificateFactory Object
 `CertificateFactory`{.codeph} objects are obtained by using one of the
 `getInstance()`{.codeph} static factory methods. For more information,
 see [How Provider Implementations Are Requested and
-Supplied](java-cryptography-architecture-jca-reference-guide.htm#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
+Supplied](java-cryptography-architecture-jca-reference-guide.html#GUID-2DCBD20D-2D5E-4ECA-81A8-1FCE9E961741).
 
 </div>
 <!-- class="section" -->
@@ -4516,7 +4516,7 @@ SSL/TLS.
 
 <div class="section">
 The SSL/TLS Overview section in the [SSL, TLS, and DTLS
-Protocols](java-security-overview1.htm#GUID-FCF419A7-B856-46DD-A36F-C6F88F9AF37F "The JDK provides APIs and an implementation of the SSL, TLS, and DTLS protocols that includes functionality for data encryption, message integrity, and server and client authentication. Applications can use SSL/TLS/DTLS to provide for the secure passage of data between two peers over any application protocol, such as HTTP on top of TCP/IP.")
+Protocols](java-security-overview1.html#GUID-FCF419A7-B856-46DD-A36F-C6F88F9AF37F "The JDK provides APIs and an implementation of the SSL, TLS, and DTLS protocols that includes functionality for data encryption, message integrity, and server and client authentication. Applications can use SSL/TLS/DTLS to provide for the secure passage of data between two peers over any application protocol, such as HTTP on top of TCP/IP.")
 describes at a high level how the protocols work. As asymmetric (public
 key) cipher operations are much slower than symmetric operations (secret
 key), public key cryptography is used to establish secret keys which are
@@ -4532,7 +4532,7 @@ The details presented here simply show how some of the above classes
 might be employed. This section will not present sufficient information
 for building a SSL/TLS implementation. For more information, see [Java
 Secure Socket Extension (JSSE) Reference
-Guide](java-secure-socket-extension-jsse-reference-guide.htm#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication.")
+Guide](java-secure-socket-extension-jsse-reference-guide.html#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication.")
 and [RFC 5246: The Transport Layer Security (TLS) Protocol, Version
 1.2](https://tools.ietf.org/html/rfc5246).
 
@@ -4674,7 +4674,7 @@ Cryptographic Strength Configuration {#JSSEC-GUID-EFA5AC2D-644E-4CD9-8523-C6D393
 You can configure the cryptographic strength of the Java Cryptography
 Extension (JCE) architecture using jurisdiction policy files (see
 [Jurisdiction Policy File
-Format](java-cryptography-architecture-jca-reference-guide.htm#GUID-F2CF205E-744E-4C16-B504-B6F79781E762))
+Format](java-cryptography-architecture-jca-reference-guide.html#GUID-F2CF205E-744E-4C16-B504-B6F79781E762))
 and the security properties file.
 
 Prior to Oracle Java JDK 9, the default cryptographic strength allowed
@@ -4721,7 +4721,7 @@ directory. These policy files settings are VM-wide, and affect all
 applications running on this VM. If you want to override cryptographic
 strength at the application level, see [How to Make Applications Exempt
 from Cryptographic
-Restrictions](java-cryptography-architecture-jca-reference-guide.htm#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D).
+Restrictions](java-cryptography-architecture-jca-reference-guide.html#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D).
 
 </div>
 <!-- class="section" -->
@@ -4859,7 +4859,7 @@ files:
     Countries that have import restrictions should use "limited", but
     these restrictions could be relaxed if the exemption mechanism can
     be employed. See [How to Make Applications Exempt from Cryptographic
-    Restrictions](java-cryptography-architecture-jca-reference-guide.htm#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D).
+    Restrictions](java-cryptography-architecture-jca-reference-guide.html#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D).
     Please obtain legal guidance for your situation.
 
     </div>
@@ -4899,7 +4899,7 @@ Jurisdiction Policy File Format {#JSSEC-GUID-F2CF205E-744E-4C16-B504-B6F79781E76
 JCA represents its jurisdiction policy files as Java-style policy files
 with corresponding permission statements. As described in [Cryptographic
 Strength
-Configuration](java-cryptography-architecture-jca-reference-guide.htm#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1),
+Configuration](java-cryptography-architecture-jca-reference-guide.html#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1),
 a Java policy file specifies what permissions are allowed for code from
 specified code sources. A permission represents access to a system
 resource. In the case of JCA, the \"resources\" are cryptography
@@ -5069,7 +5069,7 @@ applications in different jurisdiction contexts (locations). You specify
 these restrictions in jurisdiction policy files. For more information
 about jurisdiction policy files and how to create and configure them,
 see [Cryptographic Strength
-Configuration](java-cryptography-architecture-jca-reference-guide.htm#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1).
+Configuration](java-cryptography-architecture-jca-reference-guide.html#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1).
 
 It is possible that the governments of some or all such countries may
 allow certain applications to become exempt from some or all
@@ -5118,7 +5118,7 @@ The `SunJCE`{.codeph} provider does not supply an implementation of the
     c.  Bundle the Application and Permission Policy File into a JAR
         file
     d.  [Step 7.1: Get a Code-Signing
-        Certificate](howtoimplaprovider.htm#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62 "The next step is to request a code-signing certificate so that you can use it to sign your provider prior to testing. The certificate will be good for both testing and production. It will be valid for 5 years.")
+        Certificate](howtoimplaprovider.html#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62 "The next step is to request a code-signing certificate so that you can use it to sign your provider prior to testing. The certificate will be good for both testing and production. It will be valid for 5 years.")
     e.  Set Up Your Environment Like That of a User in a Restricted
         Country
     f.  (only for applications using exemption mechanisms) Install a
@@ -5201,7 +5201,7 @@ permission <crypto permission class name>
 ```
 
 See [Jurisdiction Policy File
-Format](java-cryptography-architecture-jca-reference-guide.htm#GUID-F2CF205E-744E-4C16-B504-B6F79781E762).
+Format](java-cryptography-architecture-jca-reference-guide.html#GUID-F2CF205E-744E-4C16-B504-B6F79781E762).
 
 </div>
 <!-- class="section" -->
@@ -5349,7 +5349,7 @@ describes the standard names for algorithms, certificate and keystore
 types that the JDK Security API requires and uses. It also contains more
 information about the algorithm specifications. Specific provider
 information can be found in [JDK Providers
-Documentation](oracle-providers.htm#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
+Documentation](oracle-providers.html#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
 
 Cryptographic implementations in the JDK are distributed through several
 different providers primarily for historical reasons (`Sun`{.codeph},
@@ -5364,7 +5364,7 @@ environment (such as PKCS or Microsoft\'s CAPI).
 The `SunPKCS11`{.codeph} provider itself does not contain any
 cryptographic algorithms, but instead, directs requests into an
 underlying PKCS11 implementation. Consult [PKCS\#11 Reference
-Guide](pkcs11-reference-guide1.htm#GUID-30E98B63-4910-40A1-A6DD-663EAF466991)
+Guide](pkcs11-reference-guide1.html#GUID-30E98B63-4910-40A1-A6DD-663EAF466991)
 and the underlying PKCS11 implementation to determine if a desired
 algorithm will be available through the PKCS11 provider. Likewise, on
 Windows systems, the `SunMSCAPI`{.codeph} provider does not provide any
@@ -5417,37 +5417,37 @@ Additional JCA Code Samples {#JSSEC-GUID-871FA938-5110-409E-A4EC-16F2A898093A .s
 <div>
 These examples illustrate use of several JCA mechanisms. See also
 [Sample Programs for Diffie-Hellman Key Exchange, AES/GCM, and
-HMAC-SHA256](java-cryptography-architecture-jca-reference-guide.htm#GUID-725B837C-9DB3-4B9F-A8D8-1E1C72B558E0 "The following are sample programs for Diffie-Hellman key exchange, AES/GCM, and HMAC-SHA256.")
+HMAC-SHA256](java-cryptography-architecture-jca-reference-guide.html#GUID-725B837C-9DB3-4B9F-A8D8-1E1C72B558E0 "The following are sample programs for Diffie-Hellman key exchange, AES/GCM, and HMAC-SHA256.")
 
 <div class="section">
 Topics
 
 [Computing a MessageDigest
-Object](java-cryptography-architecture-jca-reference-guide.htm#GUID-6E9FB890-F011-450E-9EC5-EBB358E1D8A1 "An example describing the procedure to compute a MessageDigest object.")
+Object](java-cryptography-architecture-jca-reference-guide.html#GUID-6E9FB890-F011-450E-9EC5-EBB358E1D8A1 "An example describing the procedure to compute a MessageDigest object.")
 
 [Generating a Pair of
-Keys](java-cryptography-architecture-jca-reference-guide.htm#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ")
+Keys](java-cryptography-architecture-jca-reference-guide.html#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ")
 
 [Generating and Verifying a Signature Using Generated
-Keys](java-cryptography-architecture-jca-reference-guide.htm#GUID-7389E94B-A595-4020-A4D2-73FB0DD5A05A "Examples of generating and verifying a signature using generated keys.")
+Keys](java-cryptography-architecture-jca-reference-guide.html#GUID-7389E94B-A595-4020-A4D2-73FB0DD5A05A "Examples of generating and verifying a signature using generated keys.")
 
 [Generating/Verifying Signatures Using Key Specifications and
-KeyFactory](java-cryptography-architecture-jca-reference-guide.htm#GUID-5514BAFF-5F0F-403C-9943-56A632D6E406 "Sample code that is used to generate and verify signatures using key specifications and KeyFactory.")
+KeyFactory](java-cryptography-architecture-jca-reference-guide.html#GUID-5514BAFF-5F0F-403C-9943-56A632D6E406 "Sample code that is used to generate and verify signatures using key specifications and KeyFactory.")
 
 [Determining If Two Keys Are
-Equal](java-cryptography-architecture-jca-reference-guide.htm#GUID-F7F401C9-63E6-4BE4-9F32-A28B3568EBCC "Example code for determining if two keys are equal.")
+Equal](java-cryptography-architecture-jca-reference-guide.html#GUID-F7F401C9-63E6-4BE4-9F32-A28B3568EBCC "Example code for determining if two keys are equal.")
 
 [Reading Base64-Encoded
-Certificates](java-cryptography-architecture-jca-reference-guide.htm#GUID-CD24C31B-45FA-480C-AFCA-C108C01689D8)
+Certificates](java-cryptography-architecture-jca-reference-guide.html#GUID-CD24C31B-45FA-480C-AFCA-C108C01689D8)
 
 [Parsing a Certificate
-Reply](java-cryptography-architecture-jca-reference-guide.htm#GUID-8001F1B9-7DBF-4135-A5F3-0042F803E58A)
+Reply](java-cryptography-architecture-jca-reference-guide.html#GUID-8001F1B9-7DBF-4135-A5F3-0042F803E58A)
 
 [Using
-Encryption](java-cryptography-architecture-jca-reference-guide.htm#GUID-AA678E6B-7EAB-44F3-A8CD-F59BEA201BBF "This section takes the user through the process of generating a key, creating and initializing a cipher object, encrypting a file, and then decrypting it. Throughout this example, we use the Advanced Encryption Standard (AES).")
+Encryption](java-cryptography-architecture-jca-reference-guide.html#GUID-AA678E6B-7EAB-44F3-A8CD-F59BEA201BBF "This section takes the user through the process of generating a key, creating and initializing a cipher object, encrypting a file, and then decrypting it. Throughout this example, we use the Advanced Encryption Standard (AES).")
 
 [Using Password-Based
-Encryption](java-cryptography-architecture-jca-reference-guide.htm#GUID-C9F76AFB-6B20-45A7-B84F-96756C8A94B4)
+Encryption](java-cryptography-architecture-jca-reference-guide.html#GUID-C9F76AFB-6B20-45A7-B84F-96756C8A94B4)
 
 </div>
 <!-- class="section" -->
@@ -5709,7 +5709,7 @@ Examples of generating and verifying a signature using generated keys.
 <div class="section">
 The following signature generation and verification examples use the
 `KeyPair`{.codeph} generated in the [Generating a Pair of
-Keys](java-cryptography-architecture-jca-reference-guide.htm#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ")
+Keys](java-cryptography-architecture-jca-reference-guide.html#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ")
 .
 
 </div>
@@ -5775,7 +5775,7 @@ specifications and `KeyFactory`{.codeph}.
 <div class="section">
 Suppose that, rather than having a public/private key pair (as, for
 example, was generated in the [Generating a Pair of
-Keys](java-cryptography-architecture-jca-reference-guide.htm#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ")
+Keys](java-cryptography-architecture-jca-reference-guide.html#GUID-ED6EDA78-8D20-4059-92E1-FBDDE4D3DFE6 "In this example we will generate a public-private key pair for the algorithm named ")
 above), you simply have the components of your DSA private key:
 `x`{.codeph} (the private key), `p`{.codeph} (the prime), `q`{.codeph}
 (the sub-prime), and `g`{.codeph} (the base).
@@ -6247,16 +6247,16 @@ AES/GCM, and HMAC-SHA256.
 Topics
 
 [Diffie-Hellman Key Exchange between 2
-Parties](java-cryptography-architecture-jca-reference-guide.htm#GUID-98B5A57E-E5BA-46F2-BE35-2056F43C58A4 "The program runs the Diffie-Hellman key agreement protocol between 2 parties.")
+Parties](java-cryptography-architecture-jca-reference-guide.html#GUID-98B5A57E-E5BA-46F2-BE35-2056F43C58A4 "The program runs the Diffie-Hellman key agreement protocol between 2 parties.")
 
 [Diffie-Hellman Key Exchange between 3
-Parties](java-cryptography-architecture-jca-reference-guide.htm#GUID-3DADAE4E-EBC1-46CE-A47B-A09AD9E2A01E "The program runs the Diffie-Hellman key agreement protocol between 3 parties.")
+Parties](java-cryptography-architecture-jca-reference-guide.html#GUID-3DADAE4E-EBC1-46CE-A47B-A09AD9E2A01E "The program runs the Diffie-Hellman key agreement protocol between 3 parties.")
 
 [AES/GCM
-Example](java-cryptography-architecture-jca-reference-guide.htm#GUID-BCF9A664-EA76-49C9-AB0C-662FD7542B85 "The following is a sample program to demonstrate AES/GCM usage to encrypt/decrypt data.")
+Example](java-cryptography-architecture-jca-reference-guide.html#GUID-BCF9A664-EA76-49C9-AB0C-662FD7542B85 "The following is a sample program to demonstrate AES/GCM usage to encrypt/decrypt data.")
 
 [HMAC-SHA256
-Example](java-cryptography-architecture-jca-reference-guide.htm#GUID-1B141C6A-7BB3-4DA2-A112-ADEBCE7F4B4A "The following is a sample program that demonstrates how to generate a secret-key object for HMAC-SHA256, and initialize a HMAC-SHA256 object with it.")
+Example](java-cryptography-architecture-jca-reference-guide.html#GUID-1B141C6A-7BB3-4DA2-A112-ADEBCE7F4B4A "The following is a sample program that demonstrates how to generate a secret-key object for HMAC-SHA256, and initialize a HMAC-SHA256 object with it.")
 
 </div>
 <!-- class="section" -->

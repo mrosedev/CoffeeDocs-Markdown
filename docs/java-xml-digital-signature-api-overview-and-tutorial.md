@@ -57,7 +57,7 @@ features of the W3C Recommendation for XML-Signature Syntax and
 Processing. The API is extensible and pluggable and is based on the Java
 Cryptography Service Provider Architecture; see [Java Cryptography
 Architecture (JCA) Reference
-Guide](java-cryptography-architecture-jca-reference-guide.htm#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").
+Guide](java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").
 The API is designed for two types of developers:
 
 -   Developers who want to use the XML Digital Signature API to generate
@@ -65,7 +65,7 @@ The API is designed for two types of developers:
 -   Developers who want to create a concrete implementation of the XML
     Digital Signature API and register it as a cryptographic service of
     a JCA provider (see [The Provider
-    Class](java-cryptography-architecture-jca-reference-guide.htm#GUID-D8E30FE5-66B4-4F6A-88B7-280789E68307 "In order to be used, a cryptographic provider must first be installed, then registered either statically or dynamically. There are a variety of Sun providers shipped with this release (SUN, SunJCE, SunJSSE, SunRsaSign, etc.) that are already installed and registered. The following sections describe how to install and register additional providers.Each Provider class instance has a (currently case-sensitive) name, a version number, and a string description of the provider and its services.")).
+    Class](java-cryptography-architecture-jca-reference-guide.html#GUID-D8E30FE5-66B4-4F6A-88B7-280789E68307 "In order to be used, a cryptographic provider must first be installed, then registered either statically or dynamically. There are a variety of Sun providers shipped with this release (SUN, SunJCE, SunJSSE, SunRsaSign, etc.) that are already installed and registered. The following sections describe how to install and register additional providers.Each Provider class instance has a (currently case-sensitive) name, a version number, and a string description of the provider and its services.")).
 
 </div>
 <div class="sect2">
@@ -246,7 +246,7 @@ inside the data that it is signing.
 <div>
 The easiest way to describe the contents of an XML Signature is to show
 an actual sample and describe each component in more detail. [Example
-12-3](java-xml-digital-signature-api-overview-and-tutorial.htm#GUID-22AB40C4-45EC-4714-91A2-CFB59EC05AA0__GUID-4DCD9F0B-02C7-4C00-AB66-096C7F262ACF)
+12-3](java-xml-digital-signature-api-overview-and-tutorial.html#GUID-22AB40C4-45EC-4714-91A2-CFB59EC05AA0__GUID-4DCD9F0B-02C7-4C00-AB66-096C7F262ACF)
 is an enveloped XML Signature generated over the contents of an XML
 document. The root element, `Envelop`{.codeph}, contains a
 `Signature`{.codeph} element:
@@ -730,7 +730,7 @@ earlier):
 
 The <span class="apiname">KeyValueKeySelector</span> is explained in
 greater detail in [Using
-KeySelectors](java-xml-digital-signature-api-overview-and-tutorial.htm#GUID-26946ED1-1BBE-4AFD-B1CA-5A6A46FD7354).
+KeySelectors](java-xml-digital-signature-api-overview-and-tutorial.html#GUID-26946ED1-1BBE-4AFD-B1CA-5A6A46FD7354).
 
 </div>
 </div>
