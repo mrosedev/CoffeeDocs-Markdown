@@ -51,20 +51,20 @@ Related Documentation {#JSSEC-GUID-DFC5108C-A999-4F95-942F-21C0DD83F48B .sect1}
 -   User guides and tutorials
 
     -   [Java Authentication and Authorization Service (JAAS) Reference
-        Guide](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-2A935F5E-0803-411D-B6BC-F8C64D01A25C)
+        Guide](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-2A935F5E-0803-411D-B6BC-F8C64D01A25C)
     -   [Java Security
         Tutorial](https://docs.oracle.com/javase/tutorial/security/index.html)
 
 -   Other Java Security Documentation
 
     -   [Default Policy Implementation and Policy File
-        Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)
+        Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D)
     -   [Permissions in the
-        JDK](permissions-jdk1.htm#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.")
+        JDK](permissions-jdk1.html#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.")
     -   [Single Sign-on Using Kerberos in
-        Java](single-sign-using-kerberos-java1.htm#GUID-D4230975-A28B-4532-B1DD-3C7219A4867F)
+        Java](single-sign-using-kerberos-java1.html#GUID-D4230975-A28B-4532-B1DD-3C7219A4867F)
     -   [Java SE Platform Security
-        Architecture](java-se-platform-security-architecture.htm#GUID-D6C53B30-01F9-49F1-9F61-35815558422B "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.This section describes the doPrivileged API and the use of the privileged feature.If you are using a lambda expression or anonymous inner class, then any local variables you access must be final or effectively final.If the action performed in your run method could throw a checked exception (one that must be listed in the throws clause of a method), then you need to use the PrivilegedExceptionAction interface instead of the PrivilegedAction interface.The typical use case of the doPrivileged method is to enable the method that invokes it to perform one or more actions that require permission checks without requiring the callers of the current method to have all the necessary permissions.When coding the current method, you want to temporarily extend the permission of the calling method to perform an action.Marking code as privileged enables a piece of trusted code to temporarily enable access to more resources than are available directly to the code that called it.The doPrivileged method can be invoked reflectively using the java.lang.reflect.Method.invoke method.")
+        Architecture](java-se-platform-security-architecture.html#GUID-D6C53B30-01F9-49F1-9F61-35815558422B "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.This section describes the doPrivileged API and the use of the privileged feature.If you are using a lambda expression or anonymous inner class, then any local variables you access must be final or effectively final.If the action performed in your run method could throw a checked exception (one that must be listed in the throws clause of a method), then you need to use the PrivilegedExceptionAction interface instead of the PrivilegedAction interface.The typical use case of the doPrivileged method is to enable the method that invokes it to perform one or more actions that require permission checks without requiring the callers of the current method to have all the necessary permissions.When coding the current method, you want to temporarily extend the permission of the calling method to perform an action.Marking code as privileged enables a piece of trusted code to temporarily enable access to more resources than are available directly to the code that called it.The doPrivileged method can be invoked reflectively using the java.lang.reflect.Method.invoke method.")
 
 -   Reference document
 

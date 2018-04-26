@@ -54,7 +54,7 @@ To use more than one option, separate options with a comma.
 
 JSSE also provides dynamic debug tracing support for SSL/TLS/DTLS
 troubleshooting. See [Debugging
-Utilities](java-secure-socket-extension-jsse-reference-guide.htm#GUID-31B7E142-B874-46E9-8DD0-4E18EC0EB2CF).
+Utilities](java-secure-socket-extension-jsse-reference-guide.html#GUID-31B7E142-B874-46E9-8DD0-4E18EC0EB2CF).
 
 </div>
 </div>
@@ -72,7 +72,7 @@ Table 1-10 `java.security.debug`{.codeph} Options
 +-----------------------+-----------------------+-----------------------+
 | `access`{.codeph}     | Print all results     | [Permissions in the   |
 |                       | from the              | JDK](permissions-jdk1 |
-|                       | `AccessController.che | .htm#GUID-1E8E213A-D7 |
+|                       | `AccessController.che | .html#GUID-1E8E213A-D7 |
 |                       | ckPermission`{.codeph | F2-49F1-A2F0-EFB3397A |
 |                       | }</a></code>          | 8C95 "A permission re |
 |                       | method.               | presents access to a  |
@@ -121,7 +121,7 @@ Table 1-10 `java.security.debug`{.codeph} Options
 | `certpath`{.codeph}   | Turns on debugging    | [PKI Programmers      |
 |                       | for the PKIX          | Guide                 |
 |                       | `CertPathValidator`{. | Overview](java-pki-pr |
-|                       | codeph}</a></code>    | ogrammers-guide.htm#G |
+|                       | codeph}</a></code>    | ogrammers-guide.html#G |
 |                       | and                   | UID-D6A18B1E-A2A8-4CA |
 |                       | `CertPathBuilder`{.co | 2-BD18-514CD807810E " |
 |                       | deph}</a></code>      | The Java Certificatio |
@@ -138,7 +138,7 @@ Table 1-10 `java.security.debug`{.codeph} Options
 +-----------------------+-----------------------+-----------------------+
 | `combiner`{.codeph}   | `SubjectDomainCombine | [Permissions in the   |
 |                       | r`{.codeph}</a></code | JDK](permissions-jdk1 |
-|                       | >                     | .htm#GUID-1E8E213A-D7 |
+|                       | >                     | .html#GUID-1E8E213A-D7 |
 |                       | debugging             | F2-49F1-A2F0-EFB3397A |
 |                       |                       | 8C95 "A permission re |
 |                       |                       | presents access to a  |
@@ -318,13 +318,13 @@ Table 1-10 `java.security.debug`{.codeph} Options
 +-----------------------+-----------------------+-----------------------+
 | `pkcs11`{.codeph}     | PKCS11 session        | [PKCS\#11 Reference   |
 |                       | manager debugging     | Guide](pkcs11-referen |
-|                       |                       | ce-guide1.htm#GUID-30 |
+|                       |                       | ce-guide1.html#GUID-30 |
 |                       |                       | E98B63-4910-40A1-A6DD |
 |                       |                       | -663EAF466991)        |
 +-----------------------+-----------------------+-----------------------+
 | `pkcs11keystore`{.cod | PKCS11 KeyStore       | [PKCS\#11 Reference   |
 | eph}                  | debugging             | Guide](pkcs11-referen |
-|                       |                       | ce-guide1.htm#GUID-30 |
+|                       |                       | ce-guide1.html#GUID-30 |
 |                       |                       | E98B63-4910-40A1-A6DD |
 |                       |                       | -663EAF466991)        |
 +-----------------------+-----------------------+-----------------------+
@@ -346,7 +346,7 @@ Table 1-10 `java.security.debug`{.codeph} Options
 |                       |                       | Implementation and    |
 |                       |                       | Policy File           |
 |                       |                       | Syntax](permissions-j |
-|                       |                       | dk1.htm#GUID-789089CA |
+|                       |                       | dk1.html#GUID-789089CA |
 |                       |                       | -8557-4017-B8B0-6899A |
 |                       |                       | D3BA18D)              |
 +-----------------------+-----------------------+-----------------------+
@@ -355,7 +355,7 @@ Table 1-10 `java.security.debug`{.codeph} Options
 |                       |                       | Reference             |
 |                       | The following options | Guide](java-cryptogra |
 |                       | can be used with the  | phy-architecture-jca- |
-|                       | provider option:      | reference-guide.htm#G |
+|                       | provider option:      | reference-guide.html#G |
 |                       |                       | UID-2BCFDD85-D533-4E6 |
 |                       | `engine=<engines>`{.c | C-8CE9-29990DEB0190 " |
 |                       | odeph}                | The Java Cryptography |
@@ -393,7 +393,7 @@ Table 1-10 `java.security.debug`{.codeph} Options
 +-----------------------+-----------------------+-----------------------+
 | `scl`{.codeph}        | Permissions that      | [Permissions in the   |
 |                       | [`SecureClassLoader`{ | JDK](permissions-jdk1 |
-|                       | .codeph}](https://doc | .htm#GUID-1E8E213A-D7 |
+|                       | .codeph}](https://doc | .html#GUID-1E8E213A-D7 |
 |                       | s.oracle.com/javase/1 | F2-49F1-A2F0-EFB3397A |
 |                       | 0/docs/api/java/secur | 8C95 "A permission re |
 |                       | ity/SecureClassLoader | presents access to a  |
@@ -412,13 +412,13 @@ Table 1-10 `java.security.debug`{.codeph} Options
 | `securerandom`{.codep | SecureRandom          | [The SecureRandom     |
 | h}                    | debugging             | Class](java-cryptogra |
 |                       |                       | phy-architecture-jca- |
-|                       |                       | reference-guide.htm#G |
+|                       |                       | reference-guide.html#G |
 |                       |                       | UID-AEB77CD8-D28F-4BB |
 |                       |                       | E-B9E5-160B5DC35D36)  |
 +-----------------------+-----------------------+-----------------------+
 | `sunpkcs11`{.codeph}  | SunPKCS11 provider    | [PKCS\#11 Reference   |
 |                       | debugging             | Guide](pkcs11-referen |
-|                       |                       | ce-guide1.htm#GUID-30 |
+|                       |                       | ce-guide1.html#GUID-30 |
 |                       |                       | E98B63-4910-40A1-A6DD |
 |                       |                       | -663EAF466991)        |
 +-----------------------+-----------------------+-----------------------+

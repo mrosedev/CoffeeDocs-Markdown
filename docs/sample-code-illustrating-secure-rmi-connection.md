@@ -36,12 +36,12 @@ Sample Code Illustrating a Secure RMI Connection {#JSSEC-GUID-2F82CCFD-22E6-4E6E
 
 <div>
 The example
-[`HelloClient.java`](sample-code-illustrating-secure-rmi-connection.htm#GUID-2F82CCFD-22E6-4E6E-A2E1-88CF2BB19E87__HELLOCLIENT.JAVA-3316D03B)
+[`HelloClient.java`](sample-code-illustrating-secure-rmi-connection.html#GUID-2F82CCFD-22E6-4E6E-A2E1-88CF2BB19E87__HELLOCLIENT.JAVA-3316D03B)
 illustrates how to create a secure Java Remote Method Invocation (RMI)
 connection. The sample code is basically a \"Hello World\" example
 modified to install and use a custom RMI socket factory. It uses RMI
 over an SSL transport layer using JSSE. The server runs
-[`HelloImpl.java`](sample-code-illustrating-secure-rmi-connection.htm#GUID-2F82CCFD-22E6-4E6E-A2E1-88CF2BB19E87__HELLOIMPL.JAVA-3316C983),
+[`HelloImpl.java`](sample-code-illustrating-secure-rmi-connection.html#GUID-2F82CCFD-22E6-4E6E-A2E1-88CF2BB19E87__HELLOIMPL.JAVA-3316C983),
 which sets up an internal RMI registry (rather than using the
 `rmiregistry`{.codeph} command). The client runs `HelloClient`{.codeph}
 and communicates over a secured connection.

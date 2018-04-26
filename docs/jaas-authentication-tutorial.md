@@ -47,7 +47,7 @@ JAAS can be used for two purposes:
 
 This section provides a basic tutorial for the authentication component.
 The authorization component will be described in the [JAAS Authorization
-Tutorial](jaas-authorization-tutorial.htm#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411).
+Tutorial](jaas-authorization-tutorial.html#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411).
 
 JAAS authentication is performed in a
 <span class="variable">pluggable</span> fashion. This permits Java
@@ -62,17 +62,17 @@ ensuring that the user specifies a particular name and password.
 The rest of this tutorial consists of the following sections:
 
 1.  [The Authentication Tutorial
-    Code](jaas-authentication-tutorial.htm#GUID-EF77AA97-CB87-4D1D-A3BF-8541FF41BA4A)
+    Code](jaas-authentication-tutorial.html#GUID-EF77AA97-CB87-4D1D-A3BF-8541FF41BA4A)
 2.  [The Login
-    Configuration](jaas-authentication-tutorial.htm#GUID-987700C5-AE03-4EB1-B16A-66A1404B9604)
+    Configuration](jaas-authentication-tutorial.html#GUID-987700C5-AE03-4EB1-B16A-66A1404B9604)
 3.  [Running the
-    Code](jaas-authentication-tutorial.htm#GUID-743703A2-7EC1-4391-A816-4A883FB6A017)
+    Code](jaas-authentication-tutorial.html#GUID-743703A2-7EC1-4391-A816-4A883FB6A017)
 4.  [Running the Code with a Security
-    Manager](jaas-authentication-tutorial.htm#GUID-44F2BF3A-F51D-4F21-8F40-96CB1120396D)
+    Manager](jaas-authentication-tutorial.html#GUID-44F2BF3A-F51D-4F21-8F40-96CB1120396D)
 
 If you want to first see the tutorial code in action, you can skip
 directly to [Running the
-Code](jaas-authentication-tutorial.htm#GUID-743703A2-7EC1-4391-A816-4A883FB6A017)
+Code](jaas-authentication-tutorial.html#GUID-743703A2-7EC1-4391-A816-4A883FB6A017)
 and then go back to the other sections to learn about coding and
 configuration file details.
 
@@ -86,22 +86,22 @@ The Authentication Tutorial Code {#JSSEC-GUID-EF77AA97-CB87-4D1D-A3BF-8541FF41BA
 <div>
 The code for this tutorial consists of three files:
 
--   [`SampleAcn.java`](jaas-authentication-tutorial.htm#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101__GUID-1270A0AC-EA51-4A47-B9BC-BDB42F96F5FE)
+-   [`SampleAcn.java`](jaas-authentication-tutorial.html#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101__GUID-1270A0AC-EA51-4A47-B9BC-BDB42F96F5FE)
     contains the sample application class (`SampleAcn`{.codeph}) and
     another class used to handle user input
     (`MyCallbackHandler`{.codeph}). <span class="bold">The code in this
     file is the only code you need to understand for this tutorial. Your
     application will only indirectly use the other source files.</span>
--   [`SampleLoginModule.java`](jaas-authentication-tutorial.htm#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-F9A208EC-3247-4320-8158-82B0E84C6A04)
+-   [`SampleLoginModule.java`](jaas-authentication-tutorial.html#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-F9A208EC-3247-4320-8158-82B0E84C6A04)
     is the class specified by the tutorial\'s login configuration file,
     `sample_jass.config`, described in [The Login Configuration File for
     the JAAS Authentication
-    Tutorial](jaas-authentication-tutorial.htm#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F)
+    Tutorial](jaas-authentication-tutorial.html#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F)
     as the class implementing the desired underlying authentication.
     `SampleLoginModule`{.codeph}\'s user authentication consists of
     simply verifying that the name and password specified by the user
     have specific values.
--   [`SamplePrincipal.java`](jaas-authentication-tutorial.htm#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-3EA5533B-1284-481E-A35F-C82B17837F2E)
+-   [`SamplePrincipal.java`](jaas-authentication-tutorial.html#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-3EA5533B-1284-481E-A35F-C82B17837F2E)
     is a sample class implementing the
     [<span class="apiname">java.security.Principal</span>](https://docs.oracle.com/javase/10/docs/api/java/security/Principal.html)
     interface. It is used by `SampleLoginModule`{.codeph}.
@@ -117,9 +117,9 @@ Our authentication tutorial application code is contained in a single
 source file, `SampleAcn.java`. That file contains two classes:
 
 -   [The SampleAcn
-    Class](jaas-authentication-tutorial.htm#GUID-8DE2AB48-46DC-4EDC-B6E1-93EE0E35D801)
+    Class](jaas-authentication-tutorial.html#GUID-8DE2AB48-46DC-4EDC-B6E1-93EE0E35D801)
 -   [The MyCallbackHandler
-    Class](jaas-authentication-tutorial.htm#GUID-3D19984B-76FE-4BD6-8B21-44512936DAEE)
+    Class](jaas-authentication-tutorial.html#GUID-3D19984B-76FE-4BD6-8B21-44512936DAEE)
 
 </div>
 <div class="sect4">
@@ -136,12 +136,12 @@ The code for authenticating the user is very simple, consisting of just
 two steps:
 
 1.  [Instantiating a
-    LoginContext](jaas-authentication-tutorial.htm#GUID-C6F31AF5-24D6-48FD-B92C-930BFC312FDE)
+    LoginContext](jaas-authentication-tutorial.html#GUID-C6F31AF5-24D6-48FD-B92C-930BFC312FDE)
 2.  [Calling the LoginContext\'s login
-    Method](jaas-authentication-tutorial.htm#GUID-A2D1F3BA-3CFF-498A-A1F0-9E728C5C5C51)
+    Method](jaas-authentication-tutorial.html#GUID-A2D1F3BA-3CFF-498A-A1F0-9E728C5C5C51)
 
 First the basic code is shown, followed by [The Complete SampleAcn Class
-Code](jaas-authentication-tutorial.htm#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101),
+Code](jaas-authentication-tutorial.html#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101),
 complete with the import statement it requires and error handling.
 
 </div>
@@ -181,7 +181,7 @@ The arguments are the following:
     This is the name for the <span class="apiname">LoginContext</span>
     to use to look up an entry for this application in the JAAS login
     configuration file, described in [The Login
-    Configuration](jaas-authentication-tutorial.htm#GUID-987700C5-AE03-4EB1-B16A-66A1404B9604).
+    Configuration](jaas-authentication-tutorial.html#GUID-987700C5-AE03-4EB1-B16A-66A1404B9604).
     Such an entry specifies the class(es) that implement the desired
     underlying authentication technology(ies). The class(es) must
     implement the <span class="apiname">LoginModule</span> interface,
@@ -195,7 +195,7 @@ The arguments are the following:
     The entry in the login configuration file we use for this tutorial,
     `sample_jass.config` (see [The Login Configuration File for the JAAS
     Authentication
-    Tutorial](jaas-authentication-tutorial.htm#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F)),
+    Tutorial](jaas-authentication-tutorial.html#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F)),
     has the name \"Sample\", so that is the name we specify as the first
     argument to the LoginContext constructor.
 
@@ -227,7 +227,7 @@ The arguments are the following:
     instead demonstrate the more typical case of an application
     providing its own <span class="apiname">CallbackHandler</span>
     implementation, described in [The MyCallbackHandler
-    Class](jaas-authentication-tutorial.htm#GUID-3D19984B-76FE-4BD6-8B21-44512936DAEE).
+    Class](jaas-authentication-tutorial.html#GUID-3D19984B-76FE-4BD6-8B21-44512936DAEE).
 
 </div>
 </div>
@@ -248,7 +248,7 @@ lc.login();
 The <span class="apiname">LoginContext</span> instantiates a new empty
 [<span class="apiname">javax.security.auth.Subject</span>](https://docs.oracle.com/javase/10/docs/api/javax/security/auth/Subject.html)
 object (which represents the user or service being authenticated; see
-[Subject](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3)).
+[Subject](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3)).
 The <span class="apiname">LoginContext</span> constructs the configured
 <span class="apiname">LoginModule</span> (in our case
 `SampleLoginModule`{.codeph}) and initializes it with this new
@@ -468,7 +468,7 @@ underlying <span class="apiname">LoginModule</span>s.
 The tutorial sample code supplies its own
 <span class="apiname">CallbackHandler</span> implementation, the
 `MyCallbackHandler`{.codeph} class in
-[``](jaas-authentication-tutorial.htm#GUID-01DE56D2-3A45-4C38-83EB-257783975372).
+[``](jaas-authentication-tutorial.html#GUID-01DE56D2-3A45-4C38-83EB-257783975372).
 
 <span class="apiname">CallbackHandler</span> is an interface with one
 method to implement:
@@ -623,7 +623,7 @@ method, passing it the password typed by the user:
 interface. `SampleLoginModule`{.codeph} is the class specified by the
 tutorial\'s login configuration file (see [The Login Configuration File
 for the JAAS Authentication
-Tutorial](jaas-authentication-tutorial.htm#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F))
+Tutorial](jaas-authentication-tutorial.html#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F))
 as the class implementing the desired underlying authentication.
 `SampleLoginModule`{.codeph}\'s user authentication consists of simply
 verifying that the name and password specified by the user have specific
@@ -661,13 +661,13 @@ control the <span class="apiname">LoginModule</span>\'s behavior.
 Any vendor can provide a LoginModule implementation that you can use.
 Some implementations are supplied with the JRE from Oracle, as listed in
 [Appendix B: JAAS Login Configuration
-File](appendix-b-jaas-login-configuration-file.htm#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E).
+File](appendix-b-jaas-login-configuration-file.html#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E).
 
 Information for programmers who want to write a
 <span class="apiname">LoginModule</span> can be found in [Java
 Authentication and Authorization Service (JAAS): LoginModule
 Developer\'s
-Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A).
+Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A).
 
 <div class="section" id="GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-F9A208EC-3247-4320-8158-82B0E84C6A04">
 SampleLoginModule.java
@@ -1096,7 +1096,7 @@ described in the
 class.
 
 See [Appendix B: JAAS Login Configuration
-File](appendix-b-jaas-login-configuration-file.htm#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
+File](appendix-b-jaas-login-configuration-file.html#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
 for information as to what a login configuration file is, what it
 contains, and how to specify which login configuration file should be
 used.
@@ -1154,7 +1154,7 @@ To execute our JAAS authentication tutorial code, all you have to do is
     -   <span class="apiname">sample\_jass.config</span> login
         configuration file (see [The Login Configuration File for the
         JAAS Authentication
-        Tutorial](jaas-authentication-tutorial.htm#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F))
+        Tutorial](jaas-authentication-tutorial.html#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F))
 
 2.  Create a subdirectory named <span class="apiname">sample</span> of
     that top-level directory, and place the following into it (note the
@@ -1163,21 +1163,21 @@ To execute our JAAS authentication tutorial code, all you have to do is
     `SampleAcn.java`{.codeph}, are in a package named
     `sample`{.codeph}):
 
-    -   [`SampleAcn.java`](jaas-authentication-tutorial.htm#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101__GUID-1270A0AC-EA51-4A47-B9BC-BDB42F96F5FE)
+    -   [`SampleAcn.java`](jaas-authentication-tutorial.html#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101__GUID-1270A0AC-EA51-4A47-B9BC-BDB42F96F5FE)
         application source file
 
 3.  Create a subdirectory of the `sample` directory and name it
     `module`. Place the following into it (note the `SampleLoginModule`
     class is in a package named `sample.module`{.codeph}):
 
-    -   [`SampleLoginModule.java`](jaas-authentication-tutorial.htm#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-F9A208EC-3247-4320-8158-82B0E84C6A04)
+    -   [`SampleLoginModule.java`](jaas-authentication-tutorial.html#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-F9A208EC-3247-4320-8158-82B0E84C6A04)
         source file
 
 4.  Create another subdirectory of the `sample` directory and name it
     `principal`. Place the following into it (note the
     `SamplePrincipal`{.codeph} class is in a package named
     `sample.principal`{.codeph}):
-    -   [`SamplePrincipal.java`](jaas-authentication-tutorial.htm#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-3EA5533B-1284-481E-A35F-C82B17837F2E)
+    -   [`SamplePrincipal.java`](jaas-authentication-tutorial.html#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-3EA5533B-1284-481E-A35F-C82B17837F2E)
         source file
 5.  While in the top-level directory, compile `SampleAcn.java`{.codeph},
     `SampleLoginModule.java`{.codeph}, and
@@ -1246,10 +1246,10 @@ When a Java program is run with a security manager installed, the
 program is not allowed to access resources or otherwise perform
 security-sensitive operations unless it is explicitly granted permission
 to do so by the security policy in effect. (See [Permissions in the
-JDK](permissions-jdk1.htm#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").)
+JDK](permissions-jdk1.html#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").)
 The permission must be granted by an entry in a policy file (see
 [Default Policy Implementation and Policy File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).)
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).)
 
 Most browsers install a security manager, so
 <span class="variable">applets</span> typically run under the scrutiny
@@ -1286,13 +1286,13 @@ Here are the complete steps required in order to be able to run our
 `SampleAcn`{.codeph} application with a security manager installed. You
 can skip the first five steps if you have already done them, as
 described in [Running the
-Code](jaas-authentication-tutorial.htm#GUID-743703A2-7EC1-4391-A816-4A883FB6A017).
+Code](jaas-authentication-tutorial.html#GUID-743703A2-7EC1-4391-A816-4A883FB6A017).
 
 1.  Place the following file into a directory:
 
     -   `sample_jass.config` login configuration file (see [The Login
         Configuration File for the JAAS Authentication
-        Tutorial](jaas-authentication-tutorial.htm#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F))
+        Tutorial](jaas-authentication-tutorial.html#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F))
 
 2.  Create a subdirectory named <span class="apiname">sample</span> of
     that top-level directory, and place the following into it (note the
@@ -1301,14 +1301,14 @@ Code](jaas-authentication-tutorial.htm#GUID-743703A2-7EC1-4391-A816-4A883FB6A017
     `SampleAcn.java`{.codeph}, are in a package named
     `sample`{.codeph}):
 
-    -   [`SampleAcn.java`](jaas-authentication-tutorial.htm#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101__GUID-1270A0AC-EA51-4A47-B9BC-BDB42F96F5FE)
+    -   [`SampleAcn.java`](jaas-authentication-tutorial.html#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101__GUID-1270A0AC-EA51-4A47-B9BC-BDB42F96F5FE)
         application source file
 
 3.  Create a subdirectory of the `sample` directory and name it
     `module`. Place the following into it (note the `SampleLoginModule`
     class is in a package named `sample.module`{.codeph}):
 
-    -   [`SampleLoginModule.java`](jaas-authentication-tutorial.htm#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-F9A208EC-3247-4320-8158-82B0E84C6A04)
+    -   [`SampleLoginModule.java`](jaas-authentication-tutorial.html#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-F9A208EC-3247-4320-8158-82B0E84C6A04)
         source file
 
 4.  Create another subdirectory of the `sample` directory and name it
@@ -1316,7 +1316,7 @@ Code](jaas-authentication-tutorial.htm#GUID-743703A2-7EC1-4391-A816-4A883FB6A017
     `SamplePrincipal`{.codeph} class is in a package named
     `sample.principal`{.codeph}):
 
-    -   [`SamplePrincipal.java`](jaas-authentication-tutorial.htm#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-3EA5533B-1284-481E-A35F-C82B17837F2E)
+    -   [`SamplePrincipal.java`](jaas-authentication-tutorial.html#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-3EA5533B-1284-481E-A35F-C82B17837F2E)
         source file
 
 5.  While in the top-level directory, compile `SampleAcn.java`{.codeph},
@@ -1384,7 +1384,7 @@ Code](jaas-authentication-tutorial.htm#GUID-743703A2-7EC1-4391-A816-4A883FB6A017
     ```
 
     Copy the policy file
-    [`sampleacn.policy`](jaas-authentication-tutorial.htm#GUID-44F2BF3A-F51D-4F21-8F40-96CB1120396D__SAMPLEACN.POLICY-2FEDE143)
+    [`sampleacn.policy`](jaas-authentication-tutorial.html#GUID-44F2BF3A-F51D-4F21-8F40-96CB1120396D__SAMPLEACN.POLICY-2FEDE143)
     to the same directory as that in which you stored
     `SampleAcn.java`{.codeph}, etc. The policy file contains the
     following `grant`{.codeph} statement to grant
@@ -1409,9 +1409,9 @@ Code](jaas-authentication-tutorial.htm#GUID-743703A2-7EC1-4391-A816-4A883FB6A017
 
     Note: Policy files and the structure of entries within them are
     described in [Default Policy Implementation and Policy File
-    Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
+    Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
     Permissions are described in [Permissions in the
-    JDK](permissions-jdk1.htm#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").
+    JDK](permissions-jdk1.html#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.").
 
     Execute the `SampleAcn`{.codeph} application, specifying
 

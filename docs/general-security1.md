@@ -36,13 +36,13 @@
 
 <div>
 [Java Security
-Overview](java-security-overview1.htm#GUID-2EF91196-D468-4D0F-8FDC-DA2BEA165D10 "Java security includes a large set of APIs, tools, and implementations of commonly-used security algorithms, mechanisms, and protocols. The Java security APIs span a wide range of areas, including cryptography, public key infrastructure, secure communication, authentication, and access control. Java security technology provides the developer with a comprehensive security framework for writing applications, and also provides the user or administrator with a set of tools to securely manage applications.")
+Overview](java-security-overview1.html#GUID-2EF91196-D468-4D0F-8FDC-DA2BEA165D10 "Java security includes a large set of APIs, tools, and implementations of commonly-used security algorithms, mechanisms, and protocols. The Java security APIs span a wide range of areas, including cryptography, public key infrastructure, secure communication, authentication, and access control. Java security technology provides the developer with a comprehensive security framework for writing applications, and also provides the user or administrator with a set of tools to securely manage applications.")
 introduces you to cryptography, public key infrastructure,
 authentication, secure communication, access control, and XML
 signatures.
 
 [Java Security
-Architecture](java-se-platform-security-architecture.htm#GUID-C203D80F-C730-45C3-AB95-D4E61FD6D89C)
+Architecture](java-se-platform-security-architecture.html#GUID-C203D80F-C730-45C3-AB95-D4E61FD6D89C)
 provides an overview of the motivation of major security features, an
 introduction to security classes and their usage, a discussion of the
 impact of the security architecture on code, and thoughts on writing
@@ -54,12 +54,12 @@ describes the set of standard names for algorithms, certificate and
 keystore types that Java SE requires and uses.
 
 [Permissions in the
-JDK](permissions-jdk1.htm#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.")
+JDK](permissions-jdk1.html#GUID-1E8E213A-D7F2-49F1-A2F0-EFB3397A8C95 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.")
 describes the built-in JDK permission types and discusses the risks of
 granting each permission.
 
 [Troubleshooting
-Security](troubleshooting-security.htm "To monitor security access, you can set the java.security.debug system property, which determines what trace messages are printed during execution.")
+Security](troubleshooting-security.html "To monitor security access, you can set the java.security.debug system property, which determines what trace messages are printed during execution.")
 lists options for the <span class="apiname">java.security.debug</span>
 system property that enable you to monitor security access.
 

@@ -166,7 +166,7 @@ The APIs are designed around the following principles:
 :   Applications do not need to implement security themselves. Rather,
     they can request security services from the JDK. Security services
     are implemented in providers (see the section [Security
-    Providers](java-security-overview1.htm#GUID-74E1EFEA-F1DD-466C-B61A-CB5E89FA50DE "The java.security.Provider class encapsulates the notion of a security provider in the Java platform. It specifies the provider's name and lists the security services it implements. Multiple providers may be configured at the same time and are listed in order of preference. When a security service is requested, the highest priority provider that implements that service is selected.")),
+    Providers](java-security-overview1.html#GUID-74E1EFEA-F1DD-466C-B61A-CB5E89FA50DE "The java.security.Provider class encapsulates the notion of a security provider in the Java platform. It specifies the provider's name and lists the security services it implements. Multiple providers may be configured at the same time and are listed in order of preference. When a security service is requested, the highest priority provider that implements that service is selected.")),
     which are plugged into the JDK via a standard interface. An
     application may rely on multiple independent providers for security
     functionality.
@@ -262,7 +262,7 @@ Provider\"](img_text/security-overview-message-digest-providerc.htm)\
 
 For more information about cryptographic services, such as message
 digest algorithms, see the section [Java
-Cryptography](java-security-overview1.htm#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.").
+Cryptography](java-security-overview1.html#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.").
 
 Oracle\'s implementation of the Java platform includes a number of
 built-in default providers that implement a basic set of security
@@ -317,7 +317,7 @@ Table 1-2 Java security files and tools
 |                       | urity`{.codeph}       | system policy file;   |
 |                       |                       | see [Security         |
 |                       |                       | Policy](java-security |
-|                       |                       | -overview1.htm#GUID-5 |
+|                       |                       | -overview1.html#GUID-5 |
 |                       |                       | FB6B917-DDFE-42F5-923 |
 |                       |                       | 3-8E6250C1EA93 "A lim |
 |                       |                       | ited set of default p |
@@ -339,7 +339,7 @@ Table 1-2 Java security files and tools
 |                       |                       | Configuration](java-c |
 |                       |                       | ryptography-architect |
 |                       |                       | ure-jca-reference-gui |
-|                       |                       | de.htm#GUID-EFA5AC2D- |
+|                       |                       | de.html#GUID-EFA5AC2D- |
 |                       |                       | 644E-4CD9-8523-C6D393 |
 |                       |                       | 6D5FB1).              |
 +-----------------------+-----------------------+-----------------------+
@@ -509,7 +509,7 @@ See [keytool](olink:JSWOR-GUID-5990A2E4-78E3-47B7-AE75-6D1826259549) in
 Reference</cite></span>.
 
 The SunPKCS11 provider mentioned in the section [Java
-Cryptography](java-security-overview1.htm#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.")
+Cryptography](java-security-overview1.html#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.")
 includes a PKCS11 `KeyStore`{.codeph} implementation. This means that
 keys and certificates residing in secure hardware (such as a smart card)
 can be accessed and used by Java applications via the
@@ -604,7 +604,7 @@ Authentication is the process of determining the identity of a user. In
 the context of the Java runtime environment, it is the process of
 identifying the user of an executing Java program. In certain cases,
 this process may rely on the services described in the section [Java
-Cryptography](java-security-overview1.htm#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.").
+Cryptography](java-security-overview1.html#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.").
 
 The Java platform provides APIs that enable an application to perform
 user authentication via pluggable login modules. Applications call into
@@ -638,9 +638,9 @@ It is important to note that although login modules are pluggable
 components that can be configured into the Java platform, they are not
 plugged in via security providers. Therefore, they do not follow the
 provider searching model as described in the section [Security
-Providers](java-security-overview1.htm#GUID-74E1EFEA-F1DD-466C-B61A-CB5E89FA50DE "The java.security.Provider class encapsulates the notion of a security provider in the Java platform. It specifies the provider's name and lists the security services it implements. Multiple providers may be configured at the same time and are listed in order of preference. When a security service is requested, the highest priority provider that implements that service is selected.").
+Providers](java-security-overview1.html#GUID-74E1EFEA-F1DD-466C-B61A-CB5E89FA50DE "The java.security.Provider class encapsulates the notion of a security provider in the Java platform. It specifies the provider's name and lists the security services it implements. Multiple providers may be configured at the same time and are listed in order of preference. When a security service is requested, the highest priority provider that implements that service is selected.").
 Instead, as is shown in [Figure
-1-3](java-security-overview1.htm#GUID-F8BE6C49-3506-4D1A-8E4E-053CA439D1E2__GUID-99060EF8-D731-4093-BFAB-B715A085DA49),
+1-3](java-security-overview1.html#GUID-F8BE6C49-3506-4D1A-8E4E-053CA439D1E2__GUID-99060EF8-D731-4093-BFAB-B715A085DA49),
 login modules are administered by their own unique configuration.
 
 The Java platform provides the following built-in login modules, all in
@@ -657,7 +657,7 @@ Authentication can also be achieved during the process of establishing a
 secure communication channel between two peers. The Java platform
 provides implementations of a number of standard communication
 protocols, which are discussed in the section [Secure
-Communication](java-security-overview1.htm#GUID-4E5FEEF5-A541-4222-AD18-31AE184F38E4 "The data that travels across a network can be accessed by someone who is not the intended recipient. When the data includes private information, such as passwords and credit card numbers, steps must be taken to make the data unintelligible to unauthorized parties. It is also important to ensure that you are sending the data to the appropriate party, and that the data has not been modified, either intentionally or unintentionally, during transport.").
+Communication](java-security-overview1.html#GUID-4E5FEEF5-A541-4222-AD18-31AE184F38E4 "The data that travels across a network can be accessed by someone who is not the intended recipient. When the data includes private information, such as passwords and credit card numbers, steps must be taken to make the data unintelligible to unauthorized parties. It is also important to ensure that you are sending the data to the appropriate party, and that the data has not been modified, either intentionally or unintentionally, during transport.").
 
 </div>
 </div>
@@ -678,7 +678,7 @@ during transport.
 
 Cryptography forms the basis required for secure communication; see the
 section [Java
-Cryptography](java-security-overview1.htm#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.").
+Cryptography](java-security-overview1.html#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.").
 The Java platform also provides API support and provider implementations
 for a number of standard secure communication protocols.
 
@@ -782,7 +782,7 @@ possible to plug in additional mechanisms.
 Note:
 
 The `Krb5LoginModule`{.codeph} mentioned in the section
-[Authentication](java-security-overview1.htm#GUID-F8BE6C49-3506-4D1A-8E4E-053CA439D1E2)
+[Authentication](java-security-overview1.html#GUID-F8BE6C49-3506-4D1A-8E4E-053CA439D1E2)
 can be used in conjunction with the GSS Kerberos mechanism.
 
 </div>
@@ -869,7 +869,7 @@ directory it came from, and also from subdirectories of that directory.
 Note that the identity of the user executing the code is not available
 at class loading time. It is the responsibility of application code to
 authenticate the end user if necessary (see the section
-[Authentication](java-security-overview1.htm#GUID-F8BE6C49-3506-4D1A-8E4E-053CA439D1E2)).
+[Authentication](java-security-overview1.html#GUID-F8BE6C49-3506-4D1A-8E4E-053CA439D1E2)).
 Once the user has been authenticated, the application can dynamically
 associate that user with executing code by invoking the `doAs`{.codeph}
 method in the `javax.security.auth.Subject`{.codeph} class.
@@ -958,7 +958,7 @@ not granted, the `AccessController`{.codeph} throws a
 `java.lang.SecurityException.`{.codeph}
 
 [Figure
-1-4](java-security-overview1.htm#GUID-2779612B-8DE1-49D3-8EC3-C678C3A9FC35__GUID-33C5A83F-81FF-42DA-8A2C-D726305C9F98)
+1-4](java-security-overview1.html#GUID-2779612B-8DE1-49D3-8EC3-C678C3A9FC35__GUID-33C5A83F-81FF-42DA-8A2C-D726305C9F98)
 illustrates access control enforcement. In this particular example,
 there are initially two elements on the call stack, `ClassA`{.codeph}
 and `ClassB`{.codeph}. `ClassA`{.codeph} invokes a method in
@@ -1050,18 +1050,18 @@ security documentation, here is an explanation of what they represent:
 
 -   JSSE (Java Secure Socket Extension) refers to the SSL-related
     services as described in the section [SSL, TLS, and DTLS
-    Protocols](java-security-overview1.htm#GUID-FCF419A7-B856-46DD-A36F-C6F88F9AF37F "The JDK provides APIs and an implementation of the SSL, TLS, and DTLS protocols that includes functionality for data encryption, message integrity, and server and client authentication. Applications can use SSL/TLS/DTLS to provide for the secure passage of data between two peers over any application protocol, such as HTTP on top of TCP/IP.")
+    Protocols](java-security-overview1.html#GUID-FCF419A7-B856-46DD-A36F-C6F88F9AF37F "The JDK provides APIs and an implementation of the SSL, TLS, and DTLS protocols that includes functionality for data encryption, message integrity, and server and client authentication. Applications can use SSL/TLS/DTLS to provide for the secure passage of data between two peers over any application protocol, such as HTTP on top of TCP/IP.")
 
 -   JCE (Java Cryptography Extension) refers to cryptographic services
     as described in the section [Java
-    Cryptography](java-security-overview1.htm#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.")
+    Cryptography](java-security-overview1.html#GUID-C6D250FC-F147-4284-A6BF-8384DFD39DA6 "The Java cryptography architecture is a framework for accessing and developing cryptographic functionality for the Java platform.")
 
 -   JAAS (Java Authentication and Authorization Service) refers to the
     authentication and user-based access control services as described
     in the sections
-    [Authentication](java-security-overview1.htm#GUID-F8BE6C49-3506-4D1A-8E4E-053CA439D1E2)
+    [Authentication](java-security-overview1.html#GUID-F8BE6C49-3506-4D1A-8E4E-053CA439D1E2)
     and [Access
-    Control](java-security-overview1.htm#GUID-BBEC2DC8-BA00-42B1-B52A-A49488FCF8FE "The access control architecture in the Java platform protects access to sensitive resources (for example, local files) or sensitive application code (for example, methods in a class). All access control decisions are mediated by a security manager, represented by the java.lang.SecurityManager class. A SecurityManager must be installed into the Java runtime in order to activate the access control checks."),
+    Control](java-security-overview1.html#GUID-BBEC2DC8-BA00-42B1-B52A-A49488FCF8FE "The access control architecture in the Java platform protects access to sensitive resources (for example, local files) or sensitive application code (for example, methods in a class). All access control decisions are mediated by a security manager, represented by the java.lang.SecurityManager class. A SecurityManager must be installed into the Java runtime in order to activate the access control checks."),
     respectively
 
 </div>
@@ -1255,7 +1255,7 @@ Built-In Providers {#JSSEC-GUID-2EF0B3B8-9F3A-41CF-A7DA-63DB52180084 .sect2}
 <div class="section">
 The <span>Java SE</span> implementation from Oracle includes a number of
 built-in provider packages. See [JDK Providers
-Documentation](oracle-providers.htm#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
+Documentation](oracle-providers.html#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "This document contains the technical details of the providers that are included in the JDK. It is assumed that readers have a strong understanding of the Java Cryptography Architecture and Provider Architecture.").
 
 </div>
 <!-- class="section" -->
@@ -1288,7 +1288,7 @@ Documentation](oracle-providers.htm#GUID-FE2D2E28-C991-4EF9-9DBE-2A4982726313 "T
 |                      | . |                      |
 |    <span class="icon | / |                      |
 | ">Previous</span>](g | . |                      |
-| eneral-security1.htm | . |                      |
+| eneral-security1.html | . |                      |
 | )   <span class="ico | / |                      |
 | n">Next</span>](java | d |                      |
 | -se-platform-securit | c |                      |

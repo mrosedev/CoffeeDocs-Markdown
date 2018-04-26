@@ -74,9 +74,9 @@ Authentication. It does not demonstrate JAAS Authorization.
 Resources for This Exercise
 
 -   [Java Authentication and Authorization Service (JAAS) Reference
-    Guide](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-2A935F5E-0803-411D-B6BC-F8C64D01A25C)
+    Guide](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-2A935F5E-0803-411D-B6BC-F8C64D01A25C)
 -   [JAAS
-    Tutorials](jaas-tutorials.htm#GUID-272DB20A-B590-4B2E-BD60-7EF9EB54AB5A)
+    Tutorials](jaas-tutorials.html#GUID-272DB20A-B590-4B2E-BD60-7EF9EB54AB5A)
 -   JAAS Javadoc API documentation
     -   [<span class="apiname">javax.security.auth</span>](https://docs.oracle.com/javase/10/docs/api/javax/security/auth/package-summary.html)
     -   [<span class="apiname">javax.security.auth.callback</span>](https://docs.oracle.com/javase/10/docs/api/javax/security/auth/callback/package-summary.html)
@@ -92,7 +92,7 @@ Resources for This Exercise
 Steps to Follow
 
 -   Read the
-    [`Jass.java`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.htm#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__JASS.JAVA-338B5916)
+    [`Jass.java`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.html#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__JASS.JAVA-338B5916)
     sample code. The code performs the following tasks:
 
     1.  Define a callback handler or use a predefined one.
@@ -140,7 +140,7 @@ use the Subject to perform an action as the authenticated user.
 Next Steps
 
 Proceed to [Exercise 2: Configuring JAAS for Kerberos
-Authentication](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.htm#GUID-2079DC72-5A2E-46FE-978F-42D113FFA41A)
+Authentication](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.html#GUID-2079DC72-5A2E-46FE-978F-42D113FFA41A)
 to learn how to configure the sample application to use Kerberos for
 authentication.
 
@@ -219,11 +219,11 @@ Resources for This Exercise
 
 -   [Java Authentication and Authorization Service (JAAS): LoginModule
     Developer\'s
-    Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A)
+    Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A)
 -   [The Kerberos Network Authentication Service
     (v5)](http://www.ietf.org/rfc/rfc4120.txt)
 -   [Appendix B: JAAS Login Configuration
-    File](appendix-b-jaas-login-configuration-file.htm#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
+    File](appendix-b-jaas-login-configuration-file.html#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
 -   Login module package Javadoc API
     documentation:[<span class="apiname">com.sun.security.auth.module</span>](https://docs.oracle.com/javase/10/docs/api/com/sun/security/auth/module/package-summary.html)
 -   [Introduction to JAAS and Java GSS-API
@@ -236,7 +236,7 @@ Resources for This Exercise
 Steps to Follow
 
 1.  Examine the
-    [<span class="apiname">jaas-krb5.conf</span>](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.htm#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__JASS-KRB5.CONF-338B5E8A)
+    [<span class="apiname">jaas-krb5.conf</span>](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.html#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__JASS-KRB5.CONF-338B5E8A)
     configuration file.
 
     This file contains two entries, one named
@@ -307,7 +307,7 @@ keys from a `keytab` file.
 Next Steps
 
 Proceed to [Part II : Secure Communications using the Java SE Security
-API](part-ii-secure-communications-using-java-se-security-api.htm#GUID-98B02DB0-13DB-4175-9485-3449E1A241B5)
+API](part-ii-secure-communications-using-java-se-security-api.html#GUID-98B02DB0-13DB-4175-9485-3449E1A241B5)
 to learn how to establish secure communication channels using Java
 security APIs.
 

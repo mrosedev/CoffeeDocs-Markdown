@@ -70,7 +70,7 @@ then you can use a Kerberos configuration file with your `java`{.codeph}
 command by using the `-Djava.security.krb5.conf`{.codeph} option. Here
 is an example of how to invoke one of the commands from the exercises to
 use the
-[`krb5.conf`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.htm#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__KRB5.CONF-338B7967)
+[`krb5.conf`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.html#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__KRB5.CONF-338B7967)
 configuration file.
 
 ``` {.oac_no_warn dir="ltr"}

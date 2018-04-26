@@ -90,7 +90,7 @@ Mechanism (SPNEGO), to secure the association.
 Steps to Follow
 
 1.  Read the
-    [`GssSpNegoClient.java`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.htm#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__GSSSPNEGOCLIENT.JAVA-338B7C31)
+    [`GssSpNegoClient.java`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.html#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__GSSSPNEGOCLIENT.JAVA-338B7C31)
     code.
 
 2.  Compile the sample code:
@@ -100,7 +100,7 @@ Steps to Follow
     ```
 
 3.  Read the
-    [`GssSpNegoServer.java`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.htm#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__GSSSPNEGOSERVER.JAVA-338B7F93)
+    [`GssSpNegoServer.java`](source-code-advanced-security-programming-java-se-authentication-secure-communication-and-single-sig.html#GUID-40AF52E5-ECEA-4E5F-B0C1-35C150C7BB6E__GSSSPNEGOSERVER.JAVA-338B7F93)
     code.
 
 4.  Compile the sample code:

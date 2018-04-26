@@ -36,7 +36,7 @@
 
 <div>
 [Java Authentication and Authorization Service (JAAS) Reference
-Guide](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-2A935F5E-0803-411D-B6BC-F8C64D01A25C)
+Guide](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-2A935F5E-0803-411D-B6BC-F8C64D01A25C)
 describes Java Authentication and Authorization Service (JAAS), which
 enables you to authenticate users and securely determine who is
 currently executing Java code, and authorize users to ensure that they
@@ -44,13 +44,13 @@ have the access control rights, or permissions, required to do the
 actions performed.
 
 [JAAS
-Tutorials](jaas-tutorials.htm#GUID-272DB20A-B590-4B2E-BD60-7EF9EB54AB5A)
+Tutorials](jaas-tutorials.html#GUID-272DB20A-B590-4B2E-BD60-7EF9EB54AB5A)
 provides tutorials about Java Authentication and Authorization Service
 (JAAS) authentication and authorization.
 
 [Java Authentication and Authorization Service (JAAS): LoginModule
 Developer\'s
-Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A)
+Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A)
 shows you how to implement the <span class="apiname">LoginModule</span>
 interface, which you plug into an application to provide a particular
 type of authentication.

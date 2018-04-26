@@ -44,7 +44,7 @@ series of tutorials demonstrating various aspects of the use of Java
 Authentication and Authorization Service (JAAS) and Java GSS-API.
 
 [Single Sign-on Using Kerberos in
-Java](single-sign-using-kerberos-java1.htm#GUID-D4230975-A28B-4532-B1DD-3C7219A4867F)
+Java](single-sign-using-kerberos-java1.html#GUID-D4230975-A28B-4532-B1DD-3C7219A4867F)
 discusses how to use Single Sign-On based on the Kerberos V5 protocol.
 
 [Advanced Security Programming in Java SE Authentication, Secure
@@ -56,7 +56,7 @@ and services, and configure your applications in a Kerberos environment
 to achieve Single Sign-On.
 
 [The Kerberos 5 GSS-API
-Mechanism](kerberos-5-gss-api-mechanism.htm "This section describes and lists security features regarding Java Generic Security Services (Java GSS) for Kerberos 5. It also describes the Object Identifier (OID) for the Kerberos V5 mechanism, the encryption types, and the krb5.conf settings supported by Java GSS.")
+Mechanism](kerberos-5-gss-api-mechanism.html "This section describes and lists security features regarding Java Generic Security Services (Java GSS) for Kerberos 5. It also describes the Object Identifier (OID) for the Kerberos V5 mechanism, the encryption types, and the krb5.conf settings supported by Java GSS.")
 describes and lists security features regarding Java Generic Security
 Services (Java GSS) for Kerberos 5.
 

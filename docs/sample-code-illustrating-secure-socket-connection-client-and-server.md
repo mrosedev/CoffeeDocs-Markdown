@@ -48,11 +48,11 @@ but from different terminal windows.
 All the sample `SSLSocketClient*`{.codeph} programs in the
 samples/sockets/client directory (and `URLReader*`{.codeph} programs
 described in [Sample Code Illustrating HTTPS
-Connections](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGHTTPSCONNECTI-7D238310))
+Connections](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__SAMPLECODEILLUSTRATINGHTTPSCONNECTI-7D238310))
 can be run with the `ClassFileServer`{.codeph} sample server program. An
 example of how to do this is shown in [Running
 SSLSocketClientWithClientAuth with
-ClassFileServer](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__RUNNINGSSLSOCKETCLIENTWITHCLIENTAUT-7D23BC0C).
+ClassFileServer](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__RUNNINGSSLSOCKETCLIENTWITHCLIENTAUT-7D23BC0C).
 You can make similar changes to run `URLReader`{.codeph},
 `SSLSocketClient`{.codeph}, or `SSLSocketClientWithTunneling`{.codeph}
 with `ClassFileServer`{.codeph}.
@@ -61,7 +61,7 @@ If an authentication error occurs during communication between the
 client and the server (whether using a web server or
 `ClassFileServer`{.codeph}), it is most likely because the necessary
 keys are not in the truststore (trust key database). See [Terms and
-Definitions](java-secure-socket-extension-jsse-reference-guide.htm#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.").
+Definitions](java-secure-socket-extension-jsse-reference-guide.html#GUID-C7BB21C7-E19E-4DE4-8494-CB43F957C329 "The following are commonly used cryptography terms and their definitions.").
 For example, the `ClassFileServer`{.codeph} uses a keystore called
 `testkeys`{.codeph} containing the private key for `localhost`{.codeph}
 as needed during the SSL handshake. The `testkeys`{.codeph} keystore is
@@ -72,7 +72,7 @@ the truststore it consults, then an authentication error will occur. Be
 sure to use the `samplecacerts`{.codeph} truststore (which contains the
 public key and certificate of the `localhost`{.codeph}), as described in
 [Configuration Requirements for SSL Socket
-Samples](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-B1060A74-9BAE-40F1-AB2B-C8D83812A4C7).
+Samples](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-B1060A74-9BAE-40F1-AB2B-C8D83812A4C7).
 
 </div>
 <div class="sect2">
@@ -133,12 +133,12 @@ Running SSLSocketClient {#JSSEC-GUID-AA1C27A1-2CA8-4309-B281-D6199F60E666 .sect2
 
 <div>
 The example
-[`SSLSocketClient.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-AA1C27A1-2CA8-4309-B281-D6199F60E666__SSLSOCKETCLIENT.JAVA-32CFECE1)
+[`SSLSocketClient.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-AA1C27A1-2CA8-4309-B281-D6199F60E666__SSLSOCKETCLIENT.JAVA-32CFECE1)
 demonstrates how to create a client that uses an `SSLSocket`{.codeph} to
 send an HTTP request and to get a response from an HTTPS server. By
 default, this example connects to `www.verisign.com`{.codeph}, but it
 can easily be adapted to connect to `ClassFileServer` (see [Running
-ClassFileServer](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C)).
+ClassFileServer](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C)).
 The output of this program is the HTML source for
 `https://www.verisign.com/index.html`{.codeph}.
 
@@ -259,7 +259,7 @@ Running SSLSocketClientWithTunnelling {#JSSEC-GUID-B9103D0C-3E6A-4301-B558-461E4
 
 <div>
 The example
-[`SSLSocketClientWithTunneling.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-B9103D0C-3E6A-4301-B558-461E4CB23DC9__SSLSOCKETCLIENTWITHTUNNELING.JAVA-32D03DB5)
+[`SSLSocketClientWithTunneling.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-B9103D0C-3E6A-4301-B558-461E4CB23DC9__SSLSOCKETCLIENTWITHTUNNELING.JAVA-32D03DB5)
 illustrates how to do proxy tunneling to access a secure web server from
 behind a firewall.
 
@@ -497,14 +497,14 @@ Running SSLSocketClientWithClientAuth {#JSSEC-GUID-756AE510-E1BF-42FE-92FC-B9BE3
 
 <div>
 The example
-[`SSLSocketClientWithClientAuth.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-756AE510-E1BF-42FE-92FC-B9BE3EC31C7B__SSLSOCKETCLIENTWITHCLIENTAUTH.JAVA-32D0CA6C)
+[`SSLSocketClientWithClientAuth.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-756AE510-E1BF-42FE-92FC-B9BE3EC31C7B__SSLSOCKETCLIENTWITHCLIENTAUTH.JAVA-32D0CA6C)
 is similar to [Running
-SSLSocketClient](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-AA1C27A1-2CA8-4309-B281-D6199F60E666),
+SSLSocketClient](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-AA1C27A1-2CA8-4309-B281-D6199F60E666),
 but this shows how to set up a key manager to do client authentication
 if required by a server. This program also assumes that the client is
 not outside a firewall. You can modify the program to connect from
 inside a firewall by following the example in [Running
-SSLSocketClientWithTunnelling](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-B9103D0C-3E6A-4301-B558-461E4CB23DC9).
+SSLSocketClientWithTunnelling](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-B9103D0C-3E6A-4301-B558-461E4CB23DC9).
 
 To run this program, you must specify three parameters: host, port, and
 requested file path. To mirror the previous examples, you can run this
@@ -519,7 +519,7 @@ authentication, you must access a server that requests client
 authentication. You can use the sample program
 `ClassFileServer`{.codeph} as this server. See [Running
 SSLSocketClientWithClientAuth with
-ClassFileServer](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-1B7038DC-7564-4EE6-A1DF-6B1445077E2E).
+ClassFileServer](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-1B7038DC-7564-4EE6-A1DF-6B1445077E2E).
 
 <div class="section">
 Usage
@@ -671,9 +671,9 @@ Running ClassFileServer {#JSSEC-GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C .sect2
 
 <div>
 This example, which consists of
-[`ClassFileServer.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C__CLASSFILESERVER.JAVA-3314B74B)
+[`ClassFileServer.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C__CLASSFILESERVER.JAVA-3314B74B)
 and
-[`ClassServer.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C__CLASSSERVER.JAVA-3314BE5B),
+[`ClassServer.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C__CLASSSERVER.JAVA-3314BE5B),
 demonstrates the implementation of a mini-webserver, which can service
 simple HTTP or HTTPS requests (only the GET method is supported). By
 default, the server does not use SSL/TLS. However, a command-line option
@@ -1056,9 +1056,9 @@ Running SSLSocketClientWithClientAuth with ClassFileServer {#JSSEC-GUID-1B7038DC
 
 <div>
 You can use the sample programs
-[`SSLSocketClientWithClientAuth.java`](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-756AE510-E1BF-42FE-92FC-B9BE3EC31C7B__SSLSOCKETCLIENTWITHCLIENTAUTH.JAVA-32D0CA6C)
+[`SSLSocketClientWithClientAuth.java`](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-756AE510-E1BF-42FE-92FC-B9BE3EC31C7B__SSLSOCKETCLIENTWITHCLIENTAUTH.JAVA-32D0CA6C)
 and
-[`ClassFileServer.;ava`{.codeph}](sample-code-illustrating-secure-socket-connection-client-and-server.htm#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C__CLASSFILESERVER.JAVA-3314B74B)
+[`ClassFileServer.;ava`{.codeph}](sample-code-illustrating-secure-socket-connection-client-and-server.html#GUID-3561ED02-174C-4E65-8BB1-5995E9B7282C__CLASSFILESERVER.JAVA-3314B74B)
 to set up authenticated communication, where the client and server are
 authenticated to each other. You can run both sample programs on
 different machines connected to the same network, or you can run them
@@ -1068,7 +1068,7 @@ following:
 
 1.  Run the program `ClassFileServer`{.codeph} from one machine or
     terminal window. See [Running
-    ClassFileServer](java-secure-socket-extension-jsse-reference-guide.htm#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__RUNNINGCLASSFILESERVER-7D23BEFC).
+    ClassFileServer](java-secure-socket-extension-jsse-reference-guide.html#GUID-1E8A0301-BD82-4E6A-BEB7-B76FE8F554BA__RUNNINGCLASSFILESERVER-7D23BEFC).
 2.  Run the program `SSLSocketClientWithClientAuth`{.codeph} on another
     machine or terminal window. `SSLSocketClientWithClientAuth`{.codeph}
     requires the following parameters:

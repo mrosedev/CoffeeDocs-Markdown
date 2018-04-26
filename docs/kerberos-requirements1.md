@@ -69,7 +69,7 @@ default realm and KDC. If you are using a Kerberos implementation that
 does not include a `krb5.conf`{.codeph} file (such as one from Windows),
 you will either need to create one or use system properties as described
 in [Setting Properties to Indicate the Default Realm and
-KDC](kerberos-requirements1.htm#GUID-8B30CD5C-64B6-48DE-9CD5-0E44D3A434A7).
+KDC](kerberos-requirements1.html#GUID-8B30CD5C-64B6-48DE-9CD5-0E44D3A434A7).
 
 </div>
 <div class="sect2">
@@ -115,7 +115,7 @@ Locating the krb5.conf Configuration File {#JSSEC-GUID-0C6413BA-417B-493D-BC89-F
 The essential Kerberos configuration information is the default realm
 and the default KDC. As shown in [Setting Properties to Indicate the
 Default Realm and
-KDC](kerberos-requirements1.htm#GUID-8B30CD5C-64B6-48DE-9CD5-0E44D3A434A7),
+KDC](kerberos-requirements1.html#GUID-8B30CD5C-64B6-48DE-9CD5-0E44D3A434A7),
 if you set properties to indicate these values, they are not obtained
 from a `krb5.conf`{.codeph} configuration file.
 

@@ -66,7 +66,7 @@ and suggestions for solving them.
 
     <span class="variable">Solution</span>: Check the configuration file
     carefully for errors. See [Appendix B: JAAS Login Configuration
-    File](appendix-b-jaas-login-configuration-file.htm#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
+    File](appendix-b-jaas-login-configuration-file.html#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
     for information about the syntax required in the login configuration
     file.
 
@@ -99,7 +99,7 @@ and suggestions for solving them.
     <span>Solution 4</span>: Make the Kerberos realm name all uppercase.
     <span class="bold">Note</span>: It is recommended to have all
     uppercase realm names. See [Naming Conventions for Realm Names and
-    Hostnames](kerberos-requirements1.htm#GUID-E73CCEA1-E94F-4E8D-9C42-403AF825658A).
+    Hostnames](kerberos-requirements1.html#GUID-E73CCEA1-E94F-4E8D-9C42-403AF825658A).
 
 -   <span class="bold">GSSException: No valid credentials provided
     (Mechanism level: Attempt to obtain new INITIATE credentials failed!
@@ -176,7 +176,7 @@ and suggestions for solving them.
     <span class="variable">Solution</span>: Verify that the Kerberos
     configuration file `krb5.conf`{.codeph} is available and readable.
     Check [Kerberos
-    Requirements](kerberos-requirements1.htm#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998)
+    Requirements](kerberos-requirements1.html#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998)
     for information about how to specify the location of the
     `krb5.conf`{.codeph} file and where such a file is searched for by
     default if you don\'t explicitly indicate the location.

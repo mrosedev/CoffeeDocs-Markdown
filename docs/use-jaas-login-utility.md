@@ -38,9 +38,9 @@ Use of JAAS Login Utility {#JSSEC-GUID-F41E74DF-EE54-4EB1-8609-49C6D324ADF5 .sec
 <span></span>
 
 The previous two tutorials, [JAAS
-Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 and [JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F),
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F),
 show how you can use the <span class="apiname">LoginContext</span> and
 <span class="apiname">Subject</span> classes to write a program to
 
@@ -58,7 +58,7 @@ authenticated user.
 Use of the Login utility with a sample application is demonstrated in
 this tutorial. The next tutorial, [Use of JAAS Login Utility and Java
 GSS-API for Secure Message
-Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.htm#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8),
+Exchanges](use-jaas-login-utility-and-java-gss-api-secure-message-exchanges.html#GUID-C1DFED9D-D3A1-4C11-95D8-3543935E87C8),
 a client/server application using the Java GSS-API, also uses the Login
 utility.
 
@@ -66,32 +66,32 @@ It is not necessary to read the previous two tutorials on JAAS
 authentication and authorization prior to reading this one. However, you
 may want to refer to some sections in those tutorials to obtain further
 details regarding certain topics, such as [JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F).
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F).
 You should also read [Appendix B: JAAS Login Configuration
-File](appendix-b-jaas-login-configuration-file.htm#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
+File](appendix-b-jaas-login-configuration-file.html#GUID-7EB80FA5-3C16-4016-AED6-0FC619F86F8E)
 for information as to what a login configuration file is, since one is
 needed for this and all other tutorials in this series.
 
 As with all tutorials in this series of tutorials, the underlying
 technology used to support authentication is Kerberos. See [Kerberos
-Requirements](kerberos-requirements1.htm#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).
+Requirements](kerberos-requirements1.html#GUID-EAA2758B-3071-4CDA-AEF1-D76F5271E998).
 
 -   [What You Need to Know About the Login
-    Utility](use-jaas-login-utility.htm#GUID-F92EBF93-2E18-4006-86CC-3D4C0DC6174E)
+    Utility](use-jaas-login-utility.html#GUID-F92EBF93-2E18-4006-86CC-3D4C0DC6174E)
 -   [Application and Other File
-    Requirements](use-jaas-login-utility.htm#GUID-A988A760-1F2E-4665-AC8B-BACDEBAED5B5)
+    Requirements](use-jaas-login-utility.html#GUID-A988A760-1F2E-4665-AC8B-BACDEBAED5B5)
 -   [The Sample Application
-    Program](use-jaas-login-utility.htm#GUID-78D65FB0-34DC-4DEE-95A4-0C0BD1AE6330)
+    Program](use-jaas-login-utility.html#GUID-78D65FB0-34DC-4DEE-95A4-0C0BD1AE6330)
 -   [The Login Configuration
-    File](use-jaas-login-utility.htm#GUID-DFC52892-6206-4D1F-96B3-B8F11C2536E1)
+    File](use-jaas-login-utility.html#GUID-DFC52892-6206-4D1F-96B3-B8F11C2536E1)
 -   [The Policy
-    File](use-jaas-login-utility.htm#GUID-FF7EBCB2-F3B9-4483-86A1-7EDA7ECA1689)
+    File](use-jaas-login-utility.html#GUID-FF7EBCB2-F3B9-4483-86A1-7EDA7ECA1689)
 -   [Running the Sample Program with the Login
-    Utility](use-jaas-login-utility.htm#GUID-B3F1D0B9-D58A-469B-AF56-9636FE86FF0F)
+    Utility](use-jaas-login-utility.html#GUID-B3F1D0B9-D58A-469B-AF56-9636FE86FF0F)
 
 If you want to first see the tutorial code in action, you can skip
 directly to [Running the Sample Program with the Login
-Utility](use-jaas-login-utility.htm#GUID-B3F1D0B9-D58A-469B-AF56-9636FE86FF0F)
+Utility](use-jaas-login-utility.html#GUID-B3F1D0B9-D58A-469B-AF56-9636FE86FF0F)
 and then go back to the other sections to learn more.
 
 </div>
@@ -103,7 +103,7 @@ What You Need to Know About the Login Utility {#JSSEC-GUID-F92EBF93-2E18-4006-86
 
 <div>
 You do not need to understand the code contained in
-[`Login.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__LOGIN.JAVA-338935D0);
+[`Login.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__LOGIN.JAVA-338935D0);
 you can just use it as is. However, you need to understand some facts
 about what it does so that your program, policy file, and login
 configuration file will properly work with it. Below is a summary of
@@ -155,11 +155,11 @@ to your login configuration file and policy file, as described in the
 following.
 
 -   [Application
-    Requirements](use-jaas-login-utility.htm#GUID-2DA66897-B872-4DB3-B580-2A884321B52E)
+    Requirements](use-jaas-login-utility.html#GUID-2DA66897-B872-4DB3-B580-2A884321B52E)
 -   [Login Configuration File
-    Requirements](use-jaas-login-utility.htm#GUID-1475ADA8-4B71-4022-8295-209AFCEB89D9)
+    Requirements](use-jaas-login-utility.html#GUID-1475ADA8-4B71-4022-8295-209AFCEB89D9)
 -   [Policy File
-    Requirements](use-jaas-login-utility.htm#GUID-6F2F1165-FF1F-46BB-B18B-1D13E1A51BAF)
+    Requirements](use-jaas-login-utility.html#GUID-6F2F1165-FF1F-46BB-B18B-1D13E1A51BAF)
 
 </div>
 <div class="sect3">
@@ -184,7 +184,7 @@ java <options> Login <AppName> <app arguments>
 where `<AppName>`{.codeph} is your application\'s top-level class name
 and `<app arguments>`{.codeph} are any arguments required by your
 application. See [Running the Sample Program with the Login
-Utility](use-jaas-login-utility.htm#GUID-B3F1D0B9-D58A-469B-AF56-9636FE86FF0F)
+Utility](use-jaas-login-utility.html#GUID-B3F1D0B9-D58A-469B-AF56-9636FE86FF0F)
 for the full command used for this tutorial.
 
 </div>
@@ -198,14 +198,14 @@ for the full command used for this tutorial.
 Whenever a LoginContext is used to authenticate the user, you need a
 login configuration file to specify the desired login module. See the
 [The Login
-Configuration](jaas-authentication.htm#GUID-C595253D-3817-4CA6-9336-D7D5159C9680)
+Configuration](jaas-authentication.html#GUID-C595253D-3817-4CA6-9336-D7D5159C9680)
 section in the JAAS authentication tutorial for more information as to
 what a login configuration file is and what it contains.
 
 When you use the Login utility, the name for the login configuration
 file entry must be exactly the same as your top-level application class
 name. See [The Login Configuration
-File](use-jaas-login-utility.htm#GUID-DFC52892-6206-4D1F-96B3-B8F11C2536E1)
+File](use-jaas-login-utility.html#GUID-DFC52892-6206-4D1F-96B3-B8F11C2536E1)
 in this tutorial for an example.
 
 </div>
@@ -221,13 +221,13 @@ policy indicating the permissions granted to specific code, or to
 specific code being executed by a specific user (or users). One way of
 specifying the policy is by `grant`{.codeph} statements in a policy
 file. See [The Policy
-File](use-jaas-login-utility.htm#GUID-FF7EBCB2-F3B9-4483-86A1-7EDA7ECA1689)
+File](use-jaas-login-utility.html#GUID-FF7EBCB2-F3B9-4483-86A1-7EDA7ECA1689)
 for more information.
 
 If you use the Login utility to invoke your application, then you will
 need to grant it various permissions, as described in [Permissions
 Required by the Login and MyAction
-Classes](use-jaas-login-utility.htm#GUID-9E9CAD3D-5F80-424E-AE19-B102064054E4).
+Classes](use-jaas-login-utility.html#GUID-9E9CAD3D-5F80-424E-AE19-B102064054E4).
 
 </div>
 </div>
@@ -240,10 +240,10 @@ The Sample Application Program {#JSSEC-GUID-78D65FB0-34DC-4DEE-95A4-0C0BD1AE6330
 
 <div>
 The
-[`Sample.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.JAVA-3389388B)
+[`Sample.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.JAVA-3389388B)
 application used for this tutorial performs the same actions as the
 `SampleAction.java`{.codeph} application did in the previous ([JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F))
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F))
 tutorial. It does the following:
 
 -   Reads and prints the value of the `java.home`{.codeph} system
@@ -263,10 +263,10 @@ The Login Configuration File {#JSSEC-GUID-DFC52892-6206-4D1F-96B3-B8F11C2536E1 .
 
 <div>
 The
-[`sample.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.CONF-33893A5C)
+[`sample.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.CONF-33893A5C)
 login configuration file for this tutorial contains a single entry, just
 like the login configuration file for the previous ([JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F))
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F))
 tutorial. The entry contents are the same since the class implementing
 the desired authentication technology in both cases is the
 <span class="apiname">Krb5LoginModule</span> in the
@@ -314,7 +314,7 @@ The <span class="apiname">Login</span>,
 <span class="apiname">Sample</span> classes all perform some
 security-sensitive operations and thus relevant permissions are required
 in a policy file,
-[`sample.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.POLICY-33893EE3),
+[`sample.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.POLICY-33893EE3),
 in order for the operations to be executed.
 
 </div>
@@ -353,9 +353,9 @@ grant codebase "file:./Login.jar" {
 <div>
 (Note: This section is essentially a modified copy of the [Permissions
 Required by
-SampleAction](jaas-authorization.htm#GUID-9ADEB874-E415-4ABC-BB20-70FBBFF87F84)
+SampleAction](jaas-authorization.html#GUID-9ADEB874-E415-4ABC-BB20-70FBBFF87F84)
 section from the previous ([JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F))
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F))
 tutorial, since `Sample`{.codeph} and `SampleAction`{.codeph} perform
 the same operations and thus require the same permissions.)
 
@@ -386,7 +386,7 @@ operations in code to a specific user rather than allowing the
 permissions to all users executing the code.
 
 Thus, as explained in [JAAS
-Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F),
+Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F),
 our `grant`{.codeph} statement looks like the following:
 
 ``` {.oac_no_warn dir="ltr"}
@@ -427,16 +427,16 @@ the following:
 
 1.  Place the following files into a directory:
     -   The
-        [`Login.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__LOGIN.JAVA-338935D0)
+        [`Login.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__LOGIN.JAVA-338935D0)
         source file.
     -   The
-        [`Sample.java`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.JAVA-3389388B)
+        [`Sample.java`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.JAVA-3389388B)
         source file.
     -   The
-        [`sample.conf`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.CONF-33893A5C)
+        [`sample.conf`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.CONF-33893A5C)
         login configuration file.
     -   The
-        [`sample.policy`](source-code-jaas-and-java-gss-api-tutorials.htm#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.POLICY-33893EE3)
+        [`sample.policy`](source-code-jaas-and-java-gss-api-tutorials.html#GUID-09D4192C-D855-49D6-BC62-E08F49ADB4F8__SAMPLE.POLICY-33893EE3)
         policy file.
 2.  Replace `your_user_name@your_realm`{.codeph} in
     `sample.policy`{.codeph} with your user name and realm.
@@ -532,7 +532,7 @@ the following:
     directory.
 
     For login troubleshooting suggestions, see
-    [Troubleshooting](troubleshooting.htm#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
+    [Troubleshooting](troubleshooting.html#GUID-2087ADBA-6C36-43D5-8841-C79FCB4F5FBE).
 
 </div>
 </div>

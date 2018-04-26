@@ -39,7 +39,7 @@ The Java platform defines a set of programming interfaces for performing
 cryptographic operations. These interfaces are collectively known as the
 Java Cryptography Architecture (JCA) and the Java Cryptography Extension
 (JCE). See [Java Cryptography Architecture (JCA) Reference
-Guide](java-cryptography-architecture-jca-reference-guide.htm#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").
+Guide](java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few.").
 
 The cryptographic interfaces are provider-based. Specifically,
 applications talk to Application Programming Interfaces (APIs), and the
@@ -124,7 +124,7 @@ The SunPKCS11 provider supports a number of algorithms, provided that
 the underlying PKCS\#11 implementation offers them. The algorithms and
 their corresponding PKCS\#11 mechanisms are listed in the table in
 [SunPKCS11 Provider Supported
-Algorithms](pkcs11-reference-guide1.htm#GUID-D3EF9023-7DDC-435D-9186-D2FD05674777).
+Algorithms](pkcs11-reference-guide1.html#GUID-D3EF9023-7DDC-435D-9186-D2FD05674777).
 
 </div>
 </div>
@@ -364,7 +364,7 @@ Table 5-1 Attributes in the PKCS\#11 Provider Configuration File
 |                       |                       | [SunPKCS11 Provider   |
 |                       |                       | Supported             |
 |                       |                       | Algorithms](pkcs11-re |
-|                       |                       | ference-guide1.htm#GU |
+|                       |                       | ference-guide1.html#GU |
 |                       |                       | ID-D3EF9023-7DDC-435D |
 |                       |                       | -9186-D2FD05674777))  |
 |                       |                       | and the PKCS\#11      |
@@ -406,7 +406,7 @@ Table 5-1 Attributes in the PKCS\#11 Provider Configuration File
 |                       |                       | [SunPKCS11 Provider   |
 |                       |                       | Supported             |
 |                       |                       | Algorithms](pkcs11-re |
-|                       |                       | ference-guide1.htm#GU |
+|                       |                       | ference-guide1.html#GU |
 |                       |                       | ID-D3EF9023-7DDC-435D |
 |                       |                       | -9186-D2FD05674777))  |
 |                       |                       | and the PKCS\#11      |
@@ -754,7 +754,7 @@ debug info about Library, Slots, Token, and Mechanism, add
 which is `<java-home>/conf/security/sunpkcs11-solaris.cfg` or the
 configuration file that you specified statically or dynamically as
 described in [SunPKCS11
-Configuration](pkcs11-reference-guide1.htm#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9).
+Configuration](pkcs11-reference-guide1.html#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9).
 
 For additional debugging info, users can start or restart the Java
 processes with one of the following options:
@@ -1130,7 +1130,7 @@ the SunPKCS11 provider, the provider name is of the form
 `SunPKCS11-TokenName`{.codeph}, where `TokenName`{.codeph} is the name
 suffix that the provider instance has been configured with, as detailed
 in the [Table
-5-1](pkcs11-reference-guide1.htm#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9__GUID-8ADD17FD-3320-4D8F-A1ED-319DFEABA338 "PKCS#11 provider configuration file attributes.").
+5-1](pkcs11-reference-guide1.html#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9__GUID-8ADD17FD-3320-4D8F-A1ED-319DFEABA338 "PKCS#11 provider configuration file attributes.").
 For example, the following configuration file names the PKCS\#11
 provider instance with name suffix `SmartCard`{.codeph}.
 
@@ -1171,7 +1171,7 @@ other {
 <div>
 To use PKCS\#11 tokens as JSSE keystores or trust stores, the JSSE
 application can use the APIs described in [Token
-Login](pkcs11-reference-guide1.htm#GUID-6E8B2F3C-792F-4512-9BB3-234C440ADC46 "You can login to the keystore using a Personal Identification Number and perform PKCS#11 operations.")
+Login](pkcs11-reference-guide1.html#GUID-6E8B2F3C-792F-4512-9BB3-234C440ADC46 "You can login to the keystore using a Personal Identification Number and perform PKCS#11 operations.")
 to instantiate a <span class="apiname">KeyStore</span> that is backed by
 a PKCS\#11 token and pass it to its key manager and trust manager. The
 JSSE application will then have access to the keys on the token.
@@ -1179,7 +1179,7 @@ JSSE application will then have access to the keys on the token.
 JSSE also supports configuring the use of keystores and trust stores via
 system properties, as described in the [Java Secure Socket Extension
 (JSSE) Reference
-Guide](java-secure-socket-extension-jsse-reference-guide.htm#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication.").
+Guide](java-secure-socket-extension-jsse-reference-guide.html#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication.").
 To use a PKCS\#11 token as a keystore or trust store, set the
 `javax.net.ssl.keyStoreType`{.codeph} and
 `javax.net.ssl.trustStoreType`{.codeph} system properties, respectively,
@@ -1241,7 +1241,7 @@ For the SunPKCS11 provider, `providerName`{.codeph} is of the form
 
 :   The name suffix that the provider instance has been configured with,
     as detailed in [Table
-    5-1](pkcs11-reference-guide1.htm#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9__GUID-8ADD17FD-3320-4D8F-A1ED-319DFEABA338 "PKCS#11 provider configuration file attributes.").
+    5-1](pkcs11-reference-guide1.html#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9__GUID-8ADD17FD-3320-4D8F-A1ED-319DFEABA338 "PKCS#11 provider configuration file attributes.").
     For example, the following command lists the contents of the
     PKCS\#11 keystore provider instance with name suffix
     `SmartCard`{.codeph}.
@@ -1343,7 +1343,7 @@ to more easily support PKCS\#11 tokens and cryptographic services
 through provider services and parameter support.
 
 See [Example
-Provider](pkcs11-reference-guide1.htm#GUID-50C137F1-F23B-434D-AA90-5A744ABA2F5B "The following is an example of a simple provider that demonstrates features of the Provider class.")
+Provider](pkcs11-reference-guide1.html#GUID-50C137F1-F23B-434D-AA90-5A744ABA2F5B "The following is an example of a simple provider that demonstrates features of the Provider class.")
 for an example of a simple provider designed to demonstrate provider
 services and parameter support.
 
@@ -1393,9 +1393,9 @@ Using `Provider.Service`{.codeph} objects instead of legacy
 `Property`{.codeph} entries has a couple of major benefits. One benefit
 is that it allows the provider to have greater flexibility when
 [Instantiating Engine
-Classes](pkcs11-reference-guide1.htm#GUID-BDF21F95-43FA-462F-A89C-5DF20760440E__INSTANTIATINGENGINECLASSES-F41C69E1).
+Classes](pkcs11-reference-guide1.html#GUID-BDF21F95-43FA-462F-A89C-5DF20760440E__INSTANTIATINGENGINECLASSES-F41C69E1).
 Another benefit is that it allows the provider to test [Parameter
-Support](pkcs11-reference-guide1.htm#GUID-BDF21F95-43FA-462F-A89C-5DF20760440E__PARAMETERSUPPORT-57310DC1).
+Support](pkcs11-reference-guide1.html#GUID-BDF21F95-43FA-462F-A89C-5DF20760440E__PARAMETERSUPPORT-57310DC1).
 These features are discussed in detail next.
 
 </div>
@@ -1429,7 +1429,7 @@ framework calls `Provider.Service.supportsParameter()`{.codeph}.
 
 The framework relies on this fast test during delayed provider selection
 (see [Delayed Provider
-Selection](pkcs11-reference-guide1.htm#GUID-99785B51-50D8-458E-AA2C-755749F1E39E)).
+Selection](pkcs11-reference-guide1.html#GUID-99785B51-50D8-458E-AA2C-755749F1E39E)).
 When an application invokes an initialization method and passes it a
 `Key`{.codeph} object, the framework asks an underlying provider whether
 it supports the object by calling its
@@ -1475,7 +1475,7 @@ framework calls `Provider.Service.supportsParameter()`{.codeph}.
 
 The framework relies on this fast test during delayed provider selection
 (see [Delayed Provider
-Selection](pkcs11-reference-guide1.htm#GUID-99785B51-50D8-458E-AA2C-755749F1E39E)).
+Selection](pkcs11-reference-guide1.html#GUID-99785B51-50D8-458E-AA2C-755749F1E39E)).
 When an application invokes an initialization method and passes it a
 `Key`{.codeph} object, the framework asks an underlying provider whether
 it supports the object by calling its
@@ -1515,7 +1515,7 @@ SunPKCS11 Provider Supported Algorithms {#JSSEC-GUID-D3EF9023-7DDC-435D-9186-D2F
 <div>
 <div class="section">
 [Table
-5-3](pkcs11-reference-guide1.htm#GUID-D3EF9023-7DDC-435D-9186-D2FD05674777__GUID-21B92E76-EE33-47EA-BC0C-F428AF662C02 "List of Java Algorithms supported by the Sun PKCS#11 Provider.")
+5-3](pkcs11-reference-guide1.html#GUID-D3EF9023-7DDC-435D-9186-D2FD05674777__GUID-21B92E76-EE33-47EA-BC0C-F428AF662C02 "List of Java Algorithms supported by the Sun PKCS#11 Provider.")
 lists the Java algorithms supported by the SunPKCS11 provider and
 corresponding PKCS\#11 mechanisms needed to support them. When multiple
 mechanisms are listed, they are given in the order of preference and any
@@ -1527,7 +1527,7 @@ Note:
 SunPKCS11 can be instructed to ignore mechanisms by using the
 `disabledMechanisms`{.codeph} and `enabledMechanisms`{.codeph}
 configuration directives (see [SunPKCS11
-Configuration](pkcs11-reference-guide1.htm#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9)).
+Configuration](pkcs11-reference-guide1.html#GUID-C4ABFACB-B2C9-4E71-A313-79F881488BB9)).
 
 </div>
 For Elliptic Curve mechanisms, the SunPKCS11 provider will only use keys

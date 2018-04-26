@@ -97,61 +97,61 @@ document.
 Topics
 
 [Introduction to JDK
-Providers](oracle-providers.htm#GUID-F41EE1C9-DD6A-4BAB-8979-EB7654094029 "The Java platform defines a set of APIs spanning major security areas, including cryptography, public key infrastructure, authentication, secure communication, and access control. These APIs enable developers to easily integrate security mechanisms into their application code.")
+Providers](oracle-providers.html#GUID-F41EE1C9-DD6A-4BAB-8979-EB7654094029 "The Java platform defines a set of APIs spanning major security areas, including cryptography, public key infrastructure, authentication, secure communication, and access control. These APIs enable developers to easily integrate security mechanisms into their application code.")
 
 [Import Limits on Cryptographic
-Algorithms](oracle-providers.htm#GUID-9224B90B-7B2F-41F9-BB96-C0A1B6A0FEAA)
+Algorithms](oracle-providers.html#GUID-9224B90B-7B2F-41F9-BB96-C0A1B6A0FEAA)
 
 [Cipher
-Transformations](oracle-providers.htm#GUID-BC92B7F1-D15C-432A-B725-9BBA9FEF61DB "The javax.crypto.Cipher.getInstance(String transformation) factory method generates Cipher objects using transformations of the form algorithm/mode/padding. If the mode/padding are omitted, the SunJCE and SunPKCS11 providers use ECB as the default mode and PKCS5Padding as the default padding for many symmetric ciphers.")
+Transformations](oracle-providers.html#GUID-BC92B7F1-D15C-432A-B725-9BBA9FEF61DB "The javax.crypto.Cipher.getInstance(String transformation) factory method generates Cipher objects using transformations of the form algorithm/mode/padding. If the mode/padding are omitted, the SunJCE and SunPKCS11 providers use ECB as the default mode and PKCS5Padding as the default padding for many symmetric ciphers.")
 
 [SecureRandom
-Implementations](oracle-providers.htm#GUID-9DC4ADD5-6D01-4B2E-9E85-B88E3BEE7453 "The following table lists the default preference order of the available SecureRandom implementations.")
+Implementations](oracle-providers.html#GUID-9DC4ADD5-6D01-4B2E-9E85-B88E3BEE7453 "The following table lists the default preference order of the available SecureRandom implementations.")
 
 [The SunPKCS11
-Provider](oracle-providers.htm#GUID-C4706FFE-D08F-4E29-B0BE-CCE8C93DD940)
+Provider](oracle-providers.html#GUID-C4706FFE-D08F-4E29-B0BE-CCE8C93DD940)
 
 [The SUN
-Provider](oracle-providers.htm#GUID-3A80CC46-91E1-4E47-AC51-CB7B782CEA7D "JDK 1.1 introduced the Provider architecture. The first JDK provider was named SUN, and contained two types of cryptographic services (MessageDigestand Signature). In later releases, other mechanisms were added (SecureRandom, KeyPairGenerator, KeyFactory, and so on).")
+Provider](oracle-providers.html#GUID-3A80CC46-91E1-4E47-AC51-CB7B782CEA7D "JDK 1.1 introduced the Provider architecture. The first JDK provider was named SUN, and contained two types of cryptographic services (MessageDigestand Signature). In later releases, other mechanisms were added (SecureRandom, KeyPairGenerator, KeyFactory, and so on).")
 
 [The SunRsaSign
-Provider](oracle-providers.htm#GUID-17E3589E-E4BA-4881-9B12-9880DD2D128D "The SunRsaSign provider was introduced in JDK 1.3 as an enhanced replacement for the RSA signature in the SunJSSE provider.")
+Provider](oracle-providers.html#GUID-17E3589E-E4BA-4881-9B12-9880DD2D128D "The SunRsaSign provider was introduced in JDK 1.3 as an enhanced replacement for the RSA signature in the SunJSSE provider.")
 
 [The SunJSSE
-Provider](oracle-providers.htm#GUID-7093246A-31A3-4304-AC5F-5FB6400405E2)
+Provider](oracle-providers.html#GUID-7093246A-31A3-4304-AC5F-5FB6400405E2)
 
 [The SunJCE
-Provider](oracle-providers.htm#GUID-A47B1249-593C-4C38-A0D0-68FA7681E0A7 "As described briefly in The SUN Provider, US export regulations at the time restricted the type of cryptographic functionality that could be available in the JDK. A separate API and reference implementation was developed that allowed applications to encrypt/decrypt date. The Java Cryptographic Extension (JCE) was released as a separate ”Optional Package” (also briefly known as a “Standard Extension”), and was available for JDK 1.2x and 1.3x. During the development of JDK 1.4, regulations were relaxed enough that JCE (and SunJSSE) could be bundled as part of the JDK.")
+Provider](oracle-providers.html#GUID-A47B1249-593C-4C38-A0D0-68FA7681E0A7 "As described briefly in The SUN Provider, US export regulations at the time restricted the type of cryptographic functionality that could be available in the JDK. A separate API and reference implementation was developed that allowed applications to encrypt/decrypt date. The Java Cryptographic Extension (JCE) was released as a separate ”Optional Package” (also briefly known as a “Standard Extension”), and was available for JDK 1.2x and 1.3x. During the development of JDK 1.4, regulations were relaxed enough that JCE (and SunJSSE) could be bundled as part of the JDK.")
 
 [The SunJGSS
-Provider](oracle-providers.htm#GUID-9CAAC18D-CFF0-4602-A1B7-53C9FAA98C9F "The following algorithms are available in the SunJGSS provider:")
+Provider](oracle-providers.html#GUID-9CAAC18D-CFF0-4602-A1B7-53C9FAA98C9F "The following algorithms are available in the SunJGSS provider:")
 
 [The SunSASL
-Provider](oracle-providers.htm#GUID-EB759F08-B8D8-424A-9357-10F9002AE177 "The following algorithms are available in the SunSASL provider:")
+Provider](oracle-providers.html#GUID-EB759F08-B8D8-424A-9357-10F9002AE177 "The following algorithms are available in the SunSASL provider:")
 
 [The XMLDSig
-Provider](oracle-providers.htm#GUID-D09DE3FE-237F-4B7B-A323-0A370137E0F3 "The following algorithms are available in the XMLDSig provider:")
+Provider](oracle-providers.html#GUID-D09DE3FE-237F-4B7B-A323-0A370137E0F3 "The following algorithms are available in the XMLDSig provider:")
 
 [The SunPCSC
-Provider](oracle-providers.htm#GUID-DEAD6543-FB59-46F3-B4E7-EE1AFE246EA0)
+Provider](oracle-providers.html#GUID-DEAD6543-FB59-46F3-B4E7-EE1AFE246EA0)
 
 [The SunMSCAPI
-Provider](oracle-providers.htm#GUID-4F1737D6-1569-4340-B140-678C70E63CD5 "The SunMSCAPI provider enables applications to use the standard JCA/JCE APIs to access the native cryptographic libraries, certificates stores and key containers on the Microsoft Windows platform. The SunMSCAPI provider itself does not contain cryptographic functionality, it is simply a conduit between the Java environment and the native cryptographic services on Windows.")
+Provider](oracle-providers.html#GUID-4F1737D6-1569-4340-B140-678C70E63CD5 "The SunMSCAPI provider enables applications to use the standard JCA/JCE APIs to access the native cryptographic libraries, certificates stores and key containers on the Microsoft Windows platform. The SunMSCAPI provider itself does not contain cryptographic functionality, it is simply a conduit between the Java environment and the native cryptographic services on Windows.")
 
 [The SunEC
-Provider](oracle-providers.htm#GUID-091BF58C-82AB-4C9C-850F-1660824D5254 "The SunEC provider implements Elliptical Curve Cryptography (ECC). Compared to traditional cryptosystems such as RSA, ECC offers equivalent security with smaller key sizes, which results in faster computations, lower power consumption, and memory and bandwidth savings.")
+Provider](oracle-providers.html#GUID-091BF58C-82AB-4C9C-850F-1660824D5254 "The SunEC provider implements Elliptical Curve Cryptography (ECC). Compared to traditional cryptosystems such as RSA, ECC offers equivalent security with smaller key sizes, which results in faster computations, lower power consumption, and memory and bandwidth savings.")
 
 [The OracleUcrypto
-Provider](oracle-providers.htm#GUID-B1F2B3F3-F2A4-4FF5-8887-3B3335343B2A "The Solaris-only security provider OracleUcrypto leverages the Solaris Ucrypto library to offload and delegate cryptographic operations supported by the Oracle SPARC T4 based on-core cryptographic instructions. The OracleUcrypto provider itself does not contain cryptographic functionality; it is simply a conduit between the Java environment and the Solaris Ucrypto library.")
+Provider](oracle-providers.html#GUID-B1F2B3F3-F2A4-4FF5-8887-3B3335343B2A "The Solaris-only security provider OracleUcrypto leverages the Solaris Ucrypto library to offload and delegate cryptographic operations supported by the Oracle SPARC T4 based on-core cryptographic instructions. The OracleUcrypto provider itself does not contain cryptographic functionality; it is simply a conduit between the Java environment and the Solaris Ucrypto library.")
 
 [The Apple
-Provider](oracle-providers.htm#GUID-3185649A-C316-45F2-A70E-2B3FF6BDC34F "The Apple provider implements a java.security.KeyStore that provides access to the macOS Keychain.")
+Provider](oracle-providers.html#GUID-3185649A-C316-45F2-A70E-2B3FF6BDC34F "The Apple provider implements a java.security.KeyStore that provides access to the macOS Keychain.")
 
 [The JdkLDAP
-Provider](oracle-providers.htm#GUID-67D4652C-2551-4BBE-9941-50A9348AEA84 "The JdkLDAP provider was introduced in JDK 9 as a replacement for the LDAP CertStore implementation in the SUN provider.")
+Provider](oracle-providers.html#GUID-67D4652C-2551-4BBE-9941-50A9348AEA84 "The JdkLDAP provider was introduced in JDK 9 as a replacement for the LDAP CertStore implementation in the SUN provider.")
 
 [The JdkSASL
-Provider](oracle-providers.htm#GUID-D08B5350-6653-4FC6-B350-2B009A9E7FD6 "The following algorithms are available in the JdkSASL provider:")
+Provider](oracle-providers.html#GUID-D08B5350-6653-4FC6-B350-2B009A9E7FD6 "The following algorithms are available in the JdkSASL provider:")
 
 </div>
 <!-- class="section" -->
@@ -170,9 +170,9 @@ secure communication, and access control. These APIs enable developers
 to easily integrate security mechanisms into their application code.
 
 The [Java Cryptography Architecture
-(JCA)](java-cryptography-architecture-jca-reference-guide.htm#GUID-815542FE-CF3D-407A-9673-CAE9840F6231 "The Java platform strongly emphasizes security, including language safety, cryptography, public key infrastructure, authentication, secure communication, and access control.")
+(JCA)](java-cryptography-architecture-jca-reference-guide.html#GUID-815542FE-CF3D-407A-9673-CAE9840F6231 "The Java platform strongly emphasizes security, including language safety, cryptography, public key infrastructure, authentication, secure communication, and access control.")
 and its [Provider
-Architecture](java-cryptography-architecture-jca-reference-guide.htm#GUID-EAB9FF73-4C69-4FD5-8A0C-5CF48211A859 "Providers contain a package (or a set of packages) that supply concrete implementations for the advertised cryptographic algorithms.")
+Architecture](java-cryptography-architecture-jca-reference-guide.html#GUID-EAB9FF73-4C69-4FD5-8A0C-5CF48211A859 "Providers contain a package (or a set of packages) that supply concrete implementations for the advertised cryptographic algorithms.")
 are core concepts of the Java Development Kit (JDK). It is assumed that
 readers have a solid understanding of this architecture.
 
@@ -268,7 +268,7 @@ different sets of jurisdiction policy files in the directory
 `<java-home>/conf/security/policy` that determine the strength of
 cryptographic algorithms. Information about jurisdiction policy files
 and how to activate them is available in [Cryptographic Strength
-Configuration](java-cryptography-architecture-jca-reference-guide.htm#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1).
+Configuration](java-cryptography-architecture-jca-reference-guide.html#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1).
 
 Consult your export/import control counsel or attorney to determine the
 exact requirements for your location.
@@ -616,7 +616,7 @@ use the standard JCA/JCE APIs to access native PKCS\#11 libraries.
 contain cryptographic functionality</span>, it is simply a conduit
 between the Java environment and the native PKCS11 providers. The [Java
 PKCS\#11 Reference
-Guide](pkcs11-reference-guide1.htm#GUID-6DA72F34-6C6A-4F7D-ADBA-5811576A9331 "The SunPKCS11 provider, in contrast to most other providers, does not implement cryptographic algorithms itself. Instead, it acts as a bridge between the Java JCA and JCE APIs and the native PKCS#11 cryptographic API, translating the calls and conventions between the two.")
+Guide](pkcs11-reference-guide1.html#GUID-6DA72F34-6C6A-4F7D-ADBA-5811576A9331 "The SunPKCS11 provider, in contrast to most other providers, does not implement cryptographic algorithms itself. Instead, it acts as a bridge between the Java JCA and JCE APIs and the native PKCS#11 cryptographic API, translating the calls and conventions between the two.")
 has a much more detailed treatment of this provider.
 
 </div>
@@ -864,7 +864,7 @@ Additional details on the `SUN`{.codeph} provider implementations for
 `CertificateFactory`{.codeph}, `CertPathBuilder`{.codeph},
 `CertPathValidator`{.codeph} and `CertStore`{.codeph} are documented in
 [Appendix B: CertPath Implementation in SUN
-Provider](java-pki-programmers-guide.htm#GUID-EB250086-0AC1-4D60-AE2A-FC7461374746)
+Provider](java-pki-programmers-guide.html#GUID-EB250086-0AC1-4D60-AE2A-FC7461374746)
 of the PKI Programmer\'s Guide.
 
 </div>
@@ -1182,7 +1182,7 @@ Table 4-10 Connections Possible Using SSLv2Hellos
 Cipher Suites
 
 `SunJSSE`{.codeph} supports a large number of cipher suites. [Table
-4-11](oracle-providers.htm#GUID-7093246A-31A3-4304-AC5F-5FB6400405E2__CIPHERSUITESSUPPORTEDBYSUNJSSE-29E460FE "List of cipher suites supported by SunJSSE, whether they are enabled or disabled by default, and the release in which they were introduced")
+4-11](oracle-providers.html#GUID-7093246A-31A3-4304-AC5F-5FB6400405E2__CIPHERSUITESSUPPORTEDBYSUNJSSE-29E460FE "List of cipher suites supported by SunJSSE, whether they are enabled or disabled by default, and the release in which they were introduced")
 lists the cipher suites supported by `SunJSSE`{.codeph}, whether they
 are enabled or disabled by default, and the release in which they were
 introduced. A value of N/A means that the cipher suite hasn\'t been
@@ -1864,9 +1864,9 @@ for TLS 1.2 or later.
 ^Footnote 13^ `TLS_EMPTY_RENEGOTIATION_INFO_SCSV`{.codeph} is a
 pseudo-cipher suite that supports RFC 5746. See [Transport Layer
 Security (TLS) Renegotiation
-Issue](java-secure-socket-extension-jsse-reference-guide.htm#GUID-9C767872-3A6C-4AD1-9805-49F112A0FA28 "In the fall of 2009, a flaw was discovered in the SSL/TLS protocols. A fix to the protocol was developed by the IETF TLS Working Group, and current versions of the JDK contain this fix. This section describes the situation in much more detail, along with interoperability issues when communicating with older implementations that do not contain this protocol fix.")
+Issue](java-secure-socket-extension-jsse-reference-guide.html#GUID-9C767872-3A6C-4AD1-9805-49F112A0FA28 "In the fall of 2009, a flaw was discovered in the SSL/TLS protocols. A fix to the protocol was developed by the IETF TLS Working Group, and current versions of the JDK contain this fix. This section describes the situation in much more detail, along with interoperability issues when communicating with older implementations that do not contain this protocol fix.")
 in [Java Secure Socket Extension (JSSE) Reference
-Guide](java-secure-socket-extension-jsse-reference-guide.htm#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication.").
+Guide](java-secure-socket-extension-jsse-reference-guide.html#GUID-93DEEE16-0B70-40E5-BBE7-55C3FD432345 "The Java Secure Socket Extension (JSSE) enables secure Internet communications. It provides a framework and an implementation for a Java version of the SSL, TLS, and DTLS protocols and includes functionality for data encryption, server authentication, message integrity, and optional client authentication.").
 
 </div>
 <!-- class="section" -->
@@ -1977,7 +1977,7 @@ Table 4-12 The SunJCE Provider Algorithm Names for Engine Classes
 |                                   | RC2                               |
 +-----------------------------------+-----------------------------------+
 | `Cipher`{.codeph}                 | See [Table                        |
-|                                   | 4-13](oracle-providers.htm#GUID-A |
+|                                   | 4-13](oracle-providers.html#GUID-A |
 |                                   | 47B1249-593C-4C38-A0D0-68FA7681E0 |
 |                                   | A7__GUID-5AB84158-7D99-4604-98EC- |
 |                                   | 1E2F755CCB1C "List of SunJCE Prov |

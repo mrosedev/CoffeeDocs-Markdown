@@ -46,10 +46,10 @@ first exercise:
 1.  Install and set up a Solaris machine (required for [Exercise 7:
     Configuring to Use Stronger Encryption Algorithms in a Kerberos
     Environment, to Secure the
-    Communication](part-iv-secure-communications-using-stronger-encryption-algorithms.htm#GUID-29FBA28F-5E45-47FF-AB3A-CEB60871D212)).
+    Communication](part-iv-secure-communications-using-stronger-encryption-algorithms.html#GUID-29FBA28F-5E45-47FF-AB3A-CEB60871D212)).
 2.  Configure a Kerberos server on a Solaris machine with accounts used
     by the exercises. See [Appendix A: Setting up Kerberos
-    Accounts](appendix-setting-kerberos-accounts.htm#GUID-D1F41B0A-E756-49CB-828A-422DC23E572B).
+    Accounts](appendix-setting-kerberos-accounts.html#GUID-D1F41B0A-E756-49CB-828A-422DC23E572B).
 3.  Set up the Key Distribution Center (KDC) on your Solaris machine and
     start the Kerberos server.
 4.  Set up the Kerberos configuration on your client machine.
@@ -72,37 +72,37 @@ exercises. Work through the exercises in sequence:
 
 -   [Part I : Secure Authentication using the Java Authentication and
     Authorization Service
-    (JAAS)](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.htm#GUID-42416198-9AEE-428C-80EF-2A56488B5890)
+    (JAAS)](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.html#GUID-42416198-9AEE-428C-80EF-2A56488B5890)
     -   [Exercise 1: Using the JAAS
-        API](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.htm#GUID-1446370E-5019-4BD1-860A-22BAC1F13CF8)
+        API](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.html#GUID-1446370E-5019-4BD1-860A-22BAC1F13CF8)
     -   [Exercise 2: Configuring JAAS for Kerberos
-        Authentication](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.htm#GUID-2079DC72-5A2E-46FE-978F-42D113FFA41A)
+        Authentication](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.html#GUID-2079DC72-5A2E-46FE-978F-42D113FFA41A)
 -   [Part II : Secure Communications using the Java SE Security
-    API](part-ii-secure-communications-using-java-se-security-api.htm#GUID-98B02DB0-13DB-4175-9485-3449E1A241B5)
+    API](part-ii-secure-communications-using-java-se-security-api.html#GUID-98B02DB0-13DB-4175-9485-3449E1A241B5)
     -   [Exercise 3: Using the Java Generic Security Service (GSS)
-        API](part-ii-secure-communications-using-java-se-security-api.htm#GUID-1E4E43BA-EC38-435E-A426-7A88E52F34DF)
+        API](part-ii-secure-communications-using-java-se-security-api.html#GUID-1E4E43BA-EC38-435E-A426-7A88E52F34DF)
     -   [Exercise 4: Using the Java SASL
-        API](part-ii-secure-communications-using-java-se-security-api.htm#GUID-727C5CDB-8701-40B3-8355-00C8314590A3)
+        API](part-ii-secure-communications-using-java-se-security-api.html#GUID-727C5CDB-8701-40B3-8355-00C8314590A3)
     -   [Exercise 5: Using the Java Secure Socket Extension with
-        Kerberos](part-ii-secure-communications-using-java-se-security-api.htm#GUID-9AAFC7BB-8562-4E3E-B5EF-E33F30E779D1)
+        Kerberos](part-ii-secure-communications-using-java-se-security-api.html#GUID-9AAFC7BB-8562-4E3E-B5EF-E33F30E779D1)
 -   [Part III : Deploying for Single Sign-On in a Kerberos
-    Environment](part-iii-deploying-single-sign-kerberos-environment.htm#GUID-549EA363-62DD-4819-BC92-4C8B23D01A1F)
+    Environment](part-iii-deploying-single-sign-kerberos-environment.html#GUID-549EA363-62DD-4819-BC92-4C8B23D01A1F)
     -   [Exercise 6: Deploying for Single
-        Sign-On](part-iii-deploying-single-sign-kerberos-environment.htm#GUID-5D0B8FD9-FF12-44E7-B7E9-7620E95E784C)
+        Sign-On](part-iii-deploying-single-sign-kerberos-environment.html#GUID-5D0B8FD9-FF12-44E7-B7E9-7620E95E784C)
 -   [Part IV : Secure Communications Using Stronger Encryption
-    Algorithms](part-iv-secure-communications-using-stronger-encryption-algorithms.htm#GUID-49820DF7-0DED-4C63-8DB8-89718501ADB1)
+    Algorithms](part-iv-secure-communications-using-stronger-encryption-algorithms.html#GUID-49820DF7-0DED-4C63-8DB8-89718501ADB1)
     -   [Exercise 7: Configuring to Use Stronger Encryption Algorithms
         in a Kerberos Environment, to Secure the
-        Communication](part-iv-secure-communications-using-stronger-encryption-algorithms.htm#GUID-29FBA28F-5E45-47FF-AB3A-CEB60871D212)
+        Communication](part-iv-secure-communications-using-stronger-encryption-algorithms.html#GUID-29FBA28F-5E45-47FF-AB3A-CEB60871D212)
 -   [Part V : Secure Authentication Using SPNEGO Java GSS
-    Mechanism](part-v-secure-authentication-using-spnego-java-gss-mechanism.htm#GUID-B51B4169-BD5D-4A19-BC2B-7F6B3ABB9B7A)
+    Mechanism](part-v-secure-authentication-using-spnego-java-gss-mechanism.html#GUID-B51B4169-BD5D-4A19-BC2B-7F6B3ABB9B7A)
     -   [Exercise 8: Using the Java Generic Security Services (GSS) API
         with
-        SPNEGO](part-v-secure-authentication-using-spnego-java-gss-mechanism.htm#GUID-47C377A7-68D9-4B16-86AF-5AE89BCB2845)
+        SPNEGO](part-v-secure-authentication-using-spnego-java-gss-mechanism.html#GUID-47C377A7-68D9-4B16-86AF-5AE89BCB2845)
 -   [Part VI: HTTP/SPNEGO
-    Authentication](part-vi-http-spnego-authentication.htm#GUID-996F729E-5FEA-4E29-A32A-78FB510B2D80)
+    Authentication](part-vi-http-spnego-authentication.html#GUID-996F729E-5FEA-4E29-A32A-78FB510B2D80)
     -   [Exercise 9: Using HTTP/SPNEGO
-        Authentication](part-vi-http-spnego-authentication.htm#GUID-2978DB58-6217-4E29-95EF-2C1F25F7C37F)
+        Authentication](part-vi-http-spnego-authentication.html#GUID-2978DB58-6217-4E29-95EF-2C1F25F7C37F)
 
 </div>
 <!-- class="section" -->
@@ -147,7 +147,7 @@ exercises. Work through the exercises in sequence:
 | cure-authentication- | g |                      |
 | using-java-authentic | i |                      |
 | ation-and-authorizat | f |                      |
-| ion-service-jaas.htm | s |                      |
+| ion-service-jaas.html | s |                      |
 | )                    | / |                      |
 |   ------------------ | o |                      |
 | -------------------- | r |                      |

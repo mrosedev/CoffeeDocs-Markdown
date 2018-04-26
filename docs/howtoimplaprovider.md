@@ -49,9 +49,9 @@ Who Should Read This Document {#JSSEC-GUID-75AFEAAB-BDEE-4857-9637-9D72D6C42DED 
 <div>
 Programmers that only need to use the Java Security APIs (see [Core
 Classes and
-Interfaces](java-cryptography-architecture-jca-reference-guide.htm#GUID-5C9A28FC-8B6B-45BA-8A71-6BEEA34EC27F "The following are the core classes and interfaces provided in the JCA.")
+Interfaces](java-cryptography-architecture-jca-reference-guide.html#GUID-5C9A28FC-8B6B-45BA-8A71-6BEEA34EC27F "The following are the core classes and interfaces provided in the JCA.")
 in [Java Cryptography Architecture (JCA) Reference
-Guide](java-cryptography-architecture-jca-reference-guide.htm#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few."))
+Guide](java-cryptography-architecture-jca-reference-guide.html#GUID-2BCFDD85-D533-4E6C-8CE9-29990DEB0190 "The Java Cryptography Architecture (JCA) is a major piece of the platform, and contains a "provider" architecture and a set of APIs for digital signatures, message digests (hashes), certificates and certificate validation, encryption (symmetric/asymmetric block/stream ciphers), key generation and management, and secure random number generation, to name a few."))
 to access existing cryptography algorithms and other services do
 <span class="variable">not</span> need to read this document.
 
@@ -141,7 +141,7 @@ implements. Multiple providers may be configured at the same time, and
 are listed in order of preference. When a security service is requested,
 the highest priority provider that implements that service is selected.
 See [Security
-Providers](java-security-overview1.htm#GUID-74E1EFEA-F1DD-466C-B61A-CB5E89FA50DE "The java.security.Provider class encapsulates the notion of a security provider in the Java platform. It specifies the provider's name and lists the security services it implements. Multiple providers may be configured at the same time and are listed in order of preference. When a security service is requested, the highest priority provider that implements that service is selected."),
+Providers](java-security-overview1.html#GUID-74E1EFEA-F1DD-466C-B61A-CB5E89FA50DE "The java.security.Provider class encapsulates the notion of a security provider in the Java platform. It specifies the provider's name and lists the security services it implements. Multiple providers may be configured at the same time and are listed in order of preference. When a security service is requested, the highest priority provider that implements that service is selected."),
 which illustrates how a provider selects a requested security service.
 
 </div>
@@ -299,7 +299,7 @@ of various message digest algorithms such as SHA256 or SHA384.
 As a final example, the `KeyFactory`{.codeph} engine class supports the
 conversion from opaque keys to transparent key specifications, and vice
 versa. See [Key Specification Interfaces and Classes Required by Key
-Factories](howtoimplaprovider.htm#GUID-97E2DE2A-5DFD-4A87-AFA7-CDECC3F77FA6 "A key factory provides bi-directional conversions between opaque keys (of type Key) and key specifications. If you implement a key factory, you thus need to understand and utilize key specifications. In some cases, you also need to implement your own key specifications.").
+Factories](howtoimplaprovider.html#GUID-97E2DE2A-5DFD-4A87-AFA7-CDECC3F77FA6 "A key factory provides bi-directional conversions between opaque keys (of type Key) and key specifications. If you implement a key factory, you thus need to understand and utilize key specifications. In some cases, you also need to implement your own key specifications.").
 The actual implementation supplied in a `KeyFactorySpi`{.codeph}
 subclass would be that for a specific type of keys, e.g., DSA public and
 private keys.
@@ -317,31 +317,31 @@ Follow these steps to implement a provider and integrate it into the JCA
 framework:
 
 -   [Step 1: Write your Service Implementation
-    Code](howtoimplaprovider.htm#GUID-1D2FDA77-743C-47CB-9CCB-2585FEC0607A "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.")
+    Code](howtoimplaprovider.html#GUID-1D2FDA77-743C-47CB-9CCB-2585FEC0607A "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.")
 -   [Step 2: Give your Provider a
-    Name](howtoimplaprovider.htm#GUID-7241AB0C-71DC-408C-8726-B8E0225DDBCE)
+    Name](howtoimplaprovider.html#GUID-7241AB0C-71DC-408C-8726-B8E0225DDBCE)
 -   [Step 3: Write Your Master Class, a Subclass of
-    Provider](howtoimplaprovider.htm#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")
+    Provider](howtoimplaprovider.html#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")
 -   [Step 4: Create a Module Declaration for Your
-    Provider](howtoimplaprovider.htm#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules.")
+    Provider](howtoimplaprovider.html#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules.")
 -   [Step 5: Compile Your
-    Code](howtoimplaprovider.htm#GUID-83742677-6E39-4A8D-BF0F-BC743E3AE43C)
+    Code](howtoimplaprovider.html#GUID-83742677-6E39-4A8D-BF0F-BC743E3AE43C)
 -   [Step 6: Place Your Provider in a JAR
-    File](howtoimplaprovider.htm#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F)
+    File](howtoimplaprovider.html#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F)
 -   [Step 7: Sign Your JAR File, If
-    Necessary](howtoimplaprovider.htm#GUID-2D4432F9-1C3C-4A91-8612-2B2840188B36)
+    Necessary](howtoimplaprovider.html#GUID-2D4432F9-1C3C-4A91-8612-2B2840188B36)
 -   [Step 8: Prepare for
-    Testing](howtoimplaprovider.htm#GUID-FB9C6DB2-DE9A-4EFE-89B4-C2C168C5982D "The next steps describe how to install and configure your new provider so that it is available via the JCA.")
+    Testing](howtoimplaprovider.html#GUID-FB9C6DB2-DE9A-4EFE-89B4-C2C168C5982D "The next steps describe how to install and configure your new provider so that it is available via the JCA.")
 -   [Step 9: Write and Compile Your Test
-    Programs](howtoimplaprovider.htm#GUID-C6054169-FE6E-4837-B2BD-382DFEB955C0 "Write and compile one or more test programs that test your provider's incorporation into the Security API as well as the correctness of its algorithm(s). Create any supporting files needed, such as those for test data to be encrypted.")
+    Programs](howtoimplaprovider.html#GUID-C6054169-FE6E-4837-B2BD-382DFEB955C0 "Write and compile one or more test programs that test your provider's incorporation into the Security API as well as the correctness of its algorithm(s). Create any supporting files needed, such as those for test data to be encrypted.")
 -   [Step 10: Run Your Test
-    Programs](howtoimplaprovider.htm#GUID-3FD26072-6982-4DCE-932C-DE152C463992 "When you run your test applications, the required java command options will vary depending on factors such as whether you packaged your provider as a named, automatic, or unnamed module and if you configured it so that the ServiceLoader class can search for it.")
+    Programs](howtoimplaprovider.html#GUID-3FD26072-6982-4DCE-932C-DE152C463992 "When you run your test applications, the required java command options will vary depending on factors such as whether you packaged your provider as a named, automatic, or unnamed module and if you configured it so that the ServiceLoader class can search for it.")
 -   [Step 11: Apply for U.S. Government Export Approval If
-    Required](howtoimplaprovider.htm#GUID-A62916EE-BE09-4229-9D05-3D6AF303CA4E "All U.S. vendors whose providers may be exported outside the U.S. should apply to the Bureau of Industry and Security in the U.S. Department of Commerce for export approval.")
+    Required](howtoimplaprovider.html#GUID-A62916EE-BE09-4229-9D05-3D6AF303CA4E "All U.S. vendors whose providers may be exported outside the U.S. should apply to the Bureau of Industry and Security in the U.S. Department of Commerce for export approval.")
 -   [Step 12: Document Your Provider and Its Supported
-    Services](howtoimplaprovider.htm#GUID-912FAB1D-628A-47EA-A1DD-A216F2DD4245)
+    Services](howtoimplaprovider.html#GUID-912FAB1D-628A-47EA-A1DD-A216F2DD4245)
 -   [Step 13: Make Your Class Files and Documentation Available to
-    Clients](howtoimplaprovider.htm#GUID-3521E2A8-93B5-4D0F-AE2D-DC1B5E6857B7 "After writing, configuring, testing, installing and documenting your provider software, make documentation available to your customers.")
+    Clients](howtoimplaprovider.html#GUID-3521E2A8-93B5-4D0F-AE2D-DC1B5E6857B7 "After writing, configuring, testing, installing and documenting your provider software, make documentation available to your customers.")
 
 </div>
 <div class="sect3">
@@ -359,7 +359,7 @@ components of the JDK.
 
 For cryptographic services not defined in JCA (for example, signatures
 and message digests), see [Engine Classes and
-Algorithms](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
+Algorithms](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
 
 For each cryptographic service you wish to implement, create a subclass
 of the appropriate SPI class. JCA defines the following engine classes:
@@ -382,7 +382,7 @@ of the appropriate SPI class. JCA defines the following engine classes:
 
 To know more about the JCA and other cryptographic classes, see [Engine
 Classes and Corresponding Service Provider Interface
-Classes](java-cryptography-architecture-jca-reference-guide.htm#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
+Classes](java-cryptography-architecture-jca-reference-guide.html#GUID-A7EEDE25-C4C0-4C28-94EA-262858AE9212 "An engine class provides the interface to a specific type of cryptographic service, independent of a particular cryptographic algorithm or provider.").
 
 In the subclass, you need to:
 
@@ -392,7 +392,7 @@ In the subclass, you need to:
 1.  <span>Supply implementations for the abstract methods, whose names
     usually begin with `engine`{.codeph}. See [Further Implementation
     Details and
-    Requirements](howtoimplaprovider.htm#GUID-C8B79D46-6EA9-4E27-8083-7CB967732BB3 "This section provides additional information about alias names, service interdependencies, algorithm parameter generators and algorithm parameters.").</span>
+    Requirements](howtoimplaprovider.html#GUID-C8B79D46-6EA9-4E27-8083-7CB967732BB3 "This section provides additional information about alias names, service interdependencies, algorithm parameter generators and algorithm parameters.").</span>
 2.  <span>Depending on how you write your provider and register its
     algorithms (using either <span class="apiname">String</span> objects
     or the <span class="apiname">Provider.Service</span> class), the
@@ -402,7 +402,7 @@ In the subclass, you need to:
         Security looks up the subclass implementing that service, as
         specified by a property in your \"master class\" (see [Step 3:
         Write Your Master Class, a Subclass of
-        Provider](howtoimplaprovider.htm#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")).
+        Provider](howtoimplaprovider.html#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")).
         Java Security then creates the `Class`{.codeph} object
         associated with your subclass, and creates an instance of your
         subclass by calling the `newInstance`{.codeph} method on that
@@ -474,7 +474,7 @@ providers may implement are:
     application (or applet) that uses it. To know more about the
     requirements for apps that utilize exemption mechanisms, see [How to
     Make Applications Exempt from Cryptographic
-    Restrictions](java-cryptography-architecture-jca-reference-guide.htm#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D).</span>
+    Restrictions](java-cryptography-architecture-jca-reference-guide.html#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D).</span>
 
 </div>
 </div>
@@ -558,7 +558,7 @@ To create a provider with this coding style, do the following:
 
 -   <span>Call `super`{.codeph}, specifying the provider name (see [Step
     2: Give your Provider a
-    Name](howtoimplaprovider.htm#GUID-7241AB0C-71DC-408C-8726-B8E0225DDBCE))
+    Name](howtoimplaprovider.html#GUID-7241AB0C-71DC-408C-8726-B8E0225DDBCE))
     version number, and a string of information about the provider and
     algorithms it supports.</span>
 
@@ -801,7 +801,7 @@ To create a provider with this coding style, do the following:
     Note that this example is essentially the same as the example
     described in [Step 3.1: Create a Provider That Uses String Objects
     to Register Its
-    Services](howtoimplaprovider.htm#GUID-AB9C2460-0CF2-48BA-B9FE-7059071344CE).
+    Services](howtoimplaprovider.html#GUID-AB9C2460-0CF2-48BA-B9FE-7059071344CE).
 
     </div>
 -   <span>Override any method in
@@ -819,7 +819,7 @@ To create a provider with this coding style, do the following:
 
     For more information about other methods you can override, see [The
     Provider.Service
-    Class](howtoimplaprovider.htm#GUID-B1428B09-5542-4D36-9C0D-D78A8B2B3C00 "Provider.Service class offers an alternative way for providers to advertise their services and supports additional features.").
+    Class](howtoimplaprovider.html#GUID-B1428B09-5542-4D36-9C0D-D78A8B2B3C00 "Provider.Service class offers an alternative way for providers to advertise their services and supports additional features.").
 
     <div class="infoboxnote" id="GUID-CB446B7A-CEA2-4F4A-A4AF-4D492CB58733__GUID-62864B28-DA3B-492B-8079-F83B7004D2AC">
     Note:
@@ -1064,9 +1064,9 @@ You can package a provider in three different kinds of modules:
     class (which simplifies provider configuration) to search for
     providers in explicit modules without any additional changes to the
     module. See [Step 8.1: Configure the
-    Provider](howtoimplaprovider.htm#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")
+    Provider](howtoimplaprovider.html#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")
     and [Step 10: Run Your Test
-    Programs](howtoimplaprovider.htm#GUID-3FD26072-6982-4DCE-932C-DE152C463992 "When you run your test applications, the required java command options will vary depending on factors such as whether you packaged your provider as a named, automatic, or unnamed module and if you configured it so that the ServiceLoader class can search for it.").
+    Programs](howtoimplaprovider.html#GUID-3FD26072-6982-4DCE-932C-DE152C463992 "When you run your test applications, the required java command options will vary depending on factors such as whether you packaged your provider as a named, automatic, or unnamed module and if you configured it so that the ServiceLoader class can search for it.").
 
 -   Automatic module:  A module that appears on the module path, but
     does not contain module configuration information in a
@@ -1104,15 +1104,15 @@ System](http://openjdk.java.net/projects/jigsaw/spec/sotms/) and [JEP
 <div>
 After you have created your implementation code ([Step 1: Write your
 Service Implementation
-Code](howtoimplaprovider.htm#GUID-1D2FDA77-743C-47CB-9CCB-2585FEC0607A "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.")),
+Code](howtoimplaprovider.html#GUID-1D2FDA77-743C-47CB-9CCB-2585FEC0607A "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.")),
 given your provider a name ([Step 2: Give your Provider a
-Name](howtoimplaprovider.htm#GUID-7241AB0C-71DC-408C-8726-B8E0225DDBCE)),
+Name](howtoimplaprovider.html#GUID-7241AB0C-71DC-408C-8726-B8E0225DDBCE)),
 created the master class ([Step 3: Write Your Master Class, a Subclass
 of
-Provider](howtoimplaprovider.htm#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")),
+Provider](howtoimplaprovider.html#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")),
 and created a module declaration ([Step 4: Create a Module Declaration
 for Your
-Provider](howtoimplaprovider.htm#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules.")),
+Provider](howtoimplaprovider.html#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules.")),
 use the Java compiler to compile your files.
 
 </div>
@@ -1130,7 +1130,7 @@ Search for Providers
 If your provider is packaged in an automatic or unnamed module (you did
 not create a module declaration as described in [Step 4: Create a Module
 Declaration for Your
-Provider](howtoimplaprovider.htm#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules."))
+Provider](howtoimplaprovider.html#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules."))
 and you want the use the
 <span class="apiname">java.util.ServiceLoader</span> to search for your
 providers, then add the file `META-INF/services/java.security.Provider`
@@ -1198,7 +1198,7 @@ If your provider is supplying encryption algorithms through the
 your JAR file so that the JCA can authenticate the code at run time; see
 [Step 1.1: Consider Additional JCA Provider Requirements and
 Recommendations for Encryption
-Implementations](howtoimplaprovider.htm#GUID-AEE5234F-24F1-4899-B490-C79F0C2D8D59 "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.").
+Implementations](howtoimplaprovider.html#GUID-AEE5234F-24F1-4899-B490-C79F0C2D8D59 "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.").
 If you are not providing an implementation of this type, then you can
 skip this step.
 
@@ -1337,7 +1337,7 @@ Reference</cite></span>.
 
     `<alias>`{.codeph} is the same alias as that which you created in
     [Step
-    1](howtoimplaprovider.htm#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62__USEKEYTOOLTOGENERATEADSAKEYPAIRUSIN-7569AAA1)
+    1](howtoimplaprovider.html#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62__USEKEYTOOLTOGENERATEADSAKEYPAIRUSIN-7569AAA1)
     where you generated a DSA keypair. This command replaces the
     self-signed certificate in the keystore entry specified by
     `<alias>`{.codeph} with the one signed by the JCA Code Signing
@@ -1349,9 +1349,9 @@ Reference</cite></span>.
 Now that you have in your keystore a certificate from an entity trusted
 by JCA (the JCA Code Signing Certification Authority), you can place
 your provider code in a JAR file ([Step 6: Place Your Provider in a JAR
-File](howtoimplaprovider.htm#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F))
+File](howtoimplaprovider.html#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F))
 and then use that certificate to sign the JAR file ([Step 7.2: Sign Your
-Provider](howtoimplaprovider.htm#GUID-CF5F0E7D-BA0E-494C-8A5A-B228FF839AEF)).
+Provider](howtoimplaprovider.html#GUID-CF5F0E7D-BA0E-494C-8A5A-B228FF839AEF)).
 
 </div>
 <!-- class="section" -->
@@ -1366,10 +1366,10 @@ Provider](howtoimplaprovider.htm#GUID-CF5F0E7D-BA0E-494C-8A5A-B228FF839AEF)).
 <div>
 <div class="section">
 Sign the JAR file created in [Step 6: Place Your Provider in a JAR
-File](howtoimplaprovider.htm#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F)
+File](howtoimplaprovider.html#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F)
 with the code-signing certificate obtained in [Step 7.1: Get a
 Code-Signing
-Certificate](howtoimplaprovider.htm#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62 "The next step is to request a code-signing certificate so that you can use it to sign your provider prior to testing. The certificate will be good for both testing and production. It will be valid for 5 years.").
+Certificate](howtoimplaprovider.html#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62 "The next step is to request a code-signing certificate so that you can use it to sign your provider prior to testing. The certificate will be good for both testing and production. It will be valid for 5 years.").
 See [jarsigner](olink:JSWOR-GUID-925E7A1B-B3F3-44D2-8B49-0B3FA2C54864)
 in <span><cite>Java Platform, Standard Edition Tools
 Reference</cite></span>.
@@ -1384,7 +1384,7 @@ Here, `<alias>`{.codeph} is the alias into the keystore for the entry
 containing the code-signing certificate received from the JCA Code
 Signing Certification Authority (the same alias as that specified in the
 commands in [Step 7.1: Get a Code-Signing
-Certificate](howtoimplaprovider.htm#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62 "The next step is to request a code-signing certificate so that you can use it to sign your provider prior to testing. The certificate will be good for both testing and production. It will be valid for 5 years.")).
+Certificate](howtoimplaprovider.html#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62 "The next step is to request a code-signing certificate so that you can use it to sign your provider prior to testing. The certificate will be good for both testing and production. It will be valid for 5 years.")).
 
 You can test verification of the signature via the following:
 
@@ -1500,11 +1500,11 @@ the class path or module path.
     class can search for it (because you packaged the provider in a
     named module as described in [Step 4: Create a Module Declaration
     for Your
-    Provider](howtoimplaprovider.htm#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules.")
+    Provider](howtoimplaprovider.html#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules.")
     or added a `java.security.Provider` file as described in [Add the
     File java.security.Provider to Use the ServiceLoader Class to Search
     for
-    Providers](howtoimplaprovider.htm#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F__ADDTHEFILEJAVA.SECURITY.PROVIDERTOU-025DFEDB)),
+    Providers](howtoimplaprovider.html#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F__ADDTHEFILEJAVA.SECURITY.PROVIDERTOU-025DFEDB)),
     then specify just the provider\'s name.
 
     If you have not configured your provider so that
@@ -1543,7 +1543,7 @@ the class path or module path.
 Alternatively, you can register providers dynamically. To do so, a
 program (such as your test program, to be written in [Step 9: Write and
 Compile Your Test
-Programs](howtoimplaprovider.htm#GUID-C6054169-FE6E-4837-B2BD-382DFEB955C0 "Write and compile one or more test programs that test your provider's incorporation into the Security API as well as the correctness of its algorithm(s). Create any supporting files needed, such as those for test data to be encrypted."))
+Programs](howtoimplaprovider.html#GUID-C6054169-FE6E-4837-B2BD-382DFEB955C0 "Write and compile one or more test programs that test your provider's incorporation into the Security API as well as the correctness of its algorithm(s). Create any supporting files needed, such as those for test data to be encrypted."))
 call either the `addProvider`{.codeph} or `insertProviderAt`{.codeph}
 method in the `Security`{.codeph} class:
 
@@ -1589,7 +1589,7 @@ permission:
 
 <div>
 <div class="section">
-[Permissions](java-security-overview1.htm#GUID-7A49C00B-BEA6-4050-9E32-6168211585F7 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.")
+[Permissions](java-security-overview1.html#GUID-7A49C00B-BEA6-4050-9E32-6168211585F7 "A permission represents access to a system resource. In order for a resource access to be allowed for an applet (or an application running with a security manager), the corresponding permission must be explicitly granted to the code attempting the access.")
 must be granted for when applications are run while a security manager
 is installed. A security manager may be installed for an application
 either through code in the application itself or through a command-line
@@ -1683,7 +1683,7 @@ data to be encrypted.
 3.  **Optional:** <span>If you don\'t specify a provider name in the
     call to `getInstance`{.codeph}, all registered providers will be
     searched, in preference order (see [Step 8.1: Configure the
-    Provider](howtoimplaprovider.htm#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")),
+    Provider](howtoimplaprovider.html#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")),
     until one implementing the algorithm is found.</span>
 4.  **Optional:** <span>If your provider implements an exemption
     mechanism, you should write a test applet or application that uses
@@ -1692,7 +1692,7 @@ data to be encrypted.
     it.</span>
     <div>
     See [How to Make Applications Exempt from Cryptographic
-    Restrictions](java-cryptography-architecture-jca-reference-guide.htm#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D)
+    Restrictions](java-cryptography-architecture-jca-reference-guide.html#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D)
     for complete information on creating and testing such an
     application.
     </div>
@@ -1716,7 +1716,7 @@ If you packaged your provider as a named module and have configured it
 so that the <span class="apiname">ServiceLoader</span> class can search
 for it (by registering it with its name in the `java.security` as
 described in [Step 8.1: Configure the
-Provider](howtoimplaprovider.htm#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")),
+Provider](howtoimplaprovider.html#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")),
 then run your test program with the following command:
 
 ``` {.oac_no_warn dir="ltr"}
@@ -1727,9 +1727,9 @@ The directory `jars` contains your provider.
 
 You may require more options depending on your provider code style (see
 [Step 3.1: Create a Provider That Uses String Objects to Register Its
-Services](howtoimplaprovider.htm#GUID-AB9C2460-0CF2-48BA-B9FE-7059071344CE)
+Services](howtoimplaprovider.html#GUID-AB9C2460-0CF2-48BA-B9FE-7059071344CE)
 and [Step 3.2: Create a Provider That Uses
-Provider.Service](howtoimplaprovider.htm#GUID-CB446B7A-CEA2-4F4A-A4AF-4D492CB58733)),
+Provider.Service](howtoimplaprovider.html#GUID-CB446B7A-CEA2-4F4A-A4AF-4D492CB58733)),
 if you packaged your provider in a different kind of module, or if you
 have not configured it for the
 <span class="apiname">ServiceLoader</span> class. The following table
@@ -1935,17 +1935,17 @@ security manager running).
 
 1.  [**Optional:** <span>If you find during testing that your code needs
     modification, make the changes and recompile [Step 5: Compile Your
-    Code](howtoimplaprovider.htm#GUID-83742677-6E39-4A8D-BF0F-BC743E3AE43C).</span>]{#GUID-3FD26072-6982-4DCE-932C-DE152C463992__IFYOUFINDDURINGTESTINGTHATYOURCODEN-7568E2A4}
+    Code](howtoimplaprovider.html#GUID-83742677-6E39-4A8D-BF0F-BC743E3AE43C).</span>]{#GUID-3FD26072-6982-4DCE-932C-DE152C463992__IFYOUFINDDURINGTESTINGTHATYOURCODEN-7568E2A4}
 2.  <span>Place the updated provider code in a JAR file ([Step 6: Place
     Your Provider in a JAR
-    File](howtoimplaprovider.htm#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F)).</span>
+    File](howtoimplaprovider.html#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F)).</span>
 3.  <span>Sign the JAR file ([Step 7: Sign Your JAR File, If
-    Necessary](howtoimplaprovider.htm#GUID-2D4432F9-1C3C-4A91-8612-2B2840188B36)).</span>
+    Necessary](howtoimplaprovider.html#GUID-2D4432F9-1C3C-4A91-8612-2B2840188B36)).</span>
 4.  <span>Re-configure the provider ([Step 8.1: Configure the
-    Provider](howtoimplaprovider.htm#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")).</span>
+    Provider](howtoimplaprovider.html#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path.")).</span>
 5.  **Optional:** <span>If needed, fix or add to the permissions ([Step
     8.2: Set Provider
-    Permissions](howtoimplaprovider.htm#GUID-6E267101-15F4-4E7B-A6EB-64E36AAD1285)).</span>
+    Permissions](howtoimplaprovider.html#GUID-6E267101-15F4-4E7B-A6EB-64E36AAD1285)).</span>
 6.  [<span>Run your
     programs.</span>]{#GUID-3FD26072-6982-4DCE-932C-DE152C463992__RE-TESTYOURPROGRAMS.-7568E6BE}
 7.  **Optional:** <span>If required, repeat steps 1 to 6.</span>
@@ -1980,7 +1980,7 @@ this file is just like the requirement that applets and applications
 \"exempt\" from cryptographic restrictions must include a
 `cryptoPerms`{.codeph} permission policy file in their JAR file. See
 [How to Make Applications Exempt from Cryptographic
-Restrictions](java-cryptography-architecture-jca-reference-guide.htm#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D).
+Restrictions](java-cryptography-architecture-jca-reference-guide.html#GUID-B74786B8-A0AD-4DC3-8A2D-2EF41084CE3D).
 
 </div>
 </div>
@@ -2026,12 +2026,12 @@ minimum, you need to specify:
     provider.</span>
 -   <span>Instructions for installing the provider, similar to those
     provided in [Step 8.1: Configure the
-    Provider](howtoimplaprovider.htm#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path."),
+    Provider](howtoimplaprovider.html#GUID-831AA25F-F702-442D-A2E4-8DA6DEA16F33 "Register your provider so that the JCE framework can find your provider, either with the ServiceLoader class or in the class path or module path."),
     except that the information and examples should be specific to your
     provider.</span>
 -   <span>The permissions your provider will require if a security
     manager is run, as described in [Step 8.2: Set Provider
-    Permissions](howtoimplaprovider.htm#GUID-6E267101-15F4-4E7B-A6EB-64E36AAD1285).</span>
+    Permissions](howtoimplaprovider.html#GUID-6E267101-15F4-4E7B-A6EB-64E36AAD1285).</span>
 
 <div class="section">
 In addition, your documentation should specify anything else of interest
@@ -2247,7 +2247,7 @@ equivalent:
 
 Aliases can be defined in your \"master class\" (see [Step 3: Write Your
 Master Class, a Subclass of
-Provider](howtoimplaprovider.htm#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")).
+Provider](howtoimplaprovider.html#GUID-1C82EDB9-96CA-44AB-8590-E299814D6A46 "Create a subclass of the java.security.Provider class. This is essentially a lookup table that advertises the algorithms that your provider implements.")).
 To define an alias, create a property named
 
 ``` {.codeblock dir="ltr"}
@@ -2493,7 +2493,7 @@ default parameters that are used when clients don\'t specify parameters.
 <div class="section">
 The documentation you supply ([Step 12: Document Your Provider and Its
 Supported
-Services](howtoimplaprovider.htm#GUID-912FAB1D-628A-47EA-A1DD-A216F2DD4245))
+Services](howtoimplaprovider.html#GUID-912FAB1D-628A-47EA-A1DD-A216F2DD4245))
 should state what the default parameters are.
 
 For example, the DSA key pair generator in the
@@ -2650,7 +2650,7 @@ is encoded.
 <div class="section">
 If you implement a signature algorithm, the documentation you supply
 ([Step 12: Document Your Provider and Its Supported
-Services](howtoimplaprovider.htm#GUID-912FAB1D-628A-47EA-A1DD-A216F2DD4245))
+Services](howtoimplaprovider.html#GUID-912FAB1D-628A-47EA-A1DD-A216F2DD4245))
 should specify the format in which the signature (generated by one of
 the `sign`{.codeph} methods) is encoded.
 
@@ -2833,7 +2833,7 @@ Thus, for private keys, you need to supply a class that implements
     interface, since `DSAPrivateKey`{.codeph} extends `DSAKey`{.codeph}.
     Note: The `getParams`{.codeph} method returns a `DSAParams`{.codeph}
     object, so you must also have a [`DSAParams`{.codeph}
-    implementation](howtoimplaprovider.htm#GUID-C618C5AF-737E-41AB-8FD3-6F5BB8A319A9__DSAPARAMSIMPLEMENTATION-7140B38E).
+    implementation](howtoimplaprovider.html#GUID-C618C5AF-737E-41AB-8FD3-6F5BB8A319A9__DSAPARAMSIMPLEMENTATION-7140B38E).
 -   The `getAlgorithm`{.codeph}, `getEncoded`{.codeph}, and
     `getFormat`{.codeph} methods from the
     [`Interface Key`{.codeph}](https://docs.oracle.com/javase/10/docs/api/java/security/Key.html)
@@ -2856,7 +2856,7 @@ Thus, for private keys, you need to supply a class that implements
 
         The `getParams`{.codeph} method returns a `DSAParams`{.codeph}
         object, so you must also have a [DSAParams
-        Implementation](howtoimplaprovider.htm#GUID-C618C5AF-737E-41AB-8FD3-6F5BB8A319A9__DSAPARAMSIMPLEMENTATION-7140B38E).
+        Implementation](howtoimplaprovider.html#GUID-C618C5AF-737E-41AB-8FD3-6F5BB8A319A9__DSAPARAMSIMPLEMENTATION-7140B38E).
 
         </div>
     -   The `getAlgorithm`{.codeph}, `getEncoded`{.codeph}, and
@@ -4011,7 +4011,7 @@ By default, an application can use cryptographic algorithms of any
 strength. However, due to import regulations in some countries, you may
 have to limit those algorithms\' strength. You do this with jurisdiction
 policy files; see [Cryptographic Strength
-Configuration](java-cryptography-architecture-jca-reference-guide.htm#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1).
+Configuration](java-cryptography-architecture-jca-reference-guide.html#GUID-EFA5AC2D-644E-4CD9-8523-C6D3936D5FB1).
 The JCA framework will enforce the restrictions specified in the
 installed jurisdiction policy files.
 
@@ -4028,18 +4028,18 @@ to be plugged into JCA are the following:
 -   The provider code should be written in such a way that provider
     classes become unusable if instantiated by an application directly,
     bypassing JCA. See [Step 1: Write your Service Implementation
-    Code](howtoimplaprovider.htm#GUID-1D2FDA77-743C-47CB-9CCB-2585FEC0607A "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.")
+    Code](howtoimplaprovider.html#GUID-1D2FDA77-743C-47CB-9CCB-2585FEC0607A "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.")
     in [Steps to Implement and Integrate a
-    Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
+    Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
 -   The provider package must be signed by an entity trusted by the JCA
     framework. (See [Step 7.1: Get a Code-Signing
-    Certificate](howtoimplaprovider.htm#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62 "The next step is to request a code-signing certificate so that you can use it to sign your provider prior to testing. The certificate will be good for both testing and production. It will be valid for 5 years.")
+    Certificate](howtoimplaprovider.html#GUID-434AACF7-0D2C-494A-B32A-508A6B605F62 "The next step is to request a code-signing certificate so that you can use it to sign your provider prior to testing. The certificate will be good for both testing and production. It will be valid for 5 years.")
     through [Step 7.2: Sign Your
-    Provider](howtoimplaprovider.htm#GUID-CF5F0E7D-BA0E-494C-8A5A-B228FF839AEF).)
+    Provider](howtoimplaprovider.html#GUID-CF5F0E7D-BA0E-494C-8A5A-B228FF839AEF).)
     U.S. vendors whose providers may be exported outside the U.S. first
     need to apply for U.S. government export approval. (See [Step 11:
     Apply for U.S. Government Export Approval If
-    Required](howtoimplaprovider.htm#GUID-A62916EE-BE09-4229-9D05-3D6AF303CA4E "All U.S. vendors whose providers may be exported outside the U.S. should apply to the Bureau of Industry and Security in the U.S. Department of Commerce for export approval.").)
+    Required](howtoimplaprovider.html#GUID-A62916EE-BE09-4229-9D05-3D6AF303CA4E "All U.S. vendors whose providers may be exported outside the U.S. should apply to the Bureau of Industry and Security in the U.S. Department of Commerce for export approval.").)
 
 </div>
 </div>
@@ -4061,7 +4061,7 @@ module path. It consists of two modules:
     compile, package, and sign the provider, then specify it in your
     class or module path as described in [Steps to Implement and
     Integrate a
-    Provider](howtoimplaprovider.htm#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
+    Provider](howtoimplaprovider.html#GUID-CC161921-EBD2-48C6-B543-A956658B68B6 "Follow these steps to implement a provider and integrate it into the JCA framework:").
 
 -   `com.example.MyApp`{.codeph}: Contains a sample application that
     uses the MyProvider provider. It finds and loads this provider with
@@ -4083,7 +4083,7 @@ This example consists of the following files:
 src/com.example.MyProvider/module-info.java
 
 See [Step 4: Create a Module Declaration for Your
-Provider](howtoimplaprovider.htm#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules.")
+Provider](howtoimplaprovider.html#GUID-7C304A79-6D0B-438B-A02E-51648C909876 "This step is optional but recommended; it enables you to package your provider in a named module. A modular JDK can then locate your provider in the module path as opposed to the class path. The module system can more thoroughly check for dependencies in modules in the module path. Note that you can use named modules in a non-modular JDK; the module declaration will be ignored. Also, you can still package your providers in unnamed or automatic modules.")
 for information about the module declaration, which is specified in
 <span class="apiname">module-info.java</span>.
 
@@ -4105,7 +4105,7 @@ src/com.example.MyProvider/com/example/MyProvider/MyProvider.java
 The <span class="apiname">MyProvider</span> class is an example of a
 provider that uses the <span class="apiname">Provider.Service</span>
 class. See [Step 3.2: Create a Provider That Uses
-Provider.Service](howtoimplaprovider.htm#GUID-CB446B7A-CEA2-4F4A-A4AF-4D492CB58733).
+Provider.Service](howtoimplaprovider.html#GUID-CB446B7A-CEA2-4F4A-A4AF-4D492CB58733).
 
 ``` {.oac_no_warn dir="ltr"}
 package com.example.MyProvider;
@@ -4188,7 +4188,7 @@ The <span class="apiname">MyCipher</span> class extends the
 Interface (SPI). Each cryptographic service that a provider implements
 has a subclass of the appropriate SPI. See [Step 1: Write your Service
 Implementation
-Code](howtoimplaprovider.htm#GUID-1D2FDA77-743C-47CB-9CCB-2585FEC0607A "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.").
+Code](howtoimplaprovider.html#GUID-1D2FDA77-743C-47CB-9CCB-2585FEC0607A "When instantiating a provider's implementation (class) of a Cipher, KeyAgreement, KeyGenerator, MAC, or SecretKey factory, the framework will determine the provider's codebase (JAR file) and verify its signature. In this way, JCA authenticates the provider and ensures that only providers signed by a trusted entity can be plugged into the JCA. Thus, one requirement for encryption providers is that they must be signed, as described in later steps.").
 
 <div class="infoboxnote" id="GUID-0BB9FD94-C66E-44BC-BE8A-AF7CB376F137__GUID-53A626BF-DDDB-4135-98C4-B94A602BBBEB">
 Note:
@@ -4301,7 +4301,7 @@ src/com.example.MyProvider/META-INF/services/java.security.Provider
 The `java.security.Provider` file enables automatic or unnamed modules
 to use the <span class="apiname">ServiceLoader</span> class to search
 for your providers. See [Step 6: Place Your Provider in a JAR
-File](howtoimplaprovider.htm#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F).
+File](howtoimplaprovider.html#GUID-B30F5AA2-6517-4107-9FFF-F6BBE57A7A5F).
 
 ``` {.oac_no_warn dir="ltr"}
 com.example.MyProvider.MyProvider

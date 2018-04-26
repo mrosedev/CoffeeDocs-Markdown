@@ -100,12 +100,12 @@ It is also intended to be read by
 implementing an authentication technology) prior to reading the [Java
 Authentication and Authorization Service (JAAS): LoginModule
 Developer\'s
-Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A).
+Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A).
 
 You may wish to first read [JAAS Authentication
-Tutorial](jaas-authentication-tutorial.htm#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
+Tutorial](jaas-authentication-tutorial.html#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
 and [JAAS Authorization
-Tutorial](jaas-authorization-tutorial.htm#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411)
+Tutorial](jaas-authorization-tutorial.html#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411)
 to get an overview of how to use JAAS and to see sample code in action,
 and then return to this document for further information.
 
@@ -121,12 +121,12 @@ Related Documentation {#JSSEC-GUID-11885DA7-0D17-4756-B193-3CC9376B1225 .sect2}
 This document assumes you have already read the following:
 
 -   [Java SE Platform Security
-    Architecture](java-se-platform-security-architecture.htm#GUID-D6C53B30-01F9-49F1-9F61-35815558422B "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.This section describes the doPrivileged API and the use of the privileged feature.If you are using a lambda expression or anonymous inner class, then any local variables you access must be final or effectively final.If the action performed in your run method could throw a checked exception (one that must be listed in the throws clause of a method), then you need to use the PrivilegedExceptionAction interface instead of the PrivilegedAction interface.The typical use case of the doPrivileged method is to enable the method that invokes it to perform one or more actions that require permission checks without requiring the callers of the current method to have all the necessary permissions.When coding the current method, you want to temporarily extend the permission of the calling method to perform an action.Marking code as privileged enables a piece of trusted code to temporarily enable access to more resources than are available directly to the code that called it.The doPrivileged method can be invoked reflectively using the java.lang.reflect.Method.invoke method.")
+    Architecture](java-se-platform-security-architecture.html#GUID-D6C53B30-01F9-49F1-9F61-35815558422B "This section explains what privileged code is and what it is used for. It also shows you how to use the doPrivileged API.This section describes the doPrivileged API and the use of the privileged feature.If you are using a lambda expression or anonymous inner class, then any local variables you access must be final or effectively final.If the action performed in your run method could throw a checked exception (one that must be listed in the throws clause of a method), then you need to use the PrivilegedExceptionAction interface instead of the PrivilegedAction interface.The typical use case of the doPrivileged method is to enable the method that invokes it to perform one or more actions that require permission checks without requiring the callers of the current method to have all the necessary permissions.When coding the current method, you want to temporarily extend the permission of the calling method to perform an action.Marking code as privileged enables a piece of trusted code to temporarily enable access to more resources than are available directly to the code that called it.The doPrivileged method can be invoked reflectively using the java.lang.reflect.Method.invoke method.")
 -   [Java SE Security
     Tutorial](https://docs.oracle.com/javase/tutorial/security/index.html)
 
 A supplement to this guide is the [JAAS LoginModule Developer\'s
-Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A),
+Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A),
 intended for experienced programmers who require the ability to write a
 [`LoginModule`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/security/auth/spi/LoginModule.html)
 implementing an authentication technology.
@@ -135,18 +135,18 @@ The following <span class="bold">tutorials</span> for JAAS
 authentication and authorization can be run by everyone:
 
 -   [JAAS Authentication
-    Tutorial](jaas-authentication-tutorial.htm#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
+    Tutorial](jaas-authentication-tutorial.html#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
 -   [JAAS Authorization
-    Tutorial](jaas-authorization-tutorial.htm#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411)
+    Tutorial](jaas-authorization-tutorial.html#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411)
 
 Similar tutorials for JAAS authentication and authorization, but which
 demonstrate the use of a Kerberos LoginModule and thus which require a
 Kerberos installation, can be found at
 
 -   [JAAS
-    Authentication](jaas-authentication.htm#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
+    Authentication](jaas-authentication.html#GUID-0C6EB04B-D203-4688-A3E2-A7D442334623)
 -   [JAAS
-    Authorization](jaas-authorization.htm#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
+    Authorization](jaas-authorization.html#GUID-69241059-CCD0-49F6-838F-DDC752F9F19F)
 
 These two tutorials are a part of [Introduction to JAAS and Java GSS-API
 Tutorials](introduction-jaas-and-java-gss-api-tutorials1.htm) that
@@ -179,7 +179,7 @@ The key JAAS class is
 [`javax.security.auth.Subject`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/security/auth/Subject.html),
 which represents a grouping of related information for a single entity
 such as a person. It encompasses the entity\'s
-[Principals](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-8FAF9739-CD62-4A47-9582-884DBF3081F0),
+[Principals](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-8FAF9739-CD62-4A47-9582-884DBF3081F0),
 public credentials, and private credentials.
 
 Note that the `java.security.Principal`{.codeph} interface is used to
@@ -200,7 +200,7 @@ request. A subject may be any entity, such as a person or a service.
 Once the subject is authenticated, a
 [`javax.security.auth.Subject`{.codeph}](https://docs.oracle.com/javase/10/docs/api/javax/security/auth/Subject.html)
 is populated with associated identities, or
-[Principals](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-8FAF9739-CD62-4A47-9582-884DBF3081F0).
+[Principals](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-8FAF9739-CD62-4A47-9582-884DBF3081F0).
 A `Subject`{.codeph} may have many `Principal`{.codeph}s. For example, a
 person may have a name `Principal`{.codeph} (\"John Doe\") and a SSN
 `Principal`{.codeph} (\"123-45-6789\"), which distinguish it from other
@@ -209,7 +209,7 @@ subjects.
 A `Subject`{.codeph} may also own security-related attributes, which are
 referred to as <span class="variable">credentials</span>; see the
 section
-[Credentials](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-9381520E-7A13-4087-BA26-C6CB8BE4A437).
+[Credentials](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-9381520E-7A13-4087-BA26-C6CB8BE4A437).
 Sensitive credentials that require special protection, such as private
 cryptographic keys, are stored within a private credential
 `Set`{.codeph}. Credentials intended to be shared, such as public key
@@ -239,7 +239,7 @@ If the application instantiates a `LoginContext`{.codeph} and does not
 pass a `Subject`{.codeph} to the `LoginContext`{.codeph} constructor,
 the `LoginContext`{.codeph} instantiates a new empty `Subject`{.codeph}.
 See the
-[LoginContext](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-164692CF-6790-488C-BF86-39F7C5CF0F5A)
+[LoginContext](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-164692CF-6790-488C-BF86-39F7C5CF0F5A)
 section.
 
 If a `Subject`{.codeph} was not instantiated to be in a read-only state,
@@ -405,13 +405,13 @@ exception from its `PrivilegedExceptionAction run`{.codeph} method. An
 Here is an example utilizing the first `doAs`{.codeph} method. Assume
 that someone named \"Bob\" has been authenticated by a
 `LoginContext`{.codeph} (see the
-[LoginContext](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-164692CF-6790-488C-BF86-39F7C5CF0F5A))
+[LoginContext](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-164692CF-6790-488C-BF86-39F7C5CF0F5A))
 and as a result a `Subject`{.codeph} was populated with a
 `Principal`{.codeph} of class `com.ibm.security.Principal`{.codeph}, and
 that `Principal`{.codeph} has the name \"BOB\". Also assume that a
 <span class="apiname">SecurityManager</span> has been installed, and
 that the following exists in the access control policy (see
-[Policy](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-66990EE6-1213-4BF7-AC43-A4C75AE6746D)
+[Policy](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-66990EE6-1213-4BF7-AC43-A4C75AE6746D)
 for more details on the policy file).
 
 ``` {.oac_no_warn dir="ltr"}
@@ -544,7 +544,7 @@ distinguish it from other <span class="apiname">Subject</span>s. A
 and
 [<span class="apiname">java.io.Serializable</span>](https://docs.oracle.com/javase/10/docs/api/java/io/Serializable.html)
 interfaces. See
-[Subject](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3)
+[Subject](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3)
 for information about ways to update the
 <span class="apiname">Principal</span>s associated with a
 <span class="apiname">Subject</span>.
@@ -727,7 +727,7 @@ configuration entry that the application references in the name
 parameter for the `LoginContext`{.codeph} instantiation.
 
 See
-[CallbackHandler](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-1018AB86-8912-4C00-8717-2FA2B54A4866)
+[CallbackHandler](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-1018AB86-8912-4C00-8717-2FA2B54A4866)
 for information on what a `CallbackHandler`{.codeph} is and when you may
 need one.
 
@@ -806,7 +806,7 @@ If, on the other hand, you are a programmer who wishes to write a
 LoginModule implementing an authentication technology, see the [Java
 Authentication and Authorization Service (JAAS): LoginModule
 Developer\'s
-Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A)
+Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A)
 for detailed step-by-step instructions.
 
 </div>
@@ -874,7 +874,7 @@ The
 package contains the Callback <span class="bold">interface</span> as
 well as several implementations. LoginModules may pass an array of
 Callbacks directly to the handle method of a
-[CallbackHandler](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-1018AB86-8912-4C00-8717-2FA2B54A4866).
+[CallbackHandler](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-1018AB86-8912-4C00-8717-2FA2B54A4866).
 
 Please consult the various Callback APIs for more information on their
 use.
@@ -893,11 +893,11 @@ permissions based not just on what code is running but also on who is
 running it, the following is required:
 
 -   The user must be authenticated, as described in the
-    [LoginContext](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-164692CF-6790-488C-BF86-39F7C5CF0F5A)
+    [LoginContext](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-164692CF-6790-488C-BF86-39F7C5CF0F5A)
     section.
 -   The Subject that is the result of authentication must be associated
     with an access control context, as described in the
-    [Subject](java-authentication-and-authorization-service-jaas-reference-guide.htm#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3)
+    [Subject](java-authentication-and-authorization-service-jaas-reference-guide.html#GUID-804BDE80-9E66-421C-BF0A-A96FBE7DE4E3)
     section.
 -   Principal-based entries must be configured in the security policy,
     as described below.
@@ -927,7 +927,7 @@ which was upgraded to support `Principal`{.codeph}-based
 
 Policy files and the structure of entries within them are described in
 [Default Policy Implementation and Policy File
-Syntax](permissions-jdk1.htm#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
+Syntax](permissions-jdk1.html#GUID-789089CA-8557-4017-B8B0-6899AD3BA18D).
 
 </div>
 </div>
@@ -997,34 +997,34 @@ JAAS Tutorials and Sample Programs {#JSSEC-GUID-7B9C6511-A221-414A-8A4B-6BCF0817
 
 <div>
 The [JAAS
-Authentication](jaas-authentication-tutorial.htm#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
+Authentication](jaas-authentication-tutorial.html#GUID-BFEBDB00-9826-499C-A20F-E9463883DED4)
 and [JAAS
-Authorization](jaas-authorization-tutorial.htm#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411)
+Authorization](jaas-authorization-tutorial.html#GUID-D43CF965-8A5F-4A23-A2AF-F41DD5F8B411)
 tutorials contain the following samples:
 
--   [`SampleAcn.java`](jaas-authentication-tutorial.htm#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101__GUID-1270A0AC-EA51-4A47-B9BC-BDB42F96F5FE)
+-   [`SampleAcn.java`](jaas-authentication-tutorial.html#GUID-E007D5F4-3FA5-417A-B85F-E669839F0101__GUID-1270A0AC-EA51-4A47-B9BC-BDB42F96F5FE)
     is a sample application demonstrating JAAS authentication.
--   [`SampleAzn.java`](jaas-authorization-tutorial.htm#GUID-07EAB926-63EA-48F4-8DF0-4CC4526FA545__GUID-9AE66C05-0850-4AAF-8DD9-7D940069844F)
+-   [`SampleAzn.java`](jaas-authorization-tutorial.html#GUID-07EAB926-63EA-48F4-8DF0-4CC4526FA545__GUID-9AE66C05-0850-4AAF-8DD9-7D940069844F)
     is a sample application used by the authorization tutorial. It
     demonstrates both authentication and authorization.
 -   [The Login Configuration File for the JAAS Authentication
-    Tutorial](jaas-authentication-tutorial.htm#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F)
+    Tutorial](jaas-authentication-tutorial.html#GUID-A7E0803F-DA0B-42BF-8E25-DA5889BE847F)
     describes `sample_jaas.config`, which is a sample login
     configuration file used by both tutorials.
--   [`sampleacn.policy`](jaas-authentication-tutorial.htm#GUID-44F2BF3A-F51D-4F21-8F40-96CB1120396D__SAMPLEACN.POLICY-2FEDE143)
+-   [`sampleacn.policy`](jaas-authentication-tutorial.html#GUID-44F2BF3A-F51D-4F21-8F40-96CB1120396D__SAMPLEACN.POLICY-2FEDE143)
     is a sample policy file granting permissions required by the code
     for the authentication tutorial.
--   [`sampleazn.policy`](jaas-authorization-tutorial.htm#GUID-3A2FF6CF-3124-4402-B550-D0F4E76B3D4D__GUID-6CA8F774-5E38-437D-8549-9604DEC5C317)
+-   [`sampleazn.policy`](jaas-authorization-tutorial.html#GUID-3A2FF6CF-3124-4402-B550-D0F4E76B3D4D__GUID-6CA8F774-5E38-437D-8549-9604DEC5C317)
     is a sample policy file granting permissions required by the code
     for the authorization tutorial.
--   [`SampleLoginModule.java`](jaas-authentication-tutorial.htm#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-F9A208EC-3247-4320-8158-82B0E84C6A04)
+-   [`SampleLoginModule.java`](jaas-authentication-tutorial.html#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-F9A208EC-3247-4320-8158-82B0E84C6A04)
     is the class specified by the tutorials\' login configuration file
     (`sample_jaas.config`{.codeph}) as the class implementing the
     desired underlying authentication.
     <span class="apiname">SampleLoginModule</span>\'s user
     authentication consists of simply verifying that the name and
     password specified by the user have specific values.
--   [`SamplePrincipal.java`](jaas-authentication-tutorial.htm#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-3EA5533B-1284-481E-A35F-C82B17837F2E)
+-   [`SamplePrincipal.java`](jaas-authentication-tutorial.html#GUID-03476CCA-11C6-4D51-B170-C8DD7C0D9075__GUID-3EA5533B-1284-481E-A35F-C82B17837F2E)
     is a sample class implementing the
     [`Principal`{.codeph}](https://docs.oracle.com/javase/10/docs/api/java/security/Principal.html)
     interface. It is used by
@@ -1038,7 +1038,7 @@ Application writers do not need to understand the code for
 tutorials. Programmers who wish to write LoginModules can learn how to
 do so by reading the [Java Authentication and Authorization Service
 (JAAS): LoginModule Developer\'s
-Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.htm#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A).
+Guide](java-authentication-and-authorization-service-jaas-loginmodule-developers-guide1.html#GUID-CB46C30D-FFF1-466F-B2F5-6DE0BD5DA43A).
 
 </div>
 </div>
