@@ -1,3 +1,7 @@
+---
+theme : default
+---
+
 <div class="header">
 []{#top}
 
