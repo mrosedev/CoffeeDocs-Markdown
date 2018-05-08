@@ -5,22 +5,11 @@
 [Go to primary content](#BEGIN)
 
 </div>
-+-----------------------------------+----------------------------------:+
-| **Java Platform, Standard Edition |   -- ---------------------------- |
-| Security Developer's Guide**\     | ------------------------------    |
-| **<span>Release 11</span>**\      |       [![Go To Table Of Contents] |
-| E94828-01                         | (../../dcommon/gifs/toc.gif)\     |
-|                                   |             <span class="icon">Co |
-|                                   | ntents</span>](toc.htm)           |
-|                                   |   -- ---------------------------- |
-|                                   | ------------------------------    |
-+-----------------------------------+-----------------------------------+
 
-------------------------------------------------------------------------
 
   ---------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------- --
                           [![Previous](../../dcommon/gifs/leftnav.gif)\                                            [![Next](../../dcommon/gifs/rightnav.gif)\                    
-   <span class="icon">Previous</span>](java-authentication-and-authorization-service-jaas1.htm)   <span class="icon">Next</span>](appendix-b-jaas-login-configuration-file.htm)  
+   <span on">Previous</span>](java-authentication-and-authorization-service-jaas1.htm)   <span class="icon">Next</span>](appendix-b-jaas-login-configuration-file.htm)  
   ---------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------- --
 
 []{#BEGIN}
