@@ -9,11 +9,9 @@ Release 11
 
 E94828-01
 
-------------------------------------------------------------------------
+<div>
+[<span class="icon">Previous</span>](single-sign-using-kerberos-java1.htm)   <span class="icon">Next</span>](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.htm)  
 
-  --------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------- --
-                 [<span class="icon">Previous</span>](single-sign-using-kerberos-java1.htm)   <span class="icon">Next</span>](part-i-secure-authentication-using-java-authentication-and-authorization-service-jaas.htm)  
-  --------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------- --
 
 
 
@@ -21,7 +19,7 @@ E94828-01
 <!-- class="header" -->
 
 <div class="ind">
-[]{#GUID-5DEF0954-0AB3-4AEB-9981-C2A172D5EDE9}<!-- End Header -->
+<!-- []{#GUID-5DEF0954-0AB3-4AEB-9981-C2A172D5EDE9}<!-- End Header -->
 
 Advanced Security Programming in Java SE Authentication, Secure Communication and Single Sign-On {#JSSEC-GUID-5DEF0954-0AB3-4AEB-9981-C2A172D5EDE9 .sect1}
 ================================================================================================
